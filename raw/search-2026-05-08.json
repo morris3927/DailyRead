@@ -1,0 +1,1068 @@
+{
+  "date": "2026-05-08",
+  "base": "http://192.168.1.18:8888/search",
+  "domains": {
+    "silicon-sampling-social-simulation": [
+      {
+        "query": "silicon sampling LLM persona simulation arxiv",
+        "results": [
+          {
+            "title": "[PDF] LLM Generated Persona is a Promise with a Catch - OpenReview",
+            "url": "https://openreview.net/pdf?id=qh9eGtMG4H",
+            "content": "While \"silicon samples\" hold the potential to revolutionize societal-scale experimentation, a critical challenge remains: the systematic and reliable generation of persona profiles for targeted populations. Although large-scale collection of human data can maximize downstream simulation fidelity [Park et al., 2024], gathering such comprehensive data is far from trivial. It requires ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] Mixture-of-Personas Language Models for Population Simulation",
+            "url": "https://aclanthology.org/2025.findings-acl.1271.pdf",
+            "content": "The persona and the exemplar are randomly chosen according to the learned mixing weights to elicit diverse LLM responses during simulation. MoP is flexible, does not require model fine-tuning, and is trans- ferable between base models.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Mitigating Social Desirability Bias in Random Silicon Sampling - arXiv",
+            "url": "https://arxiv.org/html/2512.22725v1",
+            "content": "2025年12月27日 · This work presents a systematic study of prompt-level mitigation strategies for Social Desirability Bias (SDB) in LLM-based survey simulation.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[2503.16527] LLM Generated Persona is a Promise with a Catch - arXiv.org",
+            "url": "https://arxiv.org/abs/2503.16527",
+            "content": "Consequently, synthetic persona generation with LLMs offers a scalable, cost-effective alternative. However, current approaches rely on ad hoc and heuristic generation techniques that do not guarantee methodological rigor or simulation precision, resulting in systematic biases in downstream tasks.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] LLM Generated Persona is a Promise with a Catch - arXiv",
+            "url": "https://arxiv.org/pdf/2503.16527",
+            "content": "2025年3月18日 · These findings critically undermine the validity of using LLMs as \"silicon samples\" and raise serious concerns about applying. LLM-generated ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] Representativeness and Structural Consistency of Silicon Samples ...",
+            "url": "https://arxiv.org/pdf/2507.02919",
+            "content": "This hypothesis suggests that asking an LLM to respond from a persona is not akin to sampling an individual from a population who holds genuine, potentially ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] Random Silicon Sampling: Simulating Human Sub-Population ... - arXiv",
+            "url": "https://arxiv.org/pdf/2402.18144",
+            "content": "2024年2月28日 · Our study proposes “random silicon sampling,” which generates the opinions correspond with a real human group through LLMs based on the ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LLM Generated Persona is a Promise with a Catch",
+            "url": "https://proceedings.neurips.cc/paper_files/paper/2025/hash/5fc150b75e8b509735564de16bc3527b-Abstract-Position_Paper_Track.html",
+            "content": "Consequently, synthetic persona generation with LLMs offers a scalable, cost-effective alternative. However, current approaches rely on ad hoc and heuristic generation techniques that do not guarantee methodological rigor or simulation precision, resulting in systematic biases in downstream tasks.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "1 Introduction - arXiv",
+            "url": "https://arxiv.org/html/2503.16527v1",
+            "content": "2025年3月18日 · These findings critically undermine the validity of using LLMs as \"silicon samples\" and raise serious concerns about applying LLM-generated ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Evaluating Silicon Sampling: LLM Accuracy in Simulating Public Opinion ...",
+            "url": "https://openaccess.cms-conferences.org/publications/book/978-1-964867-73-1/article/978-1-964867-73-1_45",
+            "content": "Large Language Models (LLMs) have demonstrated remarkable capabilities in generating human-like responses, prompting exploration into their potential for social science research. \"Silicon sampling,\" a method where LLMs are queried after being prompted with personas, has emerged as a possible alternative to traditional survey methods, especially given the increasing challenges associated with ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      },
+      {
+        "query": "social simulation large language models generative agents arxiv",
+        "results": [
+          {
+            "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents ...",
+            "url": "https://arxiv.org/abs/2502.08691",
+            "content": "Recent advances in large language models (LLMs) have further transformed this research paradigm, enabling the creation of human-like generative social agents and realistic simulacra of society.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "GenSim: A General Social Simulation Platform with Large Language ...",
+            "url": "https://arxiv.org/abs/2410.04360",
+            "content": "2024年10月6日 · GenSim represents an initial step toward a general, large-scale, and correctable social simulation platform based on LLM agents.缺少字詞： generative | 必須包含以下字詞：generative",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[2411.10109] LLM Agents Grounded in Self-Reports Enable General ...",
+            "url": "https://arxiv.org/abs/2411.10109",
+            "content": "2024年11月15日 · Abstract page for arXiv paper 2411.10109: LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "tsinghua-fib-lab/AgentSociety - GitHub",
+            "url": "https://github.com/tsinghua-fib-lab/agentsociety",
+            "content": "AgentSociety is an advanced framework specifically designed for building agents in urban simulation environments. With AgentSociety, you can easily create and manage agents, enabling complex urban scenarios to be modeled and simulated efficiently. The paper is available at arXiv: @article ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Do Large Language Models Solve the Problems of Agent-Based ... - arXiv",
+            "url": "https://arxiv.org/abs/2504.03274",
+            "content": "2025年4月4日 · This paper reviews the generative ABM literature to assess how this new approach adequately addresses these long-standing criticisms.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents ...",
+            "url": "https://www.alphaxiv.org/overview/2502.08691v1",
+            "content": "Generative Agents: Interactive Simulacra of Human Behavior. ... S$^3$: Social-network Simulation System with Large Language Model-Empowered Agents. arXiv preprint arXiv:2307.14984, 2023.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[2604.03898] LLM-Agent-based Social Simulation for Attitude Diffusion",
+            "url": "https://arxiv.org/abs/2604.03898",
+            "content": "2026年4月4日 · Large language models (LLMs) are used to generate social media posts, interpret opinions, and model how ideas spread through social networks.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "(PDF) AgentSociety: Large-Scale Simulation of LLM-Driven ...",
+            "url": "https://www.researchgate.net/publication/388963974_AgentSociety_Large-Scale_Simulation_of_LLM-Driven_Generative_Agents_Advances_Understanding_of_Human_Behaviors_and_Society",
+            "content": "2025年2月12日 · Recent advances in large language models (LLMs) have further transformed this research paradigm, enabling the creation of human-like generative ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents ...",
+            "url": "https://huggingface.co/papers/2502.08691",
+            "content": "Join the discussion on this paper page AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Agent-Based Modelling Meets Generative AI in Social Network ...",
+            "url": "https://www.linkedin.com/posts/picuslab_agent-based-modelling-meets-generative-ai-activity-7270494062384746497-Ujpt",
+            "content": "2024年12月5日 · This paper presents an integration of Large Language Models (LLMs) with Agent-Based Modelling (ABM) to simulate user behaviour in social networks.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      },
+      {
+        "query": "LLM survey simulation synthetic population paper",
+        "results": [
+          {
+            "title": "Simulating Human Opinions with Large Language Models:",
+            "url": "https://dl.acm.org/doi/10.1145/3708319.3733685",
+            "content": "Synthetic data achieved better-than-chance accuracy in matching human responses and approximated aggregate subjective rankings for both binary and Likert-scale items. However, LLM-simulated data overestimated humans' tendencies to provide positive ratings and exhibited substantially reduced variance compared to real data.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Specializing Large Language Models to Simulate Survey Response ...",
+            "url": "https://arxiv.org/html/2502.07068v1",
+            "content": "2025年2月10日 · In this paper, we are the first to specialize LLMs for the task of simulating survey response distributions.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[2509.06337] Large Language Models as Virtual Survey Respondents ...",
+            "url": "https://arxiv.org/abs/2509.06337",
+            "content": "We curate LLM-S^3 (Large Language Model-based Sociodemographic Survey Simulation), a benchmark spanning 11 real-world public datasets across four sociological domains, and evaluate GPT-3.5/4 Turbo and LLaMA 3.0/3.1-8B under zero-shot and few-shot settings.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A large language model for feasible and diverse population synthesis",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0968090X26000690",
+            "content": "Notably, these improvements are achieved by fine-tuning a lightweight open-source LLM and generating synthetic population on standard personal computers.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Auto Sim Ai: A Large Language Model-Based System For Survey ...",
+            "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6415040",
+            "content": "2026年4月24日 · We present Auto Sim AI, an open-source platform for LLM-based survey simulation with virtual personas. The system supports synthetic population ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Large language models empowered agent-based modeling and simulation: a ...",
+            "url": "https://www.nature.com/articles/s41599-024-03611-3",
+            "content": "This paper surveys the landscape of utilizing large language models in agent-based modeling and simulation, discussing their challenges and promising future directions.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Synthetic Sample in Social Research: significant limitations of AI ...",
+            "url": "https://www.veriangroup.com/news-and-insights/synthetic-sample-in-social-research",
+            "content": "Synthetic sample involves training an AI model to simulate how real human respondents might answer survey questions. This means the AI is predicting responses ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] A Survey on LLM-based Conversational User Simulation",
+            "url": "https://aclanthology.org/2026.eacl-long.200.pdf",
+            "content": "2026年3月24日 · In this paper, we survey recent advancements in LLM- based ... Datadreamer: A tool for synthetic data genera- tion and reproducible LLM workflows.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Uncertainty Quantification for LLM-Based Survey Simulations",
+            "url": "https://openreview.net/forum?id=nY1Ge2wxtP",
+            "content": "2025年6月9日 · The paper proposes a novel framework for converting synthetic survey responses generated by large language models (LLMs) into statistically ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "PDF Specializing Large Language Models to Simulate Survey Response ...",
+            "url": "https://aclanthology.org/2025.naacl-long.162.pdf",
+            "content": "Abstract Large-scale surveys are essential tools for in- forming social science research and policy, but running surveys is costly and time-intensive. If one could accurately simulate group-level survey results, this could be very valuable to so- cial science research. Prior work has explored the use of large language models (LLMs) for simulating human behaviors, mostly through prompting. In ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      },
+      {
+        "query": "large language models opinion dynamics social simulation",
+        "results": [
+          {
+            "title": "Social opinions prediction utilizes fusing dynamics equation with LLM ...",
+            "url": "https://www.nature.com/articles/s41598-025-99704-3",
+            "content": "2025年5月3日 · Opinion simulation methods are divided into two categories: traditional Agent-Based Modeling (ABM) and Large Language Model (LLM)-based ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Simulating Public Opinion Propagation on Social Media Using Large ...",
+            "url": "https://link.springer.com/article/10.1007/s11518-026-5726-8",
+            "content": "In this paper, we present a simulation of social network dynamics using agents powered by the GPT-4o large language model. These agents are designed with cognitive modules for memory, reflection, and chain of thought to better emulate human-like behavior. Focusing on the Roe v. Wade case, we model public opinion propagation on a simulated Twitter-like platform through actions like likes ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Modeling the impact of large language models on opinion dynamics",
+            "url": "https://www.sciencedirect.com/science/article/abs/pii/S0952197625033846",
+            "content": "Our simulation study reveals that LLMs exert significant influence on collective opinion evolution and formation within social networks. Building upon prior ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Modeling the impact of large language models on opinion dynamics: A ...",
+            "url": "https://www.sciencedirect.com/science/article/pii/S0952197625033846",
+            "content": "Using the proposed model, we conduct millions of simulations to investigate the impact of LLMs on opinion dynamics in a variety of scenarios. The results suggested that the output opinion of LLMs has a unique and positive effect on the collective opinion difference.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Too Open for Opinion? Embracing Open-Endedness in Large ... - arXiv",
+            "url": "https://arxiv.org/html/2510.13884v2",
+            "content": "2026年3月16日 · Large Language Models (LLMs) are increasingly used to simulate public opinion and other social phenomena. Most current studies constrain ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A curated awesome list for LLM-based social simulation research",
+            "url": "https://github.com/Wanying-He/awesome-llm-social-simulation",
+            "content": "One of the cleaner empirical papers on opinion dynamics. Tests bounded confidence models with LLM agents. Finance & Economics. [2025.02] TwinMarket: A ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Too Open for Opinion? Embracing Open-Endedness ... - ACL Anthology",
+            "url": "https://aclanthology.org/2026.eacl-long.89/",
+            "content": "Large Language Models (LLMs) are increasingly used to simulate public opinion and other social phenomena. Most current studies constrain these simulations to ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LLM-Based Opinion Dynamics Simulation - Emergent Mind",
+            "url": "https://www.emergentmind.com/topics/llm-based-opinion-dynamics-simulation-e2def99f-a158-4778-ba6f-0880a2db17ef",
+            "content": "2026年1月2日 · LLM-based opinion dynamics simulation refers to the computational modeling of social opinion evolution using populations of LLM-powered agents, ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Too Open for Opinion? Embracing Open-Endedness in Large Language Models ...",
+            "url": "https://arxiv.org/abs/2510.13884",
+            "content": "Large Language Models (LLMs) are increasingly used to simulate public opinion and other social phenomena. Most current studies constrain these simulations to multiple-choice or short-answer formats for ease of scoring and comparison, but such closed designs overlook the inherently generative nature of LLMs.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Impact of mindset types and social community compositions on opinion ...",
+            "url": "https://dl.acm.org/doi/10.1016/j.chb.2025.108730",
+            "content": "2025年11月1日 · This study examines the impact of individual mindsets and social community compositions (SCC) on opinion dynamics through a large language ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      }
+    ],
+    "harness-engineering": [
+      {
+        "query": "LLM evaluation harness agent benchmark framework",
+        "results": [
+          {
+            "title": "GitHub - EleutherAI/lm-evaluation-harness: A framework for few-shot ...",
+            "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+            "content": "A new v0.4.0 release of lm-evaluation-harness is available ! New updates and features include: New Open LLM Leaderboard tasks have been added ! You can find them under the leaderboard task group. Internal refactoring Config-based task creation and configuration Easier import and sharing of externally-defined task config YAMLs Support for Jinja2 prompt design, easy modification of prompts ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Evaluation and Benchmarking of LLM Agents: A Survey - arXiv.org",
+            "url": "https://arxiv.org/html/2507.21504v1",
+            "content": "We also identify the future research directions, including holistic, more realistic, and scalable evaluation. This work aims to bring clarity to the fragmented landscape of agent evaluation and provide a framework for systematic assessment, enabling researchers and practitioners to evaluate LLM agents for real-world deployment.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Demystifying evals for AI agents - Anthropic",
+            "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+            "content": "For example, Claude Code is a flexible agent harness, and we used its core primitives through the Agent SDK to build our long-running agent harness. An evaluation suite is a collection of tasks designed to measure specific capabilities or behaviors. Tasks in a suite typically share a broad goal.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "【基础理论】【工具链】大模型评测框架 - 知乎专栏",
+            "url": "https://zhuanlan.zhihu.com/p/1955676644950939034",
+            "content": "2025年9月28日 · 1️⃣ 什么是LLM 评测框架？ LLM 评测框架（Evaluation Framework） 是一套系统化的工具、流程与方法论，用于组织、执行和管理对大语言模型的评估。",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "AI agent evaluation: A practical framework for testing multi-step ...",
+            "url": "https://www.braintrust.dev/articles/ai-agent-evaluation-framework",
+            "content": "2026年2月2日 · Why agent evaluation requires a different approach. Standard LLM benchmarks measure whether a model produces coherent and relevant text.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Evaluation Harness - OpenHands Docs",
+            "url": "https://docs.openhands.dev/openhands/usage/developers/evaluation-harness",
+            "content": "This guide provides an overview of how to integrate your own evaluation benchmark into the OpenHands framework. ​. Setup Environment and LLM Configuration.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Evaluating Llms Harness — lm-eval-harness: benchmark LLMs (MMLU, GSM8K ...",
+            "url": "https://hermes-agent.nousresearch.com/docs/user-guide/skills/bundled/mlops/mlops-evaluation-lm-evaluation-harness",
+            "content": "lm-evaluation-harness - LLM Benchmarking What's inside Evaluates LLMs across 60+ academic benchmarks (MMLU, HumanEval, GSM8K, TruthfulQA, HellaSwag). Use when benchmarking model quality, comparing models, reporting academic results, or tracking training progress. Industry standard used by EleutherAI, HuggingFace, and major labs. Supports HuggingFace, vLLM, APIs. Quick start lm-evaluation ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "AI Agent Evaluation: Frameworks, Strategies, and Best Practices",
+            "url": "https://medium.com/online-inference/ai-agent-evaluation-frameworks-strategies-and-best-practices-9dc3cfdf9890",
+            "content": "2025年10月22日 · Agent evaluation is the systematic process of measuring AI agent performance across technical capabilities, autonomy levels, and business ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LLM Eval Harness: Benchmark Any Model on 200+ Tasks (2026 Guide)",
+            "url": "https://www.morphllm.com/llm-eval-harness",
+            "content": "Home / LLM Eval Harness: How to Benchmark Any Model on 200+ Tasks in One Command LLM Eval Harness: How to Benchmark Any Model on 200+ Tasks in One Command The EleutherAI LM Evaluation Harness is the standard tool for benchmarking language models.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LLM Coding Benchmarks Explained: Evaluate Models for Agents - Blaxel",
+            "url": "https://blaxel.ai/blog/llm-coding-benchmarks",
+            "content": "2026年3月20日 · This guide covers how to read LLM coding benchmarks critically, which benchmarks map to production workloads, and how to build an evaluation ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      },
+      {
+        "query": "agent evaluation harness technical blog GitHub benchmark",
+        "results": [
+          {
+            "title": "GitHub - najeed/ai-agent-eval-harness: The open-source MultiAgentOps ...",
+            "url": "https://github.com/najeed/ai-agent-eval-harness",
+            "content": "Mission Our goal is to create a standardized, community-driven benchmark for AI agent performance. By providing a rich set of industry-specific scenarios and a flexible evaluation runner, we aim to help developers, researchers, and businesses measure and improve their agent-based systems. The harness is organized into the following key components:",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Demystifying evals for AI agents - Anthropic",
+            "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+            "content": "An agent harness (or scaffold) is the system that enables a model to act as an agent: it processes inputs, orchestrates tool calls, and returns results. When we evaluate \"an agent,\" we're evaluating the harness and the model working together.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "OpenHands/benchmarks: Evaluation harness for OpenHands V1. - GitHub",
+            "url": "https://github.com/OpenHands/benchmarks",
+            "content": "2025年11月17日 · This repository contains benchmark evaluation infrastructure for OpenHands agents. It provides standardized evaluation pipelines for testing ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "eval-harness · GitHub Topics",
+            "url": "https://github.com/topics/eval-harness",
+            "content": "2026年3月31日 · Evaluate AI agents with Unix-style pipeline commands. Schema-driven adapters for any CLI agent, trajectory capture, pass@k metrics, ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "awesome-agent-harness - Curated list of agent harnesses, benchmarks ...",
+            "url": "https://reputagent.com/ecosystem/autojunjie-awesome-agent-harness",
+            "content": "Curated directory of agent harnesses, benchmarks, and evaluation patterns for multi-agent systems. Find tools, tests, and best practices for agent-to-agent evaluation.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "The Agent Harness: Why 70% of Your AI Agent's Performance Lives ...",
+            "url": "https://medium.com/@tentenco/the-agent-harness-why-70-of-your-ai-agents-performance-lives-outside-the-model-5093cfe03df1",
+            "content": "2026年4月19日 · The agent harness — the complete software infrastructure wrapping a large language model — is the variable that decides whether your AI ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Build an eval harness for 184 AI agent prompts with promptfoo",
+            "url": "https://jonesrussell.github.io/blog/eval-harness-agency-agents/",
+            "content": "Ahnii! Agency-agents is an open-source collection of 184 specialist AI agent prompts (my fork with the eval harness). Backend architects, UX designers, historians, game developers. Each prompt is a detailed markdown file with identity, workflows, deliverable templates, and success metrics. But there's no way to know if any of them actually produce good output. You can build a promptfoo ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "agent-evaluation · GitHub Topics",
+            "url": "https://github.com/topics/agent-evaluation?l=shell",
+            "content": "2026年4月1日 · Lightweight benchmark harness for testing AI coding agents against explicit task specs, acceptance criteria, and local validation scripts.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Benchmark Landscape | walkinglabs/awesome-harness-engineering | DeepWiki",
+            "url": "https://deepwiki.com/walkinglabs/awesome-harness-engineering/3.2-benchmark-landscape",
+            "content": "Detailed Benchmark Survey 1. SWE-bench (Software Engineering Benchmark) SWE-bench is the industry standard for evaluating coding agents on real-world GitHub issues. It stresses the harness's ability to provide a usable development environment (compilers, linters, test runners) and the agent's ability to navigate large codebases.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A Benchmark Mutation Approach for Realistic Agent Evaluation - arXiv",
+            "url": "https://arxiv.org/html/2510.08996v2",
+            "content": "2025年10月14日 · In this study, we have demonstrated that existing bug-fixing benchmarks for evaluating software engineering agents, such as SWE-Bench Verified, ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      },
+      {
+        "query": "LLM eval pipeline reproducibility benchmark contamination",
+        "results": [
+          {
+            "title": "Test of Time: Rethinking Temporal Signal of Benchmark Contamination",
+            "url": "https://arxiv.org/html/2509.00072v3",
+            "content": "2026年4月26日 · Post-cutoff performance decay has been widely interpreted as a temporal signal for benchmark contamination. We critically examine this ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Benchmark Contamination in LLMs: Detection & Mitigation Strategies",
+            "url": "https://mbrenndoerfer.com/writing/benchmark-contamination-llm-detection-mitigation",
+            "content": "Learn how benchmark contamination affects LLM evaluation accuracy. Discover detection methods including n-gram matching, MinHash, and embedding similarity analysis.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "The LLM Evaluation Problem Nobody Talks About - Towards AI",
+            "url": "https://pub.towardsai.net/the-llm-evaluation-problem-nobody-talks-about-5e876a12a5af",
+            "content": "2026年3月16日 · Problem 4: Benchmark contamination. A model trained on data that overlaps with benchmark test sets will score higher on those benchmarks for ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "AI Benchmarks for the Enterprise: How to Evaluate LLMs, Systems, and ...",
+            "url": "https://medium.com/@adnanmasood/when-leaderboards-mislead-measuring-enterprise-value-for-ai-and-llm-benchmarks-for-the-enterprise-bca9dfcaf5fe",
+            "content": "2026年2月14日 · The Great LLM Benchmark Illusion — Why your “best model” might fail in production — and how enterprises can test properly.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "DCR: Quantifying Data Contamination in LLMs Evaluation",
+            "url": "https://aclanthology.org/2025.emnlp-main.1173/",
+            "content": "Abstract The rapid advancement of large language models (LLMs) has heightened concerns about benchmark data contamination (BDC), where models inadvertently memorize evaluation data during the training process, inflating performance metrics, and undermining genuine generalization assessment. This paper introduces the Data Contamination Risk (DCR) framework, a lightweight, interpretable pipeline ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] Benchmarking Large Language Models Under Data Contamination",
+            "url": "https://aclanthology.org/2025.emnlp-main.511.pdf",
+            "content": "Dynamic methods aim to reduce contamination risk either by continuously updating benchmark datasets based on LLM training times- tamps (White et al., 2024; Jain ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LLM benchmark contamination detection framework - GitHub",
+            "url": "https://github.com/nate-daba/detect-benchmark-contamination",
+            "content": "This repository builds upon the LLMSanitize framework for detecting benchmark contamination in large language models (LLMs). It adapts, extends, and evaluates contamination detection techniques on recent open-source reasoning models and math-focused datasets, such as AIME-2024 and subsets of MMLU ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Detecting Benchmark Contamination Through Watermarking - OpenReview",
+            "url": "https://openreview.net/forum?id=WFGxFzFDmQ",
+            "content": "Benchmark contamination undermines LLM evaluations, and existing post-hoc detection methods are heuristics and thus lack verifiable guarantees.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Mastering LLM Techniques: Evaluation | NVIDIA Technical Blog",
+            "url": "https://developer.nvidia.com/blog/mastering-llm-techniques-evaluation/",
+            "content": "2025年1月29日 · In this post, we explore robust evaluation techniques and best practices for assessing the accuracy and reliability of LLMs and RAG systems.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Towards Reproducible LLM Evaluation: Quantifying Uncertainty in LLM ...",
+            "url": "https://arxiv.org/html/2410.03492v1",
+            "content": "We suggest a simple method for cost-effectively quantifying the uncertainty of a benchmark score and make recommendations concerning reproducible LLM evaluation.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      },
+      {
+        "query": "OpenAI evals lm-evaluation-harness agent evaluation",
+        "results": [
+          {
+            "title": "Language Model Evaluation Harness - GitHub",
+            "url": "https://github.com/EleutherAI/lm-evaluation-harness",
+            "content": "A new v0.4.0 release of lm-evaluation-harness is available ! New updates and features include: New Open LLM Leaderboard tasks have been added ! You can find them under the leaderboard task group. Internal refactoring Config-based task creation and configuration Easier import and sharing of externally-defined task config YAMLs Support for Jinja2 prompt design, easy modification of prompts ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Strategies for LLM Evals (GuideLLM, lm-eval-harness, OpenAI ... - YouTube",
+            "url": "https://www.youtube.com/watch?v=89NuzmKokIk",
+            "content": "2025年7月27日 · ... agent interactions with practical reliability tests. Whether you're deploying chatbots, copilots, or autonomous AI agents, robust evaluation ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Testing Agent Skills Systematically with Evals - OpenAI Developers",
+            "url": "https://developers.openai.com/blog/eval-skills",
+            "content": "2026年1月22日 · A practical guide to turning agent skills into something you can test, score, and improve over time.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LLM Eval Harness: Benchmark Any Model on 200+ Tasks (2026 Guide)",
+            "url": "https://www.morphllm.com/llm-eval-harness",
+            "content": "The EleutherAI LM Evaluation Harness is the standard tool for benchmarking language models. One command runs MMLU, HellaSwag, GSM8K, or any of 60+ benchmarks with hundreds of subtask variants. It supports local HuggingFace models, vLLM, and any OpenAI-compatible API. This guide covers everything from first install to building custom benchmarks.",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LLM 評估教學| EleutherAI LM Evaluation Harness",
+            "url": "https://chichieh-huang.com/posts/42628a4362f7/",
+            "content": "2024年4月12日 · lm-evaluation-harness 支援許多模型種類與商業模型，包含HuggingFace Hub 上託管的模型，OpenAI、Anthropic 的API，也有支援Llama. ... 列表可以使用 lm-eval ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Working with evals | OpenAI API",
+            "url": "https://developers.openai.com/api/docs/guides/evals",
+            "content": "Evaluations (often called evals) test model outputs to ensure they meet style and content criteria that you specify. Writing evals to understand how your LLM applications are performing against your expectations, especially when upgrading or trying new models, is an essential component to building reliable applications. In this guide, we will focus on configuring evals programmatically using ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "lm | Skills Marketplace - LobeHub",
+            "url": "https://lobehub.com/zh-TW/skills/frank-luongt-faos-skills-marketplace-lm-evaluation-harness",
+            "content": "2026年4月7日 · lm-evaluation-harness 是一個命令列工具包，用於在60 多個學術與社群任務上進行標準化的大型語言模型（LLM）基準測試。它提供現成的任務套件（ ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "用lm-evaluation-harness 来评估本地部署的QwQ-32B等大模型的推理能力",
+            "url": "https://developer.volcengine.com/articles/7535837094099615771",
+            "content": "2025年8月7日 · lm-evaluation-harness 是一个用于评估生成式语言模型的项目，提供了一个统一的框架，可在大量不同的评估任务上测试语言模型。 最近更新：. 2025 年3 月：增加 ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "LM Evaluation Harness - LM Evaluation Harness",
+            "url": "https://lm-evaluation-harness.readthedocs.io/",
+            "content": "A framework for evaluating language models LM Evaluation Harness A unified framework for evaluating generative language models on a large number of different evaluation tasks. Features 60+ benchmarks with hundreds of subtasks, including MMLU, HellaSwag, GSM8K, ARC, and more Multiple backends — HuggingFace Transformers, vLLM, OpenAI-compatible APIs, and custom models YAML-based configuration ...",
+            "engine": "duckduckgo",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "EleutherAI lm-evaluation-harness | by tony Kuo | Disassembly - Medium",
+            "url": "https://medium.com/disassembly/llm-evaluation-eleutherai-lm-evaluation-harness-cc379495d545",
+            "content": "2024年9月29日 · Lm-evaluation-harness represents a valuable resource, offering a powerful LLM evaluation tool developed by EleutherAI.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": []
+      }
+    ],
+    "agent-memory": [
+      {
+        "query": "agent memory large language model arxiv",
+        "results": [
+          {
+            "title": "[2601.01885] Agentic Memory: Learning Unified Long-Term and ...",
+            "url": "https://arxiv.org/abs/2601.01885",
+            "content": "2026年1月5日 · Large language model (LLM) agents face fundamental limitations in long-horizon reasoning due to finite context windows, making effective memory ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[2508.19828] Memory-R1: Enhancing Large Language Model Agents to ...",
+            "url": "https://arxiv.org/abs/2508.19828",
+            "content": "2025年8月27日 · Abstract page for arXiv paper 2508.19828: Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[2502.12110] A-MEM: Agentic Memory for LLM Agents - arXiv",
+            "url": "https://arxiv.org/abs/2502.12110",
+            "content": "2025年2月17日 · This paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A Survey on the Memory Mechanism of Large Language Model based ...",
+            "url": "https://arxiv.org/abs/2404.13501",
+            "content": "2024年4月21日 · In this paper, we propose a comprehensive survey on the memory mechanism of LLM-based agents. In specific, we first discuss ''what is'' and ''why do we need'' ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Memory OS of AI Agent - arXiv",
+            "url": "https://arxiv.org/html/2506.06326v1",
+            "content": "Large Language Models (LLMs) face a crucial challenge from fixed context windows and inadequate memory management, leading to a severe shortage of long-term ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Context-ReAct: Adaptive Memory for AI Agents | StartupHub.ai",
+            "url": "https://www.startuphub.ai/ai-news/ai-research/2026/context-react-adaptive-memory-for-ai-agents",
+            "content": "13 小時前 · This framework, detailed in their arXiv publication, marks a significant step in agent memory architecture. ... Large Language Models. $57.9B.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "INMS: Memory Sharing for Large Language Model based Agents",
+            "url": "https://arxiv.org/abs/2404.09982",
+            "content": "Extensive experiments across three datasets demonstrate that INMS significantly improves agent performance by effectively modeling multi-agent ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A-Mem: Agentic Memory for LLM Agents | OpenReview",
+            "url": "https://openreview.net/forum?id=FiM0M8gcct",
+            "content": "2025年9月18日 · This paper introduces a novel agentic memory system called A-Mem, designed to enhance the performance of Large Language Model (LLM) agents in ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A-Mem: Agentic Memory for LLM Agents - arXiv",
+            "url": "https://arxiv.org/html/2502.12110v1",
+            "content": "2025年2月17日 · This paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "MemTensor/MemOS: Self-evolving memory OS for LLM & AI Agents",
+            "url": "https://github.com/MemTensor/MemOS",
+            "content": "MemOS is a Memory Operating System for LLMs and AI agents that unifies store / retrieve / manage for long-term memory, enabling context-aware and ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": [
+          [
+            "duckduckgo",
+            "CAPTCHA"
+          ]
+        ]
+      },
+      {
+        "query": "long term memory LLM agents arxiv",
+        "results": [
+          {
+            "title": "[2604.16548] A Survey on the Security of Long-Term Memory in LLM Agents",
+            "url": "https://arxiv.org/abs/2604.16548",
+            "content": "2026年4月17日 · Abstract page for arXiv paper 2604.16548: A Survey on the Security of Long-Term Memory in LLM Agents: Toward Mnemonic Sovereignty.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "SimpleMem: Efficient Lifelong Memory for LLM Agents - arXiv",
+            "url": "https://arxiv.org/abs/2601.02553",
+            "content": "2026年1月5日 · Abstract:To support long-term interaction in complex environments, LLM agents require memory systems that manage historical experiences.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[2601.01885] Agentic Memory: Learning Unified Long-Term and ...",
+            "url": "https://arxiv.org/abs/2601.01885",
+            "content": "2026年1月5日 · In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "HiMem: Hierarchical Long-Term Memory for LLM Long-Horizon Agents",
+            "url": "https://arxiv.org/abs/2601.06377",
+            "content": "Inspired by cognitive theories, we propose HiMem, a hierarchical long-term memory framework for long-horizon dialogues, designed to support ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term ...",
+            "url": "https://arxiv.org/html/2504.19413v1",
+            "content": "2025年4月28日 · We introduce Mem0, a scalable memory-centric architecture that addresses this issue by dynamically extracting, consolidating, and retrieving salient ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "How Memory Management Impacts LLM Agents: An Empirical Study of ...",
+            "url": "https://arxiv.org/abs/2505.16067",
+            "content": "2025年5月21日 · In this paper, we conduct an empirical study on how memory management choices impact the LLM agents' behavior, especially their long-term performance.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A-Mem: Agentic Memory for LLM Agents - arXiv",
+            "url": "https://arxiv.org/html/2502.12110v1",
+            "content": "2025年2月17日 · This paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Effective context engineering for AI agents - Anthropic",
+            "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+            "content": "2025年9月29日 · Effectively wrangling LLMs often requires thinking in context — in other words: considering the holistic state available to the LLM at any given ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "MemTensor/MemOS: Self-evolving memory OS for LLM & AI Agents",
+            "url": "https://github.com/MemTensor/MemOS",
+            "content": "MemOS is a Memory Operating System for LLMs and AI agents that unifies store / retrieve / manage for long-term memory, enabling context-aware and ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "How to scale LLMs to 100 million tokens without blowing up memory ...",
+            "url": "https://bdtechtalks.substack.com/p/how-to-scale-llms-to-100-million",
+            "content": "3 天前 · Memory Sparse Attention (MSA) scales LLM context windows to an unprecedented 100 million tokens while preserving accuracy.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": [
+          [
+            "duckduckgo",
+            "CAPTCHA"
+          ]
+        ]
+      },
+      {
+        "query": "episodic memory semantic memory LLM agents paper",
+        "results": [
+          {
+            "title": "SYNAPSE: Empowering LLM Agents with Episodic-Semantic Memory via ...",
+            "url": "https://arxiv.org/abs/2601.02744",
+            "content": "2026年1月6日 · Abstract page for arXiv paper 2601.02744: SYNAPSE: Empowering LLM Agents with Episodic-Semantic Memory via Spreading Activation.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Episodic Memory is the Missing Piece for Long-Term LLM Agents - arXiv",
+            "url": "https://arxiv.org/abs/2502.06975",
+            "content": "2025年2月10日 · This position paper argues that now is the right time for an explicit, integrated focus on episodic memory to catalyze the development of long-term agents.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] AriGraph: Learning Knowledge Graph World Models with Episodic ... - IJCAI",
+            "url": "https://www.ijcai.org/proceedings/2025/0002.pdf",
+            "content": "In our study, we introduce AriGraph, a novel method wherein the agent constructs and updates a mem- ory graph that integrates semantic and episodic memories ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "REMem: Reasoning with Episodic Memory in Language Agent",
+            "url": "https://openreview.net/forum?id=fugnQxbvMm",
+            "content": "The paper proposes REMem, a memory + reasoning framework for LLM agents. Offline, it converts past interactions into a “hybrid memory graph” containing (i) ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "GitHub - TsinghuaC3I/Awesome-Memory-for ...",
+            "url": "https://github.com/TsinghuaC3I/Awesome-Memory-for-Agents",
+            "content": "This repository provides a curated list of papers on agent memory, structured by a core taxonomy. We first divide agent memory based on its persistence:.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A Practical Guide to Memory for Autonomous LLM Agents",
+            "url": "https://towardsdatascience.com/a-practical-guide-to-memory-for-autonomous-llm-agents/",
+            "content": "2026年4月17日 · Production agents can leverage things like Agent Core's short-term memory to keep these episodic memories. There are even mechanisms to ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "What is Semantic and Episodic Memory? - Hugging Face",
+            "url": "https://huggingface.co/spaces/awacke1/Arxiv-Paper-Search-And-QA-RAG-Pattern/discussions/5",
+            "content": "2024年3月21日 · In this framework, episodic memory and semantic memory depend on the same decoding process, and perception includes an active semantic decoding ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Episodic Memory for AI Agents: How It Works and Why It Matters - Atlan",
+            "url": "https://atlan.com/know/episodic-memory-ai-agents/",
+            "content": "2026年4月17日 · Episodic memory gives AI agents recall of specific past events with context. How it works, how it differs from semantic memory, ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "Significance of Procedural, Semantic, and Episodic Memory for LLM Agents",
+            "url": "https://www.linkedin.com/pulse/significance-procedural-semantic-episodic-memory-llm-hatalis-ph-d--ezate",
+            "content": "2025年1月9日 · In cognitive science, procedural, semantic, and episodic memory are often discussed as three distinct facets of how humans store and retrieve ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "SYNAPSE: Empowering LLM Agents with Episodic-Semantic Memory via ...",
+            "url": "https://www.researchgate.net/publication/399522573_SYNAPSE_Empowering_LLM_Agents_with_Episodic-Semantic_Memory_via_Spreading_Activation",
+            "content": "2026年1月6日 · SYNAPSE: Empowering LLM Agents with Episodic-Semantic Memory via Spreading Activation ... In this paper, we propose QueEn, a novel approach for ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": [
+          [
+            "duckduckgo",
+            "CAPTCHA"
+          ]
+        ]
+      },
+      {
+        "query": "A-MEM agentic memory LLM agents",
+        "results": [
+          {
+            "title": "[2502.12110] A-MEM: Agentic Memory for LLM Agents - arXiv",
+            "url": "https://arxiv.org/abs/2502.12110",
+            "content": "2025年2月17日 · This paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A-Mem: Agentic Memory for LLM Agents | OpenReview",
+            "url": "https://openreview.net/forum?id=FiM0M8gcct",
+            "content": "2025年9月18日 · This paper proposes A-MEM, an agentic memory system for LLM agents inspired by the Zettelkasten method. It structures each interaction as a ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "agiresearch/A-mem: A-MEM: Agentic Memory for LLM Agents - GitHub",
+            "url": "https://github.com/agiresearch/a-mem",
+            "content": "A novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way. Introduction. Large Language Model (LLM) agents have ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A-Mem: Agentic Memory for LLM Agents - NIPS papers",
+            "url": "https://papers.nips.cc/paper_files/paper/2025/hash/19909c36f51abc4856b4560aff3d36d6-Abstract-Conference.html",
+            "content": "To address this limitation, this paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way. Following ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "【论文解读】A-MEM：面向LLM Agent 的主动式记忆系统 - 知乎专栏",
+            "url": "https://zhuanlan.zhihu.com/p/1888290059859514793",
+            "content": "2025年3月26日 · 这篇文章提出了一种名为A-MEM 的主动式记忆系统，尝试解决现有LLM 代理记忆系统结构僵化、适应性不足的问题。 传统方法（如MemGPT、MemoryBank）依赖预 ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "NeurIPS Poster A-Mem: Agentic Memory for LLM Agents",
+            "url": "https://neurips.cc/virtual/2025/poster/119020",
+            "content": "2025年12月4日 · In this paper, we introduce a novel agentic memory system, named as A-MEM, for LLM agents that enables dynamic memory structuring without ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A-MEM: Agentic Memory for LLM Agents - GraphRAG",
+            "url": "https://graphrag.com/appendices/research/2502.12110/",
+            "content": "2025年2月17日 · To address this limitation, this paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "A-Mem: Agentic Memory for LLM Agents - arXiv",
+            "url": "https://arxiv.org/html/2502.12110v1",
+            "content": "2025年2月17日 · This paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] A-MEM: Agentic Memory for LLM Agents | Semantic Scholar",
+            "url": "https://www.semanticscholar.org/paper/A-MEM%3A-Agentic-Memory-for-LLM-Agents-Xu-Liang/1f35a15fe9df43d24ec6ea551ec6c9766c17eccf",
+            "content": "A novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way, combining the structured organization principles of ...",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          },
+          {
+            "title": "[PDF] A-Mem: Agentic Memory for LLM Agents - OpenReview",
+            "url": "https://openreview.net/pdf?id=FiM0M8gcct",
+            "content": "Our system introduces an agentic memory architecture that enables autonomous and flexible memory management for LLM agents. For each new memory, we construct.",
+            "engine": "google",
+            "category": "general",
+            "publishedDate": null
+          }
+        ],
+        "unresponsive_engines": [
+          [
+            "duckduckgo",
+            "CAPTCHA"
+          ],
+          [
+            "wikipedia",
+            "too many requests"
+          ]
+        ]
+      }
+    ]
+  }
+}

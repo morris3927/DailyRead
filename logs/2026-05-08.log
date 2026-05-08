@@ -1,0 +1,6 @@
+2026-05-08 test run
+- Created DailyRead repo structure for Obsidian-readable paper/news briefing.
+- Queried SearXNG at http://192.168.1.18:8888/search with 12 queries across 3 domains.
+- Saved raw search output to raw/search-2026-05-08.json.
+- Generated one daily index and three domain daily notes.
+- No cron configured yet.

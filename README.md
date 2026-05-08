@@ -20,7 +20,9 @@ DailyRead 是一個 Obsidian-readable 的領域動態筆記庫，用來每天追
 
 ## Style
 
-- 像新聞播報，不像正式 survey。
+- 像研究新聞播報，但不是卡片式摘要。
+- 每篇 paper 以「小龍蝦讀完後講給 Morris 聽」的方式重述：先用白話說明 abstract / 主旨，再整理主要貢獻、方法、實驗設計與閱讀判斷。
 - 每則內容都標明來源與類型：paper / survey / benchmark / framework / blog / technical report。
+- Paper 需要盡量說明 contribution、method、experiment design；blog / docs 則改說工程設計、實作重點與可學到什麼。
 - 不硬湊數量；找不到高品質內容時，明確寫「今日無高品質候選」。
 - 保留原始 URL，方便後續自行深讀。

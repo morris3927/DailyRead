@@ -1,0 +1,62 @@
+DailyRead 2026-05-09
+
+Request source: cron DailyRead paper digest
+Current time: 2026-05-09 06:00 Asia/Taipei
+Repo: /Users/morris/Desktop/Repo/DailyRead
+
+Automation prompt followed: automation-prompt.md
+Search backend: Lab SearXNG http://192.168.1.18:8888/search?q={query}&format=json
+Raw search saved: raw/search-2026-05-09.json
+
+Queries executed:
+[silicon-sampling-social-simulation]
+- silicon society cookbook design space LLM social simulation 2026
+- LLM-based social simulation survey 2025 silicon sampling
+- generative agents social simulation 2026 arxiv
+
+[harness-engineering]
+- harness engineering AI agent evaluation trajectory grader 2026
+- agent eval harness workflow benchmark github 2026
+- AI agent harness engineering blog 2026
+
+[agent-memory]
+- agent memory LLM agents 2026 arxiv
+- Memory in the Age of AI Agents 2025 survey
+- long-term memory agentic memory LLM agents 2026
+
+Selected content:
+1. The Silicon Society Cookbook: Design Space of LLM-based Social Simulations
+   - https://arxiv.org/abs/2605.00197
+   - https://arxiv.org/html/2605.00197v1
+   - Chosen because it directly studies design-space/validation for LLM social simulations.
+
+2. AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society
+   - https://arxiv.org/abs/2502.08691
+   - https://arxiv.org/html/2502.08691v2
+   - Chosen as large-scale environment + social simulator platform direction; v2 updated 2026-04-10.
+
+3. Demystifying evals for AI agents
+   - https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents
+   - Chosen as high-quality engineering writeup for evaluation harness concepts.
+
+4. Ready For General Agents? Let's Test It.
+   - https://iclr-blogposts.github.io/2026/blog/2026/general-agent-evaluation/
+   - Chosen for general-agent evaluation/protocol taxonomy.
+
+5. awesome-harness-engineering
+   - https://github.com/ai-boost/awesome-harness-engineering
+   - Chosen as curated map of harness components.
+
+6. Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers
+   - https://arxiv.org/abs/2603.07670
+   - Chosen as 2026 survey of agent memory mechanisms/evaluation.
+
+7. Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents
+   - https://arxiv.org/abs/2601.01885
+   - https://arxiv.org/html/2601.01885v2
+   - https://github.com/y1y5/AgeMem
+   - Chosen as method paper for learned unified LTM/STM memory policy.
+
+Notes:
+- Milvus harness-engineering article appeared in SearXNG but web_fetch hit redirect loop; not used as a primary source.
+- For AgentSociety and AgeMem, summaries avoid unstated numeric claims where full benchmark tables were not inspected.

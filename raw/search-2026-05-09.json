@@ -1,0 +1,2192 @@
+{
+  "silicon-sampling-social-simulation": [
+    {
+      "query": "silicon society cookbook design space LLM social simulation 2026",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://arxiv.org/html/2605.00197v1",
+          "title": "The Silicon Society Cookbook: Design Space of LLM-based Social ... - arXiv",
+          "content": "We conducted a systematic exploration of the design space for LLM-based social simulations, which we refer to as Silicon Societies. By conducting 595 simulation roll-outs across an array of parameters (e.g. base models, population proportions, network topologies) we identified several key factors that define the behavior of these simulated ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/html/2605.00197v1",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            2,
+            1
+          ],
+          "score": 18.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2605.00197",
+          "title": "The $\\textit{Silicon Society}$ Cookbook: Design Space of LLM ...",
+          "content": "2026年4月30日 · Abstract:Studies attempting to simulate human behavior with \\textit{Silicon Societies} grow in numbers while LLM-only social networks have ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2605.00197",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            1
+          ],
+          "score": 3.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://www.researchgate.net/publication/404396423_The_textitSilicon_Society_Cookbook_Design_Space_of_LLM-based_Social_Simulations",
+          "title": "Cookbook: Design Space of LLM-based Social Simulations",
+          "content": "2 天前 · The Silicon Society \\textit{Silicon Society} Cookbook: Design Space of LLM-based Social Simulations. April 2026. DOI:10.48550/arXiv.2605.00197.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "www.researchgate.net",
+            "/publication/404396423_The_textitSilicon_Society_Cookbook_Design_Space_of_LLM-based_Social_Simulations",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "The $\\textit {Silicon Society}$ Cookbook: Design Space of LLM ... - ADS",
+          "content": "Studies attempting to simulate human behavior with $\\\\textit{Silicon Societies}$ grow in numbers while LLM-only social networks have started appearing outside of controlled settings. However, the design space of these networks remains under-studied, which contributes to a gap in validating model realism. To enable future works to make more informed design decisions, we perform a systematic ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260500197B/abstract",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "ui.adsabs.harvard.edu",
+            "/abs/2026arXiv260500197B/abstract",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://chatpaper.com/zh-CN/paper/274494",
+          "title": "Design Space of LLM-based Social Simulations - ChatPaper",
+          "content": "The Cookbook: Design Space of LLM-based Social Simulations. cs.AI03 May 2026 ... LLM is the most important variable impacting the simulation ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "chatpaper.com",
+            "/zh-CN/paper/274494",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            4
+          ],
+          "score": 0.75,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "The $\\textit {Silicon Society}$ Cookbook: Design Space of LLM-based ...",
+          "content": "A systematic analysis of the consequences and interactions of key design choices in simulated social networks, including the choice of base model used to model individual agents, and how they are connected to each other suggests that the geometry of the design space is non-trivial. Studies attempting to simulate human behavior with $\\\\textit{Silicon Societies}$ grow in numbers while LLM-only ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            3
+          ],
+          "score": 0.6666666666666666,
+          "category": "general",
+          "url": "https://www.semanticscholar.org/paper/The-%24%5Ctextit%7BSilicon-Society%7D%24-Cookbook%3A-Design-of-Buck-Kaeffer-Sarangi/d35d825ba58d026bba5f2516e37f9a9a9256d41a",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "www.semanticscholar.org",
+            "/paper/The-%24%5Ctextit%7BSilicon-Society%7D%24-Cookbook%3A-Design-of-Buck-Kaeffer-Sarangi/d35d825ba58d026bba5f2516e37f9a9a9256d41a",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://arxiv.org/pdf/2605.00197",
+          "title": "[PDF] Design Space of LLM-based Social Simulations - arXiv",
+          "content": "2026年4月30日 · We define a Silicon Society as a simulation of human interactions using. Large Language Models. This definition includes controlled studies ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/pdf/2605.00197",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            5
+          ],
+          "score": 0.6,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://x.com/PIN/status/2051149478262944178",
+          "title": "The Silicon Society Cookbook: Design Space of LLM-based Social ...",
+          "content": "5 天前 · Studies attempting to simulate human behavior with Silicon Societies grow in numbers while LLM-only · 0. 0. 1.缺少字詞： 2026 | 必須包含以下字詞：2026",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "x.com",
+            "/PIN/status/2051149478262944178",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            6
+          ],
+          "score": 0.5,
+          "category": "general",
+          "publishedDate": null
+        }
+      ]
+    },
+    {
+      "query": "LLM-based social simulation survey 2025 silicon sampling",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://www.mdpi.com/1099-4300/27/9/923",
+          "title": "Simulating Public Opinion: Comparing Distributional and Individual-Level ...",
+          "content": "This has led to the emergence of \"silicon sampling\" methodologies, where LLMs are employed as synthetic survey respondents to replicate human-like patterns of political and social beliefs.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "www.mdpi.com",
+            "/1099-4300/27/9/923",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            8,
+            7
+          ],
+          "score": 3.2142857142857144,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://arxiv.org/pdf/2506.19806",
+          "title": "[PDF] LLM-Based Social Simulations Require a Boundary - arXiv",
+          "content": "This position paper argues that LLM-based social simulations require clear boundaries to make meaningful contributions to social science.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/pdf/2506.19806",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            1
+          ],
+          "score": 3.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "LLM Social Simulations Are a Promising Research Method",
+          "content": "Accurate and verifiable large language model (LLM) simulations of human research subjects promise an accessible data source for understanding human behavior and training new AI systems. However, results to date have been limited, and few social scientists have adopted this method. In this position paper, we argue that the promise of LLM social simulations can be achieved by addressing five ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            1
+          ],
+          "score": 2.0,
+          "category": "general",
+          "url": "https://arxiv.org/abs/2504.02234",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2504.02234",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://arxiv.org/html/2512.22725v1",
+          "title": "Mitigating Social Desirability Bias in Random Silicon Sampling - arXiv",
+          "content": "2025年12月27日 · This work presents a systematic study of prompt-level mitigation strategies for Social Desirability Bias (SDB) in LLM-based survey simulation.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/html/2512.22725v1",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            2
+          ],
+          "score": 1.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://github.com/FudanDISC/SocialAgent",
+          "title": "FudanDISC/SocialAgent: A collection of resources that investigate social ...",
+          "content": "[2024/12]: We released the initial version of our survey about social simulation driven by LLM-based Agents: From Individual to Society: A Survey on Social ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/FudanDISC/SocialAgent",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Evaluating Silicon Sampling: LLM Accuracy in Simulating Public Opinion ...",
+          "content": "This study evaluates the effectiveness of silicon sampling in emerging technology acceptance by simulating public opinion on facial recognition technology (FRT). I compare LLM-generated responses against actual survey data from 6,076 respondents across China, Germany, the United Kingdom, and the United States.",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://openaccess-api.cms-conferences.org/articles/download/978-1-964867-73-1_45",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "openaccess-api.cms-conferences.org",
+            "/articles/download/978-1-964867-73-1_45",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://icml.cc/virtual/2025/poster/40125",
+          "title": "Position: LLM Social Simulations Are a Promising Research Method",
+          "content": "Accurate and verifiable large language model (LLM) simulations of human research subjects promise an accessible data source for understanding human behavior ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "icml.cc",
+            "/virtual/2025/poster/40125",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            4
+          ],
+          "score": 0.75,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Simulating Human Opinions with Large Language Models:",
+          "content": "Moreover, public surveys can use different question formats to gauge public opinions, such as categorical (choice-based) or numerical (rating-based) questions. Currently, however, it is unclear whether LLM accuracy depends on question format. Determining this would be important to inform the design of studies that intend to employ synthetic ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            3
+          ],
+          "score": 0.6666666666666666,
+          "category": "general",
+          "url": "https://dl.acm.org/doi/full/10.1145/3708319.3733685",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "dl.acm.org",
+            "/doi/full/10.1145/3708319.3733685",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "query": "generative agents social simulation 2026 arxiv",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2502.08691",
+          "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents ...",
+          "content": "Understanding human behavior and society is a central focus in social sciences, with the rise of generative social science marking a significant paradigmatic shift. By leveraging bottom-up simulations, it replaces costly and logistically challenging traditional experiments with scalable, replicable, and systematic computational approaches for studying complex social dynamics. Recent advances ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2502.08691",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            1,
+            1
+          ],
+          "score": 24.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://github.com/tsinghua-fib-lab/agentsociety",
+          "title": "GitHub - tsinghua-fib-lab/AgentSociety ...",
+          "content": "AgentSociety is an advanced framework specifically designed for building agents in urban simulation environments. With AgentSociety, you can easily create and manage agents, enabling complex urban scenarios to be modeled and simulated efficiently. The paper is available at arXiv: @article ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/tsinghua-fib-lab/agentsociety",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            4,
+            5
+          ],
+          "score": 5.4,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://link.springer.com/article/10.1007/s10462-025-11412-6",
+          "title": "Validation is the central challenge for generative social simulation: a ...",
+          "content": "Recent advances in Large Language Models (LLMs) have revitalized interest in Agent-Based Models (ABMs) by enabling \"generative\" simulations, with agents that can plan, reason, and interact through natural language. These developments promise greater realism and expressive power, but also revive long-standing concerns over empirical grounding, calibration, and validation—issues that have ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "link.springer.com",
+            "/article/10.1007/s10462-025-11412-6",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            8,
+            9
+          ],
+          "score": 2.833333333333333,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2508.08726",
+          "title": "Simulating Generative Social Agents via Theory-Informed Workflow Design",
+          "content": "Abstract page for arXiv paper 2508.08726: Simulating Generative Social Agents via Theory-Informed Workflow Design.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2508.08726",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            2
+          ],
+          "score": 1.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2411.10109",
+          "title": "[2411.10109] LLM Agents Grounded in Self-Reports Enable General ...",
+          "content": "Abstract page for arXiv paper 2411.10109: LLM Agents Grounded in Self-Reports Enable General-Purpose Simulation of Individuals.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2411.10109",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents ...",
+          "content": "In this paper, we propose AgentSociety, a large-scale social simulator that integrates LLM-driven agents, a realistic societal environment, and a powerful large-scale simulation engine.",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5954414",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "papers.ssrn.com",
+            "/sol3/papers.cfm",
+            "",
+            "abstract_id=5954414",
+            ""
+          ]
+        },
+        {
+          "template": "default.html",
+          "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents ...",
+          "content": "Join the discussion on this paper page AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents Advances Understanding of Human Behaviors and Society",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            3
+          ],
+          "score": 0.6666666666666666,
+          "category": "general",
+          "url": "https://huggingface.co/papers/2502.08691",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "huggingface.co",
+            "/papers/2502.08691",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://arxiv.org/html/2604.07838v1",
+          "title": "We Need Strong Preconditions For Using Simulations In Policy - arXiv",
+          "content": "2026年4月9日 · Törnberg (2025) Validation is the central challenge for generative social simulation: a critical review of llms in agent-based modeling.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/html/2604.07838v1",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            5
+          ],
+          "score": 0.6,
+          "category": "general",
+          "publishedDate": null
+        }
+      ]
+    }
+  ],
+  "harness-engineering": [
+    {
+      "query": "harness engineering AI agent evaluation trajectory grader 2026",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://mlflow.org/top-5-agent-evaluation-frameworks/",
+          "title": "Top 5 Agent Evaluation Tools in 2026 - MLflow",
+          "content": "MLflow is the most widely deployed open source AI engineering platform, and its evaluation system is designed specifically for the agent development loop.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "mlflow.org",
+            "/top-5-agent-evaluation-frameworks/",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            1
+          ],
+          "score": 3.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Home | Harness Engineering",
+          "content": "Explore the Harness Engineering Knowledge Graph An interactive map of 883 entities and 1590 relationships across AI agent infrastructure — frameworks, patterns, tools, and organizations. Click any node to explore. Latest Articles",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            1
+          ],
+          "score": 2.0,
+          "category": "general",
+          "url": "https://harness-engineering.ai/",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "harness-engineering.ai",
+            "/",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://hackmd.io/@BASHCAT/SkQEW0F2bg",
+          "title": "Harness Engineering 完全解析：當AI Agent 的護城河不再是模型，而是環境",
+          "content": "2026年4月12日 · 深入解析2026 年最重要的AI 工程新學科Harness Engineering。從Prompt 到Context 到Harness 的三代範式躍遷，Guides x Sensors 技術框架 ...缺少字詞： trajectory grader",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "hackmd.io",
+            "/@BASHCAT/SkQEW0F2bg",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            2
+          ],
+          "score": 1.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://github.com/ai-boost/awesome-harness-engineering",
+          "title": "GitHub - ai-boost/awesome-harness ...",
+          "content": "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, observability, and orchestration.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/ai-boost/awesome-harness-engineering",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Demystifying evals for AI agents \\ Anthropic",
+          "content": "Demystifying evals for AI agents In a simple eval, an agent processes a prompt, and a grader checks if the output matches expectations. For a more complex multi-turn eval, a coding agent receives tools, a task (building an MCP server in this case), and an environment, executes an \"agent loop\" (tool calls and reasoning), and updates the environment with the implementation. Grading then uses ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "www.anthropic.com",
+            "/engineering/demystifying-evals-for-ai-agents",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://medium.com/@roanmonteiro/harness-engineering-the-discipline-defining-the-future-of-ai-agents-393745e19c42",
+          "title": "Harness Engineering: The Discipline Defining the Future of AI Agents",
+          "content": "2026年4月16日 · 1. The Evolution: From Prompt to Harness. To understand harness engineering, one must understand the trajectory that brought us here.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "medium.com",
+            "/@roanmonteiro/harness-engineering-the-discipline-defining-the-future-of-ai-agents-393745e19c42",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            4
+          ],
+          "score": 0.75,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Agent Harness Engineering Guide [2026]: Evaluating AI Agents in ...",
+          "content": "Learn how to build a robust Agent Harness for AI evaluation. This complete guide covers agent benchmarking, testing frameworks, and Harness Engineering AI best practices.",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            3
+          ],
+          "score": 0.6666666666666666,
+          "category": "general",
+          "url": "https://qubittool.com/blog/agent-harness-evaluation-guide",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "qubittool.com",
+            "/blog/agent-harness-evaluation-guide",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://arxiv.org/html/2604.21003v2",
+          "title": "The Last Harness You'll Ever Build - arXiv",
+          "content": "2026年4月28日 · We presented the Harness Evolution Loop, a closed-loop architecture that automatically optimizes an AI agent's harness ℋ \\mathcal{H} —the ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/html/2604.21003v2",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            5
+          ],
+          "score": 0.6,
+          "category": "general",
+          "publishedDate": null
+        }
+      ]
+    },
+    {
+      "query": "agent eval harness workflow benchmark github 2026",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://github.com/Picrew/awesome-agent-harness",
+          "title": "GitHub - Picrew/awesome-agent-harness: An awesome list of Agent Harness ...",
+          "content": "An awesome list of Agent Harness engineering resources, including GitHub projects, tools, benchmarks, and practical guides. - Picrew/awesome-agent-harness.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/Picrew/awesome-agent-harness",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            8,
+            1
+          ],
+          "score": 13.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://github.com/najeed/ai-agent-eval-harness",
+          "title": "GitHub - najeed/ai-agent-eval-harness",
+          "content": "Our goal is to create a standardized, community-driven benchmark for AI agent performance. By providing a rich set of industry-specific scenarios and a ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/najeed/ai-agent-eval-harness",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            1
+          ],
+          "score": 3.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://gist.github.com/amazingvince/52158d00fb8b3ba1b8476bc62bb562e3",
+          "title": "Modern Agent Harness Blueprint 2026 - GitHub Gist",
+          "content": "This is an early-stage architecture blueprint for building a modern agentic harness from the ground up in 2026. It is not a product spec and not a vendor ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "gist.github.com",
+            "/amazingvince/52158d00fb8b3ba1b8476bc62bb562e3",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            2
+          ],
+          "score": 1.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://iclr-blogposts.github.io/2026/blog/2026/general-agent-evaluation/",
+          "title": "Ready For General Agents? Let's Test It. | ICLR Blogposts 2026",
+          "content": "2026年4月27日 · The third level focuses on providing a standardized evaluation harness for reproducible agent evaluations across various domain-specific ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "iclr-blogposts.github.io",
+            "/2026/blog/2026/general-agent-evaluation/",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "awesome-agent-harness - Curated list of agent harnesses, benchmarks ...",
+          "content": "Curated directory of agent harnesses, benchmarks, and evaluation patterns for multi-agent systems. Find tools, tests, and best practices for agent-to-agent evaluation.",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://reputagent.com/ecosystem/autojunjie-awesome-agent-harness",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "reputagent.com",
+            "/ecosystem/autojunjie-awesome-agent-harness",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://github.com/plaited/agent-eval-harness",
+          "title": "plaited/agent-eval-harness - GitHub",
+          "content": "2026年2月19日 · Agent Eval Harness. CLI tool for capturing agent trajectories, optimized for TypeScript/JavaScript projects using Bun. Core Commands: ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/plaited/agent-eval-harness",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            4
+          ],
+          "score": 0.75,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Build an eval harness for 184 AI agent prompts with promptfoo",
+          "content": "Ahnii! Agency-agents is an open-source collection of 184 specialist AI agent prompts (my fork with the eval harness). Backend architects, UX designers, historians, game developers. Each prompt is a detailed markdown file with identity, workflows, deliverable templates, and success metrics. But there's no way to know if any of them actually produce good output. You can build a promptfoo ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            3
+          ],
+          "score": 0.6666666666666666,
+          "category": "general",
+          "url": "https://jonesrussell.github.io/blog/eval-harness-agency-agents/",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "jonesrussell.github.io",
+            "/blog/eval-harness-agency-agents/",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://you.com/resources/the-you-dot-com-web-search-eval-harness",
+          "title": "The You.com Web Search Eval Harness: Benchmark Any Web ...",
+          "content": "2026年4月21日 · It is an open-source evaluation framework that runs the four benchmarks that have emerged as the industry standard for measuring search accuracy ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "you.com",
+            "/resources/the-you-dot-com-web-search-eval-harness",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            5
+          ],
+          "score": 0.6,
+          "category": "general",
+          "publishedDate": null
+        }
+      ]
+    },
+    {
+      "query": "AI agent harness engineering blog 2026",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://milvus.io/blog/harness-engineering-ai-agents.md",
+          "title": "Harness Engineering: The Execution Layer AI Agents Actually Need",
+          "content": "2026年4月8日 · In February 2026, he published a blog post describing a habit he'd developed while working with AI agents: every time an agent made a mistake, ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "milvus.io",
+            "/blog/harness-engineering-ai-agents.md",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            1
+          ],
+          "score": 3.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "What Is Harness Engineering? Guide to Reliable AI Agents | Agent ...",
+          "content": "What Is Harness Engineering? Harness Engineering makes AI agents like OpenAI Codex production-ready in 2026 by designing constraints, feedback loops, and verification for reliable code at scale. Learn components, best practices, and step-by-step build guide.",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            1
+          ],
+          "score": 2.0,
+          "category": "general",
+          "url": "https://www.agent-engineering.dev/article/harness-engineering-in-2026-the-discipline-that-makes-ai-agents-production-ready",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "www.agent-engineering.dev",
+            "/article/harness-engineering-in-2026-the-discipline-that-makes-ai-agents-production-ready",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://hackmd.io/@BASHCAT/SkQEW0F2bg",
+          "title": "Harness Engineering 完全解析：當AI Agent 的護城河不再是模型，而是環境",
+          "content": "2026年4月12日 · 深入解析2026 年最重要的AI 工程新學科Harness Engineering。從Prompt 到Context 到Harness 的三代範式躍遷，Guides x Sensors 技術框架 ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "hackmd.io",
+            "/@BASHCAT/SkQEW0F2bg",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            2
+          ],
+          "score": 1.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://zhuanlan.zhihu.com/p/2016818062830097745",
+          "title": "2026年最火的工程范式来了！Harness 工程（Harness Engineering）到底 ...",
+          "content": "一句话总结：2025年证明了Agent 能工作，2026年要解决的是如何让Agent 可靠地工作。答案就是Harness 工程。 本文精选全网10 篇最高质量的Harness Engineering 文章， ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "zhuanlan.zhihu.com",
+            "/p/2016818062830097745",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Home | Harness Engineering",
+          "content": "Explore the Harness Engineering Knowledge Graph An interactive map of 883 entities and 1590 relationships across AI agent infrastructure — frameworks, patterns, tools, and organizations. Click any node to explore. Latest Articles",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://harness-engineering.ai/",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "harness-engineering.ai",
+            "/",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://oakmega.com/blog/ceo-insights-010",
+          "title": "Harness Engineering 是什麼？企業AI Agent 框架導入完整指南 - OakMega",
+          "content": "2026年4月14日 · Harness Engineering 是為AI Agents 設計任務邊界、工具權限與協作架構的系統工程方法，目標是讓AI 在可控框架內自主執行多步驟任務。 · 2026 年 ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "oakmega.com",
+            "/blog/ceo-insights-010",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            4
+          ],
+          "score": 0.75,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Harness Engineering: Build Systems Around AI Agents (2026)",
+          "content": "Harness engineering is the discipline of building systems, tools, constraints, and feedback loops around AI coding agents to make them reliable and productive. The term was coined by Mitchell Hashimoto (co-founder of HashiCorp) and gained mainstream attention when OpenAI published their Codex article on the topic in early 2026.",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            3
+          ],
+          "score": 0.6666666666666666,
+          "category": "general",
+          "url": "https://ybuild.ai/en/blog/harness-engineering-complete-guide-ai-coding-agents-2026",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "ybuild.ai",
+            "/en/blog/harness-engineering-complete-guide-ai-coding-agents-2026",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://addyosmani.com/blog/agent-harness-engineering/",
+          "title": "Agent Harness Engineering - AddyOsmani.com",
+          "content": "April 19, 2026. A coding agent is the model plus everything you build around it. Harness engineering treats that scaffolding as a real artifact, ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "addyosmani.com",
+            "/blog/agent-harness-engineering/",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            5
+          ],
+          "score": 0.6,
+          "category": "general",
+          "publishedDate": null
+        }
+      ]
+    }
+  ],
+  "agent-memory": [
+    {
+      "query": "agent memory LLM agents 2026 arxiv",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://arxiv.org/html/2603.07670v1",
+          "title": "Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and ...",
+          "content": "Memory—the ability to persist, organize, and selectively recall information across interactions—is what turns a stateless text generator into a genuinely adaptive agent. This survey offers a structured account of how memory is designed, implemented, and evaluated in modern LLM-based agents, covering work from 2022 through early 2026.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/html/2603.07670v1",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            8,
+            1
+          ],
+          "score": 13.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
+          "title": "State of AI Agent Memory 2026 - Mem0",
+          "content": "2026年4月1日 · The state of AI agent memory in 2026: benchmark data across 10 approaches, 21 integrations, and the architectural shifts that matter.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "mem0.ai",
+            "/blog/state-of-ai-agent-memory-2026",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            4,
+            6
+          ],
+          "score": 5.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://openreview.net/forum?id=FiM0M8gcct",
+          "title": "A-Mem: Agentic Memory for LLM Agents | OpenReview",
+          "content": "To address this limitation, this paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way. Following the basic principles of the Zettelkasten method, we designed our memory system to create interconnected knowledge networks through dynamic indexing and linking.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "openreview.net",
+            "/forum",
+            "",
+            "id=FiM0M8gcct",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            10,
+            5
+          ],
+          "score": 3.5999999999999996,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2603.07670",
+          "title": "[2603.07670] Memory for Autonomous LLM Agents:Mechanisms ... - arXiv",
+          "content": "2026年3月8日 · This survey offers a structured account of how memory is designed, implemented, and evaluated in modern LLM-based agents, covering work from ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2603.07670",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            1
+          ],
+          "score": 3.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2601.01885",
+          "title": "[2601.01885] Agentic Memory: Learning Unified Long-Term and ...",
+          "content": "2026年1月5日 · In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2601.01885",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            2
+          ],
+          "score": 1.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://arxiv.org/abs/2604.07798",
+          "title": "[2604.07798] Lightweight LLM Agent Memory with Small Language Models",
+          "content": "Abstract:Although LLM agents can leverage tools for complex tasks, they still need memory to maintain cross-turn consistency and accumulate ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2604.07798",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "[PDF] Memory for Autonomous LLM Agents:Mechanisms, Evaluation, and ...",
+          "content": "This survey offers a structured account of how memory is designed, implemented, and evaluated in modern LLM-based agents, covering work from 2022 through early 2026, and formalizes agent memory as a three-dimensional taxonomy spanning temporal scope, representational substrate, and control policy. Large language model (LLM) agents increasingly operate in settings where a single context window ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://www.semanticscholar.org/paper/Memory-for-Autonomous-LLM-Agents%3AMechanisms%2C-and-Du/1598278f0941bc2b4be2e7abeac47e8288a14e93",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "www.semanticscholar.org",
+            "/paper/Memory-for-Autonomous-LLM-Agents%3AMechanisms%2C-and-Du/1598278f0941bc2b4be2e7abeac47e8288a14e93",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "template": "default.html",
+          "title": "Memory in the Age of AI Agents: A Survey - GitHub",
+          "content": "[2026/01/29] 🎉 Our repository has reached 1k stars! Thank you all for your support and interest in Agent Memory research! [2026/01/13] 📄 We have updated our survey to incorporate several recent works, and we sincerely thank the community for their valuable contributions and suggestions. See Memory in the Age of AI Agents: A Survey for the ...",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            3
+          ],
+          "score": 0.6666666666666666,
+          "category": "general",
+          "url": "https://github.com/Shichun-Liu/Agent-Memory-Paper-List",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/Shichun-Liu/Agent-Memory-Paper-List",
+            "",
+            "",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "query": "Memory in the Age of AI Agents 2025 survey",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2512.13564",
+          "title": "[2512.13564] Memory in the Age of AI Agents - arXiv.org",
+          "content": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2512.13564",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            1,
+            1
+          ],
+          "score": 24.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://huggingface.co/papers/2512.13564",
+          "title": "Paper page - Memory in the Age of AI Agents - Hugging Face",
+          "content": "2025年12月15日 · This survey provides an updated overview of agent memory research, distinguishing its forms, functions, and dynamics, and highlights emerging ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "huggingface.co",
+            "/papers/2512.13564",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            2,
+            4
+          ],
+          "score": 9.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://ui.adsabs.harvard.edu/abs/2025arXiv251213564H/abstract",
+          "title": "Memory in the Age of AI Agents - NASA ADS",
+          "content": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "ui.adsabs.harvard.edu",
+            "/abs/2025arXiv251213564H/abstract",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google",
+            "duckduckgo"
+          ],
+          "positions": [
+            5,
+            3
+          ],
+          "score": 6.4,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://zhuanlan.zhihu.com/p/1985435669187825983",
+          "title": "2025年Memory最全综述！AI Agent记忆统一分类体系：超越RAG下一代 ...",
+          "content": "2025年12月19日 · 核心亮点：提出了首个针对AI 智能体（Agent）记忆机制的统一分类体系，从形式、功能和动态三个维度解构了记忆模块，并厘清了Agent Memory 与RAG、Context ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "zhuanlan.zhihu.com",
+            "/p/1985435669187825983",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "template": "default.html",
+          "title": "Memory in the Age of AI Agents: A Survey - GitHub",
+          "content": "See Memory in the Age of AI Agents: A Survey for the paper! [2025/12/16] 🎉 Our paper is featured on Huggingface Daily Paper #1! [2025/12/16] 📚 We create this repository to maintain a paper list on Agent Memory. More papers are coming soon! [2025/12/16] 📄 Our survey is released! See Memory in the Age of AI Agents: A Survey for the paper!",
+          "img_src": "",
+          "iframe_src": "",
+          "audio_src": "",
+          "thumbnail": "",
+          "publishedDate": null,
+          "pubdate": "",
+          "length": null,
+          "views": "",
+          "author": "",
+          "metadata": "",
+          "priority": "",
+          "engines": [
+            "duckduckgo"
+          ],
+          "open_group": false,
+          "close_group": false,
+          "positions": [
+            2
+          ],
+          "score": 1.0,
+          "category": "general",
+          "url": "https://github.com/Shichun-Liu/Agent-Memory-Paper-List",
+          "engine": "duckduckgo",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/Shichun-Liu/Agent-Memory-Paper-List",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "url": "https://www.facebook.com/groups/DeepNetGroup/posts/2683494202043445/",
+          "title": "Memory in the Age of AI Agents: A Survey (December 2025, 102 pages)",
+          "content": "2025年12月20日 · From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "www.facebook.com",
+            "/groups/DeepNetGroup/posts/2683494202043445/",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            4
+          ],
+          "score": 0.75,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://medium.com/towardsdev/memory-in-the-age-of-ai-agents-the-definitive-framework-for-building-intelligent-self-evolving-dac2a47e3473",
+          "title": "Memory in the Age of AI Agents: The Definitive Framework for Building ...",
+          "content": "2025年12月21日 · The survey identifies several key questions that the field has struggled to answer coherently: Definition: How is “agent memory” different from ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "medium.com",
+            "/towardsdev/memory-in-the-age-of-ai-agents-the-definitive-framework-for-building-intelligent-self-evolving-dac2a47e3473",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            6
+          ],
+          "score": 0.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://blog.csdn.net/weixin_72790221/article/details/160586102",
+          "title": "【记忆机制论文阅读】Memory in the Age of AI Agents - CSDN博客",
+          "content": "2026年4月28日 · 《Memory in the Age of AI Agents: A Survey》这篇由新加坡国立大学 ... 2025年Python在AI与数据科学领域呈现三大新趋势：1）Python与Rust协同 ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "blog.csdn.net",
+            "/weixin_72790221/article/details/160586102",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            7
+          ],
+          "score": 0.42857142857142855,
+          "category": "general",
+          "publishedDate": null
+        }
+      ]
+    },
+    {
+      "query": "long-term memory agentic memory LLM agents 2026",
+      "status": 200,
+      "results": [
+        {
+          "url": "https://arxiv.org/abs/2601.01885",
+          "title": "[2601.01885] Agentic Memory: Learning Unified Long-Term and ...",
+          "content": "2026年1月5日 · In this paper, we propose Agentic Memory (AgeMem), a unified framework that integrates LTM and STM management directly into the agent's policy.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "arxiv.org",
+            "/abs/2601.01885",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            1
+          ],
+          "score": 3.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://mem0.ai/blog/state-of-ai-agent-memory-2026",
+          "title": "State of AI Agent Memory 2026 - Mem0",
+          "content": "2026年4月1日 · The state of AI agent memory in 2026: benchmark data across 10 approaches, 21 integrations, and the architectural shifts that matter.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "mem0.ai",
+            "/blog/state-of-ai-agent-memory-2026",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            2
+          ],
+          "score": 1.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://machinelearningmastery.com/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026/",
+          "title": "The 6 Best AI Agent Memory Frameworks You Should Try in 2026",
+          "content": "2026年4月2日 · It is designed to give agents long-term memory that persists across sessions and evolves over time. Here's why Mem0 stands out for agent memory:.",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "machinelearningmastery.com",
+            "/the-6-best-ai-agent-memory-frameworks-you-should-try-in-2026/",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            3
+          ],
+          "score": 1.0,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://medium.com/@mjgmario/memory-engineering-for-ai-agents-how-to-build-real-long-term-memory-and-avoid-production-1d4e5266595c",
+          "title": "Memory Engineering for AI Agents (2026) - Medium",
+          "content": "2026年1月17日 · LLM-based agents and chatbots operate under very different requirements. A chatbot can often be “good enough” as long as it delivers a coherent ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "medium.com",
+            "/@mjgmario/memory-engineering-for-ai-agents-how-to-build-real-long-term-memory-and-avoid-production-1d4e5266595c",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            4
+          ],
+          "score": 0.75,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://github.com/TsinghuaC3I/Awesome-Memory-for-Agents",
+          "title": "GitHub - TsinghuaC3I/Awesome-Memory-for ...",
+          "content": "2026-01, TeleMem: Building Long-Term and Multimodal Memory for Agentic AI, Paper ; 2026-01, HiMem: Hierarchical Long-Term Memory for LLM Long-Horizon Agents ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "github.com",
+            "/TsinghuaC3I/Awesome-Memory-for-Agents",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            5
+          ],
+          "score": 0.6,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://ihower.tw/notes/AI-Engineer/Agent/Agent+Memory",
+          "title": "Agent Memory - ihower's Notes",
+          "content": "paper: Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory ... Managing agentic memory with Elasticsearch (2026/1/16). https://www ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "ihower.tw",
+            "/notes/AI-Engineer/Agent/Agent+Memory",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            6
+          ],
+          "score": 0.5,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://towardsdatascience.com/a-practical-guide-to-memory-for-autonomous-llm-agents/",
+          "title": "A Practical Guide to Memory for Autonomous LLM Agents",
+          "content": "2026年4月17日 · ... Long-term memory, Vector Databases, and Agent Memory systems. The ... Long-lived agents will act on data from 2024 even in 2026 (who ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "towardsdatascience.com",
+            "/a-practical-guide-to-memory-for-autonomous-llm-agents/",
+            "",
+            "",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            7
+          ],
+          "score": 0.42857142857142855,
+          "category": "general",
+          "publishedDate": null
+        },
+        {
+          "url": "https://openreview.net/forum?id=U51WxL382H",
+          "title": "ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems ...",
+          "content": "2025年12月23日 · In this context, we propose a workshop devoted to the memory layer for LLM-based agentic systems. Our premise is that long-lived, safe, and ...",
+          "thumbnail": null,
+          "engine": "google",
+          "template": "default.html",
+          "parsed_url": [
+            "https",
+            "openreview.net",
+            "/forum",
+            "",
+            "id=U51WxL382H",
+            ""
+          ],
+          "img_src": "",
+          "priority": "",
+          "engines": [
+            "google"
+          ],
+          "positions": [
+            8
+          ],
+          "score": 0.375,
+          "category": "general",
+          "publishedDate": null
+        }
+      ]
+    }
+  ]
+}

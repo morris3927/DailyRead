@@ -1,0 +1,50 @@
+DailyRead 2026-05-10
+
+Automation prompt: /Users/morris/Desktop/Repo/DailyRead/automation-prompt.md
+Search backend: Lab SearXNG http://192.168.1.18:8888/search?q={query}&format=json
+Current time: 2026-05-10 06:00 Asia/Taipei
+
+Queries executed via SearXNG:
+1. silicon sampling social simulation LLM 2026 paper
+2. LLM social simulation generative agents 2026 arxiv
+3. silicon society LLM social simulation arxiv 2026
+4. harness engineering AI agents eval harness 2026
+5. agent evaluation harness tool environment trajectory grader 2026
+6. agent scaffold harness engineering GitHub 2026
+7. agent memory LLM agents 2026 arxiv
+8. long term memory LLM agents 2026 arxiv
+9. agentic memory LLM agent memory management 2026
+
+Raw SearXNG JSON saved to raw/search-2026-05-10.json.
+
+Candidate screening notes:
+
+Silicon Sampling / Social Simulation:
+- Kept: Restoring Heterogeneity in LLM-based Social Simulation: An Audience Segmentation Approach — strong methodological fit; directly addresses heterogeneity and fidelity in silicon samples.
+- Kept: AI Agents Alone Are Not (Yet) Sufficient for Social Simulation — v2 surfaced May 7; useful position paper on environment, exposure, scheduling, and validation.
+- Screened but not primary: LLM-enabled Social Agents — conceptual role/persona baseline; relevant but less concrete than the two kept items.
+- Previously covered / not repeated as main item: The Silicon Society Cookbook; AgentSociety.
+
+Harness Engineering:
+- Kept: Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses — strong match; empirical results on Terminal-Bench 2 and SWE-bench-verified; directly about harness evolution.
+- Kept: The Last Harness You'll Ever Build — framework/meta-evolution proposal; useful conceptual companion to AHE.
+- Screened but not primary: Building Effective AI Coding Agents for the Terminal / OPENDEV — relevant terminal-agent scaffold paper, but today's stronger theme was automated harness evolution.
+- Previously covered / not repeated as main item: Anthropic Demystifying evals; ICLR general agent evaluation; awesome-harness-engineering.
+
+Agent Memory:
+- Kept: Lightweight LLM Agent Memory with Small Language Models — ACL 2026 main; strong engineering relevance for efficient online/offline memory.
+- Kept: A Survey on the Security of Long-Term Memory in LLM Agents: Toward Mnemonic Sovereignty — important governance/security angle for persistent writable memory.
+- Kept: SimpleMem: Efficient Lifelong Memory for LLM Agents — useful comparison point for efficient semantic compression and retrieval planning.
+- Screened but not primary: HiMem; EMPO^2 — relevant, but today prioritized efficiency/security/system design after yesterday's policy-learning memory item.
+
+Files written:
+- daily/2026-05-10.md
+- silicon-sampling-social-simulation/2026-05-10.md
+- harness-engineering/2026-05-10.md
+- agent-memory/2026-05-10.md
+- raw/search-2026-05-10.json
+- logs/2026-05-10.log
+
+Integrity notes:
+- Summaries are based on arXiv landing pages / abstracts and available HTML links fetched during the cron run.
+- For papers where only abstract / landing page was read, benchmark numbers are explicitly attributed to abstracts and not over-interpreted.

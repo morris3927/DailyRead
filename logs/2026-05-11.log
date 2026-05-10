@@ -1,0 +1,27 @@
+DailyRead 2026-05-11
+
+Scope: silicon sampling/social simulation, harness engineering, agent memory.
+Search backend: Lab SearXNG http://192.168.1.18:8888/search?q={query}&format=json
+
+Queries run:
+- silicon sampling LLM social simulation arxiv 2026
+- LLM social simulation synthetic population arxiv 2026 May
+- generative agents social simulation arxiv 2026
+- harness engineering coding agents arxiv 2026
+- AI agent harness evaluation framework 2026
+- agent scaffold harness engineering blog 2026
+- LLM agent memory arxiv 2026 long-term memory
+- agent memory benchmark arxiv 2026
+- LLM agents memory system 2026 May arxiv
+
+Fetch/read notes:
+- Read arXiv HTML/abstract for Silicon Society Cookbook, OpenDev, Natural-Language Agent Harnesses, MemoryArena, Memory for Autonomous LLM Agents.
+- Read arXiv abstract for Memora.
+- Read Addy Osmani harness engineering blog and Mem0 State of AI Agent Memory 2026 blog.
+- arXiv API returned 429, so metadata came from arXiv abs/html pages and SearXNG search results.
+- Science.org result about silicon samples returned 403 via web_fetch, so it was not summarized.
+
+Selection decisions:
+- Silicon sampling/social simulation: selected Silicon Society Cookbook as the clearest new/high-signal item because it directly studies design-space variables over 595 roll-outs. Did not duplicate yesterday's heterogeneity / agent-only social-simulation items except as context.
+- Harness engineering: selected OpenDev technical report, Natural-Language Agent Harnesses, and Addy Osmani's synthesis blog; together they cover terminal-native architecture, portable harness representation, and practitioner design patterns.
+- Agent memory: selected MemoryArena and Memora as benchmark/evaluation contributions; added Mem0's state-of-memory report as engineering ecosystem context.

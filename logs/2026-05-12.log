@@ -1,0 +1,45 @@
+DailyRead 2026-05-12
+
+Scope:
+- Silicon Sampling / Social Simulation
+- Harness Engineering
+- Agent Memory
+
+Search backend:
+- Lab SearXNG: http://192.168.1.18:8888/search?q={query}&format=json
+
+Queries:
+Silicon Sampling / Social Simulation:
+- 2025 2026 silicon sampling social simulation large language models paper
+- LLM agents social simulation silicon sampling arxiv 2025
+- generative agents social simulation survey 2025 paper
+
+Harness Engineering:
+- 2025 2026 agent harness engineering eval framework LLM agents
+- AI agent harness workflow evaluation framework GitHub 2025
+- LLM agent evaluation harness engineering benchmark 2025
+
+Agent Memory:
+- 2025 2026 agent memory long term memory LLM agents paper
+- LLM agent memory survey benchmark 2025 arxiv
+- memory augmented agents benchmark arxiv 2025
+
+Selected items:
+Silicon Sampling / Social Simulation:
+- AI Agents Alone Are Not (Yet) Sufficient for Social Simulation — https://arxiv.org/abs/2603.00113
+- Towards Operational Validation of LLM-Agent Social Simulations — https://arxiv.org/abs/2508.21740
+
+Harness Engineering:
+- Agent Harness for Large Language Model Agents: A Survey — https://github.com/Gloriaameng/Awesome-Agent-Harness
+- Holistic Agent Leaderboard — https://openreview.net/forum?id=vUaY1t64ZZ
+- Harness Engineering for AI Coding Agents — https://www.augmentcode.com/guides/harness-engineering-ai-coding-agents
+
+Agent Memory:
+- Memory for Autonomous LLM Agents — https://arxiv.org/abs/2603.07670
+- Evaluating Memory in LLM Agents via Incremental Multi-Turn Interactions — https://arxiv.org/abs/2507.05257
+- A-Mem: Agentic Memory for LLM Agents — https://proceedings.neurips.cc/paper_files/paper/2025/hash/19909c36f51abc4856b4560aff3d36d6-Abstract-Conference.html
+
+Notes:
+- arXiv export API returned HTTP 429, so metadata was collected from arXiv landing pages via web fetch.
+- Preprints.org page for Agent Harness Survey was blocked by protection page; used GitHub README / linked metadata instead.
+- Summaries avoid fabricating experiment details when only abstract / landing page was read.

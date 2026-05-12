@@ -48,6 +48,7 @@ Harness Engineering 可納入 blog、docs、GitHub repo、framework。若不是 
 - `agent-memory/YYYY-MM-DD.md`
 - `logs/YYYY-MM-DD.log`
 - `raw/search-YYYY-MM-DD.json`
+- `assets/YYYY-MM-DD/*.png`：只替「今日推薦點開」的 1–3 篇產生筆記圖，不替所有候選產圖
 
 ## 數量原則
 
@@ -56,6 +57,47 @@ Harness Engineering 可納入 blog、docs、GitHub repo、framework。若不是 
 - 每個 domain 1–3 則高品質內容
 - 若某 domain 沒有高品質候選，明確寫今日無高品質候選
 - 優先挑能說清楚方法與實驗設計的 paper
+
+## DailyRead 筆記圖（推薦篇限定）
+
+每天只替 `daily/YYYY-MM-DD.md` 中「今日推薦點開」的 1–3 篇產圖，不替所有候選 paper / article 產圖，避免任務太久、圖片品質不穩、repo 變太肥。
+
+### 產圖策略
+
+- 圖片可以使用英文文字，不必強制繁體中文；以清楚、穩定、可讀為優先。
+- 每張圖只表達該 paper / article 的核心 takeaway，不嘗試塞完整摘要。
+- 依內容類型選圖：
+  - 抽象 / 理論 paper：產「concept map / method flow diagram」。
+  - 系統 / framework / infrastructure paper：產「pipeline note diagram」。
+  - survey / taxonomy paper：產「classification tree note diagram」。
+  - blog / repo / engineering article：產「architecture / workflow note diagram」。
+- 風格：research notebook / clean handwritten study note；可用 highlight、arrows、small icons，但不要做商業海報。
+
+### 非同步產圖
+
+產圖流程應非同步，不要阻塞閱讀下一篇 paper：
+
+1. 每讀完並決定一篇「今日推薦點開」後，先根據該篇內容寫出 image prompt。
+2. 立即開 sub-agent 讓 Codex / ChatGPT image 產圖；主 DailyRead 流程繼續讀下一篇。
+3. 圖片輸出到 `assets/YYYY-MM-DD/<slug>.png`。
+4. sub-agent 完成後，主流程檢查圖片是否存在、基本可讀、無明顯錯字或嚴重跑題。
+5. 在對應 domain markdown 與 `daily/YYYY-MM-DD.md` 的推薦篇段落插入 Markdown 圖片連結：
+   - GitHub Markdown：`![](../assets/YYYY-MM-DD/<slug>.png)`（視檔案相對路徑調整）
+   - Obsidian 可讀時也可使用一般 Markdown 圖片語法。
+
+### Image prompt template
+
+針對每篇推薦內容產生英文 prompt，包含：
+
+- Title / short topic.
+- Problem: 原始問題或研究動機。
+- Method: 方法、pipeline、framework 或 taxonomy。
+- Evidence: dataset / benchmark / main experiment / evaluation setup（若有）。
+- Takeaway: 一句核心判斷。
+- Diagram type: concept map / pipeline note diagram / classification tree / architecture workflow.
+- Style: clean research notebook, readable English labels, paper texture, arrows, highlight markers, minimal icons.
+
+不要把未確認的實驗數字或結論畫進圖片；若資訊不足，只畫 problem–method–takeaway。
 
 ## Git
 

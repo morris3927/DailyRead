@@ -1,0 +1,69 @@
+{
+  "date": "2026-05-13",
+  "queries": [
+    "silicon sampling social simulation 2025 2026 arxiv",
+    "harness engineering LLM agent eval framework 2025 2026",
+    "agent memory LLM long-term memory retrieval 2025 2026 arxiv"
+  ],
+  "selected_papers": [
+    {
+      "id": "2605.00197",
+      "title": "The Silicon Society Cookbook: Design Space of LLM-based Social Simulations",
+      "domain": "silicon-sampling"
+    },
+    {
+      "id": "2509.13397",
+      "title": "The Threat of Analytic Flexibility in Using LLMs to Simulate Human Data",
+      "domain": "silicon-sampling"
+    },
+    {
+      "id": "2603.00113",
+      "title": "AI Agents Alone Are Not (Yet) Sufficient for Social Simulation",
+      "domain": "silicon-sampling"
+    },
+    {
+      "id": "2604.07236",
+      "title": "How Much Heavy Lifting Can an Agent Harness Do?",
+      "domain": "harness-engineering"
+    },
+    {
+      "id": "2604.21003",
+      "title": "The Last Harness Youll Ever Build",
+      "domain": "harness-engineering"
+    },
+    {
+      "id": "mongodb-blog",
+      "title": "The Agent Harness: Why the LLM Is the Smallest Part of Your Agent System",
+      "domain": "harness-engineering"
+    },
+    {
+      "id": "2603.00026",
+      "title": "ActMem: Bridging the Gap Between Memory Retrieval and Reasoning",
+      "domain": "agent-memory"
+    },
+    {
+      "id": "2603.07670",
+      "title": "Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers",
+      "domain": "agent-memory"
+    },
+    {
+      "id": "2512.13564",
+      "title": "Memory in the Age of AI Agents: A Survey",
+      "domain": "agent-memory"
+    }
+  ],
+  "recommended": [
+    {
+      "id": "2604.07236",
+      "reason": "First quantitative decomposition of harness vs LLM contribution"
+    },
+    {
+      "id": "2603.07670",
+      "reason": "Most comprehensive agent memory survey to date"
+    },
+    {
+      "id": "2605.00197",
+      "reason": "Rare systematic design-space analysis for silicon societies"
+    }
+  ]
+}

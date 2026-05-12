@@ -1,0 +1,27 @@
+DailyRead 2026-05-13 Log
+========================
+Time: 2026-05-13 06:00 CST (Asia/Taipei)
+Search backend: SearXNG http://192.168.1.18:8888/search?format=json
+
+Search queries:
+1. silicon sampling social simulation 2025 2026 arxiv
+2. harness engineering LLM agent eval framework 2025 2026
+3. agent memory LLM long-term memory retrieval 2025 2026 arxiv
+
+Papers fetched and analyzed:
+- Silicon Society Cookbook (2605.00197) — fetched abstract, analyzed
+- AI Agents Alone Are Not Sufficient (2603.00113) — v2 noted
+- Threat of Analytic Flexibility (2509.13397) — fetched abstract, analyzed
+- How Much Heavy Lifting Can an Agent Harness Do? (2604.07236) — fetched abstract, analyzed
+- The Last Harness You'll Ever Build (2604.21003) — fetched abstract, analyzed
+- MongoDB Agent Harness Blog — fetched and analyzed
+- ActMem (2603.00026) — fetched abstract, analyzed
+- Memory for Autonomous LLM Agents (2603.07670) — fetched abstract, analyzed
+- Memory in the Age of AI Agents (2512.13564) — noted as reference
+
+Today's recommendations (3):
+1. How Much Heavy Lifting Can an Agent Harness Do? (2604.07236) — harness engineering
+2. Memory for Autonomous LLM Agents (2603.07670) — agent memory survey
+3. The Silicon Society Cookbook (2605.00197) — silicon sampling design space
+
+Images spawned asynchronously for all 3 recommendations.

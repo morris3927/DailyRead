@@ -1,0 +1,37 @@
+{
+  "date": "2026-05-14",
+  "domains_searched": [
+    "silicon sampling social simulation LLM 2025",
+    "harness engineering agent eval framework 2025",
+    "agent memory LLM long term short term 2025",
+    "agent memory architecture retrieval augmented 2025 2026",
+    "harness engineering agent evaluation benchmark 2025 2026",
+    "silicon sampling LLM simulation opinion survey 2025 2026"
+  ],
+  "searxng_base": "http://192.168.1.18:8888",
+  "candidates_evaluated": [
+    {"arxiv": "2605.00197", "title": "The Silicon Society Cookbook", "status": "SEEN"},
+    {"arxiv": "2512.22725", "title": "Mitigating Social Desirability Bias in Random Silicon Sampling", "status": "NOT_SEEN -> included"},
+    {"arxiv": "2504.02234", "title": "LLM Social Simulations Are a Promising Research Method", "status": "NOT_SEEN -> excluded (position paper, less substance)"},
+    {"arxiv": "2604.23575", "title": "The Collapse of Heterogeneity in Silicon Philosophers", "status": "NOT_SEEN -> included (recommended)"},
+    {"arxiv": "2603.00059", "title": "Stochastic Parrots or Singing in Harmony?", "status": "NOT_SEEN -> included"},
+    {"arxiv": "2604.25850", "title": "Agentic Harness Engineering: Observability-Driven", "status": "SEEN"},
+    {"arxiv": "2509.08031", "title": "AU-Harness (Audio LLM)", "status": "NOT_SEEN -> excluded (audio domain, not agent harness)"},
+    {"harnessbench": "HarnessBench", "status": "NOT_SEEN -> included (recommended)"},
+    {"arxiv": "2605.03596", "title": "Workspace-Bench", "status": "NOT_SEEN -> included"},
+    {"arxiv": "2604.07236", "title": "How Much Heavy Lifting Can an Agent Harness Do?", "status": "SEEN"},
+    {"arxiv": "2504.19413", "title": "Mem0", "status": "SEEN"},
+    {"arxiv": "2512.13564", "title": "Memory in the Age of AI Agents", "status": "SEEN"},
+    {"arxiv": "2602.06052", "title": "Rethinking Memory Mechanisms of Foundation Agents", "status": "NOT_SEEN -> excluded (survey, lower novelty)"},
+    {"arxiv": "2603.07670", "title": "Memory for Autonomous LLM Agents", "status": "SEEN"},
+    "acl2025-hiagent": "HiAgent: Hierarchical Working Memory", "status": "NOT_SEEN -> included (recommended)"},
+    "emnlp2025-memoryos": "MemoryOS", "status": "NOT_SEEN -> included"},
+    "acl2025-rmm": "RMM: Reflective Memory Management", "status": "NOT_SEEN -> included"},
+    "acl2025-hello-again": "Hello Again! LLM-Powered Personalized Agent", "status": "NOT_SEEN -> excluded (less novel)"
+  ],
+  "recommended_today": [
+    "2604.23575 - The Collapse of Heterogeneity in Silicon Philosophers",
+    "HarnessBench - A Benchmark for Coding Agent Harnesses",
+    "HiAgent - Hierarchical Working Memory Management"
+  ]
+}

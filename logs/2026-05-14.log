@@ -1,0 +1,40 @@
+DailyRead 2026-05-14 Log
+========================
+
+Search Queries:
+- silicon sampling social simulation LLM 2025 (SearXNG)
+- harness engineering agent eval framework 2025 (SearXNG)
+- agent memory LLM long term short term 2025 (SearXNG)
+- agent memory architecture retrieval augmented 2025 2026 (SearXNG)
+- harness engineering agent evaluation benchmark 2025 2026 (SearXNG)
+- silicon sampling LLM simulation opinion survey 2025 2026 (SearXNG)
+
+Dedup Checks:
+- 2605.00197 (Silicon Society Cookbook) -> SEEN, skipped
+- 2604.25850 (AHE) -> SEEN, skipped
+- 2504.19413 (Mem0) -> SEEN, skipped
+- 2512.13564 (Memory in the Age) -> SEEN, skipped
+- 2603.07670 (Memory for Autonomous Agents) -> SEEN, skipped
+- 2604.07236 (Heavy Lifting Harness) -> SEEN, skipped
+- 2502.12110 (A-MEM) -> SEEN, skipped
+- 2512.22725 -> NOT_SEEN, included
+- 2504.02234 -> NOT_SEEN, excluded (position paper)
+- 2604.23575 -> NOT_SEEN, included (recommended)
+- 2603.00059 -> NOT_SEEN, included
+- HarnessBench -> NOT_SEEN, included (recommended)
+- 2605.03596 -> NOT_SEEN, included
+- HiAgent -> NOT_SEEN, included (recommended)
+- MemoryOS -> NOT_SEEN, included
+- RMM -> NOT_SEEN, included
+
+Recommended Today:
+1. The Collapse of Heterogeneity in Silicon Philosophers (2604.23575)
+2. HarnessBench
+3. HiAgent
+
+Images Generated:
+- silicon-philosophers-heterogeneity-collapse.png (sub-agent)
+- harnessbench-coding-agent-benchmark.png (sub-agent)
+- hiagent-hierarchical-working-memory.png (sub-agent)
+
+Graph Update: pending (will run after commit)

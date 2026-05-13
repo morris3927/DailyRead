@@ -85,7 +85,7 @@
   <path d="M1139 485 C1139 560 730 560 730 595" class="arrow"/>
 
   <rect x="414" y="595" width="450" height="105" class="box purple"/>
-  <text x="448" y="634" class="text">Mechanistic & counterfactual evaluation</text>
+  <text x="448" y="634" class="text">Mechanistic &amp; counterfactual evaluation</text>
   <text x="448" y="666" class="small">Mechanism ablations · Negative controls · Counterfactual sweeps</text>
   <text x="448" y="690" class="small">Report uncertainty, variance, sensitivity — not selected trajectories</text>
 

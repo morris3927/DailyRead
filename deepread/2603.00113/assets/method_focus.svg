@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" role="img" aria-labelledby="title desc">
+  <title id="title">AI agent social simulation: from plausibility to auditable mechanisms</title>
+  <desc id="desc">Diagram summarizing the paper's argument: LLM agent social simulation needs explicit environment, visibility, scheduler, transition, initial priors, and mechanism-level evaluation.</desc>
+  <defs>
+    <style>
+      .bg { fill:#fbfaf7; }
+      .title { font: 700 34px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; fill:#1f2937; }
+      .subtitle { font: 400 18px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; fill:#4b5563; }
+      .box { fill:white; stroke:#d1d5db; stroke-width:2; rx:18; }
+      .risk { fill:#fff7ed; stroke:#fb923c; }
+      .good { fill:#ecfdf5; stroke:#34d399; }
+      .blue { fill:#eff6ff; stroke:#60a5fa; }
+      .purple { fill:#f5f3ff; stroke:#a78bfa; }
+      .text { font: 600 20px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; fill:#111827; }
+      .small { font: 400 15px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; fill:#374151; }
+      .tiny { font: 400 13px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; fill:#6b7280; }
+      .arrow { stroke:#6b7280; stroke-width:3; fill:none; marker-end:url(#arrow); }
+      .dash { stroke:#ef4444; stroke-width:3; fill:none; stroke-dasharray:8 7; marker-end:url(#arrow-red); }
+      .label { font: 700 14px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; fill:#b91c1c; }
+    </style>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#6b7280"/>
+    </marker>
+    <marker id="arrow-red" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#ef4444"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="1280" height="820"/>
+  <text x="64" y="62" class="title">AI Agents Alone Are Not Sufficient for Social Simulation</text>
+  <text x="64" y="94" class="subtitle">重點：從「對話看起來像人」轉向「環境、曝光、排程與反事實機制可稽核」</text>
+
+  <rect x="64" y="145" width="300" height="130" class="box blue"/>
+  <text x="92" y="185" class="text">常見做法</text>
+  <text x="92" y="218" class="small">Persona + memory</text>
+  <text x="92" y="242" class="small">Agent-agent messages</text>
+  <text x="92" y="266" class="small">Transcript plausibility</text>
+
+  <rect x="474" y="145" width="300" height="130" class="box risk"/>
+  <text x="502" y="185" class="text">過度推論風險</text>
+  <text x="502" y="218" class="small">把 local plausibility</text>
+  <text x="502" y="242" class="small">當成 population validity</text>
+  <text x="502" y="266" class="small">甚至政策 / 反事實證據</text>
+
+  <rect x="884" y="145" width="330" height="130" class="box risk"/>
+  <text x="912" y="185" class="text">兩個 mismatch</text>
+  <text x="912" y="218" class="small">1. Role-play ≠ human fidelity</text>
+  <text x="912" y="242" class="small">2. Messaging ≠ social dynamics</text>
+  <text x="912" y="266" class="tiny">結果可能由 prompt / priors / scheduling 主導</text>
+
+  <path d="M364 210 L474 210" class="arrow"/>
+  <path d="M774 210 L884 210" class="arrow"/>
+
+  <text x="64" y="345" class="subtitle">作者主張：把 social simulator 拆成可檢查的機制部件</text>
+
+  <rect x="64" y="385" width="220" height="100" class="box good"/>
+  <text x="92" y="423" class="text">Environment E</text>
+  <text x="92" y="454" class="small">政策、制度、資源</text>
+  <text x="92" y="476" class="small">約束與執法</text>
+
+  <rect x="314" y="385" width="220" height="100" class="box good"/>
+  <text x="342" y="423" class="text">Visibility Vis</text>
+  <text x="342" y="454" class="small">誰看見什麼</text>
+  <text x="342" y="476" class="small">曝光與資訊不對稱</text>
+
+  <rect x="564" y="385" width="220" height="100" class="box good"/>
+  <text x="592" y="423" class="text">Scheduler Sch</text>
+  <text x="592" y="454" class="small">誰何時行動</text>
+  <text x="592" y="476" class="small">同步 / 非同步</text>
+
+  <rect x="814" y="385" width="220" height="100" class="box good"/>
+  <text x="842" y="423" class="text">Transition Tr</text>
+  <text x="842" y="454" class="small">行動如何改變</text>
+  <text x="842" y="476" class="small">環境與網路</text>
+
+  <rect x="1064" y="385" width="150" height="100" class="box good"/>
+  <text x="1088" y="423" class="text">D0 / P / U</text>
+  <text x="1088" y="454" class="small">初始條件</text>
+  <text x="1088" y="476" class="small">決策與更新</text>
+
+  <path d="M174 485 C174 560 640 560 640 595" class="arrow"/>
+  <path d="M424 485 C424 545 640 555 640 595" class="arrow"/>
+  <path d="M674 485 L674 595" class="arrow"/>
+  <path d="M924 485 C924 545 700 555 700 595" class="arrow"/>
+  <path d="M1139 485 C1139 560 730 560 730 595" class="arrow"/>
+
+  <rect x="414" y="595" width="450" height="105" class="box purple"/>
+  <text x="448" y="634" class="text">Mechanistic & counterfactual evaluation</text>
+  <text x="448" y="666" class="small">Mechanism ablations · Negative controls · Counterfactual sweeps</text>
+  <text x="448" y="690" class="small">Report uncertainty, variance, sensitivity — not selected trajectories</text>
+
+  <rect x="914" y="595" width="300" height="105" class="box blue"/>
+  <text x="942" y="634" class="text">更謹慎的推論</text>
+  <text x="942" y="666" class="small">Simulation output 只是</text>
+  <text x="942" y="690" class="small">明確假設下的 conditional implication</text>
+
+  <path d="M864 647 L914 647" class="arrow"/>
+
+  <text x="64" y="758" class="tiny">Source: Li &amp; Tao, arXiv:2603.00113v2. Diagram created for DeepRead notes.</text>
+</svg>

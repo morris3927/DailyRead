@@ -1,0 +1,32 @@
+flowchart LR
+  subgraph D[Design Space: 7 parameters]
+    A1[Number of agents\n64 / 256 / 1024 / 4096]
+    A2[Base LLM\nMinitaur / Llama / Qwen / Gemma]
+    A3[Network topology\nER random / directed scale-free]
+    A4[Homophily initialization\nYes / No]
+    A5[Survey context\nAgent sees own answers?]
+    A6[Biased news agent\n0 / 1]
+    A7[LoRA proportions\nUniform / BluePrint / Distribution / Average]
+  end
+
+  D --> S[595 simulation roll-outs\n2500 steps each\nsurvey every 250 steps]
+  S --> M[Metrics]
+  M --> M1[BERT human-vs-LLM classifier\nstylistic realism proxy]
+  M --> M2[Opinion dynamics\nConsensus / NCC / OSR / MFR / NASR]
+  M --> M3[Network metrics\nAssortativity / local agreement / cross-cutting edges]
+
+  M --> F[Key findings]
+  F --> F1[Base model is most influential\nη²=0.266 on BERT accuracy\nη²=0.090 on net consensus change]
+  F --> F2[BluePrint LoRA fine-tuning\nreduces AI detectability\nand intensifies opinion dynamics]
+  F --> F3[Survey context changes behavior\nbut effects are model- and scale-dependent]
+  F --> F4[Single biased news agent\nno measurable effect in this setup]
+  F --> F5[Design-space geometry\npartly additive, partly non-linear]
+
+  classDef design fill:#e8f3ff,stroke:#2f6fab,color:#123;
+  classDef process fill:#fff3d6,stroke:#b78300,color:#221;
+  classDef metric fill:#ecffe8,stroke:#4b8f3a,color:#123;
+  classDef finding fill:#f7e8ff,stroke:#7a3fa0,color:#213;
+  class A1,A2,A3,A4,A5,A6,A7 design;
+  class S process;
+  class M,M1,M2,M3 metric;
+  class F,F1,F2,F3,F4,F5 finding;

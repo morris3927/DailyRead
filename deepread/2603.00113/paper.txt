@@ -1,0 +1,858 @@
+
+
+--- PAGE 1 ---
+AI Agents Alone Are Not (Yet) Sufficient
+for Social Simulation
+Yiming Li, Dacheng Tao
+College of Computing and Data Science, Nanyang Technological University, Singapore
+liyiming.tech@gmail.com
+Abstract
+Recent advances in large language models (LLMs) have spurred growing interest
+in using LLM-integrated agents for social simulation, often under the implicit as-
+sumption that realistic population dynamics will emerge once role-specified agents
+are placed in a networked multi-agent setting. This position paper argues that
+LLM-based agents alone are not (yet) sufficient for social simulation. We attribute
+this over-optimism to a systematic mismatch between what current agent pipelines
+are typically optimized and validated to produce and what simulation-as-science
+requires. Concretely, role-playing plausibility does not imply faithful human behav-
+ioral validity; collective outcomes are frequently mediated by agent–environment
+co-dynamics rather than agent–agent messaging alone; and results can be domi-
+nated by interaction protocols, scheduling, and initial information priors. To make
+these underlying mechanisms explicit and auditable, we propose a unified formula-
+tion of AI agent-based social simulation as an environment-involved Markov game
+with explicit exposure and scheduling mechanisms, from which we derive concrete
+actions for design, evaluation, and interpretation.
+1 Introduction
+LLM-integrated agents are increasingly used to construct interactive multi-agent systems mediated
+by natural language. A rapidly growing line of work proposes to use such agent societies as social
+simulators, where agents serve as proxies for human individuals and aggregate outcomes are used to
+study diffusion, polarization, market behavior, and policy interventions [18, 45, 51]. This paradigm
+is appealing because it appears to enable scalable and repeatable experimentation in settings where
+human studies are costly, slow, or ethically constrained [49, 4, 3].
+This optimism has been amplified by a wave of recent demonstrations in which LLM-integrated
+agents appear strikingly human-like and exhibit emergent society-like patterns at scale. Generative-
+agent towns produce believable daily routines, gossip, and relationship formation [49]; large-scale
+platforms simulate millions of social-media users with longitudinal behavioral traces [51]; and most
+strikingly, agent-only social networks such as Moltbook1 have reportedly produced spontaneous
+governance structures, token economies, tribal identities, and even an emergent religion among
+tens of thousands of LLM agents [ 84]. Such demonstrations have, understandably, encouraged
+the inference that role-playing fidelity is converging towards human fidelity, and that placing such
+agents in a network is itself sufficient to instantiate a society. However, much current practice risks
+over-interpreting these outputs. Social simulations are often instantiated as role-playing pipelines:
+personas are assigned, agents exchange messages, and transcript plausibility is treated as evidence
+of realism [49, 18, 51]. This implicitly assumes that human-like local interactions are sufficient to
+justify collective validity. The assumption becomes particularly fragile when simulations are used
+to support comparative or counterfactual claims, where conclusions depend not only on interaction
+quality but also on how information, incentives, and constraints are generated and propagated.
+1https://www.moltbook.com/
+Preprint.
+arXiv:2603.00113v2  [cs.MA]  7 May 2026
+
+
+--- PAGE 2 ---
+Our position is that AI agents alone are not (yet) sufficient for social simulation.The core issue
+is epistemic: LLM-agent pipelines are typically optimized and validated for role consistency and
+conversational plausibility, whereas simulation-as-science requires faithful decision processes and
+well-specified generative mechanisms. In practice, we find that collective outcomes are frequently
+shaped by agent–environment co-dynamics, such as exposure mechanisms, institutional constraints,
+scheduling effects, and information asymmetries. These factors are often under-specified or treated
+as implementation details, yet they can dominate downstream trajectories and drive apparent effects
+[49, 33, 80]. Building on this diagnosis, we identify recurring mismatches between proxy objectives
+and epistemic goals in current LLM-based social simulation, highlight their concrete gaps, and
+propose a unified formulation of environment-involved agent-based social simulation. We conclude
+by calling for a set of practical actions aimed at improving reliability, interpretability, and epistemic
+clarity before such simulators are treated as scientific or policy-facing evidence.
+2 AI Agents for Social Simulation
+2.1 Scope
+Social simulation refers to the use of computational models to study how individual cognition,
+decision-making, and interaction give rise to collective social phenomena [23]. In recent years, this
+paradigm has attracted renewed interest through the use of large language model (LLM)-integrated
+AI agents, which promise scalable, flexible proxies for human individuals in settings where real-
+world experimentation is costly, slow, or ethically constrained [18, 45, 51]. By enabling open-ended
+communication and role-conditioned behavior, LLM-based agents are often viewed as a natural
+substrate for simulating complex social dynamics in domains such as policy analysis, opinion
+dynamics, and institutional design [49, 4, 29].
+In this paper, we focus on (LLM-integrated) AI agents used explicitly as proxies for human individuals
+in social simulation, where simulation outcomes are interpreted at the collective level2. Our analysis
+centers on the methodological assumptions and epistemic implications of such simulations, rather
+than on task performance or predictive accuracy. We do not aim to provide a comprehensive survey
+of social simulation methods, nor do we examine non–agent-based approaches or agent applications
+outside social simulation. This scoped focus allows us to critically examine prevailing assumptions
+and overlooked issues of AI agents specifically within the context of social simulation.
+2.2 Current Approaches
+To ground the discussion, we briefly outline how recent work employs LLM-integrated agents
+for social simulation. Building on existing taxonomies of LLM-based agent simulation [ 18, 45],
+we organize current practice along two axes. Most existing pipelines share an implicit premise:
+sufficiently human-like individual agents, once placed in a networked setting, will yield realistic
+collective dynamics. In practice, this premise is instantiated along two complementary axes. Some
+work prioritisesindividual-levelsimulation, configuring agents as human proxies via personas,
+memory, and interaction protocols to ensure local plausibility. Other work emphasisescollective-level
+simulation, focusing on how agents are composed, connected, and interact to generate and interpret
+system-level outcomes. This section adopts this decomposition to organize current practice.
+2.2.1 Individual-level Simulation
+At the individual level, LLM-integrated agents are designed as stable and plausible human proxies.
+Based on their implementation techniques, these methods can be grouped into two categories.
+Prompt-based methodsencode personas in the prompt to shape agent behavior, without updating
+model parameters. Some curate personas via human-in-the-loop profiling, drawing on well-known
+characters [82] or structured attributes (e.g., gender) [71]. Others synthesize personas by prompting
+LLMs with individual details [67].
+Training-based methodscover pre-training, fine-tuning, and reinforcement learning (RL). Pre-
+training grounds base LLMs in personal knowledge using corpora such as literature [56] and personal
+descriptions [54]. Fine-tuning adapts models to target behaviors via instruction-style data [59, 22, 64].
+RL refines behavior in interactive environments by optimizing reward signals that reflect response
+quality and persona consistency [61, 30, 50].
+2More details are in Appendix A.
+2
+
+
+--- PAGE 3 ---
+For all individual-level simulation methods, they remain grounded in “behaviorism", with limited
+exploration of deeper psychological motivations and underlying causes [36]. Besides, these methods
+struggle to ensure consistency and stability over long periods of simulation, often diverging from
+actual human decision-making behavior.
+2.2.2 Collective-level Simulation
+Mirroring the interconnected nature of human society, collective-level simulation targets both inter-
+agent interactions and their dynamics within a pre-defined context. We group these methods into two
+categories by environment complexity and agent diversity.
+Structured Scenario Interactionsplace agents in controlled settings to study coordination and
+interaction protocols.Dialogue-centredsettings task agents with practising social interaction [ 86, 69],
+collaborative reasoning [15], or strategic communication in games [78, 73].Goal-centredsettings
+assign agents specialised roles to complete domain tasks such as software engineering [ 28, 52],
+clinical diagnosis [37], and judicial decision-making [26].
+Emergent Societal Dynamicsfocuses on more heterogeneous agent populations to reproduce
+non-linear interactions and system-level outcomes that are difficult to anticipate from individual
+behavior alone [55]. For example, in general economics, simulations range from strategic-interaction
+settings (e.g., repeated games such as the Prisoner’s Dilemma [77, 47]) to macroeconomic simulations
+that model economy-wide dynamics and aggregate trends [40]. In sociology and political science,
+simulations are used to approximate survey respondents and interviewees for opinion polling, election
+forecasting, and public-administration stress tests [4, 9, 83], and to probe theory-driven questions
+in controlled social settings [13]. Online-platform simulations further model opinion dynamics on
+social media and related digital environments [43].
+3 Fundamental Mismatches and Gaps
+3.1 Fundamental Mismatches
+We hereby usemismatchto denote a systematic gap between(1)what LLM-integrated agent pipelines
+are typically optimized and validated to achieve, and(2)what social simulation ultimately demands
+to support credible population-level conclusions. In much current practice, the implicit objective
+isbehavioral plausibility: agents should produce coherent, role-consistent, and contextually ap-
+propriate text, often judged via transcripts, short-horizon consistency checks, or human preference
+judgments [49, 18, 51]. By contrast, simulation-as-science requiresmechanistic and counterfactual
+reliability: outcomes should be robust to irrelevant prompt details, sensitive to the right causal
+interventions, and interpretable as consequences of well-specified assumptions rather than artifacts of
+the prompting/implementation stack.
+This distinction matters because social simulations are frequently used not only to “tell a compelling
+story” but to support comparative claims (e.g.,intervention Aversusintervention B), to probe failure
+modes, or to explore policies that cannot be tested in the real world. If the validation target is local
+plausibility while the intended inference is causal or counterfactual, then seemingly minor design
+choices (e.g., persona wording, memory truncation, interaction protocol, or tool availability) can
+quietly dominate results [49, 33, 80]. In these cases, the simulation may beinternally consistentyet
+externally misleading, producing conclusions that are brittle, irreproducible, or overconfident.
+Framing issues as mismatches is thus a methodological move: it makes explicit where the commu-
+nity’s proxy objectives (“does the agent look human?”) diverge from the epistemic goal (“can we
+trust the implied mechanism and the resulting comparative conclusions?”). The rest of this section
+uses this lens to pinpoint recurring mismatches that arise even when agents appear plausible, thereby
+motivating the evaluation and modeling gaps discussed next.
+Mismatch 1.Role-playing plausibility does not imply faithful human simulation.
+A central promise of LLM-based social simulation is that, once an agent can “sound like” a target role
+(e.g., a voter, a policymaker, a patient), it can serve as a proxy for how a real human in that role would
+think and act. This is a mismatch because role-playing methods primarily optimize forlinguistic and
+narrative coherence,e.g., staying in-character, producing sensible justifications, and avoiding obvious
+contradictions, whereas faithful human simulation requiresbehavioral validity under constraints:
+decisions should reflect stable preferences, bounded cognition, incentives, social learning, and norm
+3
+
+
+--- PAGE 4 ---
+compliance across time and across counterfactual interventions [ 3]. In other words, an agent can
+produce a convincing transcript while still instantiating the wrong decision process.
+This mismatch has two consequences. First, it creates an illusion of validity: “human-like” transcripts
+can lead researchers to over-trust the simulated mechanism and treat subjective plausibility as
+evidence. Second, it induces fragility and hidden confounding: because behavior is prompt- and
+interface-mediated, small changes in persona wording, memory format, tools, or interaction protocol
+can shift conclusions later interpreted as substantive policy or social-mechanism effects [49, 33, 80].
+For comparative claims (e.g., messaging strategies, institutional rules), this yields spurious treatment
+effects, unstable recommendations, and misleading “explanations” of emergent outcomes.Neitherof
+the dominant individual-level approaches in Section 2.2 fully resolves this mismatch.
+Specifically, prompt-based methods generally improvesurface role adherenceby conditioning the
+model on demographic descriptors, backstories, or exemplars. However, they typically treat the
+persona as a static textual constraint and rely on the base model to fill in missing structure. We argue
+that this makes them vulnerable to(1)underspecification(i.e., many different latent decision rules
+can yield equally plausible text),(2)stereotype completion(i.e., agents default to socially salient
+but inaccurate heuristics), and(3)prompt sensitivity(e.g., behavior shifts with phrasing, ordering).
+Accordingly, prompt-based agents may be consistent in the short term while drifting in long-horizon
+interaction or responding unrealistically to incentives, uncertainty, and social pressure. Training-based
+methods (e.g., fine-tuning) can make agents more consistent and can better imitate a target style or
+population. Yet, the typical training signals still rewardpredictive or preference-aligned outputs,
+not faithful decision-making under explicit institutional and informational constraints. Fine-tuning
+on narrative data may improve how an agentdescribesmotivations without ensuring that itacts
+according to them when incentives change. Moreover, training-based agents inherit dataset biases
+and may generalize poorly under distribution shift [ 60], which is precisely the regime of interest
+in counterfactual social simulation. In short, stronger imitation does not automatically produce the
+causal fidelity required for trustworthy simulation.
+Mismatch 2.Social simulation cannot be simply reduced to agent–agent interaction.
+The second mismatch arises from an interaction-centric view of “society,” where researchers build
+a network of agents, let them exchange messages, and then interpret the resulting conversation
+dynamics as a proxy for real-world collective behavior. This is a mismatch because, for humans,
+many consequential behaviors are mediated less by what otherssayand more by what the world
+makes possibleandmakes salient: the opportunities, constraints, frictions, and incentives created by
+institutions and platforms. Accordingly, many social outcomes are not generated by dialogue alone;
+they are produced byagent–environment co-dynamics[ 55, 8, 34]. Here, “environment” includes not
+only physical constraints, but also institutional rules, market and platform mechanisms, information
+exposure and ranking systems, resource constraints, enforcement, and feedback loops that shape what
+agents can observe, what actions are available, and which actions are rewarded or punished.
+Reducing social simulation to agent–agent interaction implicitly assumes that the environment is
+either neutral (a passive stage) or can be approximated by a simple message-passing protocol. In
+real settings, however, the environment is often the dominant causal channel. For example, the same
+population can exhibit qualitatively different collective outcomes under different moderation policies,
+recommendation algorithms, voting rules, pricing mechanisms, or enforcement regimes [80], even if
+individuals’ “intrinsic” preferences remain unchanged. When such mechanisms are missing or overly
+simplified, simulations risk attributing emergent effects to agents’ “social behavior” while the true
+driver in the world is the mediation layer.
+The consequences are particularly severe when simulations are used to evaluate interventions. If an
+intervention in the real world operates by changing exposure, incentives, or institutional constraints
+(e.g., throttling misinformation, changing audit probability, altering default options, adjusting payoffs,
+modifying group formation), then an interaction-only simulation may be unable to represent the
+intervention at all, or will represent it as an ad hoc prompt instruction. This can yield false negatives
+(i.e., missing real effects), false positives (i.e., hallucinated effects), and incorrect mechanism stories
+that do not transfer outside the simulator. More broadly, it encourages a misleading decomposition
+of social phenomena into “micro dialogue quality” and “macro emergence,” obscuring the fact that
+macro patterns are often artifacts of the environment model.
+4
+
+
+--- PAGE 5 ---
+3.2 Current Gaps
+The two mismatches above point to paradigmatic flaws: conflating role-playing with human fidelity,
+and conflating social dynamics with inter-agent messaging while under-modeling the mediating role
+of the environment. Beyond these conceptual issues, the current literature also exhibits technical and
+workflow-levelgaps. We usegapto denote a concrete yet underdeveloped or missing component in the
+end-to-end simulation pipeline that is necessary to(1)make the simulator’s underlying assumptions
+explicit and empirically testable, and(2)evaluate whether an observed collective outcome remains
+robust beyond a particular choice of prompt or implementation detail. Unlikemismatches, which
+concern discrepancies between what researchers claim and what their simulator can epistemically
+support,gapsconcern parts of the pipeline that remain inadequately operationalized.
+3.2.1 Evaluation of Simulation Results
+A central barrier to treating LLM-based agent societies as credible social simulators is the current lack
+of rigorous and comprehensive evaluation protocols. Much of the literature relies on demonstration-
+style validation: a small number of curated transcripts or trajectories are presented as evidence of
+“realism”, with limited quantification of run-to-run variance and limited comparison against explicit
+baselines. This issue is particularly acute at the collective level, where outcomes are high-dimensional
+and real-world “ground-truth” trajectories are rarely available.
+Across both the individual and collective levels, a small number of relatively more objective eval-
+uation methods have begun to emerge; nevertheless, evaluation remains fragmented and far from
+standardized. At the individual level, existing protocols are relatively more structured and can be
+broadly grouped intostaticandinteractiveregimes [ 45]. Specifically,static subjective evalua-
+tionuses human or LLM judges to rate persona fidelity, coherence, and psychological plausibility,
+often via interview-style prompts [ 20, 72, 74];Static objective evaluationtranslates persona fi-
+delity into constrained tasks with measurable targets, such as psychometric tests or multiple-choice
+questionnaires [20, 38, 2]. A complementary objective line adopts reference-based text similarity
+metrics in character-aligned dialogue or personalization benchmarks, reporting BLEU/ROUGE-style
+scores (or closely related overlap measures) to quantify alignment with target utterances and styles
+[42, 11, 20]; Finally,interactive evaluationembeds the agent in a multi-turn environment and
+measures performance via task/game outcomes under explicit rules [59, 10, 41].
+Despite these efforts, most existing evaluations remain fundamentally output-centric and behaviorist.
+They validate agents through observable text, and treat fluency, stylistic consistency, and short-horizon
+coherence as proxies for human realism. Interview-based ratings, for instance, can be dominated
+by narrative plausibility rather than by whether the agent’s underlying preferences and constraints
+are faithfully instantiated [51]. Reference-based text metrics primarily reward surface-level lexical
+alignment, and thus provide only a coarse proxy for open-ended social behavior and decision validity
+under incentives or information constraints [48]. Consequently, an agent may score well while still
+exhibiting unstable beliefs, prompt-induced shifts in preferences, or implausible adaptation under
+counterfactual interventions. This misalignment between what is measured and what is required for
+credible simulation constitutes a major technical evaluation gap.
+At the collective level, evaluation is even less standardized and is typically framed in two comple-
+mentary ways. In sandbox settings without reliable real-world traces, authors often ask whether the
+simulated society “looks human-like,” relying on Turing-test-style judgments of interaction quality or
+the plausibility of emergent narratives, as in early sandbox society simulations [49]. In policy- or
+platform-facing settings where empirical traces exist, evaluation is more often cast asalignment: does
+the simulator reproduce observed aggregate patterns, such as diffusion scale, opinion distributions,
+and temporal trends [80, 29].
+These evaluation practices also introduce several failure modes that directly threaten the epistemic
+value of social simulation. Firstly, they can enable selective reporting and confirmation bias: when
+only a few trajectories are highlighted, it becomes easy to overlook instability across random
+seeds, prompt variants, or sampling settings. Secondly, they can make method comparison ill-
+posed, because improvements in reported metrics may reflect better linguistic polish rather than
+improved behavioral validity. Thirdly, when collective simulations are used for decision support
+(e.g., public opinion diffusion or platform governance), weak validation can translate into brittle
+or biased recommendations, especially under distribution shift or information asymmetry. Overall,
+the current evaluation gap amplifies the risk that agent-based simulators are interpreted as causal or
+policy-relevant models, even when they have only been assessed as plausible generators of text.
+5
+
+
+--- PAGE 6 ---
+3.2.2 Interaction Dynamics and State Update
+Even assuming high-fidelity individual agents, a social simulator is well-defined only once it specifies
+aninteraction kernel: who can affect whom, through what channels, and how these interactions
+update persistent states (e.g., beliefs, relationships, resources, exposure). In current AI agent-based
+simulations, these mechanisms are often left implicit because the simulator interfaces are text-based:
+even in rich sandbox environments, world state and institutional rules are commonly represented via
+text, with prompt engineering acting as the de facto “dynamics layer” [18].
+Existing work consequently implements inter-agent interaction in two broad styles.Dialogue-first
+designs place agents in a shared conversational loop with unstructured natural language as the
+interaction medium, typical of sandbox “society” settings such as Generative Agents [ 49].Rule-
+mediateddesigns couple agents through an explicit rule layer: agents communicate via structured
+formats (e.g., code/JSON) or act in environments with discrete action spaces and state-transition
+rules, so that outputs map to well-defined state changes [ 45]. Even within text-centric systems,
+interaction can bedirect(i.e., text exchange) orindirect(e.g., coupling through predefined system
+rules), implying distinct causal pathways for how “interaction” propagates [18].
+The dialogue-first approach is attractive because it maximizes expressiveness and reduces up-front
+modeling: in principle, any social act can be expressed as language. However, this flexibility comes
+with underspecified semantics. Unstructured language is inherently ambiguous and redundant [45],
+so utterances may mix narration, intention, and action, and the same “interaction” can take many
+surface forms. This blurs the boundary betweencommunicationandstate transition, making macro
+trajectories sensitive to prompt phrasing, verbosity, and turn-taking order rather than stable behavioral
+mechanisms. Moreover, when interaction effects must flow primarily through a shared conversational
+channel, the simulator implicitly assumes synchronous and highly observable exchanges, misaligned
+with real social systems involving parallel, partially observed interactions across time scales.
+Rule-mediated designs attempt to restore well-posed interaction by explicitly separating agent
+decisions from environment updates. In practice, this includes “hard” rules such as diffusion/contagion
+processes: for example, S3 simulates individuals embedded in a social network to study information
+diffusion and the dynamics of emotions and attitudes [19], and epidemic-oriented simulations test
+whether LLM agents can reproduce complex phenomena such as multi-peak infection patterns [75].
+Platform simulators such as OASIS further operationalize interaction through an environment server
+and recommender-mediated exposure, where a time engine activates agents and an action module
+updates environment state (e.g., new posts and evolving relations) [80]. While this rule layer improves
+clarity and reproducibility, it also reintroduces a classical ABM tension: rules and models cannot
+cover all dimensions of real-world heterogeneity, and using rules to drive behavior may only capture
+limited aspects of diverse preferences and decision processes [18]. When the rule layer dominates,
+LLM agents risk becoming narrative wrappers around a largely pre-specified dynamics, weakening
+the simulator’s ability to generate new causal insight.
+Crucially, even after choosing an interaction style, the simulator must still specifystate update: which
+interactions happen concurrently, how they are interleaved, and what each agent observes when
+deciding. Many implementations execute interactions as sequential loops (fixed order or batched), yet
+real societies exhibit asynchronous and heterogeneous activity: agents can receive multiple signals
+between decisions, interact through different channels, and update different state variables on different
+time scales. AgentSociety explicitly notes that common multi-agent frameworks rely on predefined
+message-passing procedures to determine execution sequences, whereas real-world decisions are
+not strictly dependent on other agents’ immediate inputs, making asynchronous societal dynamics
+hard to simulate [51]. In parallel, OASIS emphasizes temporal activation (via a time engine) and
+real-time environment updates after actions [80]. Together, these examples suggest that scheduling
+and synchronization are not mere engineering choices but part of the model: changing them can alter
+exposure, feedback loops, and emergent outcomes.
+3.2.3 Initialization and Information Priors
+A third (and often underestimated) barrier to credible LLM-based social simulation is the under-
+specification ofinitial conditionsandinformation priors. Even with highly role-faithful agents and a
+well-defined state-update rule, a simulator must still decidewho exists,who is connected to whom,
+andwho knows what at t= 0 . In policy- and event-facing settings, these choices are not merely
+structural: they determine how a new shock (e.g., a regulation, crisis, or public announcement) is
+6
+
+
+--- PAGE 7 ---
+instantiated as an initial perturbation of the system, and therefore whether “short-run” effects are
+even well-defined or interpretable. In much of current practice, however, initialization is treated
+primarily as an engineering convenience,e.g., sampling N personas, wiring an interaction graph,
+or embedding a scenario description directly into agent prompts [ 80]. Such procedures implicitly
+fix strong assumptions about the initial distribution of awareness, exposure, and belief, effectively
+hard-coding the immediate impact of the shock rather than modeling its emergence. As a result, these
+unexamined information priors can dominate downstream dynamics, making simulation outcomes
+difficult to interpret and epistemically unreliable in practice.
+Role and Population Assignment Involves More than Matching Population-level Statistics.A
+common starting point is to assign each agent a role or persona by matching coarse population
+statistics (e.g., age, gender, occupation, or ideology) and then sampling individuals accordingly.
+This approach is attractive because it requires only aggregate distributions and scales easily; it
+also aligns with the “silicon samples” framing, in which LLMs are used to elicit population-level
+responses from demographically conditioned prompts [ 4]. Recent large-scale simulations adopt
+similar strategies by constructing personas from survey instruments and census-like sources [ 65,
+80, 83]. However, matching population statistics is rarely sufficient for credible social simulation,
+because social behavior depends on structured heterogeneity,e.g., correlations among attributes,
+institutional positions, and latent variables that are not captured by a short persona description. Naively
+sampling attributes independently can break the underlying joint distribution, produce implausible
+combinations, and distort which agents become influential or representative in downstream dynamics.
+Some systems explicitly acknowledge this limitation by employing techniques such as iterative
+proportional fitting to approximate joint demographic distributions from multiple marginal constraints
+[83]. Yet even when demographic joints are matched, the mapping from demographics tobeliefs,
+incentives, and constraintsremains fundamentally underdetermined. Consequently, two simulation
+initializations may share identical aggregate statistics while encoding very different mechanisms of
+persuasion, norm compliance, or strategic adaptation, precisely the mechanisms that policy-oriented
+social simulations seek to interrogate.
+Scale Selection is an Epistemic Modeling Choice, Not Merely a Computational Constraint.A
+second design question concerns how many agents to instantiate. The principled choice, simulating
+the full target population, is typically infeasible for LLM-driven agents due to cost and latency. Most
+existing social simulations therefore operate at substantially reduced scale: Tornberget al.use 500
+agents to study algorithmic news-feed interventions [65]; HiSim samples 1,000 participating users per
+movement dataset and models 300 as “core” LLM-driven users [46]; and ElectionSim processes over
+one million distinct social media users to construct a million-level voter pool [83]. Large by LLM-
+agent standards, these scales nevertheless remain orders of magnitude smaller than the populations
+implicated in national elections, platform governance, or public health policy. Down-sampling “by
+proportion” is not innocuous: many collective phenomena exhibit strong non-linear dependencies
+on population size and interaction topology. Rare subgroups can trigger cascades; heavy-tailed
+influence structures can cause outcomes to hinge on a few high-degree nodes; and finite-size effects
+can inflate run-to-run variance, producing apparent “treatment effects” that vanish at larger scales.
+HiSim’s hybrid design, combining core LLM-driven agents with a larger deductive pool, is an explicit
+attempt to navigate this precision-scale trade-off [ 46]. Yet the field lacks principled guidance on
+when reduced-scale simulations preserve the relevant invariants of the underlying social system, and
+when they instead introduce qualitative artifacts that compromise inference in practice.
+Conflating Information Availability with Information Awareness.Beyondwhois simulated, any
+agent-based simulation must also specifywhat each agent initially knows and believes, a design
+choice that is particularly consequential in policy-oriented applications, where conclusions often hinge
+on how information, regulations, or announcements are perceived and acted upon. In contemporary
+LLM-agent pipelines, this epistemic initialization is most often implemented through prompt-level
+priors, including a persona description, a brief memory summary, and an explicit textual specification
+of the scenario and intervention. In HiSim, for instance, real-world trigger events are introduced
+as natural-language “background information” provided to core users [46]. Similarly, in fake-news
+simulations, new information is typically operationalized as discrete text content that is broadcast by
+designated modules or “infected” individuals [43, 29]. While such mechanisms are understandable,
+as a simulator must introduce exogenous shocks in some form, they implicitly collapse a critical
+distinction betweenthe existence of informationandagents’ awareness of that information.
+7
+
+
+--- PAGE 8 ---
+4 Actions for Future Social Simulation
+Many of the issues discussed above arise from the lack of a comprehensive and standardized formu-
+lation of AI agent-based social simulation. To address this gap, we propose a unified formulation
+that makes the structural requirements for credible simulation explicit, and use it to derive concrete
+actions for improving the design, evaluation, and interpretability of agent-based social simulations.
+Definition 4.1(Environment-involved AI Agent-based Social Simulator).For a fixed number of
+agentsNand simulation horizonT, the simulator is defined as a tuple
+Sim≜
+
+E,G,C,{M i,O i,A i,P i,U i,R i}N
+i=1, D0,Sch,Vis,Tr
+
+,(1)
+where E is theEnvironmentstate space, with et ∈ E denoting the instantiated configuration of
+the social context at time t, including policy parameters, institutional settings, resource levels, and
+enforcement intensities; G is theGraph(network) state space, with gt ∈ G ; C is theContextspace,
+with ct ∈ C showing exogenous conditions (e.g., policies, events, or scenario settings); For each
+agent i, Mi is itsMentalstate space with mi
+t ∈ M i indicating information like beliefs, preferences,
+memory, Oi is itsObservationspace with oi
+t ∈ O i, Ai is itsActionspace with ai
+t ∈ A i. Pi
+is the (LLM-based)Policy, s.t. a i
+t ∼P i(·|oi
+t, mi
+t;ℓ i), where ℓi is the LLM configuration (e.g.,
+checkpoint, prompting template, tool access). Ui is theUpdatefunction for the mental statei.e.,
+mi
+t+1 =U i(mi
+t, oi
+t, ai
+t, vt, et, gt, ct). Each Ri is aRewardfunction, formalizing how institutional
+incentives, costs, and enforcement mechanisms translate agent actions into social consequences,
+thereby shaping the agent–environment co-dynamics; D0 is theDistributionover initial conditions:
+(e0, g0, m1:N
+0 )∼D 0(·|c0). It must encode population composition, attribute correlations, initial
+network structure, and epistemic priors; Sch is theSchedulerreturning the active index set: It =
+Sch(et, gt, ct)⊆ {1,· · ·, N} , modeling choice that formalizes when and which agents are allowed to
+act; Vis is theVisibilitymechanism, s.t.(o 1:N
+t , vt)∼Vis(·|e t, gt, ct), where vt is a visibility object
+(e.g., exposure graph) that determines who sees what and thus represents information asymmetries;
+Tr is theTransitionfor environment and network dynamics: (et+1, gt+1)∼Tr(·|e t, gt, ct, a1:N
+t ).
+Specifically, given c0:T and an initial draw from D0, the simulator proceeds for t= 1,· · ·, T as
+follows:(1)sample (o1:N
+t , vt) via Vis;(2)sample active set It via Sch;(3)for each i∈I t, sample
+ai
+t via Pi (and optionally set ai
+t to a no-op for i /∈It);(4)update {mi
+t+1} via {Ui};(5)transition
+(et+1,gt+1 )viaTr. Specific instantiations are application-dependent and beyond our scope.
+This formulation potentially addresses the mismatches and gaps in Section 3 by making previ-
+ously implicit assumptions explicit and controllable. By separating agent-level generation from
+environment-mediated mechanisms, the simulator distinguishes how information is exposed, when
+agents may act, and how actions produce institutional consequences. Specifically, information
+asymmetries are represented through the visibility mechanism rather than by assuming globally
+shared context; interaction timing and ordering are governed by the scheduler, preventing turn-taking
+artifacts from being conflated with social dynamics; and incentives and enforcement are encoded
+via consequence functions, allowing policy interventions to be modeled as controlled changes to
+environment state and mechanisms rather than prompt-only modifications. While this formulation
+does not guarantee valid social simulation, it provides astructured interfacefor evaluating robustness,
+sensitivity, and counterfactual reliability.
+Based on the aforementioned formulation and understandings, we advocate the following actions:
+Action 1.Treat the environment as a first-class, auditable object. A credible agent-based social
+simulator should make the environment explicit, rather than embedding it in natural-language prompts
+or ad hoc implementation details. Concretely, the environment state et and its governing mechanisms,
+including Vis (exposure and information routing), Sch (action scheduling), Tr (environment dynam-
+ics), and the incentive mapping R, should be specified as versioned, inspectable artifacts with logged
+traces, enabling external auditors to reconstruct the constraints, incentives, and information frictions
+at each step. This explicitness directly reduces hidden confounding: macro-level outcomes trace
+to declared mechanism choices rather than prompt phrasing or undocumented simulator defaults.
+When manual specification of et and Tr is infeasible, one can learn an explicit dynamics model from
+empirical trajectories (e.g., a “world model” [85]), provided its intermediate states and uncertainty
+diagnostics remain exposed, keeping the environment auditable rather than subsumed into the LLM.
+Action 2.Move evaluation beyond plausibility to mechanistic and counterfactual reliability. Current
+practice often evaluates social simulations by transcript plausibility or short-horizon coherence,
+yet such criteria are misaligned with the epistemic goal of drawing mechanism- or policy-relevant
+8
+
+
+--- PAGE 9 ---
+conclusions. Evaluation should instead directly probe mechanistic and counterfactual reliability:(1)
+whether agent decisions respond appropriately to the constraints and incentives encoded in et and
+R (behavior under constraints);(2)whether targeted edits to C, Vis, Sch, or Tr induce stable and
+directionally consistent changes in macro-level outcomes (mechanism sensitivity); and(3)whether
+comparative conclusions persist across random seeds, prompt paraphrases, and other nominally
+irrelevant implementation choices (counterfactual stability). These criteria can be operationalized
+through mechanism ablations, negative controls, and counterfactual sweeps that vary one component
+at a time, with results reported as distributions (e.g., uncertainty intervals and variance decomposition)
+rather than selected trajectories. This reframes evaluation from “does it look human-like?” to “can
+the implied mechanism and comparative claims be trusted?”.
+Action 3.Interpret simulation outcomes with epistemic caution and explicit uncertainty. Finally,
+and most importantly, simulation outputs should be interpreted with epistemic caution: even under
+an explicit formulation, they do not constitute automatic evidence of social dynamics, but only
+conditional implications of the assumed mechanisms and implementation choices. We therefore
+recommend treating uncertainty as a first-class output and reporting sensitivity to D0, Vis, Sch, Tr,
+and the LLM configuration ℓi. Without such uncertainty reporting, mechanistic or policy-facing
+conclusions risk being non-transferable and overconfident.
+5 Alternative Views
+A first credible counter-view, which we term theindividual-fidelity-sufficient thesis, holds that the
+main bottleneck in AI agent-based social simulation is the fidelity of individual agents, and that
+sufficiently human-aligned agents would naturally yield realistic collective behaviour, rendering
+explicit environment modeling secondary. This view is articulated by [3] and reinforced by demon-
+strations of LLMs reproducing survey responses and electoral preferences when conditioned on
+demographic personas [ 4, 49, 83]; a parallel constructive line proposes deepening the cognitive
+substrate of agents [ 36]. We respect this view but disagree with its implication that environment
+modeling is secondary. Methods that refine an agent’s internal generation or decision heuristics
+do not specify how information is produced or disclosed, nor how incentives and constraints are
+implemented and enforced. Consequently, even highly role-consistent agents placed in an unrealistic
+or underspecified environment can generate collective dynamics that are internally coherent yet
+externally implausible [33, 80]. Treating the environment as an afterthought is therefore an epistemic
+error: without explicitly modeling how agents are coupled to their world, making agents more
+human-like does not by itself make the simulation more faithful.
+A second concern, therigidity worry, holds that explicit environment specification may be infeasible
+or counterproductive: formalising environment dynamics or institutional rules is sometimes seen as
+reintroducing the rigid assumptions of classical rule-based models [76, 21, 35], reducing LLM agents
+to narrative wrappers around fixed mechanisms. We acknowledge this tension. However, removing
+explicit structure does not eliminate assumptions; it relocates them into prompts, scheduling, and
+interfaces, where they become implicit, brittle, and hard to audit. Our position is not that environments
+must be fully specified, but that making key mechanisms explicit, even approximately, enables
+stress-testing, comparison, and diagnosis. Without such framework, it becomes difficult to attribute
+outcomes to underlying mechanisms, limiting the scientific value of agent-based social simulation.
+6 Conclusion
+Large language models have expanded agent-based social simulation, but expressiveness alone does
+not confer epistemic validity. We argued that AI agents alone are not (yet) sufficient for social
+simulation: the central challenge is not solely how human-like agents appear, but whether the
+assumptions governing interaction, information exposure, and institutional coupling are made explicit,
+testable, and auditable. Without such structure, simulations risk becoming persuasive narratives rather
+than scientific instruments. Our position is forward-looking rather than dismissive: we argue not
+against AI agents, but for a shift in how social simulations are framed, constructed, and evaluated. We
+call on the community to treat aggregate human-correlation as insufficient evidence, and mechanism-
+level audits as the default. Treating environments as first-class objects, separating proxy objectives
+from epistemic goals, and foregrounding uncertainty are necessary to move from demonstration to
+explanation, and from plausibility to inference. Only by embracing these principles can agent-based
+social simulation mature into a reliable tool for scientific understanding and policy reasoning, rather
+than a source of overconfident yet fragile conclusions.
+9
+
+
+--- PAGE 10 ---
+References
+[1] Josh Achiam, Steven Adler, Sandhini Agarwal, Lama Ahmad, Ilge Akkaya, Florencia Leoni
+Aleman, Diogo Almeida, Janko Altenschmidt, Sam Altman, Shyamal Anadkat, et al. Gpt-4
+technical report.arXiv preprint arXiv:2303.08774, 2023.
+[2] Jaewoo Ahn, Yeda Song, Sangdoo Yun, and Gunhee Kim. Mpchat: Towards multimodal
+persona-grounded conversation. InACL, pages 3354–3377, 2023.
+[3] Jacy Reese Anthis, Ryan Liu, Sean M Richardson, Austin C. Kozlowski, Bernard Koch, Erik
+Brynjolfsson, James Evans, and Michael S. Bernstein. Position: LLM social simulations are a
+promising research method. InICML (Position Paper Track), 2025.
+[4] Lisa P Argyle, Ethan C Busby, Nancy Fulda, Joshua R Gubler, Christopher Rytting, and David
+Wingate. Out of one, many: Using language models to simulate human samples.Political
+Analysis, 31(3):337–351, 2023.
+[5] Delia Baldassarri and Maria Abascal. Field experiments across the social sciences.Annual
+review of sociology, 43(1):41–73, 2017.
+[6] Pranav Bhandari, Usman Naseem, Amitava Datta, Nicolas Fay, and Mehwish Nasim. Evaluating
+personality traits in large language models: Insights from psychological questionnaires. In
+WWW (Short Paper), pages 868–872, 2025.
+[7] Daniil A Boiko, Robert MacKnight, Ben Kline, and Gabe Gomes. Autonomous chemical
+research with large language models.Nature, 624(7992):570–578, 2023.
+[8] Elizabeth Bruch and Jon Atwell. Agent-based models in empirical social research.Sociological
+methods & research, 44(2):186–221, 2015.
+[9] Yaqub Chaudhary and Jonnie Penn. Large language models as instruments of power: New
+regimes of autonomous manipulation and control.arXiv preprint arXiv:2405.03813, 2024.
+[10] Kushal Chawla, Ian Wu, Yu Rong, Gale Lucas, and Jonathan Gratch. Be selfish, but wisely:
+Investigating the impact of agent personality in mixed-motive human-agent interactions. In
+EMNLP, pages 13078–13092, 2023.
+[11] Nuo Chen, Yan Wang, Haiyun Jiang, Deng Cai, Yuhan Li, Ziyang Chen, Longyue Wang, and
+Jia Li. Large language models meet harry potter: A dataset for aligning dialogue agents with
+characters. InEMNLP (Findings), pages 8506–8520, 2023.
+[12] Xiaodong Chen, Frank Lupi, Li An, Ryan Sheely, Andrés Viña, and Jianguo Liu. Agent-based
+modeling of the effects of social norms on enrollment in payments for ecosystem services.
+Ecological modelling, 229:16–24, 2012.
+[13] Yun-Shiuan Chuang, Nikunj Harlalka, Siddharth Suresh, Agam Goyal, Robert Hawkins, Sijia
+Yang, Dhavan Shah, Junjie Hu, and Timothy T Rogers. The wisdom of partisan crowds:
+Comparing collective intelligence in humans and llm-based agents. InCogSci, volume 46, 2024.
+[14] David de Vaus.Surveys in Social Research. Routledge, 6 edition, 2013.
+[15] Yilun Du, Shuang Li, Antonio Torralba, Joshua B Tenenbaum, and Igor Mordatch. Improving
+factuality and reasoning in language models through multiagent debate. InICML, pages
+11733–11763, 2023.
+[16] Armin Falk and James J Heckman. Lab experiments are a major source of knowledge in the
+social sciences.Science, 326(5952):535–538, 2009.
+[17] Benjamin Faucher, Rania Assab, Jonathan Roux, Daniel Levy-Bruhl, Cécile Tran Kiem, Simon
+Cauchemez, Laura Zanetti, Vittoria Colizza, Pierre-Yves Boëlle, and Chiara Poletto. Agent-
+based modelling of reactive vaccination of workplaces and schools against covid-19.Nature
+communications, 13(1):1414, 2022.
+10
+
+
+--- PAGE 11 ---
+[18] Chen Gao, Xiaochong Lan, Nian Li, Yuan Yuan, Jingtao Ding, Zhilun Zhou, Fengli Xu, and
+Yong Li. Large language models empowered agent-based modeling and simulation: A survey
+and perspectives.Humanities and Social Sciences Communications, 11(1):1–24, 2024.
+[19] Chen Gao, Xiaochong Lan, Zhihong Lu, Jinzhu Mao, Jinghua Piao, Huandong Wang, Depeng
+Jin, and Yong Li. S3: Social-network simulation system with large language model-empowered
+agents.arXiv preprint arXiv:2307.14984, 2023.
+[20] Jingsheng Gao, Yixin Lian, Ziyi Zhou, Yuzhuo Fu, and Baoyuan Wang. Livechat: A large-scale
+personalized dialogue dataset automatically constructed from live streaming. InACL, pages
+15387–15405, 2023.
+[21] Domenico Delli Gatti, Saul Desiderio, Edoardo Gaffeo, Pasquale Cirillo, and Mauro Gallegati.
+Macroeconomics from the Bottom-up, volume 1. Springer Science & Business Media, 2011.
+[22] Tao Ge, Xin Chan, Xiaoyang Wang, Dian Yu, Haitao Mi, and Dong Yu. Scaling synthetic data
+creation with 1,000,000,000 personas.arXiv preprint arXiv:2406.20094, 2024.
+[23] Nigel Gilbert and Klaus Troitzsch.Simulation for the social scientist. McGraw-Hill Education
+(UK), 2005.
+[24] Mateus FB Granha, André LM Vilela, Chao Wang, Kenric P Nelson, and H Eugene Stanley.
+Opinion dynamics in financial markets via random networks.Proceedings of the National
+Academy of Sciences, 119(49):e2201573119, 2022.
+[25] Daya Guo, Dejian Yang, Haowei Zhang, Junxiao Song, Peiyi Wang, Qihao Zhu, Runxin Xu,
+Ruoyu Zhang, Shirong Ma, Xiao Bi, et al. Deepseek-r1 incentivizes reasoning in llms through
+reinforcement learning.Nature, 645(8081):633–638, 2025.
+[26] Zhitao He, Pengfei Cao, Chenhao Wang, Zhuoran Jin, Yubo Chen, Jiexin Xu, Huaijun Li, Kang
+Liu, and Jun Zhao. Agentscourt: Building judicial decision-making agents with court debate
+simulation and legal knowledge augmentation. InEMNLP (Findings), pages 9399–9416, 2024.
+[27] Dirk Helbing and Péter Molnár. Social force model for pedestrian dynamics.Physical review E,
+51(5):4282, 1995.
+[28] Sirui Hong, Mingchen Zhuge, Jonathan Chen, Xiawu Zheng, Yuheng Cheng, Jinlin Wang,
+Ceyao Zhang, Zili Wang, Steven Ka Shing Yau, Zijuan Lin, et al. Metagpt: Meta programming
+for a multi-agent collaborative framework. InICLR, 2023.
+[29] Enhao Huang, Tongtong Pan, Shuhuai Zhang, Qishu Jin, Liheng Zhen, Kaichun Hu, Yiming
+Li, Zhan Qin, and Kui Ren. Dualmind: Towards understanding cognitive-affective cascades in
+public opinion dissemination via multi-agent simulation. InWWW (Demo Paper). ACM, 2026.
+[30] Joel Jang, Seungone Kim, Bill Yuchen Lin, Yizhong Wang, Jack Hessel, Luke Zettlemoyer,
+Hannaneh Hajishirzi, Yejin Choi, and Prithviraj Ammanabrolu. Personalized soups: Per-
+sonalized large language model alignment via post-hoc parameter merging.arXiv preprint
+arXiv:2310.11564, 2023.
+[31] Guangyuan Jiang, Manjie Xu, Song-Chun Zhu, Wenjuan Han, Chi Zhang, and Yixin Zhu.
+Evaluating and inducing personality in pre-trained language models.NeurIPS, pages 10622–
+10643, 2023.
+[32] Nicola F Johnson, Rhys Leahy, N Johnson Restrepo, Nicholas Velásquez, Minzhang Zheng,
+Pedro Manrique, Prajwal Devkota, and Stefan Wuchty. Hidden resilience and adaptive dynamics
+of the global online hate ecology.Nature, 573(7773):261–265, 2019.
+[33] Da Ju, Adina Williams, Brian Karrer, and Maximilian Nickel. Sense and sensitivity: evaluating
+the simulation of social dynamics via large language models.arXiv preprint arXiv:2412.05093,
+2024.
+[34] Raphael Köster, Dylan Hadfield-Menell, Richard Everett, Laura Weidinger, Gillian K Hadfield,
+and Joel Z Leibo. Spurious normativity enhances learning of compliance and enforcement behav-
+ior in artificial agents.Proceedings of the National Academy of Sciences, 119(3):e2106028118,
+2022.
+11
+
+
+--- PAGE 12 ---
+[35] Matthias Lengnick. Agent-based macroeconomics: A baseline model.Journal of Economic
+Behavior & Organization, 86:102–120, 2013.
+[36] Chance Jiajie Li, Jiayi Wu, Zhenze Mo, Ao Qu, Yuhan Tang, Kaiya Ivy Zhao, Yulu Gan, Jie
+Fan, Jiangbo Yu, Jinhua Zhao, Paul Pu Liang, Luis Alberto Alonso Pastor, and Kent Larson.
+Simulating society requires simulating thought. InNeurIPS (Position Paper Track), 2025.
+[37] Junkai Li, Yunghwei Lai, Weitao Li, Jingyi Ren, Meng Zhang, Xinhui Kang, Siyu Wang, Peng
+Li, Ya-Qin Zhang, Weizhi Ma, et al. Agent hospital: A simulacrum of hospital with evolvable
+medical agents.arXiv preprint arXiv:2405.02957, 2024.
+[38] Junyi Li, Charith Peris, Ninareh Mehrabi, Palash Goyal, Kai-Wei Chang, Aram Galstyan,
+Richard Zemel, and Rahul Gupta. The steerability of large language models toward data-driven
+personas. InNAACL, pages 7290–7305, 2024.
+[39] Ke Li, Haiming Liang, Gang Kou, and Yucheng Dong. Opinion dynamics model based on the
+cognitive dissonance: An agent-based simulation.Information Fusion, 56:1–14, 2020.
+[40] Nian Li, Chen Gao, Mingyu Li, Yong Li, and Qingmin Liao. Econagent: large language model-
+empowered agents for simulating macroeconomic activities. InACL, pages 15523–15536,
+2024.
+[41] Jonathan Light, Min Cai, Sheng Shen, and Ziniu Hu. Avalonbench: Evaluating llms playing the
+game of avalon.arXiv preprint arXiv:2310.05036, 2023.
+[42] Yifan Liu, Wei Wei, Jiayi Liu, Xianling Mao, Rui Fang, and Dangyang Chen. Improving
+personality consistency in conversation by persona extending. InCIKM, pages 1350–1359,
+2022.
+[43] Yuhan Liu, Xiuying Chen, Xiaoqing Zhang, Xing Gao, Ji Zhang, and Rui Yan. From skepticism
+to acceptance: Simulating the attitude dynamics toward fake news. InIJCAI, pages 7886–7894,
+2024.
+[44] Andres M. Bran, Sam Cox, Oliver Schilter, Carlo Baldassari, Andrew D White, and Philippe
+Schwaller. Augmenting large language models with chemistry tools.Nature Machine Intelli-
+gence, 6(5):525–535, 2024.
+[45] Xinyi Mou, Xuanwen Ding, Qi He, Liang Wang, Jingcong Liang, Xinnong Zhang, Libo Sun,
+Jiayu Lin, Jie Zhou, Xuanjing Huang, et al. From individual to society: A survey on social
+simulation driven by large language model-based agents.arXiv preprint arXiv:2412.03563,
+2024.
+[46] Xinyi Mou, Zhongyu Wei, and Xuan-Jing Huang. Unveiling the truth and facilitating change:
+Towards agent-based large-scale social movement simulation. InACL (Findings), pages 4789–
+4809, 2024.
+[47] Mikhail Mozikov, Nikita Severin, Valeria Bodishtianu, Maria Glushanina, Mikhail Baklashkin,
+Andrey V Savchenko, and Ilya Makarov. The good, the bad, and the hulk-like gpt: Analyzing
+emotional decisions of large language models in cooperation and bargaining games.arXiv
+preprint arXiv:2406.03299, 2024.
+[48] Ayoub Nainia, Régine Vignes-Lebbe, Hajar Mousannif, and Jihad Zahir. Beyond bleu: Ethical
+risks of misleading evaluation in domain-specific qa with llms. InProceedings of the First
+Workshop on Comparative Performance Evaluation: From Rules to Language Models, pages
+77–86, 2025.
+[49] Joon Sung Park, Joseph O’Brien, Carrie Jun Cai, Meredith Ringel Morris, Percy Liang, and
+Michael S Bernstein. Generative agents: Interactive simulacra of human behavior. InUIST,
+pages 1–22, 2023.
+[50] Peter S Park, Philipp Schoenegger, and Chongyang Zhu. Diminished diversity-of-thought in a
+standard large language model.Behavior Research Methods, 56(6):5754–5770, 2024.
+12
+
+
+--- PAGE 13 ---
+[51] Jinghua Piao, Yuwei Yan, Jun Zhang, Nian Li, Junbo Yan, Xiaochong Lan, Zhihong Lu,
+Zhiheng Zheng, Jing Yi Wang, Di Zhou, et al. Agentsociety: Large-scale simulation of llm-
+driven generative agents advances understanding of human behaviors and society.arXiv preprint
+arXiv:2502.08691, 2025.
+[52] Chen Qian, Wei Liu, Hongzhang Liu, Nuo Chen, Yufan Dang, Jiahao Li, Cheng Yang, Weize
+Chen, Yusheng Su, Xin Cong, et al. Chatdev: Communicative agents for software development.
+InACL, pages 15174–15186, 2024.
+[53] Bernardino Romera-Paredes, Mohammadamin Barekatain, Alexander Novikov, Matej Balog,
+M Pawan Kumar, Emilien Dupont, Francisco JR Ruiz, Jordan S Ellenberg, Pengming Wang,
+Omar Fawzi, et al. Mathematical discoveries from program search with large language models.
+Nature, 625(7995):468–475, 2024.
+[54] Alireza Salemi, Sheshera Mysore, Michael Bendersky, and Hamed Zamani. Lamp: When large
+language models meet personalization. InACL, pages 7370–7392, 2024.
+[55] Thomas C Schelling. Dynamic models of segregation.Journal of mathematical sociology,
+1(2):143–186, 1971.
+[56] Eric Schwitzgebel, David Schwitzgebel, and Anna Strasser. Creating a large language model of
+a philosopher.arXiv preprint arXiv:2302.01339, 2023.
+[57] Gregory Serapio-García, Mustafa Safdari, Clément Crepy, Luning Sun, Stephen Fitz, Peter
+Romero, Marwa Abdulhai, Aleksandra Faust, and Maja Matari´c. A psychometric framework for
+evaluating and shaping personality traits in large language models.Nature Machine Intelligence,
+7(12):1954–1968, 2025.
+[58] Murray Shanahan, Kyle McDonell, and Laria Reynolds. Role play with large language models.
+Nature, 623(7987):493–498, 2023.
+[59] Yunfan Shao, Linyang Li, Junqi Dai, and Xipeng Qiu. Character-llm: A trainable agent for
+role-playing. InEMNLP, pages 13153–13187, 2023.
+[60] Mrinank Sharma, Meg Tong, Tomasz Korbak, David Duvenaud, Amanda Askell, Samuel R
+Bowman, Esin DURMUS, Zac Hatfield-Dodds, Scott R Johnston, Shauna M Kravec, et al.
+Towards understanding sycophancy in language models. InICLR, 2024.
+[61] Ryan Shea and Zhou Yu. Building persona consistent dialogue agents with offline reinforcement
+learning. InEMNLP, pages 1778–1795, 2023.
+[62] Yongliang Shen, Kaitao Song, Xu Tan, Dongsheng Li, Weiming Lu, and Yueting Zhuang.
+Hugginggpt: Solving ai tasks with chatgpt and its friends in hugging face.NeurIPS, pages
+38154–38180, 2023.
+[63] Noah Shinn, Federico Cassano, Ashwin Gopinath, Karthik Narasimhan, and Shunyu Yao.
+Reflexion: Language agents with verbal reinforcement learning.NeurIPS, pages 8634–8652,
+2023.
+[64] Libo Sun, Siyuan Wang, and Zhongyu Wei. Identity-driven hierarchical role-playing agents. In
+NLPCC, pages 403–417, 2025.
+[65] Petter Törnberg, Diliara Valeeva, Justus Uitermark, and Christopher Bail. Simulating social
+media using large language models to evaluate alternative news feed algorithms.arXiv preprint
+arXiv:2310.05984, 2023.
+[66] Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei,
+Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, et al. Llama 2: Open
+foundation and fine-tuned chat models.arXiv preprint arXiv:2307.09288, 2023.
+[67] Quan Tu, Chuanqi Chen, Jinpeng Li, Yanran Li, Shuo Shang, Dongyan Zhao, Ran Wang, and
+Rui Yan. Characterchat: Learning towards conversational ai with personalized social support.
+arXiv preprint arXiv:2308.10278, 2023.
+13
+
+
+--- PAGE 14 ---
+[68] Dejan Vinkovi´c and Alan Kirman. A physical analogue of the schelling model.Proceedings of
+the National Academy of Sciences, 103(51):19261–19265, 2006.
+[69] Chenxu Wang, Bin Dai, Huaping Liu, and Baoyuan Wang. Towards objectively benchmarking
+social intelligence for language agents at action level.arXiv preprint arXiv:2404.05337, 2024.
+[70] Guanzhi Wang, Yuqi Xie, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan,
+and Anima Anandkumar. V oyager: An open-ended embodied agent with large language models.
+arXiv preprint arXiv:2305.16291, 2023.
+[71] Lei Wang, Jingsen Zhang, Hao Yang, Zhi-Yuan Chen, Jiakai Tang, Zeyu Zhang, Xu Chen,
+Yankai Lin, Hao Sun, Ruihua Song, et al. User behavior simulation with large language
+model-based agents.ACM Transactions on Information Systems, 43(2):1–37, 2025.
+[72] Noah Wang, Zhongyuan Peng, Haoran Que, Jiaheng Liu, Wangchunshu Zhou, Yuhan Wu,
+Hongcheng Guo, Ruitong Gan, Zehao Ni, Jian Yang, Man Zhang, Zhaoxiang Zhang, Wanli
+Ouyang, Ke Xu, Wenhao Huang, Jie Fu, and Junran Peng. Rolellm: Benchmarking, eliciting,
+and enhancing role-playing abilities of large language models. InACL (Findings), pages
+14743–14777, 2024.
+[73] Shenzhi Wang, Chang Liu, Zilong Zheng, Siyuan Qi, Shuo Chen, Qisen Yang, Andrew Zhao,
+Chaofei Wang, Shiji Song, and Gao Huang. Avalon’s game of thoughts: Battle against deception
+through recursive contemplation.arXiv preprint arXiv:2310.01320, 2023.
+[74] Xintao Wang, Yunze Xiao, Jen-tse Huang, Siyu Yuan, Rui Xu, Haoran Guo, Quan Tu, Yaying
+Fei, Ziang Leng, Wei Wang, et al. Incharacter: Evaluating personality fidelity in role-playing
+agents through psychological interviews. InACL, pages 1840–1873, 2024.
+[75] Ross Williams, Niyousha Hosseinichimeh, Aritra Majumdar, and Navid Ghaffarzadegan. Epi-
+demic modeling with generative agents.arXiv preprint arXiv:2307.04986, 2023.
+[76] Stephen Wolfram. Cellular automata as models of complexity.Nature, 311(5985):419–424,
+1984.
+[77] Chengxing Xie, Canyu Chen, Feiran Jia, Ziyu Ye, Shiyang Lai, Kai Shu, Jindong Gu, Adel
+Bibi, Ziniu Hu, David Jurgens, et al. Can large language model agents simulate human trust
+behavior?NeurIPS, pages 15674–15729, 2024.
+[78] Yuzhuang Xu, Shuo Wang, Peng Li, Fuwen Luo, Xiaolong Wang, Weidong Liu, and Yang Liu.
+Exploring large language models for communication games: An empirical study on werewolf.
+arXiv preprint arXiv:2309.04658, 2023.
+[79] John Yang, Carlos E Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao, Karthik
+Narasimhan, and Ofir Press. Swe-agent: Agent-computer interfaces enable automated software
+engineering.NeurIPS, pages 50528–50652, 2024.
+[80] Ziyi Yang, Zaibin Zhang, Zirui Zheng, Yuxian Jiang, Ziyue Gan, Zhiyu Wang, Zijian Ling,
+Jinsong Chen, Martz Ma, Bowen Dong, et al. Oasis: Open agent social interaction simulations
+with one million agents.arXiv preprint arXiv:2411.11581, 2024.
+[81] Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik R Narasimhan, and Yuan
+Cao. React: Synergizing reasoning and acting in language models. InICLR, 2023.
+[82] Xinfeng Yuan, Siyu Yuan, Yuhan Cui, Tianhe Lin, Xintao Wang, Rui Xu, Jiangjie Chen, and
+Deqing Yang. Evaluating character understanding of large language models via character
+profiling from fictional works. InEMNLP, pages 8015–8036, 2024.
+[83] Xinnong Zhang, Jiayu Lin, Libo Sun, Weihong Qi, Yihang Yang, Yue Chen, Hanjia Lyu, Xinyi
+Mou, Siming Chen, Jiebo Luo, et al. Electionsim: Massive population election simulation
+powered by large language model driven agents.arXiv preprint arXiv:2410.20746, 2024.
+[84] Yunbei Zhang, Kai Mei, Ming Liu, Janet Wang, Dimitris N Metaxas, Xiao Wang, Jihun Hamm,
+and Yingqiang Ge. Agents in the wild: Safety, society, and the illusion of sociality on moltbook.
+arXiv preprint arXiv:2602.13284, 2026.
+14
+
+
+--- PAGE 15 ---
+[85] Xuhui Zhou, Jiarui Liu, Akhila Yerukola, Hyunwoo Kim, and Maarten Sap. Social world
+models.arXiv preprint arXiv:2509.00559, 2025.
+[86] Xuhui Zhou, Hao Zhu, Leena Mathur, Ruohong Zhang, Zhengyang Qi, Haofei Yu, Louis-
+Philippe Morency, Yonatan Bisk, Daniel Fried, Graham Neubig, and Maarten Sap. Sotopia:
+Interactive evaluation for social intelligence in language agents. InICLR, 2024.
+[87] Andy Zou, Long Phan, Sarah Chen, James Campbell, Phillip Guo, Richard Ren, Alexander Pan,
+Xuwang Yin, Mantas Mazeika, Ann-Kathrin Dombrowski, et al. Representation engineering: A
+top-down approach to ai transparency.arXiv preprint arXiv:2310.01405, 2023.
+15
+
+
+--- PAGE 16 ---
+A More Details of Our Scope
+Social simulation generally denotes the use of computer-based simulations to model social processes.
+Its core objective is to computationally emulate human individuals’ cognition, decision-making,
+and social interactions in an artificial yet computationally tractable environment, so as to generate,
+explain, or predict emergent social phenomena at the collective level [23]. Beyond scalability and
+cost considerations, social simulation plays a fundamental methodological role in social science by
+enabling controlled, repeatable, and counterfactual analysis of complex social systems. Traditional
+empirical approaches in social science, such as surveys [ 14], laboratory experiments [ 16], and
+field studies [ 5], primarily observe social phenomena as they unfold, but are often constrained
+in their ability to systematically manipulate conditions, explore rare or high-risk scenarios, or
+disentangle causal mechanisms underlying collective outcomes [8]. In contrast, social simulation
+allows researchers to explicitly specify micro-level behavioral assumptions and interaction rules, and
+to examine how alternative individual decisions, institutional designs, or environmental conditions
+give rise to divergent macro-level dynamics. This capability is particularly valuable for studying
+policy interventions [17], public opinion dissemination [39], social norms [12], and strategic behavior
+[24], where real-world experimentation may be infeasible, unethical, or prohibitively costly. By
+complementing empirical methods with a flexible and interpretable computational testbed, social
+simulation provides social science with a powerful tool for theory exploration, hypothesis generation,
+and ex ante policy assessment.
+In recent years, this methodological landscape has driven growing interest in using large language
+model (LLM)-integrated AI agents for social simulation [ 18, 45, 51]. Traditionally, agent-based
+social simulation has relied on hand-crafted rules [76], utility functions [68], or simplified behavioral
+equations [27] to model individual decision-making and interaction. While such approaches offer
+transparency and analytical control, they often impose strong structural assumptions on human
+behavior, leading to overly stylized dynamics that struggle to capture the richness, heterogeneity,
+and context sensitivity of real human cognition. Moreover, rule-based agents typically exhibit
+limited adaptability, requiring extensive manual redesign when transferred across scenarios, pop-
+ulations, or intervention settings [ 18]. The emergence of LLMs has introduced a paradigm shift
+by enabling agents with substantially improved natural language understanding, generation, and
+reasoning capabilities [1, 66, 25]. It is widely argued that such agents have the potential to engage
+in open-ended communication, negotiation, persuasion, and coordination through natural language,
+and to flexibly adopt diverse roles or personas when conditioned on contextual prompts [ 49, 63].
+Under this prevailing assumption, AI agents are often viewed as providing a scalable and expressive
+substrate for modeling complex social interactions across a wide range of scenarios, making them
+an appealing foundation for contemporary social simulation in domains such as policy analysis,
+behavioral forecasting, and opinion dynamics.
+In this paper, we focus on the use of (LLM-integrated) AI agents [18, 45, 3] for social simulation,
+specifically in settings where agents are employed as proxies for human individuals and simulation
+outcomes are interpreted at the collective level. Our analysis centers on the methodological assump-
+tions and implications of adopting such agents to model social behavior and interaction, rather than
+mainly on task performance or predictive accuracy. We do not aim to provide a comprehensive survey
+of social simulation, nor do we consider non–agent-based approaches [ 32] beyond brief method-
+ological comparison. In addition, we do not study the intrinsic “personality” of LLMs themselves
+[31, 6, 57] or the interpretability of their behaviors [58, 87, 60], nor do we examine applications of AI
+agents beyond social simulation, such as agents designed for scientific research [7, 53, 44], software
+development [28, 79, 52], or other task-oriented workflows [81, 62, 70]. This scoped focus allows us
+to critically examine prevailing assumptions and overlooked issues of AI agents specifically within
+the context of social simulation.
+16

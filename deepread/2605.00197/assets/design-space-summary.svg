@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" role="img" aria-labelledby="title desc">
+  <title id="title">Design Space of LLM-based Social Simulations Summary</title>
+  <desc id="desc">A visual summary of the paper's design parameters, simulation roll-outs, metrics, and key findings.</desc>
+  <defs>
+    <style>
+      .title { font: 700 30px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #1f2937; }
+      .subtitle { font: 500 16px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #4b5563; }
+      .h { font: 700 18px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #111827; }
+      .t { font: 500 14px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #1f2937; }
+      .small { font: 500 12px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #374151; }
+      .box { rx: 18; ry: 18; stroke-width: 2; }
+      .param { fill: #e8f3ff; stroke: #2f6fab; }
+      .process { fill: #fff3d6; stroke: #b78300; }
+      .metric { fill: #ecffe8; stroke: #4b8f3a; }
+      .finding { fill: #f7e8ff; stroke: #7a3fa0; }
+      .arrow { stroke: #6b7280; stroke-width: 3; fill: none; marker-end: url(#arrowhead); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#6b7280" />
+    </marker>
+  </defs>
+
+  <rect width="1400" height="900" fill="#ffffff"/>
+  <text x="70" y="58" class="title">The Silicon Society Cookbook: Design Space of LLM-based Social Simulations</text>
+  <text x="70" y="88" class="subtitle">方法 / 結果重點圖：設計空間 → 595 次 roll-outs → metrics → empirical findings</text>
+
+  <rect x="55" y="125" width="360" height="635" class="box param"/>
+  <text x="85" y="165" class="h">Design Space: 7 parameters</text>
+  <text x="85" y="205" class="t">1. Number of agents</text>
+  <text x="110" y="227" class="small">64 / 256 / 1024 / 4096</text>
+  <text x="85" y="267" class="t">2. Base LLM</text>
+  <text x="110" y="289" class="small">Minitaur / Llama / Qwen / Gemma</text>
+  <text x="85" y="329" class="t">3. Network topology</text>
+  <text x="110" y="351" class="small">ER random / directed scale-free</text>
+  <text x="85" y="391" class="t">4. Homophily initialization</text>
+  <text x="110" y="413" class="small">agents with similar initial opinions closer</text>
+  <text x="85" y="453" class="t">5. Survey context</text>
+  <text x="110" y="475" class="small">whether agents see own survey answers</text>
+  <text x="85" y="515" class="t">6. Biased news agent</text>
+  <text x="110" y="537" class="small">0 / 1; placed at highest-degree node</text>
+  <text x="85" y="577" class="t">7. LoRA proportions</text>
+  <text x="110" y="599" class="small">Uniform / BluePrint / Distribution / Average</text>
+
+  <path d="M 415 440 L 500 440" class="arrow"/>
+  <rect x="505" y="330" width="275" height="220" class="box process"/>
+  <text x="535" y="372" class="h">Simulation roll-outs</text>
+  <text x="535" y="413" class="t">595 randomized runs</text>
+  <text x="535" y="443" class="t">2500 steps per run</text>
+  <text x="535" y="473" class="t">survey every 250 steps</text>
+  <text x="535" y="503" class="small">1024 agents / 2500 messages ≈ 75h simulated time</text>
+
+  <path d="M 780 440 L 865 440" class="arrow"/>
+  <rect x="870" y="185" width="250" height="160" class="box metric"/>
+  <text x="900" y="225" class="h">Stylistic proxy</text>
+  <text x="900" y="265" class="t">BERT human-vs-LLM</text>
+  <text x="900" y="292" class="t">classifier accuracy</text>
+  <text x="900" y="322" class="small">lower = harder to detect as AI</text>
+
+  <rect x="870" y="380" width="250" height="160" class="box metric"/>
+  <text x="900" y="420" class="h">Opinion dynamics</text>
+  <text x="900" y="460" class="t">Consensus / NCC / OSR</text>
+  <text x="900" y="488" class="t">MFR / NASR</text>
+
+  <rect x="870" y="575" width="250" height="160" class="box metric"/>
+  <text x="900" y="615" class="h">Network metrics</text>
+  <text x="900" y="655" class="t">Assortativity</text>
+  <text x="900" y="683" class="t">local agreement</text>
+  <text x="900" y="711" class="t">cross-cutting edges</text>
+
+  <path d="M 1120 265 L 1180 265" class="arrow"/>
+  <path d="M 1120 460 L 1180 460" class="arrow"/>
+  <path d="M 1120 655 L 1180 655" class="arrow"/>
+
+  <rect x="1185" y="125" width="170" height="110" class="box finding"/>
+  <text x="1205" y="160" class="h">Base model</text>
+  <text x="1205" y="190" class="small">most influential</text>
+  <text x="1205" y="212" class="small">η²=.266 BERT</text>
+
+  <rect x="1185" y="260" width="170" height="125" class="box finding"/>
+  <text x="1205" y="295" class="h">BluePrint LoRA</text>
+  <text x="1205" y="325" class="small">less AI-detectable</text>
+  <text x="1205" y="347" class="small">stronger dynamics</text>
+
+  <rect x="1185" y="410" width="170" height="125" class="box finding"/>
+  <text x="1205" y="445" class="h">Survey context</text>
+  <text x="1205" y="475" class="small">model-dependent</text>
+  <text x="1205" y="497" class="small">scale-dependent</text>
+
+  <rect x="1185" y="560" width="170" height="110" class="box finding"/>
+  <text x="1205" y="595" class="h">News agent</text>
+  <text x="1205" y="625" class="small">no measurable</text>
+  <text x="1205" y="647" class="small">effect here</text>
+
+  <rect x="1185" y="695" width="170" height="125" class="box finding"/>
+  <text x="1205" y="730" class="h">Geometry</text>
+  <text x="1205" y="760" class="small">partly additive</text>
+  <text x="1205" y="782" class="small">partly non-linear</text>
+
+  <text x="70" y="835" class="subtitle">Caution: BERT detectability is only a stylistic realism proxy; survey metrics lack human baselines and should not be over-interpreted as realism.</text>
+</svg>

@@ -1,0 +1,29 @@
+flowchart LR
+  A[Current LLM-agent social simulation\nPersona + memory + agent-agent messages] --> B{Plausible transcripts\nlook human-like?}
+  B -->|Often over-interpreted| C[Collective outcomes\nused for causal / policy claims]
+  C --> D[Epistemic risk\nPrompt, scheduling, exposure, priors\nmay dominate results]
+
+  A -. mismatch .-> E[Role-playing plausibility\n≠ faithful human behavior]
+  A -. mismatch .-> F[Agent-agent interaction\n≠ social dynamics]
+
+  G[Environment-involved simulator] --> H[Environment E\npolicy, institutions, resources]
+  G --> I[Visibility Vis\nwho sees what]
+  G --> J[Scheduler Sch\nwho acts when]
+  G --> K[Transition Tr + reward R\nactions → consequences]
+  G --> L[Initial distribution D0\npopulation, graph, priors]
+  G --> M[Agent policy P + mental update U]
+
+  H --> N[Auditable assumptions]
+  I --> N
+  J --> N
+  K --> N
+  L --> N
+  M --> N
+
+  N --> O[Mechanistic & counterfactual evaluation]
+  O --> P[Mechanism ablations]
+  O --> Q[Counterfactual sweeps]
+  O --> R[Uncertainty reporting]
+  P --> S[More cautious inference\nfrom plausibility to evidence]
+  Q --> S
+  R --> S

@@ -37,4 +37,6 @@ Images Generated:
 - harnessbench-coding-agent-benchmark.png (sub-agent)
 - hiagent-hierarchical-working-memory.png (sub-agent)
 
-Graph Update: pending (will run after commit)
+Graph Update: SUCCESS
+- build_paper_graph.py: Nodes=131 Edges=420
+- graphify global add: +131 nodes, -119 pruned

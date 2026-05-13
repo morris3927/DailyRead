@@ -58,6 +58,37 @@ Harness Engineering 可納入 blog、docs、GitHub repo、framework。若不是 
 - 若某 domain 沒有高品質候選，明確寫今日無高品質候選
 - 優先挑能說清楚方法與實驗設計的 paper
 
+## 本地 Paper Memory / 查重
+
+DailyRead 使用 Mac mini 本地的 Graphify + NetworkX paper memory 作為查重與跨 paper/domain knowledge 記憶層。這個 graph 是本地資料，不進 DailyRead git。
+
+本地位置：
+
+- `/Users/morris/.graphify/dailyread-paper-kg/graphify-out/graph.json`
+- `/Users/morris/.graphify/dailyread-paper-kg/graphify-out/paper_index.json`
+- `/Users/morris/.graphify/dailyread-paper-kg/graphify-out/GRAPH_REPORT.md`
+- `/Users/morris/.graphify/dailyread-paper-kg/graphify-out/graph.html`
+
+在挑選今日推薦或 domain note 候選前，必須先查重：
+
+```bash
+/Users/morris/.graphify/dailyread-paper-kg/check_paper_seen.py <arxiv-id-or-title-or-url>
+```
+
+規則：
+
+- arXiv ID 優先；若沒有 arXiv ID，用 normalized title 查。
+- 若結果是 `SEEN`，不要把它當成新的今日推薦；除非它是重要更新，且必須明確標成「更新 / follow-up」，不可寫成新 paper。
+- 若結果是 `NOT_SEEN`，才可作為新候選。
+- DailyRead 完成後，重建本地 graph，讓今日讀過 / 推薦過 / 提到過的 paper 進入後續查重：
+
+```bash
+/Users/morris/.local/share/uv/tools/graphifyy/bin/python3 /Users/morris/.graphify/dailyread-paper-kg/build_paper_graph.py
+graphify global add /Users/morris/.graphify/dailyread-paper-kg/graphify-out/graph.json --as DailyRead-paper-kg
+```
+
+若 graph build 失敗，不要阻塞 DailyRead commit；但必須在 `logs/YYYY-MM-DD.log` 記錄錯誤，並在 Discord 短回報中說明 graph update 失敗。
+
 ## DailyRead 筆記圖（推薦篇限定）
 
 每天只替 `daily/YYYY-MM-DD.md` 中「今日推薦點開」的 1–3 篇產圖，不替所有候選 paper / article 產圖，避免任務太久、圖片品質不穩、repo 變太肥。

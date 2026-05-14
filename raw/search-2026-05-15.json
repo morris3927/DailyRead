@@ -1,0 +1,62 @@
+{
+  "date": "2026-05-15",
+  "search_queries": [
+    "silicon sampling social simulation LLM arxiv 2025",
+    "harness engineering agent evaluation framework 2025",
+    "agent memory LLM long-term memory arxiv 2025"
+  ],
+  "search_sources": ["web_search (Gemini)", "web_fetch (arXiv)", "web_fetch (Augment Code)"],
+  "searxng_status": "timeout (3/3 queries SIGKILL)",
+  "papers": [
+    {
+      "arxiv_id": "2601.01546",
+      "title": "Improving Behavioral Alignment in LLM Social Simulations via Context Formation and Navigation",
+      "domain": "silicon-sampling-social-simulation",
+      "seen": false,
+      "recommended": true
+    },
+    {
+      "arxiv_id": "2507.02919",
+      "title": "ChatGPT is not A Man but Das Man: Representativeness and Structural Consistency of Silicon Samples",
+      "domain": "silicon-sampling-social-simulation",
+      "seen": false,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2507.19364",
+      "title": "Integrating LLM in Agent-Based Social Simulation: Opportunities and Challenges",
+      "domain": "silicon-sampling-social-simulation",
+      "seen": false,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2509.26080",
+      "title": "Evaluating the Use of Large Language Models as Synthetic Social Agents in Social Science Research",
+      "domain": "silicon-sampling-social-simulation",
+      "seen": false,
+      "recommended": false
+    },
+    {
+      "arxiv_id": null,
+      "title": "Harness Engineering for AI Coding Agents: Constraints That Ship Reliable Code",
+      "domain": "harness-engineering",
+      "seen": false,
+      "recommended": true,
+      "source": "Augment Code"
+    },
+    {
+      "arxiv_id": "2505.00675",
+      "title": "Rethinking Memory in LLM based Agents: Representations, Operations, and Emerging Topics",
+      "domain": "agent-memory",
+      "seen": false,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2510.09720",
+      "title": "Preference-Aware Memory Update for Long-Term LLM Agents (PAMU)",
+      "domain": "agent-memory",
+      "seen": false,
+      "recommended": true
+    }
+  ]
+}

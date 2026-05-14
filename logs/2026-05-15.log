@@ -1,0 +1,66 @@
+# DailyRead Log — 2026-05-15
+
+## 搜尋記錄
+
+- SearXNG 搜尋超時（三個查詢均 SIGKILL），改用 web_search
+- web_search 查詢：
+  1. "silicon sampling social simulation LLM arxiv 2025"
+  2. "harness engineering agent evaluation framework 2025"
+  3. "agent memory LLM long-term memory arxiv 2025"
+- 之後 web_search 遇到 Gemini API 429 rate limit，改用 web_fetch 直接抓 arXiv 頁面
+- Harness engineering 另外抓取了 Augment Code guide
+
+## 查重記錄
+
+- 2512.22725: SEEN (mitigating SDB, 2026-05-14)
+- 2601.01546: NOT_SEEN ✅ → 收錄
+- 2603.07670: SEEN (Memory for Autonomous LLM Agents survey)
+- 2505.00675: NOT_SEEN ✅ → 收錄
+- 2504.19413: SEEN (Mem0, 2026-05-08)
+- 2510.09720: NOT_SEEN ✅ → 收錄
+- 2604.21003: SEEN (The Last Harness You'll Ever Build)
+- 2507.02919: NOT_SEEN ✅ → 收錄
+- 2507.19364: NOT_SEEN ✅ → 收錄
+- 2509.26080: NOT_SEEN ✅ → 收錄
+- Augment Code harness guide: NOT_SEEN ✅ → 收錄
+
+## 今日選文
+
+### Silicon Sampling / Social Simulation
+1. 2601.01546 - Improving Behavioral Alignment via Context Formation and Navigation 🥇
+2. 2507.02919 - ChatGPT is not A Man but Das Man
+3. 2507.19364 - Integrating LLM in Agent-Based Social Simulation (position paper)
+4. 2509.26080 - Evaluating LLMs as Synthetic Social Agents
+
+### Harness Engineering
+1. Augment Code - Harness Engineering for AI Coding Agents 🥉
+
+### Agent Memory
+1. 2505.00675 - Rethinking Memory in LLM based Agents (survey)
+2. 2510.09720 - PAMU: Preference-Aware Memory Update 🥈
+
+## 自審檢查
+
+- [x] 每篇條目包含 5 個小標題（這篇在說什麼 / 主要貢獻 / 方法 pipeline / 實驗設計 / かに讀後判斷）
+- [x] Harness engineering 文章（非 paper）有調整格式
+- [x] 資訊不足處有明確說明
+- [x] 無重複推薦
+
+## 筆記圖產生
+
+- 🥇 context-formation-navigation-framework.png (sub-agent)
+- 🥈 pamu-preference-aware-memory-update.png (sub-agent)
+- 🥉 harness-engineering-three-layers.png (sub-agent)
+
+## Graph Build
+
+✅ Graph build 完成：Nodes=175 Edges=549
+✅ Graphify global add 完成：+175 nodes, -135 pruned
+
+## 筆記圖產生結果
+
+- ✅ context-formation-navigation-framework.png (2.9MB)
+- ✅ harness-engineering-three-layers.png (2.7MB)
+- ✅ pamu-preference-aware-memory-update.png (2.9MB)
+
+全部圖片已存入 assets/2026-05-15/ 並插入 Markdown。

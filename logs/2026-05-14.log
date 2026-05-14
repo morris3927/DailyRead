@@ -68,3 +68,9 @@ Images Generated (afternoon):
 Graph Update: SUCCESS
 - build_paper_graph.py: Nodes=135 Edges=444
 - graphify global add: +135 nodes, -131 pruned
+
+Afternoon depth repair (manual main-session cleanup):
+- Rerun was triggered after depth requirement update.
+- Added deeper domain explanations, especially silicon sampling/social simulation.
+- Verified generated images exist and graph update succeeds after manual cleanup.
+- Graph Update after cleanup: SUCCESS (Nodes=135 Edges=446; graphify global add +135 nodes, -135 pruned).

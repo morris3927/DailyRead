@@ -38,6 +38,26 @@ Harness Engineering 可納入 blog、docs、GitHub repo、framework。若不是 
 - 對 agent harness / eval / workflow 的意義
 - 是否值得收藏或細看
 
+
+## 深度最低標準
+
+DailyRead 的品質重點是「講解深度」，不是 paper 數量。即使今天每個 domain 只有 1–2 篇，也不能寫成短摘要或卡片。
+
+每一篇被納入 domain note 的內容，至少要包含：
+
+1. **研究問題 / 動機**：這篇到底在補哪個缺口？為什麼這個問題重要？
+2. **方法 / 架構 / pipeline**：作者怎麼做；若是 benchmark，要說 task construction、evaluation protocol、scoring；若是 harness/blog/repo，要說工程架構與 workflow。
+3. **實驗設計 / 證據**：dataset、benchmark、baseline、metric、main result；如果只讀到 abstract / landing page，就明確寫「目前能確認到的證據只有哪些」，不要用一句話帶過。
+4. **和同領域既有內容的關係**：它延續、反駁、補足或修正了前幾天/既有 paper 的哪個問題？
+5. **かに讀後判斷**：具體說明值得/不值得 Morris 點開的理由，以及如果要深讀應優先看哪些 section / figure / table。
+
+篇幅原則：
+
+- 今日推薦點開：每篇至少 500–800 中文字，必須有完整方法與實驗解釋。
+- 一般收錄篇：每篇至少 300–500 中文字；若資料不足，也要解釋資訊不足在哪裡、還需要查什麼。
+- 每個 domain note 不應只列 bullet；需要有連貫段落，把 paper 的主旨講清楚。
+- `daily/YYYY-MM-DD.md` 可以維持短總覽，但 domain notes 必須是可讀的研究講解。
+
 ## 產出位置
 
 在 repo `/Users/morris/Desktop/Repo/DailyRead` 中更新：

@@ -23,33 +23,54 @@ Morris 看到有興趣的內容後會自己深讀。
 
 ## 寫作方式
 
-不要做卡片式摘要。每篇 paper 要像「かに讀完後講給 Morris 聽」：
+不要做卡片式摘要。每篇 paper 要像「かに讀完後講給 Morris 聽」。DailyRead 的 domain notes 必須保留 2026-05-08 到 2026-05-12 silicon sampling 筆記那種固定講解骨架，而不是只寫一段簡短心得。
 
-- 用自己的話重講 abstract / 主旨
-- 說明主要貢獻
-- 說明方法 / pipeline / 架構
-- 說明實驗設計：dataset、benchmark、baseline、metric、main result；若資訊不足，明確說目前只從 abstract/landing page 能看到什麼，不要編造
-- 最後給閱讀判斷：這篇在領域裡的位置，以及是否值得 Morris 點開
+每篇 paper / article 的標準格式：
 
-Harness Engineering 可納入 blog、docs、GitHub repo、framework。若不是 paper，不硬套實驗設計，改寫：
+```markdown
+## N. Paper / Article Title
 
-- 這篇文章 / repo 在解決什麼工程問題
-- 工程設計或架構重點
-- 對 agent harness / eval / workflow 的意義
-- 是否值得收藏或細看
+- **arXiv / Venue / 類型**: ...
+- **Link**: ...
+
+### 這篇在說什麼
+用自己的話重講 abstract / 主旨：研究問題是什麼、作者為什麼要做、這篇在領域脈絡中想補哪個洞。
+
+### 主要貢獻
+條列或短段落說清楚 2–4 個貢獻。不要只寫「提出新方法」；要說新在哪裡、解決什麼限制。
+
+### 方法 / pipeline
+說明方法、架構、prompt / simulator / benchmark / harness pipeline。若是系統或 framework，要說資料流、控制流、agent loop、memory / tool / environment 如何互動。
+
+### 實驗設計
+說明 dataset、benchmark、baseline、metric、main result、ablation / sensitivity analysis。若資訊不足，明確寫「目前只從 abstract / landing page 能確認到 X，還看不到 Y」，不要編造。
+
+### かに讀後判斷
+具體說明這篇的位置、和前幾天 / 既有 paper 的關係、是否值得 Morris 點開，以及深讀時優先看哪些 section / figure / table。
+```
+
+Harness Engineering 可納入 blog、docs、GitHub repo、framework。若不是 paper，也要保留同樣標題，但調整內容：
+
+- `這篇在說什麼` → 這篇文章 / repo 在解決什麼工程問題
+- `主要貢獻` → 對 harness / eval / workflow 的新貢獻
+- `方法 / pipeline` → 工程設計、架構、agent loop、工具介面、observability、evaluation workflow
+- `實驗設計` → 若無正式實驗，寫 benchmark / demo / case study / hidden tests / 評估方法；若都沒有，明確說缺少什麼證據
+- `かに讀後判斷` → 是否值得收藏或細看、適合拿來改進哪類 agent workflow
 
 
 ## 深度最低標準
 
 DailyRead 的品質重點是「講解深度」，不是 paper 數量。即使今天每個 domain 只有 1–2 篇，也不能寫成短摘要或卡片。
 
-每一篇被納入 domain note 的內容，至少要包含：
+每一篇被納入 domain note 的內容，至少要用明確小標題包含：
 
-1. **研究問題 / 動機**：這篇到底在補哪個缺口？為什麼這個問題重要？
-2. **方法 / 架構 / pipeline**：作者怎麼做；若是 benchmark，要說 task construction、evaluation protocol、scoring；若是 harness/blog/repo，要說工程架構與 workflow。
-3. **實驗設計 / 證據**：dataset、benchmark、baseline、metric、main result；如果只讀到 abstract / landing page，就明確寫「目前能確認到的證據只有哪些」，不要用一句話帶過。
-4. **和同領域既有內容的關係**：它延續、反駁、補足或修正了前幾天/既有 paper 的哪個問題？
-5. **かに讀後判斷**：具體說明值得/不值得 Morris 點開的理由，以及如果要深讀應優先看哪些 section / figure / table。
+1. `### 這篇在說什麼`：這篇到底在補哪個缺口？為什麼這個問題重要？
+2. `### 主要貢獻`：它的新貢獻是什麼，和既有研究相比新在哪。
+3. `### 方法 / pipeline`：作者怎麼做；若是 benchmark，要說 task construction、evaluation protocol、scoring；若是 harness/blog/repo，要說工程架構與 workflow。
+4. `### 實驗設計`：dataset、benchmark、baseline、metric、main result；如果只讀到 abstract / landing page，就明確寫「目前能確認到的證據只有哪些」，不要用一句話帶過。
+5. `### かに讀後判斷`：具體說明值得/不值得 Morris 點開的理由、和前幾天/既有 paper 的關係，以及如果要深讀應優先看哪些 section / figure / table。
+
+不可把以上內容壓成單段敘述；若缺任何一個小標題，該 domain note 視為未完成，必須補齊後才能 commit。
 
 篇幅原則：
 
@@ -159,6 +180,14 @@ graphify global add /Users/morris/.graphify/dailyread-paper-kg/graphify-out/grap
 3. `git push origin main`
 
 若沒有有效新內容，不要空 commit；在 log 寫明原因。
+
+Commit 前必須先跑格式檢查，確認三個 domain notes 的每篇條目都有固定小標題：
+
+```bash
+python3 scripts/validate_dailyread_format.py YYYY-MM-DD
+```
+
+若檢查失敗，先補齊 `這篇在說什麼 / 主要貢獻 / 方法 / pipeline / 實驗設計 / かに讀後判斷`，不要直接 commit。
 
 ## Discord 回報
 

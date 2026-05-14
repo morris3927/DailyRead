@@ -40,3 +40,29 @@ Images Generated:
 Graph Update: SUCCESS
 - build_paper_graph.py: Nodes=131 Edges=420
 - graphify global add: +131 nodes, -119 pruned
+
+=== Afternoon Supplement (15:20 cron) ===
+
+Search Queries (web_search):
+- agent memory architecture biologically-inspired consolidation 2026
+- LLM agent memory survey reflection experience 2026
+- harness engineering externalization skills protocols unified 2026
+- ProgramBench rebuild programs from scratch LLM 2026
+
+Dedup Checks (afternoon):
+- 2605.08538 (Human-Inspired Memory Architecture) -> NOT_SEEN, included (recommended)
+- 2605.06716 (From Storage to Experience survey) -> NOT_SEEN, included
+- 2604.01560 (DeltaMem) -> NOT_SEEN, excluded (lower novelty vs 2605.08538)
+- 2604.08224 (Externalization in LLM Agents) -> NOT_SEEN, included (recommended)
+- 2605.03546 (ProgramBench) -> NOT_SEEN, included
+- 2604.06663 (Restoring Heterogeneity) -> SEEN (2026-05-10), skipped
+
+Recommended Afternoon:
+4. Human-Inspired Memory Architecture for LLM Agents (2605.08538)
+5. Externalization in LLM Agents (2604.08224)
+
+Images Generated (afternoon):
+- human-inspired-memory-architecture.png (openai/gpt-image-1)
+- externalization-llm-agents-framework.png (openai/gpt-image-1.5)
+
+Graph Update: PENDING

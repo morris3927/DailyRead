@@ -33,5 +33,26 @@
     "2604.23575 - The Collapse of Heterogeneity in Silicon Philosophers",
     "HarnessBench - A Benchmark for Coding Agent Harnesses",
     "HiAgent - Hierarchical Working Memory Management"
-  ]
+  ],
+  "afternoon_supplement_15:20": {
+    "domains_searched": [
+      "agent memory architecture biologically-inspired consolidation 2026",
+      "LLM agent memory survey reflection experience 2026",
+      "harness engineering externalization skills protocols unified 2026",
+      "ProgramBench rebuild programs from scratch LLM 2026"
+    ],
+    "candidates_evaluated": [
+      {"arxiv": "2605.08538", "title": "Human-Inspired Memory Architecture for LLM Agents", "status": "NOT_SEEN -> included (recommended)"},
+      {"arxiv": "2605.06716", "title": "From Storage to Experience: Survey on LLM Agent Memory", "status": "NOT_SEEN -> included"},
+      {"arxiv": "2604.01560", "title": "DeltaMem: Agentic Memory Management via RL", "status": "NOT_SEEN -> excluded (lower novelty vs 2605.08538)"},
+      {"arxiv": "2604.08224", "title": "Externalization in LLM Agents: Unified Review", "status": "NOT_SEEN -> included (recommended)"},
+      {"arxiv": "2605.03546", "title": "ProgramBench: Can LMs Rebuild Programs From Scratch?", "status": "NOT_SEEN -> included"},
+      {"arxiv": "2604.06663", "title": "Restoring Heterogeneity: Audience Segmentation", "status": "SEEN (2026-05-10) -> skip"},
+      {"arxiv": "2605.06651", "title": "(checked but not relevant)", "status": "NOT_SEEN -> excluded"}
+    ],
+    "recommended_afternoon": [
+      "2605.08538 - Human-Inspired Memory Architecture",
+      "2604.08224 - Externalization in LLM Agents"
+    ]
+  }
 }

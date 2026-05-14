@@ -136,6 +136,7 @@ graphify global add /Users/morris/.graphify/dailyread-paper-kg/graphify-out/grap
 
 ### 產圖策略
 
+- 產圖預設固定使用 `openai/gpt-image-2`；除非該模型不可用，才可明確記錄原因後 fallback。
 - 圖片可以使用英文文字，不必強制繁體中文；以清楚、穩定、可讀為優先。
 - 每張圖只表達該 paper / article 的核心 takeaway，不嘗試塞完整摘要。
 - 依內容類型選圖：
@@ -150,7 +151,7 @@ graphify global add /Users/morris/.graphify/dailyread-paper-kg/graphify-out/grap
 產圖流程應非同步，不要阻塞閱讀下一篇 paper：
 
 1. 每讀完並決定一篇「今日推薦點開」後，先根據該篇內容寫出 image prompt。
-2. 立即開 sub-agent 讓 Codex / ChatGPT image 產圖；主 DailyRead 流程繼續讀下一篇。
+2. 立即開 sub-agent 讓 Codex / ChatGPT image 以 `openai/gpt-image-2` 產圖；主 DailyRead 流程繼續讀下一篇。
 3. 圖片輸出到 `assets/YYYY-MM-DD/<slug>.png`。
 4. sub-agent 完成後，主流程檢查圖片是否存在、基本可讀、無明顯錯字或嚴重跑題。
 5. 在對應 domain markdown 與 `daily/YYYY-MM-DD.md` 的推薦篇段落插入 Markdown 圖片連結：

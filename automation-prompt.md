@@ -181,13 +181,13 @@ graphify global add /Users/morris/.graphify/dailyread-paper-kg/graphify-out/grap
 
 若沒有有效新內容，不要空 commit；在 log 寫明原因。
 
-Commit 前必須先跑格式檢查，確認三個 domain notes 的每篇條目都有固定小標題：
+Commit 前必須由 main model 自審三個 domain notes：
 
-```bash
-python3 scripts/validate_dailyread_format.py YYYY-MM-DD
-```
+- 每篇條目是否保留 `這篇在說什麼 / 主要貢獻 / 方法 / pipeline / 實驗設計 / かに讀後判斷` 五個小標題。
+- 內容是否真的有講清楚研究問題、方法、證據與閱讀判斷，而不是只補標題。
+- 若有 paper / article 資訊不足，是否明確說明目前能確認與不能確認的部分。
 
-若檢查失敗，先補齊 `這篇在說什麼 / 主要貢獻 / 方法 / pipeline / 實驗設計 / かに讀後判斷`，不要直接 commit。
+自審不通過就先補齊，不要直接 commit。
 
 ## Discord 回報
 

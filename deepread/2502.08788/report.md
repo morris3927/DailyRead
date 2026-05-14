@@ -343,10 +343,7 @@ Morris 特別關心的問題是：**single agent + CoT-SC 是否會比 MAS / mul
 
 ## 10. 本次保存檔案
 
+依照目前 DeepRead 保存規則，repo 只保留必要交付物：
+
 - PDF：`/Users/morris/Desktop/Repo/DailyRead/deepread/2502.08788/paper.pdf`
-- 抽取文字：`/Users/morris/Desktop/Repo/DailyRead/deepread/2502.08788/paper.txt`
-- arXiv HTML：`/Users/morris/Desktop/Repo/DailyRead/deepread/2502.08788/arxiv_abs.html`
-- metadata JSON：`/Users/morris/Desktop/Repo/DailyRead/deepread/2502.08788/metadata.json`
-- metadata Markdown：`/Users/morris/Desktop/Repo/DailyRead/deepread/2502.08788/metadata.md`
-- arXiv API metadata 原始回應：`/Users/morris/Desktop/Repo/DailyRead/deepread/2502.08788/metadata.xml`（下載時 arXiv API 回傳 rate exceeded，因此另以 arXiv HTML 解析保存 metadata）
 - 本報告：`/Users/morris/Desktop/Repo/DailyRead/deepread/2502.08788/report.md`

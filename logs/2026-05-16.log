@@ -27,4 +27,6 @@ Self-Review Checklist:
 - ✅ Images spawned asynchronously for 3 recommended papers
 
 Graph Update:
-- Pending: build_paper_graph.py and graphify global add after commit
+- ✅ build_paper_graph.py completed: Nodes=187, Edges=607
+- ✅ graphify global add completed: +187 nodes, -175 pruned
+- Commit: 5831150

@@ -1,0 +1,145 @@
+{
+  "date": "2026-05-16",
+  "search_queries": [
+    {
+      "engine": "web_search (gemini)",
+      "query": "silicon sampling social simulation LLM agents 2025 2026",
+      "results_count": 17
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "agent harness engineering evaluation framework LLM 2025 2026",
+      "results_count": 19
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "agent memory management long-term short-term LLM 2025 2026",
+      "results_count": 15
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "arxiv silicon samples social simulation LLM 2025",
+      "results_count": 15
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "arxiv AI agent evaluation harness benchmark 2025",
+      "results_count": 11
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "arxiv \"AgentSociety\" OR \"YuLan-OneSim\" social simulation LLM agents 2025 2026",
+      "results_count": 10
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "arxiv \"SOCSCI210\" OR \"finetuning LLMs human behavior prediction social science\" 2025",
+      "results_count": 5
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "arxiv 2602.15785 \"This human study did not involve human subjects\" Hullman LLM simulation behavioral evidence",
+      "results_count": 4
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "arxiv \"S-Researcher\" OR \"siliconizing\" social science automation LLM agents 2026",
+      "results_count": 3
+    },
+    {
+      "engine": "web_search (gemini)",
+      "query": "arxiv \"Agentic Benchmark Checklist\" OR \"ABC checklist\" agent evaluation rigorous 2025",
+      "results_count": 4
+    }
+  ],
+  "papers_considered": [
+    {
+      "arxiv_id": "2602.15785",
+      "title": "This Human Study Did Not Involve Human Subjects: Validating LLM Simulations as Behavioral Evidence",
+      "domain": "silicon-sampling-social-simulation",
+      "seen": false,
+      "selected": true,
+      "recommended": true
+    },
+    {
+      "arxiv_id": "2509.05830",
+      "title": "Finetuning LLMs for Human Behavior Prediction in Social Science Experiments",
+      "domain": "silicon-sampling-social-simulation",
+      "seen": false,
+      "selected": true,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2604.01520",
+      "title": "LLM Agents as Social Scientists: A Human-AI Collaborative Platform for Social Science Automation",
+      "domain": "silicon-sampling-social-simulation",
+      "seen": false,
+      "selected": true,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2510.11977",
+      "title": "Holistic Agent Leaderboard: The Missing Infrastructure for AI Agent Evaluation",
+      "domain": "harness-engineering",
+      "seen": false,
+      "selected": true,
+      "recommended": true
+    },
+    {
+      "arxiv_id": "2507.02825",
+      "title": "Establishing Best Practices for Building Rigorous Agentic Benchmarks",
+      "domain": "harness-engineering",
+      "seen": false,
+      "selected": true,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2511.14136",
+      "title": "A Multi-Dimensional Framework for Evaluating Enterprise Agentic AI Systems (CLEAR)",
+      "domain": "harness-engineering",
+      "seen": false,
+      "selected": true,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2602.14038",
+      "title": "Choosing How to Remember: Adaptive Memory Structures for LLM Agents (FluxMem)",
+      "domain": "agent-memory",
+      "seen": false,
+      "selected": true,
+      "recommended": true
+    }
+  ],
+  "papers_seen_and_skipped": [
+    {
+      "arxiv_id": "2512.22725",
+      "title": "Mitigating Social Desirability Bias in Random Silicon Sampling",
+      "reason": "SEEN on 2026-05-14"
+    },
+    {
+      "arxiv_id": "2509.26080",
+      "title": "Evaluating the Use of Large Language Models as Synthetic Social Agents in Social Science Research",
+      "reason": "SEEN on 2026-05-15"
+    },
+    {
+      "arxiv_id": "2601.01885",
+      "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for LLM Agents",
+      "reason": "SEEN on 2026-05-09"
+    },
+    {
+      "arxiv_id": "2603.07670",
+      "title": "Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers",
+      "reason": "SEEN on 2026-05-09, 2026-05-12, 2026-05-13"
+    },
+    {
+      "arxiv_id": "2502.12110",
+      "title": "A-MEM: Agentic Memory for LLM Agents",
+      "reason": "SEEN on 2026-05-08, 2026-05-12"
+    },
+    {
+      "arxiv_id": "2502.08691",
+      "title": "AgentSociety: Large-Scale Simulation of LLM-Driven Generative Agents",
+      "reason": "SEEN on 2026-05-08, 2026-05-09"
+    }
+  ]
+}

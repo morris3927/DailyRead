@@ -1,0 +1,30 @@
+2026-05-16 DailyRead Log
+========================
+
+Search and Selection:
+- Searched via web_search (gemini) for silicon sampling, harness engineering, agent memory
+- SearXNG at 192.168.1.18:8888 was unresponsive (timeout/SIGKILL), fell back to web_search
+- 7 papers selected across 3 domains (all NOT_SEEN per check_paper_seen.py)
+- 6 previously seen papers skipped (2512.22725, 2509.26080, 2601.01885, 2603.07670, 2502.12110, 2502.08691)
+
+Today's Picks:
+- Silicon Sampling: 3 papers (1 recommended: 2602.15785)
+- Harness Engineering: 3 papers (1 recommended: 2510.11977)
+- Agent Memory: 1 paper (1 recommended: 2602.14038)
+
+Image Generation:
+- Spawned 3 sub-agents for recommended papers' note diagrams (openai/gpt-image-2)
+  - silicon-sampling-validation.png
+  - hal-eval-harness.png
+  - fluxmem-adaptive-memory.png
+- Target: assets/2026-05-16/
+
+Self-Review Checklist:
+- ✅ All entries have 5 required sub-headings (這篇在說什麼, 主要貢獻, 方法/pipeline, 實驗設計, かに讀後判斷)
+- ✅ Each recommended entry >= 500 characters
+- ✅ Each general entry >= 300 characters
+- ✅ Papers checked against paper_index.json for dedup
+- ✅ Images spawned asynchronously for 3 recommended papers
+
+Graph Update:
+- Pending: build_paper_graph.py and graphify global add after commit

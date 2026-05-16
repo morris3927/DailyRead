@@ -1,0 +1,40 @@
+# DailyRead Log — 2026-05-17
+
+## 執行時間
+- 開始：2026-05-17 06:00 (Asia/Taipei)
+- SearXNG：unreachable (connection timeout)，改用 web_search fallback
+
+## 搜尋來源
+- SearXNG: ✗ (timeout)
+- web_search (Gemini): ✓ (7 queries)
+
+## 候選論文查重
+- 總共檢查 22 篇候選
+- SEEN: 14 篇
+- NOT_SEEN: 8 篇
+- 選入: 5 篇
+
+## 選入論文
+1. 2506.19806 — LLM-Based Social Simulations Require a Boundary (silicon-sampling)
+2. 2509.10127 — Population-Aligned Persona Generation for LLM-based Social Simulation (silicon-sampling)
+3. 2604.18543 — ClawEnvKit: Automatic Environment Generation for Claw-Like Agents (harness-engineering) ★推薦
+4. 2604.01707 — Memory in the LLM Era: Unified Framework (agent-memory) ★推薦
+5. 2505.16067 — How Memory Management Impacts LLM Agents (agent-memory)
+
+## 未選入但 NOT_SEEN
+- 2603.29194 — Multi-Layered Memory Architectures（與 2605.08538 Human-Inspired Memory 高度重疊）
+- 2605.11665 — NAUTILUS（robotics，不在目標 domain）
+- 2604.22748 — Agentic World Modeling（不在目標 domain）
+
+## 自審通過
+- ✓ 每篇都有 5 個小標題
+- ✓ 內容有講清楚研究問題、方法、證據與判斷
+- ✓ 資訊不足處有明確說明
+
+## 圖片產生
+- 非同步產圖 2 張（推薦篇）
+  - 2604.01707 Memory Unified Framework
+  - 2604.18543 ClawEnvKit
+
+## Graph Build
+- 待執行

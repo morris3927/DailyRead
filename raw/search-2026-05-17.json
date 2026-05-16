@@ -1,0 +1,65 @@
+{
+  "date": "2026-05-17",
+  "search_sources": [
+    {
+      "query": "silicon sampling social simulation LLM agent 2025 2026 arxiv",
+      "engine": "web_search (SearXNG unavailable, fallback)",
+      "results_count": 10
+    },
+    {
+      "query": "harness engineering AI agent evaluation benchmark 2025",
+      "engine": "web_search",
+      "results_count": 10
+    },
+    {
+      "query": "agent memory LLM long-term memory management arxiv 2025",
+      "engine": "web_search",
+      "results_count": 10
+    },
+    {
+      "query": "arxiv silicon sampling LLM social simulation May 2026",
+      "engine": "web_search",
+      "results_count": 10
+    },
+    {
+      "query": "arxiv agent memory management LLM 2026 new paper",
+      "engine": "web_search",
+      "results_count": 10
+    },
+    {
+      "query": "arxiv harness engineering agent evaluation coding benchmark 2026",
+      "engine": "web_search",
+      "results_count": 10
+    },
+    {
+      "query": "arxiv LLM social simulation conditioned sampling heterogeneity 2026",
+      "engine": "web_search",
+      "results_count": 10
+    }
+  ],
+  "candidates_checked": [
+    {"id": "2605.00197", "title": "The Silicon Society Cookbook", "status": "SEEN"},
+    {"id": "2509.26080", "title": "Evaluating LLMs as Synthetic Social Agents", "status": "SEEN"},
+    {"id": "2502.08691", "title": "AgentSociety", "status": "SEEN"},
+    {"id": "2507.19364", "title": "Integrating LLM in Agent-Based Social Simulation", "status": "SEEN"},
+    {"id": "2508.21740", "title": "Operational Validation of LLM-Agent Social Simulations", "status": "SEEN"},
+    {"id": "2603.00113", "title": "AI Agents Alone Are Not Yet Sufficient for Social Simulation", "status": "SEEN"},
+    {"id": "2505.06716", "title": "From Storage to Experience: A Survey", "status": "SEEN"},
+    {"id": "2605.08538", "title": "Human-Inspired Memory Architecture", "status": "SEEN"},
+    {"id": "2603.07670", "title": "Memory for Autonomous LLM Agents", "status": "SEEN"},
+    {"id": "2504.19413", "title": "Mem0", "status": "SEEN"},
+    {"id": "2601.01885", "title": "Agentic Memory (AgeMem)", "status": "SEEN"},
+    {"id": "2502.12110", "title": "A-MEM", "status": "SEEN"},
+    {"id": "2603.00026", "title": "ActMem", "status": "SEEN"},
+    {"id": "2509.13397", "title": "Analytic Flexibility in LLM Silicon Samples", "status": "SEEN"},
+    {"id": "2506.19806", "title": "LLM-Based Social Simulations Require a Boundary", "status": "NOT_SEEN", "selected": true},
+    {"id": "2509.10127", "title": "Population-Aligned Persona Generation", "status": "NOT_SEEN", "selected": true},
+    {"id": "2603.29194", "title": "Multi-Layered Memory Architectures", "status": "NOT_SEEN", "not_selected": "similar to seen papers"},
+    {"id": "2604.01707", "title": "Memory in the LLM Era: Unified Framework", "status": "NOT_SEEN", "selected": true, "recommended": true},
+    {"id": "2505.16067", "title": "Experience-Following Behavior in LLM Agents", "status": "NOT_SEEN", "selected": true},
+    {"id": "2604.18543", "title": "ClawEnvKit", "status": "NOT_SEEN", "selected": true, "recommended": true},
+    {"id": "2605.11665", "title": "NAUTILUS (robotics)", "status": "NOT_SEEN", "not_selected": "not in target domains"},
+    {"id": "2604.22748", "title": "Agentic World Modeling", "status": "NOT_SEEN", "not_selected": "not directly in target domains"}
+  ],
+  "searxng_status": "unreachable (connection timeout)"
+}

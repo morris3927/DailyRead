@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-18",
+  "search_queries": {
+    "silicon_sampling": [
+      "silicon sampling social simulation LLM agents 2025 2026 arxiv",
+      "arxiv 2026 May LLM social simulation silicon sampling agent-based"
+    ],
+    "harness_engineering": [
+      "harness engineering LLM evaluation agent framework 2025 2026",
+      "arxiv 2026 eval engineering agentic AI harness agent evaluation benchmark"
+    ],
+    "agent_memory": [
+      "agent memory LLM long-term memory architecture 2025 2026 arxiv",
+      "arxiv 2026 May agent long-term memory LLM new architecture"
+    ]
+  },
+  "candidates": {
+    "silicon_sampling": [
+      {"arxiv": "2605.00197", "title": "Silicon Society Cookbook", "status": "SEEN"},
+      {"arxiv": "2506.19806", "title": "LLM-Based Social Simulations Require a Boundary", "status": "SEEN"},
+      {"arxiv": "2512.22725", "title": "Mitigating Social Desirability Bias in Random Silicon Sampling", "status": "SEEN"},
+      {"arxiv": "2603.00113", "title": "AI Agents Alone Are Not Sufficient for Social Simulation", "status": "SEEN"},
+      {"arxiv": "2604.03898", "title": "discourse_simulator: LLM-Agent-based Social Simulation for Attitude Diffusion", "status": "NEW"},
+      {"arxiv": "2603.19649", "title": "PolicySim: An LLM-Based Agent Social Simulation Sandbox", "status": "NEW"}
+    ],
+    "harness_engineering": [
+      {"arxiv": "2604.25850", "title": "Agentic Harness Engineering (AHE)", "status": "SEEN"},
+      {"arxiv": "2602.22953", "title": "General Agent Evaluation", "status": "NEW"},
+      {"arxiv": "2603.23749", "title": "Efficient Benchmarking of AI Agents", "status": "NEW"}
+    ],
+    "agent_memory": [
+      {"arxiv": "2605.08538", "title": "Human-Inspired Memory Architecture for LLM Agents", "status": "SEEN"},
+      {"arxiv": "2604.01707", "title": "Memory in the LLM Era", "status": "SEEN"},
+      {"arxiv": "2603.29194", "title": "Multi-Layered Memory Architectures for LLM Agents", "status": "NEW"},
+      {"arxiv": "2507.22925", "title": "Hierarchical Memory (H-MEM)", "status": "NEW"}
+    ]
+  },
+  "recommended": [
+    "2604.03898",
+    "2602.22953"
+  ]
+}

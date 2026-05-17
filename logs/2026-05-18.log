@@ -1,0 +1,41 @@
+# DailyRead Log 2026-05-18
+
+## 搜尋
+- SearXNG (192.168.1.18:8888) 無回應，timeout。改用 web_search (Gemini) + arXiv direct fetch。
+- 三個 domain 各 2 queries，總共找到約 12 候選。
+
+## 查重
+- 2605.00197: SEEN (deepread, recommended_daily, mentioned_daily, conversation_review; dates=2026-05-09,11,13)
+- 2506.19806: SEEN (mentioned_daily; dates=2026-05-17)
+- 2512.22725: SEEN (mentioned_daily, conversation_review; dates=2026-05-14)
+- 2605.08538: SEEN (mentioned_daily, conversation_review; dates=2026-05-14)
+- 2603.00113: SEEN (deepread, recommended_daily, mentioned_daily, conversation_review; dates=2026-05-10,12,13)
+- 2604.25850: SEEN (deepread, recommended_daily, mentioned_daily; dates=2026-05-10)
+- 2604.01707: SEEN (mentioned_daily; dates=2026-05-17)
+- 2604.03898: NOT_SEEN → 新候選
+- 2603.19649: NOT_SEEN → 新候選
+- 2602.22953: NOT_SEEN → 新候選
+- 2603.23749: NOT_SEEN → 新候選
+- 2603.29194: NOT_SEEN → 新候選
+- 2507.22925: NOT_SEEN → 新候選
+
+## 今日推薦點開
+1. 2604.03898 — discourse_simulator
+2. 2602.22953 — General Agent Evaluation
+
+## Domain Notes
+- silicon-sampling: 2 篇（2604.03898, 2603.19649）
+- harness-engineering: 2 篇（2602.22953, 2603.23749）
+- agent-memory: 2 篇（2603.29194, 2507.22925）
+
+## 自審
+- 每篇都有 5 個小標題 ✓
+- 內容有講清楚研究問題、方法、證據與閱讀判斷 ✓
+- 資訊不足處有明確說明 ✓
+
+## 產圖
+- discourse-simulator.png: sub-agent 非同步產生中
+- general-agent-eval.png: sub-agent 非同步產生中
+
+## Graph Update
+- 待 commit 後執行 build_paper_graph.py + graphify global add

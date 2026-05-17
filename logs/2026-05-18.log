@@ -38,4 +38,14 @@
 - general-agent-eval.png: sub-agent 非同步產生中
 
 ## Graph Update
-- 待 commit 後執行 build_paper_graph.py + graphify global add
+- build_paper_graph.py: 成功 (Nodes=208 Edges=720)
+- graphify global add: 成功 (+208 nodes, -197 pruned)
+
+## 圖片產出
+- discourse-simulator.png: 成功 (openai/gpt-image-1, 2.8MB, 品質可讀)
+- general-agent-eval.png: 成功 (openai/gpt-image-1.5, 2.3MB, 品質可讀，minor typo "Exagentic")
+- Google Gemini 429 quota exceeded → fallback to OpenAI successfully
+
+## Commits
+- 2d7b104: DailyRead: 2026-05-18 (markdown files)
+- d95f957: DailyRead: 2026-05-18 add notebook diagrams

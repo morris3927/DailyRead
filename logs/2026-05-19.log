@@ -1,0 +1,28 @@
+2026-05-19 DailyRead Log
+========================
+
+Search:
+- SearXNG (192.168.1.18:8888) unreachable — ping 100% packet loss
+- Fallback to web_search (Gemini) for silicon sampling and harness engineering queries
+- web_search rate limited on 3rd call (agent memory) — used previous search results + arXiv direct fetch
+- All candidate papers verified via check_paper_seen.py
+
+Full text acquisition:
+- 2602.02613 (Moltbook): arXiv HTML full
+- 2509.17703 (Moral Evolution): arXiv abstract only (ACL 2026, 51 pages including appendix)
+- 2605.12239 (Categorical Architecture): arXiv HTML full
+- 2603.28052 (Meta-Harness): arXiv HTML full
+- 2604.26197 (HLTM): arXiv HTML partial (first ~8000 chars)
+- 2604.12290 (Frontier-Eng): arXiv HTML partial — not included in today's notes
+- 2602.12670 (SkillsBench): arXiv abstract only — not included
+
+Papers with abstract-only reading:
+- 2509.17703: Only abstract + search summary available; detailed method/experiment sections could not be accessed. Notes explicitly mark this limitation.
+
+Image generation:
+- 2 recommended papers require note diagrams: Meta-Harness (2603.28052) and HLTM (2604.26197)
+- Spawned as sub-agents for async generation
+
+SearXNG issue:
+- 192.168.1.18 unreachable at 2026-05-19 06:00 CST
+- May need to check SearXNG service status separately

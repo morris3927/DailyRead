@@ -1,0 +1,36 @@
+{
+  "date": "2026-05-19",
+  "search_queries": [
+    "silicon sampling social simulation LLM agent arxiv 2025 2026",
+    "harness engineering agent evaluation benchmark arxiv 2025 2026",
+    "agent memory LLM hierarchical long-term short-term arxiv 2025 2026"
+  ],
+  "search_sources": [
+    "web_search (Gemini) — SearXNG unreachable (ping 100% packet loss)"
+  ],
+  "papers_considered": [
+    {"arxiv_id": "2602.02613", "title": "Exploring Silicon-Based Societies: Moltbook Agent Community", "status": "NOT_SEEN", "included": true},
+    {"arxiv_id": "2509.17703", "title": "Why Are We Moral? LLM-based Agent Simulation for Moral Evolution", "status": "NOT_SEEN", "included": true},
+    {"arxiv_id": "2605.12239", "title": "Harness Engineering as Categorical Architecture", "status": "NOT_SEEN", "included": true},
+    {"arxiv_id": "2603.28052", "title": "Meta-Harness: End-to-End Optimization of Model Harnesses", "status": "NOT_SEEN", "included": true},
+    {"arxiv_id": "2604.26197", "title": "Hierarchical Long-Term Semantic Memory (HLTM) for LinkedIn Hiring Agent", "status": "NOT_SEEN", "included": true},
+    {"arxiv_id": "2604.12290", "title": "Frontier-Eng: Benchmarking Self-Evolving Agents on Real-World Engineering Tasks", "status": "NOT_SEEN", "included": false, "reason": "more benchmark than harness engineering; harness domain already has 2 strong papers"},
+    {"arxiv_id": "2602.12670", "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks", "status": "NOT_SEEN", "included": false, "reason": "skills evaluation benchmark; less directly relevant to harness engineering core"},
+    {"arxiv_id": "2510.16366", "title": "Integrating LLM and Diffusion-Based Agents for Social Simulation", "status": "NOT_SEEN", "included": false, "reason": "Oct 2025; silicon sampling domain already has 2 papers"},
+    {"arxiv_id": "2504.10157", "title": "SocioVerse: LLM-Agent-Driven World Model for Social Simulation", "status": "NOT_SEEN", "included": false, "reason": "Apr 2025; silicon sampling domain already has 2 papers"},
+    {"arxiv_id": "2603.00113", "title": "AI Agents Alone Are Not (Yet) Sufficient for Social Simulation", "status": "SEEN", "included": false}
+  ],
+  "full_text_sources": {
+    "2602.02613": "arXiv HTML",
+    "2509.17703": "arXiv abstract + search summary",
+    "2605.12239": "arXiv HTML (full)",
+    "2603.28052": "arXiv HTML (full)",
+    "2604.26197": "arXiv HTML (partial)",
+    "2604.12290": "arXiv HTML (partial)",
+    "2602.12670": "arXiv abstract"
+  },
+  "recommended_papers": [
+    "2603.28052",
+    "2604.26197"
+  ]
+}

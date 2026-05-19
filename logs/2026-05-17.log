@@ -37,4 +37,5 @@
   - 2604.18543 ClawEnvKit
 
 ## Graph Build
-- 待執行
+- build_paper_graph.py: ✓ 成功 (Nodes=197 Edges=660)
+- graphify global add: ✓ 成功 (+197 nodes, -187 pruned)

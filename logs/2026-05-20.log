@@ -1,0 +1,65 @@
+# DailyRead Log — 2026-05-20
+
+## 搜尋紀錄
+
+- SearXNG (http://192.168.1.18:8888) 不可用（connection refused），改用 web_search + arXiv API
+- arXiv API 限流（429），部分改用 web_search 補充
+
+### Silicon Sampling / Social Simulation
+- 搜尋詞：silicon sampling social simulation LLM agents 2025 2026
+- 搜尋詞：silicon sampling calibrated value personas cross-cultural survey simulation 2026
+- 搜尋詞：arxiv silicon sampling social simulation 2026 new paper
+- 收錄：
+  1. 2605.16193 — Improving Cross-Cultural Survey Simulation with Calibrated Value Personas (NOT_SEEN, 收錄)
+  2. 2605.10843 — DISCA: Training-Free Cultural Alignment via Persona Disagreement (NOT_SEEN, 收錄, 推薦)
+  3. 2604.19787 — LLM Agents Predict Social Media Reactions (NOT_SEEN, 收錄, abstract-only)
+- 查重：
+  - 2506.19806 — LLM-Based Social Simulations Require a Boundary → SEEN (2026-05-17)
+  - 2604.06663 — Restoring Heterogeneity → SEEN (2026-05-10)
+
+### Harness Engineering
+- 搜尋詞：harness engineering AI agent optimization evaluation 2025 2026
+- 搜尋詞：arxiv harness engineering agent evaluation 2026
+- 收錄：
+  1. 2602.22480 — VeRO: Evaluation Harness for Agents to Optimize Agents (NOT_SEEN, 收錄, 推薦)
+- 查重：
+  - 2604.25850 — AHE → SEEN (deepread + 2026-05-10, 2026-05-18)
+  - 2603.28052 — Meta-Harness → SEEN (2026-05-19)
+
+### Agent Memory
+- 搜尋詞：agentic memory LLM framework 2026 May
+- 搜尋詞：arxiv agentic memory LLM agent framework 2026 May new paper A-Mem Memoria
+- 收錄：
+  1. 2603.11768 — SSGM: Governing Evolving Memory in LLM Agents (NOT_SEEN, 收錄)
+- 查重：
+  - 2604.01707 — Memoria → SEEN (2026-05-17)
+  - 2502.12110 — A-MEM → SEEN (2026-05-08, 2026-05-12)
+
+## 全文取得狀況
+
+| Paper | 全文來源 | 狀態 |
+|-------|---------|------|
+| 2605.16193 | ar5iv HTML | 已讀完整方法論和部分實驗 |
+| 2605.10843 | ar5iv HTML (v2) | 已讀完整方法論和部分實驗 |
+| 2604.19787 | PDF (binary) | 僅 abstract |
+| 2602.22480 | ar5iv HTML (v3) | 已讀完整方法論和部分實驗 |
+| 2603.11768 | ar5iv HTML | 已讀完整框架和分類 |
+
+## 圖片產出
+
+- disca.png — DISCA pipeline note diagram (openai/gpt-image-2) ✓
+- vero.png — VeRO pipeline note diagram (openai/gpt-image-2) ✓
+
+## 自審
+
+- [x] 每篇條目保留五個小標題
+- [x] 內容講清楚研究問題、方法、證據與判斷
+- [x] 資訊不足處已明確標示（2604.19787 標註 abstract-only）
+- [x] 推薦篇已讀全文級材料
+
+## SearXNG 故障紀錄
+
+- 時間：2026-05-20 06:00 CST
+- 現象：http://192.168.1.18:8888 connection refused
+- 影響：改用 web_search (Gemini) 和 arXiv API 替代
+- arXiv API 也遇到 429 限流，最終主要依賴 web_search

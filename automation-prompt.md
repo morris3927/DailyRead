@@ -62,6 +62,18 @@ Harness Engineering 可納入 blog、docs、GitHub repo、framework。若不是 
 
 DailyRead 的品質重點是「講解深度」，不是 paper 數量。即使今天每個 domain 只有 1–2 篇，也不能寫成短摘要或卡片。
 
+### 讀取全文規則
+
+DailyRead 不是 deepread，但不能只依 abstract 假裝已讀完。每篇被納入 domain note 前，必須先盡力取得可讀全文：
+
+1. arXiv paper：優先抓 arXiv PDF / e-print 並抽文字；其次用 ar5iv / HTML；最後才用 abstract。
+2. ACM / blog / repo：優先讀可公開取得的完整 HTML / README / docs；若被 paywall、登入或格式阻擋，才退回 abstract / landing page。
+3. 今日推薦點開：必須讀到 PDF / full HTML / repo README 等「全文級材料」後才可列為推薦；若只讀到 abstract，不可列為今日推薦，只能放候選或略過。
+4. 一般收錄篇：若只能讀到 abstract，必須明確標示為「僅 abstract 層級快速掃描」，並降低判斷強度；不要寫成像已完整檢查方法與實驗。
+5. 不要反覆使用「目前從 abstract 和 HTML 前段能確認...需要看全文」這種模板句。應具體說明：已讀來源是什麼、缺少哪個 section / table / figure / artifact、為什麼缺少會影響判斷。
+
+如果全文抓取失敗，必須在 `logs/YYYY-MM-DD.log` 記錄嘗試過的來源與失敗原因。
+
 每一篇被納入 domain note 的內容，至少要用明確小標題包含：
 
 1. `### 這篇在說什麼`：這篇到底在補哪個缺口？為什麼這個問題重要？

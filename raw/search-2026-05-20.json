@@ -1,0 +1,95 @@
+{
+  "date": "2026-05-20",
+  "search_sources": {
+    "searxng": {
+      "url": "http://192.168.1.18:8888",
+      "status": "unreachable",
+      "fallback": "web_search + arXiv API"
+    },
+    "web_search": {
+      "provider": "gemini",
+      "queries": [
+        "silicon sampling social simulation LLM agents 2025 2026 arxiv",
+        "harness engineering agent evaluation benchmark LLM 2025 2026",
+        "agent memory long-term short-term LLM framework 2025 arxiv",
+        "arxiv silicon sampling social simulation 2026 new paper",
+        "arxiv harness engineering AI agent optimization evaluation 2025 2026",
+        "arxiv agentic memory LLM framework 2026 May new paper A-Mem Memoria",
+        "arxiv silicon sampling calibrated value personas cross-cultural survey simulation 2026",
+        "arxiv agentic memory LLM agent framework 2026 May new"
+      ]
+    },
+    "arxiv_api": {
+      "status": "rate_limited_429",
+      "note": "Could not retrieve results via arXiv API due to rate limiting"
+    }
+  },
+  "papers_considered": [
+    {
+      "arxiv_id": "2605.16193",
+      "title": "Improving Cross-Cultural Survey Simulation with Calibrated Value Personas",
+      "dedup_status": "NOT_SEEN",
+      "action": "included"
+    },
+    {
+      "arxiv_id": "2605.10843",
+      "title": "Training-Free Cultural Alignment of Large Language Models via Persona Disagreement",
+      "dedup_status": "NOT_SEEN",
+      "action": "included, recommended"
+    },
+    {
+      "arxiv_id": "2604.19787",
+      "title": "LLM Agents Predict Social Media Reactions but Do Not Outperform Text Classifiers",
+      "dedup_status": "NOT_SEEN",
+      "action": "included (abstract only)"
+    },
+    {
+      "arxiv_id": "2506.19806",
+      "title": "LLM-Based Social Simulations Require a Boundary",
+      "dedup_status": "SEEN (2026-05-17)",
+      "action": "skipped"
+    },
+    {
+      "arxiv_id": "2604.06663",
+      "title": "Restoring Heterogeneity in LLM-based Social Simulation",
+      "dedup_status": "SEEN (2026-05-10)",
+      "action": "skipped"
+    },
+    {
+      "arxiv_id": "2602.22480",
+      "title": "VeRO: An Evaluation Harness for Agents to Optimize Agents",
+      "dedup_status": "NOT_SEEN",
+      "action": "included, recommended"
+    },
+    {
+      "arxiv_id": "2604.25850",
+      "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution",
+      "dedup_status": "SEEN (2026-05-10, 2026-05-18)",
+      "action": "skipped"
+    },
+    {
+      "arxiv_id": "2603.28052",
+      "title": "Meta-Harness: End-to-End Optimization of Model Harnesses",
+      "dedup_status": "SEEN (2026-05-19)",
+      "action": "skipped"
+    },
+    {
+      "arxiv_id": "2603.11768",
+      "title": "Governing Evolving Memory in LLM Agents: SSGM Framework",
+      "dedup_status": "NOT_SEEN",
+      "action": "included"
+    },
+    {
+      "arxiv_id": "2604.01707",
+      "title": "Memoria: Memory in the LLM Era",
+      "dedup_status": "SEEN (2026-05-17)",
+      "action": "skipped"
+    },
+    {
+      "arxiv_id": "2502.12110",
+      "title": "A-MEM: Agentic Memory for LLM Agents",
+      "dedup_status": "SEEN (2026-05-08, 2026-05-12)",
+      "action": "skipped"
+    }
+  ]
+}

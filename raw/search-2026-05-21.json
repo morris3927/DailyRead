@@ -1,0 +1,39 @@
+{
+  "date": "2026-05-21",
+  "search_engine": "web_search (Gemini, SearXNG timed out)",
+  "queries": [
+    "silicon sampling social simulation LLM arxiv 2025",
+    "harness engineering agent evaluation benchmark arxiv 2025",
+    "agent memory LLM long-term evolving arxiv 2025",
+    "silicon sampling LLM opinion survey simulation arxiv may 2026",
+    "agent harness eval scaffold code harness engineering arxiv may 2026",
+    "agent memory evolving self-evolving LLM arxiv may 2026"
+  ],
+  "results": {
+    "silicon_sampling": [
+      {"arxiv_id": "2605.18311", "title": "Distorted Perspectives of LLM-Simulated Preferences: Can AI Mislead Design?", "seen": false},
+      {"arxiv_id": "2509.02605", "title": "AI-Generated Social Simulations for Startup Validation Research in CSS", "seen": false},
+      {"arxiv_id": "2605.00197", "title": "The Silicon Society Cookbook", "seen": true},
+      {"arxiv_id": "2507.19364", "title": "Integrating LLM in Agent-Based Social Simulation", "seen": true},
+      {"arxiv_id": "2509.10127", "title": "Population-Aligned Persona Generation", "seen": true},
+      {"arxiv_id": "2502.08691", "title": "AgentSociety", "seen": true},
+      {"arxiv_id": "2506.19806", "title": "LLM-Based Social Simulations Require a Boundary", "seen": true},
+      {"arxiv_id": "2510.01171", "title": null, "seen": false, "note": "older, deprioritized"}
+    ],
+    "harness_engineering": [
+      {"arxiv_id": "2605.18747", "title": "Code as Agent Harness", "seen": false},
+      {"arxiv_id": "2605.15221", "title": "Effective Harness Engineering for Algorithm Discovery — Vesper", "seen": false},
+      {"arxiv_id": "2604.25850", "title": "AHE: Observability-Driven Harness Evolution", "seen": true},
+      {"arxiv_id": "2603.23749", "title": "Efficient Benchmarking of AI Agents", "seen": true},
+      {"arxiv_id": "2602.22953", "title": "General Agent Evaluation", "seen": true}
+    ],
+    "agent_memory": [
+      {"arxiv_id": "2605.13941", "title": "EvolveMem: Self-Evolving Memory Architecture via AutoResearch", "seen": false},
+      {"arxiv_id": "2605.18421", "title": "EvoMemBench: Benchmarking Agent Memory from Self-Evolving Perspective", "seen": false},
+      {"arxiv_id": "2605.06716", "title": "From Storage to Experience: Survey on LLM Agent Memory", "seen": true},
+      {"arxiv_id": "2602.00359", "title": "Agentic Evolution is the Path to Evolving LLMs", "seen": false, "note": "position paper, deprioritized"},
+      {"arxiv_id": "2603.07670", "title": "Memory for Autonomous LLM Agents", "seen": true},
+      {"arxiv_id": "2603.18620", "title": "Learning to Self-Evolve", "seen": false, "note": "RL training-time, deprioritized"}
+    ]
+  }
+}

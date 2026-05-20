@@ -1,0 +1,47 @@
+# DailyRead Log — 2026-05-21
+
+## 搜尋
+- SearXNG (192.168.1.18:8888) 三次查詢均逾時（silicon sampling, harness engineering, agent memory），改用 web_search (Gemini)。
+- web_search 成功取得三個領域的結果。
+
+## 查重
+使用 check_paper_seen.py 查重結果：
+- 2605.00197 (Silicon Society Cookbook): SEEN — 跳過
+- 2507.19364 (Integrating LLM in ABM): SEEN — 跳過
+- 2605.18311 (Distorted Perspectives): NOT_SEEN — 收錄
+- 2509.02605 (AI-Generated Social Simulations for Startup Validation): NOT_SEEN — 收錄
+- 2605.18747 (Code as Agent Harness): NOT_SEEN — 收錄
+- 2604.25850 (AHE): SEEN — 跳過
+- 2605.15221 (Vesper): NOT_SEEN — 收錄
+- 2605.13941 (EvolveMem): NOT_SEEN — 收錄 ★
+- 2605.06716 (From Storage to Experience survey): SEEN — 跳過
+- 2605.18421 (EvoMemBench): NOT_SEEN — 收錄
+- 2602.00359 (A-Evolve): NOT_SEEN — 未收錄（position paper，優先度低於 EvolveMem）
+- 2603.07670 (Memory for Autonomous LLM Agents): SEEN — 跳過
+- 2603.18620 (Learning to Self-Evolve): NOT_SEEN — 未收錄（RL for self-evolution，偏 training-time，和 DailyRead 追蹤的 agent memory runtime 演化不完全對齊）
+- 2603.23749 (Efficient Benchmarking): SEEN — 跳過
+- 2602.22953 (General Agent Evaluation): SEEN — 跳過
+- 2509.10127 (Population-Aligned Persona): SEEN — 跳過
+- 2502.08691 (AgentSociety): SEEN — 跳過
+- 2506.19806 (Boundary): SEEN — 跳過
+- 2510.01171: NOT_SEEN — 未收錄（較舊，優先度低於 2605.18311）
+
+## 全文讀取
+- 2605.18311: ar5iv HTML 全文讀取，Introduction + Section 2-3 確認
+- 2605.18747: ar5iv HTML 全文讀取，Abstract + Introduction + Section 1-4 部分
+- 2605.15221: ar5iv HTML 全文讀取，Abstract + Introduction + Section 2-4 確認
+- 2605.13941: ar5iv HTML 全文讀取，Abstract + Section 1-3 確認
+- 2605.18421: ar5iv HTML 全文讀取，Abstract + Section 1-4 確認
+- 2509.02605: 僅 abstract 層級，已在筆記中標明
+
+## 產圖
+- EvolveMem (evolvemem.png): 非同步 sub-agent 產圖中
+- Vesper (vesper.png): 非同步 sub-agent 產圖中
+- Distorted Perspectives 不產圖（非今日推薦，僅一般收錄但標為推薦）
+
+## 自審
+三個 domain notes 已自審：
+- silicon-sampling: 2 篇，各含五個小標題 ✓
+- harness-engineering: 2 篇，各含五個小標題 ✓
+- agent-memory: 2 篇，各含五個小標題 ✓
+- 所有資訊不足處已標明 ✓

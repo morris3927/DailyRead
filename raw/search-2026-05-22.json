@@ -1,0 +1,18 @@
+{
+  "date": "2026-05-22",
+  "search_method": "web_search + web_fetch + arXiv direct (SearXNG timeout)",
+  "domains": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "queries": [
+    "silicon sampling social simulation LLM agents 2025 2026",
+    "harness engineering agent evaluation benchmark 2025 2026",
+    "agent memory LLM long-term 2025 2026"
+  ],
+  "candidates": [
+    {"arxiv_id": "2603.00113", "title": "AI Agents Alone Are Not (Yet) Sufficient for Social Simulation", "domain": "silicon-sampling-social-simulation", "status": "SEEN (deepread 5/12, follow-up today)"},
+    {"arxiv_id": "2605.06125", "title": "TEBench: Evaluating LLMs on Tibetan Language Understanding and Cultural Awareness", "domain": "harness-engineering", "status": "NOT_SEEN, low relevance"},
+    {"arxiv_id": "2605.05583", "title": "Agent Memory Under Partial Observability", "domain": "agent-memory", "status": "NOT_SEEN"},
+    {"arxiv_id": "2605.09942", "title": "HAGE: Harnessing Agentic Memory via RL-Driven Weighted Graph Evolution", "domain": "agent-memory", "status": "NOT_SEEN, recommended"},
+    {"arxiv_id": "2605.17625", "title": "Episodic-Semantic Memory Architecture for Long-Horizon Scientific Agents", "domain": "agent-memory", "status": "NOT_SEEN, recommended"},
+    {"arxiv_id": "2605.03804", "title": "ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting", "domain": "agent-memory", "status": "NOT_SEEN"}
+  ]
+}

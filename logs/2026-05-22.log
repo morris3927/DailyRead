@@ -1,0 +1,52 @@
+# DailyRead Log 2026-05-22
+
+## 搜尋記錄
+
+- SearXNG (http://192.168.1.18:8888) 無回應逾時，改用 web_search + web_fetch + arXiv 直接搜尋
+- 搜尋關鍵字：silicon sampling, social simulation, harness engineering, agent memory
+- 來源：arXiv new listings, web_search 結果
+
+## 候選論文
+
+### Silicon Sampling / Social Simulation
+- 2603.00113 — AI Agents Alone Are Not Yet Sufficient for Social Simulation ★ 推薦
+- check_paper_seen: NOT_SEEN
+
+### Harness Engineering
+- 2605.06125 — TEBench: Evaluating LLMs on Tibetan Language Understanding and Cultural Awareness
+- check_paper_seen: NOT_SEEN
+- 相關性偏低（低資源語言基準 vs agent harness）
+
+### Agent Memory
+- 2605.05583 — Agent Memory Under Partial Observability
+- check_paper_seen: NOT_SEEN
+- 2605.09942 — HAGE: Harnessing Agentic Memory via RL-Driven Weighted Graph Evolution ★ 推薦
+- check_paper_seen: NOT_SEEN
+- 2605.17625 — Episodic-Semantic Memory Architecture for Long-Horizon Scientific Agents ★ 推薦
+- check_paper_seen: NOT_SEEN
+- 2605.03804 — ScrapMem: A Bio-inspired Framework for On-device Personalized Agent Memory via Optical Forgetting
+- check_paper_seen: NOT_SEEN
+
+## 全文讀取狀態
+
+| arXiv ID | 來源 | 狀態 |
+|----------|------|------|
+| 2603.00113 | arXiv HTML | 完整讀取 |
+| 2605.06125 | arXiv HTML | 完整讀取 |
+| 2605.05583 | arXiv HTML | 讀取至方法部分 |
+| 2605.09942 | arXiv HTML | 讀取至 Section 3.3+ |
+| 2605.17625 | arXiv HTML | 讀取至 Section 2.5+ |
+| 2605.03804 | arXiv HTML | 讀取至 Section 4.3 |
+
+## 推薦篇圖片
+
+- ai-agents-social-simulation.png — 2603.00113 concept map
+- hage.png — 2605.09942 pipeline note diagram
+- episodic-semantic-memory.png — 2605.17625 architecture note diagram
+
+## 自審
+
+- [x] 每篇條目包含 這篇在說什麼 / 主要貢獻 / 方法 / pipeline / 實驗設計 / かに讀後判斷
+- [x] 內容有講清楚研究問題、方法、證據與閱讀判斷
+- [x] 2605.05583 和 2605.03804 標示了資訊不足的部分
+- [x] 2605.06125 說明了和 harness engineering 的相關性偏低

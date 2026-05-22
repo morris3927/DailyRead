@@ -1,0 +1,58 @@
+# DailyRead Log — 2026-05-23
+
+## 執行時間
+- 開始: 2026-05-23 06:00 CST
+- SearXNG: 無法連線 192.168.1.18:8888（curl --connect-timeout 5 無回應），改用 web_search (Gemini) + arXiv direct fetch
+
+## 搜尋記錄
+- silicon sampling social simulation LLM 2025 arxiv → web_search (Gemini 2.5-flash)
+- harness engineering agent evaluation benchmark 2025 arxiv → web_search
+- agent memory architecture self-evolving episodic 2025 arxiv → web_search
+- 第二輪: silicon sampling / harness / agent memory May 2026 arxiv → web_search
+
+## 查重結果
+| Candidate | ID | Status |
+|-----------|-----|--------|
+| The Silicon Society Cookbook | 2605.00197 | SEEN (deepread) |
+| Mitigating Social Desirability Bias | 2512.22725 | SEEN (mentioned) |
+| AHE Observability-Driven | 2604.25850 | SEEN (deepread) |
+| Building Effective AI Coding Agents | 2603.05344 | SEEN (mentioned) |
+| Harness Engineering as Categorical Architecture | 2605.12239 | SEEN (mentioned) |
+| Code as Agent Harness | 2605.18747 | SEEN (mentioned) |
+| Episodic-Semantic Memory for Scientific Agents | 2605.17625 | SEEN (mentioned) |
+| Natural-Language Agent Harnesses | 2603.25723 | SEEN (mentioned) |
+| EvolveMem | 2605.13941 | SEEN (mentioned) |
+| **CCP: Simulating Social Media Users** | 2602.22752 | **NOT_SEEN** ✓ |
+| **Benchmark Audit Schema** | 2605.21404 | **NOT_SEEN** ✓ |
+| **CALMem** | 2605.20724 | **NOT_SEEN** ✓ |
+| **MemRL** | 2601.03192 | **NOT_SEEN** ✓ |
+| **NEMORI** | 2508.03341 | **NOT_SEEN** ✓ |
+| LLM Social Simulations Require a Boundary | 2506.19806 | NOT_SEEN (abstract only) |
+
+## 全文抓取
+- 2602.22752: arXiv HTML 全文讀取成功 (14 pages + appendix)
+- 2605.21404: arXiv HTML 全文讀取成功 (Section I-V 完整)
+- 2605.20724: arXiv HTML 全文讀取成功 (Section 1-9 完整)
+- 2601.03192: abstract + HTML 前段 (Section 1-2)
+- 2508.03341: abstract only
+- 2506.19806: abstract only
+
+## 今日推薦點開
+1. 2602.22752 — CCP: Simulating Social Media Users (全文已讀)
+2. 2605.21404 — Benchmark Audit Schema (全文已讀)
+3. 2605.20724 — CALMem (全文已讀)
+
+## 產圖
+- ccp-operational-validity.png → sub-agent (openai/gpt-image-2) ✓ 193KB PNG
+- benchmark-audit-schema.png → sub-agent 回報 done 但檔案未存入；手動重試 openai (429 usage_limit_reached) + google (429 RESOURCE_EXHAUSTED) 均失敗 ✗
+- calmem-dual-memory.png → sub-agent (openai/gpt-image-2) ✓ 106KB PNG
+
+## Graph 更新
+- build_paper_graph.py 成功: Nodes=259 Edges=982
+- graphify global add 成功: +259 nodes, -249 pruned
+- Global graph: /Users/morris/.graphify/global-graph.json
+
+## 自審
+- 三個 domain notes 均包含五個必要小標題 ✓
+- 推薦篇均有 500+ 中文字 ✓
+- 資訊不足處有明確標示 ✓

@@ -1,0 +1,63 @@
+{
+  "date": "2026-05-23",
+  "search_engine": "web_search (Gemini 2.5-flash) + arXiv direct",
+  "searxng_status": "unreachable",
+  "queries": [
+    "silicon sampling social simulation LLM 2025 arxiv",
+    "harness engineering agent evaluation benchmark 2025 arxiv",
+    "agent memory architecture self-evolving episodic 2025 arxiv",
+    "silicon sampling LLM social simulation May 2026 arxiv",
+    "harness engineering agent May 2026 arxiv",
+    "agent memory episodic semantic May 2026 arxiv"
+  ],
+  "results": [
+    {
+      "title": "Towards Simulating Social Media Users with LLMs: Evaluating the Operational Validity of Conditioned Comment Prediction",
+      "arxiv_id": "2602.22752",
+      "url": "https://arxiv.org/abs/2602.22752",
+      "seen": false,
+      "full_text": true,
+      "recommended": true
+    },
+    {
+      "title": "What Twelve LLM Agent Benchmark Papers Disclose About Themselves: A Pilot Audit and an Open Scoring Schema",
+      "arxiv_id": "2605.21404",
+      "url": "https://arxiv.org/abs/2605.21404",
+      "seen": false,
+      "full_text": true,
+      "recommended": true
+    },
+    {
+      "title": "Application-Layer Dual Memory for Conversational AI",
+      "arxiv_id": "2605.20724",
+      "url": "https://arxiv.org/abs/2605.20724",
+      "seen": false,
+      "full_text": true,
+      "recommended": true
+    },
+    {
+      "title": "Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory",
+      "arxiv_id": "2601.03192",
+      "url": "https://arxiv.org/abs/2601.03192",
+      "seen": false,
+      "full_text": false,
+      "recommended": false
+    },
+    {
+      "title": "What Deserves Memory: Adaptive Memory Distillation for LLM Agents",
+      "arxiv_id": "2508.03341",
+      "url": "https://arxiv.org/abs/2508.03341",
+      "seen": false,
+      "full_text": false,
+      "recommended": false
+    },
+    {
+      "title": "LLM-Based Social Simulations Require a Boundary",
+      "arxiv_id": "2506.19806",
+      "url": "https://arxiv.org/abs/2506.19806",
+      "seen": false,
+      "full_text": false,
+      "recommended": false
+    }
+  ]
+}

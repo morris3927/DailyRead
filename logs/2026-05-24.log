@@ -1,0 +1,33 @@
+# DailyRead Log — 2026-05-24
+
+## 搜尋來源
+- SearXNG (192.168.1.18:8888): curl 超時，改用 web_search (Gemini) 作為後備
+- arXiv HTML 全文讀取成功：2605.06527 (STALE), 2605.11032 (Portable Agent Memory), 2604.18011 (TopoSim), 2604.17615 (WhatIf), 2604.25850 (AHE), 2605.15846 (RoadmapBench), 2605.05583 (BeliefMem)
+- arXiv abstract 頁面讀取成功：2605.17830 (Remembering More, Risking More)
+- web_search 補充搜尋：agent memory staleness/invalidation, harness engineering benchmark
+
+## 查重結果
+- SEEN (排除): HAGE (2605.09942), EvoMemBench (2605.18421), CALMem (2605.20724), Harness Engineering as Categorical Architecture (2605.12239), Vesper (2605.15221), Code as Agent Harness (2605.18747)
+- NOT_SEEN (收錄): STALE (2605.06527), Portable Agent Memory (2605.11032), TopoSim (2604.18011), WhatIf (2604.17615), AHE (2604.25850), RoadmapBench (2605.15846), BeliefMem (2605.05583), Remembering More Risking More (2605.17830)
+
+## 今日推薦點開
+1. STALE (agent-memory)
+2. AHE (harness-engineering)
+3. TopoSim (silicon-sampling)
+
+## 產圖
+- stale-concept-map.png ✅
+- ahe-pipeline.png ✅ (重試一次成功)
+- toposim-pipeline.png ✅
+- Portable Agent Memory 未產圖（非今日推薦）
+- BeliefMem 未產圖（非今日推薦）
+
+## 讀取深度
+- STALE: 全文 HTML 已讀
+- AHE: 全文 HTML 已讀
+- TopoSim: 全文 HTML 已讀（截斷，但前半涵蓋方法與核心實驗）
+- Portable Agent Memory: 全文 HTML 已讀（截斷，但覆蓋方法與協議設計）
+- WhatIf: 全文 HTML 已讀（截斷，覆蓋設計需求與系統架構）
+- RoadmapBench: 全文 HTML 已讀（覆蓋任務定義、資料統計、主要結果）
+- BeliefMem: HTML 前段 + abstract 已讀
+- Remembering More Risking More: 僅 abstract

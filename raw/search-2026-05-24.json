@@ -1,0 +1,15 @@
+{
+  "date": "2026-05-24",
+  "search_source": "web_search_gemini",
+  "domains": ["agent-memory", "harness-engineering", "silicon-sampling-social-simulation"],
+  "papers": [
+    {"arxiv_id": "2605.06527", "title": "STALE: Can LLM Agents Know When Their Memories Are No Longer Valid?", "domain": "agent-memory", "status": "recommended_daily"},
+    {"arxiv_id": "2605.11032", "title": "Portable Agent Memory: A Protocol for Provenance-Verified Memory Transfer Across Heterogeneous LLM Agents", "domain": "agent-memory", "status": "mentioned_daily"},
+    {"arxiv_id": "2605.05583", "title": "BeliefMem: Agent Memory Under Partial Observability", "domain": "agent-memory", "status": "mentioned_daily"},
+    {"arxiv_id": "2605.17830", "title": "Remembering More, Risking More: Longitudinal Safety Risks in Memory-Equipped LLM Agents", "domain": "agent-memory", "status": "mentioned_daily"},
+    {"arxiv_id": "2604.25850", "title": "Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses", "domain": "harness-engineering", "status": "recommended_daily"},
+    {"arxiv_id": "2605.15846", "title": "RoadmapBench: Evaluating Long-Horizon Agentic Software Development Across Version Upgrades", "domain": "harness-engineering", "status": "mentioned_daily"},
+    {"arxiv_id": "2604.18011", "title": "TopoSim: Topology-Aware LLM-Driven Social Simulation", "domain": "silicon-sampling", "status": "recommended_daily"},
+    {"arxiv_id": "2604.17615", "title": "WhatIf: Interactive Exploration of LLM-Powered Social Simulations for Policy Reasoning", "domain": "silicon-sampling", "status": "mentioned_daily"}
+  ]
+}

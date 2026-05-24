@@ -1,0 +1,27 @@
+# DailyRead Log — 2026-05-25
+
+## 搜尋
+- SearXNG (192.168.1.18:8888) 無回應，改用 web_search (Gemini) + arXiv 直接抓取
+- 搜尋查詢：LLM social simulation silicon sampling, agent memory, harness evaluation benchmark
+- 所有候選 paper 已用 check_paper_seen.py 查重，排除已見 paper
+
+## 今日推薦
+1. TRAILS (2605.18890) — silicon-sampling
+2. MemLineage (2605.14421) — agent-memory
+
+## 全文取得狀況
+- 2605.18890 (TRAILS): arXiv HTML 完整讀取
+- 2605.12824 (Mechanism Plausibility): arXiv HTML 完整讀取
+- 2605.14421 (MemLineage): arXiv HTML 完整讀取
+- 2605.14498 (GroupMemBench): HTML 不提供，僅 abstract
+- 2605.16746 (State Contamination): arXiv HTML 完整讀取
+- 2605.15759 (DimMem): 僅 abstract
+- 2605.18693 (SkillGenBench): arXiv HTML 完整讀取
+- 2605.20204 (RealUserSim): arXiv HTML 完整讀取
+
+## Graph build
+- 待執行
+
+## 圖片產生
+- TRAILS: 待產生
+- MemLineage: 待產生

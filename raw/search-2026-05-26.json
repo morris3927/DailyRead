@@ -1,0 +1,23 @@
+{
+  "date": "2026-05-26",
+  "search_sources": ["web_search (Gemini)", "arXiv search", "arXiv HTML"],
+  "searxng_status": "unreachable",
+  "queries": {
+    "silicon_sampling": ["silicon sampling social simulation LLM 2025 2026 arxiv"],
+    "harness_engineering": ["harness engineering AI agent evaluation benchmark 2025 2026"],
+    "agent_memory": ["agent memory LLM long-term short-term architecture 2025 2026 arxiv"]
+  },
+  "papers_considered": [
+    {"arxiv_id": "2605.19229", "title": "Can LLMs Revolutionize Survey Research?", "domain": "silicon-sampling", "status": "included"},
+    {"arxiv_id": "2605.18395", "title": "Diagnosing Korean-Language LLM Political Bias via Census-Grounded Agent Simulation", "domain": "silicon-sampling", "status": "included"},
+    {"arxiv_id": "2605.21516", "title": "Harnesses for Inference-Time Alignment over Execution Trajectories", "domain": "harness-engineering", "status": "included_recommended"},
+    {"arxiv_id": "2605.13357", "title": "AI Harness Engineering: A Runtime Substrate for Foundation-Model Software Agents", "domain": "harness-engineering", "status": "included"},
+    {"arxiv_id": "2605.22411", "title": "DeferMem: Query-Time Evidence Distillation via RL for Long-Term Memory QA", "domain": "agent-memory", "status": "included_recommended"},
+    {"arxiv_id": "2605.20926", "title": "MemConflict: Evaluating Long-Term Memory Systems Under Memory Conflicts", "domain": "agent-memory", "status": "included"},
+    {"arxiv_id": "2605.18890", "title": "TRAILS", "domain": "silicon-sampling", "status": "seen_skipped"},
+    {"arxiv_id": "2605.14421", "title": "MemLineage", "domain": "agent-memory", "status": "seen_skipped"},
+    {"arxiv_id": "2605.16746", "title": "State Contamination", "domain": "agent-memory", "status": "seen_skipped"},
+    {"arxiv_id": "2605.15759", "title": "DimMem", "domain": "agent-memory", "status": "seen_skipped"},
+    {"arxiv_id": "2605.18693", "title": "SkillGenBench", "domain": "harness-engineering", "status": "seen_skipped"}
+  ]
+}

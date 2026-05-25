@@ -1,0 +1,39 @@
+# DailyRead Log — 2026-05-26
+
+## 搜尋與選稿
+
+- SearXNG (192.168.1.18:8888) 無回應，改用 web_search + arXiv search + arXiv HTML。
+- 三個 domain 各搜尋最新論文，交叉比對 paper_index.json 查重。
+- 所有收錄論文均為 NOT_SEEN。
+
+## 查重結果
+
+- 2605.19229 (Survey Research / Silicon Sampling): NOT_SEEN ✓
+- 2605.18395 (Dynamo-K / Silicon Sampling): NOT_SEEN ✓
+- 2605.21516 (Harnesses for Inference-Time Alignment): NOT_SEEN ✓
+- 2605.13357 (AI Harness Engineering): NOT_SEEN ✓
+- 2605.22411 (DeferMem): NOT_SEEN ✓
+- 2605.20926 (MemConflict): NOT_SEEN ✓
+
+## 全文讀取狀態
+
+- 2605.22411 (DeferMem): 全文 HTML 已讀取，方法、實驗、結果可確認。
+- 2605.20926 (MemConflict): 全文 HTML 已讀取，框架設計、衝突類型、評估協議可確認。
+- 2605.21516 (Harnesses for Inference-Time Alignment): 全文 HTML 已讀取，理論形式化、實驗設計可確認。
+- 2605.13357 (AI Harness Engineering): 全文 HTML 前段已讀取，框架設計可確認；大規模實驗結果需見 PDF。
+- 2605.19229 (Survey Research): 全文 HTML 已讀取，五階段框架、PMT knowledge graph、實驗結果可確認。
+- 2605.18395 (Dynamo-K): 僅 abstract 層級，已標註資訊不足。列為一般收錄篇。
+
+## 今日推薦點開
+
+1. DeferMem (2605.22411) — agent memory
+2. Harnesses for Inference-Time Alignment (2605.21516) — harness engineering
+
+## 筆記圖
+
+- DeferMem: 待產圖
+- Harnesses for Inference-Time Alignment: 待產圖
+
+## Graph Build
+
+- 待執行

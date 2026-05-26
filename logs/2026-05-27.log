@@ -1,0 +1,46 @@
+# DailyRead Log — 2026-05-27
+
+## Search Attempts
+- SearXNG (http://192.168.1.18:8888): No response (timeout)
+- Used web_search + web_fetch from arXiv as fallback
+
+## Papers Processed
+
+### Checked for Dedup (NOT_SEEN)
+- 2605.25092 (AgentIR) ✅ NOT_SEEN
+- 2506.06326 (MemoryOS) ✅ NOT_SEEN — not included in today's notes (insufficient depth)
+- 2507.21428 (MemTool) ✅ NOT_SEEN — not included (insufficient depth)
+- 2507.21028 (MAJ-Eval) ✅ NOT_SEEN
+- 2506.04018 (Misalignment Propensity) ✅ NOT_SEEN
+- 2604.24977 (Conversational User Sim Survey) ✅ NOT_SEEN
+- 2503.16416 (Agent Eval Survey) ✅ NOT_SEEN
+- 2603.11126 (Value Alignment Multi-agent) ✅ NOT_SEEN — not included (insufficient depth)
+- 2510.07925 (Personalized Long-term Interaction) ✅ NOT_SEEN — not included (insufficient depth)
+- 2605.05726 (SkillRet) ✅ NOT_SEEN
+- 2605.06132 (MemReranker) ✅ NOT_SEEN
+
+### Already Seen (SEEN) — Excluded
+- 2605.14498 (GroupMemBench) — SEEN (2026-05-25)
+- 2605.18421 (EvoMemBench) — SEEN (2026-05-21)
+- (plus 15 others from previous days)
+
+## Full Text Sources
+- AgentIR (2605.25092): https://arxiv.org/html/2605.25092v1 — FULL (15000+ chars, truncated but core method/results confirmed)
+- Conversational User Sim Survey (2604.24977): https://arxiv.org/html/2604.24977v1 — FULL (15000+ chars, truncated but taxonomy confirmed)
+- Agent Eval Survey (2503.16416): https://arxiv.org/html/2503.16416v2 — PARTIAL (12000 chars, framework section + discussion confirmed, some middle sections truncated)
+- MemReranker (2605.06132): https://arxiv.org/html/2605.06132v2 — PARTIAL (10000 chars, method + main results confirmed)
+- MAJ-Eval (2507.21028): https://arxiv.org/html/2507.21028v1 — PARTIAL (12000 chars, method + results confirmed)
+
+## Papers with Insufficient Depth (not included in domain notes)
+- 2506.06326 (MemoryOS): Only abstract fetched, no full text available. Excluded from notes.
+- 2507.21428 (MemTool): Only abstract fetched, no full text available. Excluded from notes.
+- 2603.11126 (Value Alignment Multi-agent): Only abstract fetched. Excluded.
+- 2510.07925 (Personalized Long-term Interaction): Only abstract fetched. Excluded.
+
+## Recommended Picks (Today's Picks)
+1. AgentIR (2605.25092) — agent-memory — full text read
+2. Conversational User Sim Survey (2604.24977) — silicon-sampling — full text read
+3. Agent Eval Survey (2503.16416) — harness-engineering — partial text read
+
+## Graph Update
+- To be executed after commit

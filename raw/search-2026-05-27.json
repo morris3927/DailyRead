@@ -1,0 +1,21 @@
+{
+  "date": "2026-05-27",
+  "search_sources": [
+    {"engine": "web_search", "queries": ["arxiv 2605 agent memory retrieval benchmark 2026", "arxiv silicon sampling social simulation 2026", "arxiv harness engineering agent evaluation 2026"]},
+    {"engine": "arxiv_html", "papers_fetched": ["2605.25092v1", "2604.24977v1", "2503.16416v2", "2605.06132v2", "2507.21028v1"]}
+  ],
+  "searxng_status": "no_response",
+  "papers_considered": [
+    {"arxiv_id": "2605.25092", "title": "AgentIR: Workload-Adaptive Cascade Retrieval Substrate for Long-Term Conversational Memory", "seen": false, "included": true, "recommended": true},
+    {"arxiv_id": "2604.24977", "title": "A Survey on LLM-based Conversational User Simulation", "seen": false, "included": true, "recommended": true},
+    {"arxiv_id": "2503.16416", "title": "A Survey on Evaluation of LLM-based Agents", "seen": false, "included": true, "recommended": true},
+    {"arxiv_id": "2605.06132", "title": "MemReranker: Reasoning-Aware Reranking for Agent Memory Retrieval", "seen": false, "included": true, "recommended": false},
+    {"arxiv_id": "2507.21028", "title": "MAJ-Eval: Multi-Agent-as-Judge", "seen": false, "included": true, "recommended": false},
+    {"arxiv_id": "2506.06326", "title": "MemoryOS", "seen": false, "included": false, "recommended": false},
+    {"arxiv_id": "2507.21428", "title": "MemTool", "seen": false, "included": false, "recommended": false},
+    {"arxiv_id": "2506.04018", "title": "Misalignment Propensity in LLMs", "seen": false, "included": true, "recommended": false},
+    {"arxiv_id": "2605.05726", "title": "SkillRet: Large-Scale Benchmark for Skill Retrieval", "seen": false, "included": true, "recommended": false},
+    {"arxiv_id": "2603.11126", "title": "Value Alignment Multi-agent", "seen": false, "included": false, "recommended": false},
+    {"arxiv_id": "2510.07925", "title": "Personalized Long-term Interaction", "seen": false, "included": false, "recommended": false}
+  ]
+}

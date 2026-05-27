@@ -1,0 +1,57 @@
+{
+  "date": "2026-05-28",
+  "search_queries": [
+    "silicon sampling social simulation LLM agents 2025 2026 arxiv",
+    "harness engineering agent evaluation benchmark framework 2025 2026",
+    "agent memory long-term retrieval LLM memory architecture 2025 2026 arxiv",
+    "arxiv silicon sampling social simulation new May 2026",
+    "arxiv harness engineering agent evaluation new 2026",
+    "arxiv ActMem causal memory LLM agent action 2025 2026",
+    "arxiv MemTier memory tiering LLM agents 2025 2026",
+    "arxiv Causal Memory Intervention CMI LLM agent memory selection 2605.17641",
+    "arxiv agent memory new paper May 2026",
+    "arxiv PAMU preference-aware memory update LLM agent 2026",
+    "arxiv silicon sampling opinion simulation LLM 2026 recent",
+    "arxiv \"Beyond Static Responses\" multi-agent LLM social science 2026",
+    "arxiv \"Silicon Society Cookbook\" 2605.00197",
+    "arxiv harness engineering agent VeRO coding agent evaluation May 2026",
+    "arxiv \"Necessity of a Unified Framework\" LLM agent evaluation 2602.03238"
+  ],
+  "searxng_status": "unreachable (timeout)",
+  "papers_considered": [
+    {"arxiv_id": "2605.00197", "title": "The Silicon Society Cookbook", "status": "SEEN"},
+    {"arxiv_id": "2512.22725", "title": "Mitigating Social Desirability Bias in Random Silicon Sampling", "status": "SEEN"},
+    {"arxiv_id": "2502.12110", "title": "A-MEM: Agentic Memory for LLM Agents", "status": "SEEN"},
+    {"arxiv_id": "2506.19806", "title": "LLM-Based Social Simulations Require a Boundary", "status": "SEEN"},
+    {"arxiv_id": "2603.00026", "title": "ActMem", "status": "SEEN"},
+    {"arxiv_id": "2605.18747", "title": "Code as Agent Harness", "status": "SEEN"},
+    {"arxiv_id": "2605.15221", "title": "Effective Harness Engineering — Vesper", "status": "SEEN"},
+    {"arxiv_id": "2603.29194", "title": "Multi-Layered Memory Architectures for LLM Agents", "status": "SEEN"},
+    {"arxiv_id": "2604.21003", "title": "The Last Harness You'll Ever Build", "status": "SEEN"},
+    {"arxiv_id": "2604.01520", "title": "LLM Agents as Social Scientists", "status": "SEEN"},
+    {"arxiv_id": "2604.06663", "title": "Restoring Heterogeneity in LLM-based Social Simulation", "status": "SEEN"},
+    {"arxiv_id": "2605.19229", "title": "Can LLMs Revolutionize Survey Research?", "status": "SEEN"},
+    {"arxiv_id": "2604.25850", "title": "AHE Observability Driven Harness Evolution", "status": "SEEN"},
+    {"arxiv_id": "2602.22480", "title": "VeRO: An Evaluation Harness for Agents to Optimize Agents", "status": "SEEN"},
+    {"arxiv_id": "2605.06716", "title": "From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms", "status": "SEEN"},
+    {"arxiv_id": "2601.01885", "title": "Agentic Memory (AgeMem)", "status": "SEEN"},
+    {"arxiv_id": "2603.07670", "title": "Memory for Autonomous LLM Agents", "status": "SEEN"},
+    {"arxiv_id": "2510.09720", "title": "PAMU Preference-Aware Memory Update", "status": "SEEN"},
+    {"arxiv_id": "2605.17641", "title": "CMI: Causal Intervention-Based Memory Selection", "status": "NEW - recommended"},
+    {"arxiv_id": "2605.03675", "title": "MemTier: Tiered Memory Architecture", "status": "NEW - recommended"},
+    {"arxiv_id": "2506.01839", "title": "Beyond Static Responses: Multi-Agent LLM Systems", "status": "NEW - recommended"},
+    {"arxiv_id": "2602.03238", "title": "The Necessity of a Unified Framework for LLM Agent Evaluation", "status": "NEW - included"}
+  ],
+  "papers_recommended": [
+    "2605.17641",
+    "2605.03675",
+    "2506.01839"
+  ],
+  "papers_included": [
+    "2605.17641",
+    "2605.03675",
+    "2506.01839",
+    "2602.03238",
+    "2605.19229"
+  ]
+}

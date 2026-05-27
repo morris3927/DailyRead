@@ -1,0 +1,26 @@
+# DailyRead Log — 2026-05-28
+
+## 搜尋
+- SearXNG (192.168.1.18:8888): **連線失敗** (connection timeout)。所有三個 domain 搜尋均改用 web_search + arXiv direct fetch。
+- web_search 搜尋次數：15 次（silicon sampling、harness engineering、agent memory、各 paper deep dive）
+- arXiv HTML/PDF 直接 fetch：6 次
+
+## 查重
+- check_paper_seen.py 共查 18 篇，其中 17 篇為 SEEN，3 篇為 NOT_SEEN（CMI 2605.17641、MemTier 2605.03675、Multi-Agent LLM Systems 2506.01839、Unified Framework 2602.03238）
+
+## 今日收錄
+- Agent Memory: CMI (2605.17641) ★推薦, MemTier (2605.03675) ★推薦
+- Silicon Sampling: Beyond Static Responses (2506.01839) ★推薦, Survey Research (2605.19229)
+- Harness Engineering: Unified Framework (2602.03238), Beyond Static Responses (交叉收錄)
+
+## 全文讀取狀態
+- CMI (2605.17641): arXiv HTML 全文讀取 ✓
+- MemTier (2605.03675): arXiv HTML 全文讀取 ✓
+- Beyond Static Responses (2506.01839): arXiv HTML 全文讀取 ✓
+- Unified Framework (2602.03238): arXiv HTML 全文讀取 ✓
+- Survey Research (2605.19229): abstract only — 標記為「僅 abstract 層級快速掃描」
+
+## 圖片產生
+- CMI note diagram: sub-agent 產生中
+- MemTier note diagram: sub-agent 產生中
+- Multi-Agent Social Science note diagram: sub-agent 產生中

@@ -1,0 +1,29 @@
+{
+  "date": "2026-05-30",
+  "search_queries": [
+    {"query": "silicon sampling social simulation LLM agents arxiv 2025", "engine": "web_search"},
+    {"query": "harness engineering LLM agent evaluation framework arxiv 2025", "engine": "web_search"},
+    {"query": "agent memory LLM persistent long-term memory retrieval arxiv 2025", "engine": "web_search"},
+    {"query": "silicon sampling LLM social simulation persona silicon subjects 2026 May", "engine": "web_search"},
+    {"query": "arxiv harness engineering agent evaluation 2605", "engine": "web_search"},
+    {"query": "arxiv agent memory LLM 2605", "engine": "web_search"},
+    {"query": "arxiv silicon sampling social simulation LLM agents 2026", "engine": "web_search"},
+    {"query": "arxiv agent memory architecture benchmark LLM long-term 2605 OR 2604 recent", "engine": "web_search"}
+  ],
+  "papers_found": {
+    "silicon_sampling_social_simulation": [
+      {"arxiv_id": "2605.15768", "title": "ALSO: Adversarial Online Strategy Optimization for Social Agents", "status": "NOT_SEEN", "included": true},
+      {"arxiv_id": "2605.11789", "title": "Beyond Inefficiency: Systemic Costs of Incivility in Multi-Agent Monte Carlo Simulations", "status": "NOT_SEEN", "included": true},
+      {"arxiv_id": "2605.19915", "title": "LLM Agents Make Collective Belief Dynamics Programmable", "status": "NOT_SEEN", "included": false},
+      {"arxiv_id": "2605.12260", "title": "Can LLMs Revolutionize Survey Research?", "status": "NOT_SEEN", "included": false}
+    ],
+    "harness_engineering": [
+      {"arxiv_id": "2605.00663", "title": "Affordance Agent Harness: Verification-Gated Skill Orchestration", "status": "NOT_SEEN", "included": false, "reason": "robotics/CV paper, not LLM agent harness"}
+    ],
+    "agent_memory": [
+      {"arxiv_id": "2605.20833", "title": "MemGym: A Long-Horizon Memory Environment for LLM Agents", "status": "NOT_SEEN", "included": true},
+      {"arxiv_id": "2605.04897", "title": "Storage Is Not Memory: A Retrieval-Centered Architecture for Agent Recall", "status": "NOT_SEEN", "included": true},
+      {"arxiv_id": "2605.25869", "title": "MemIR: Mitigating Provenance-Role Collapse via Typed Memory Representation", "status": "NOT_SEEN", "included": true}
+    ]
+  }
+}

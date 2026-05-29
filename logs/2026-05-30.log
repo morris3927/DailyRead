@@ -1,0 +1,38 @@
+# DailyRead Log — 2026-05-30
+
+## Search queries
+- Searched: silicon sampling social simulation LLM agents (arxiv 2025/2026)
+- Searched: harness engineering agent evaluation (arxiv 2605)
+- Searched: agent memory LLM persistent long-term (arxiv 2605)
+- Searched: silicon sampling LLM social simulation persona (arxiv 2026 May)
+- Searched: agent harness tool orchestration LLM (arxiv 2605)
+- Searched: agent memory architecture benchmark LLM long-term (arxiv 2604/2605)
+
+## Paper dedup
+- Checked via check_paper_seen.py:
+  - SEEN: 2605.00197 (Silicon Society Cookbook), 2605.18747 (Code as Agent Harness), 2605.26112 (System Scaling), 2605.06716 (Storage to Experience survey), 2605.17830 (Remembering More Risking More), 2605.14421 (MemLineage), 2605.14498 (GroupMemBench), 2605.15221 (Vesper), 2605.13357 (AI Harness Engineering survey), 2605.17734 (HASP), 2506.19806 (Boundary paper), 2604.06663 (Restoring Heterogeneity), 2603.00113 (AI Agents Not Sufficient)
+  - NOT_SEEN: 2605.20833 (MemGym), 2605.00663 (Affordance Agent Harness), 2605.15768 (ALSO), 2605.04897 (True Memory), 2605.25869 (MemIR), 2605.11789 (Incivility), 2605.26302 (AgingBench)
+
+## Selected papers
+### Today's recommendations (今日推薦點開)
+1. ALSO (2605.15768) — silicon-sampling-social-simulation — full HTML read
+2. MemGym (2605.20833) — agent-memory — full HTML read
+3. True Memory (2605.04897) — agent-memory — full HTML read
+
+### Other included
+- Incivility (2605.11789) — silicon-sampling-social-simulation — abstract + partial HTML
+- MemIR (2605.25869) — agent-memory — full HTML read
+
+### Excluded with reason
+- 2605.00663 (Affordance Agent Harness) — robotics/CV paper, not LLM agent harness
+- 2605.26302 (AgingBench) — not enough detail for quality domain note today
+- 2605.12260 (LLMs Revolutionize Survey Research) — abstract-level only, insufficient for domain note
+
+## Harness engineering
+No new high-quality candidates found. All recent important papers (Code as Agent Harness, HASP, CheetahClaws, AI Harness Engineering survey) already covered in previous DailyReads.
+
+## Image generation
+- true-memory-note.png: Generated via openai/gpt-image-2. Google quota exceeded, fell back to OpenAI.
+
+## Graph update
+Will run after commit.

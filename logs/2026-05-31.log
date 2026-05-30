@@ -1,0 +1,34 @@
+DailyRead 2026-05-31 Log
+========================
+
+## 搜尋
+- SearXNG 搜尋嘗試超時（http://192.168.1.18:8888），改用 web_search
+- 搜尋關鍵字：silicon sampling social simulation LLM, harness engineering agent evaluation benchmark, agent memory benchmark LLM
+- 獲得候選 arXiv IDs: 2605.30258, 2605.19915, 2605.08321, 2603.23448, 2602.11243, 2605.11814, 2605.29341
+
+## 去重
+- 全部 7 篇候選經 check_paper_seen.py 確認為 NOT_SEEN
+
+## 全文讀取
+- 2605.19915 (Programmable Belief Control): arXiv HTML 全文讀取成功 ✓
+- 2605.29341 (WorldMemArena): arXiv HTML 全文讀取成功 ✓
+- 2603.23448 (c-CRAB): arXiv HTML 全文讀取成功 ✓
+- 2602.11243 (StructMemEval): arXiv HTML 全文讀取成功 ✓
+- 2605.30258 (EASE/SiliSocS): HTML 不可用，僅 abstract ✓ 已標記
+- 2605.11814 (MedMemoryBench): HTML 不可用，僅 abstract ✓ 已標記
+- 2605.08321 (Warden/COAX-Bench): 僅 abstract 層級，HTML 不可用 ✓ 已標記
+
+## 今日推薦點開
+1. 2605.19915 — Programmable Collective Belief Control (silicon-sampling)
+2. 2605.29341 — WorldMemArena (agent-memory)
+3. 2603.23448 — c-CRAB (harness-engineering)
+
+## 產圖
+- programmable-belief-control-note.png ✓ 產圖成功
+- worldmemarena-note.png ✓ 產圖成功
+- ccrab-note.png ✓ 產圖成功
+- 所有圖片已複製到 assets/2026-05-31/
+- 圖片連結已插入 domain markdown 和 daily overview
+
+## Graph 重建
+- 待執行 build_paper_graph.py 和 graphify global add

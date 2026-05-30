@@ -1,0 +1,72 @@
+{
+  "date": "2026-05-31",
+  "search_queries": [
+    "silicon sampling social simulation LLM",
+    "harness engineering agent evaluation benchmark",
+    "agent memory benchmark LLM"
+  ],
+  "search_method": "web_search (SearXNG timeout)",
+  "candidates": [
+    {
+      "arxiv_id": "2605.30258",
+      "title": "EASE Configuration Facilitates A Reproducible Science of LLM Social Simulations",
+      "domain": "silicon-sampling-social-simulation",
+      "full_text_available": false,
+      "selected": false
+    },
+    {
+      "arxiv_id": "2605.19915",
+      "title": "LLM Agents Make Collective Belief Dynamics Programmable",
+      "domain": "silicon-sampling-social-simulation",
+      "full_text_available": true,
+      "selected": true,
+      "today_pick": true
+    },
+    {
+      "arxiv_id": "2605.08321",
+      "title": "Mitigating Adversarial Persuasion with Third-Party Conversational Oversight",
+      "domain": "silicon-sampling-social-simulation",
+      "full_text_available": false,
+      "selected": false
+    },
+    {
+      "arxiv_id": "2603.23448",
+      "title": "Code Review Agent Benchmark (c-CRAB)",
+      "domain": "harness-engineering",
+      "full_text_available": true,
+      "selected": true,
+      "today_pick": true
+    },
+    {
+      "arxiv_id": "2602.11243",
+      "title": "StructMemEval: Evaluating Memory Structure in LLM Agents",
+      "domain": "agent-memory",
+      "full_text_available": true,
+      "selected": true,
+      "today_pick": false
+    },
+    {
+      "arxiv_id": "2605.11814",
+      "title": "MedMemoryBench: Benchmarking Agent Memory in Personalized Healthcare",
+      "domain": "agent-memory",
+      "full_text_available": false,
+      "selected": true,
+      "today_pick": false
+    },
+    {
+      "arxiv_id": "2605.29341",
+      "title": "WorldMemArena: Evaluating Multimodal Agent Memory Through Action-World Interaction",
+      "domain": "agent-memory",
+      "full_text_available": true,
+      "selected": true,
+      "today_pick": true
+    }
+  ],
+  "dedup_results": {
+    "all_not_seen": true
+  },
+  "image_generation": {
+    "status": "timeout",
+    "note": "openai/gpt-image-2 三次產圖均超時，將在後續重試"
+  }
+}

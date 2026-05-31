@@ -1,0 +1,28 @@
+# DailyRead Log — 2026-06-01
+
+## Execution Summary
+- SearXNG (192.168.1.18:8888) was DOWN during execution. All searches fell back to web_search (Gemini) and direct arXiv fetches.
+- Search completed successfully via fallback. Found candidates for all three domains.
+
+## Search Queries
+- Silicon Sampling: "silicon sampling social simulation LLM agents", "silicon sampling LLM social simulation opinion dynamics", "silicon population simulation multi-agent"
+- Harness Engineering: "harness engineering agent evaluation benchmark", "harness bench measuring harness effects"
+- Agent Memory: "agent memory LLM long-term memory framework benchmark", "agent memory benchmark evolving stale forgetting"
+
+## Dedup Results
+- Checked all candidates against paper_index.json (163 papers)
+- All selected papers confirmed NOT_SEEN
+
+## Paper Fetch Status
+- 2605.27419 (APS): Full HTML read (first ~20K chars). Method sections confirmed. Experiments section partially confirmed; appendix tables need full read.
+- 2605.27922 (Harness-Bench): Full HTML read (first ~20K chars). Sections 1-3 confirmed. Section 4 experiments partially read.
+- 2605.24134 (ProofAgent Harness): Full HTML read (first ~10K chars). Sections 1-3 confirmed. Section 5 experiments need full read.
+- 2605.26252 (GEM): Full HTML read (first ~20K chars). Sections 1-3 confirmed. MemState experiments in Section 4 need full read.
+- 2605.10870 (DeMem): Full HTML read (first ~10K chars). Abstract, intro, related work confirmed. Algorithm details in Section 3 need full read.
+- 2605.15710 (SMMBench): Abstract only. Full text not fetched. Marked as abstract-level scan.
+
+## Image Generation
+- Will generate note diagrams for 3 recommended papers via sub-agents (non-blocking)
+
+## SearXNG Outage Note
+- SearXNG at 192.168.1.18:8888 was unreachable (connection timeout, no response). Web search fallback worked well for discovery.

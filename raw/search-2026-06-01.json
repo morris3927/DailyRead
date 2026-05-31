@@ -1,0 +1,80 @@
+{
+  "date": "2026-06-01",
+  "domains_searched": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "searxng_status": "DOWN - unreachable at 192.168.1.18:8888",
+  "fallback": "web_search via Gemini + arXiv direct fetch",
+  "papers": {
+    "silicon-sampling-social-simulation": {
+      "new_candidates": [
+        {
+          "arxiv_id": "2605.27419",
+          "title": "APS: Bias-Controlled Adaptive Prototype Simulation for Population-Scale LLM Agents",
+          "seen": false,
+          "selected": true,
+          "reason": "Directly addresses silicon sampling scalability with bias control, 10M-agent simulation"
+        }
+      ],
+      "seen_skipped": [
+        "2605.00197 (Silicon Society Cookbook - already recommended)",
+        "2605.18395 (Korean LLM bias - already mentioned)",
+        "2506.01839 (Beyond Static Responses - already mentioned)",
+        "2506.19806 (LLM Social Simulations Boundary - already mentioned)",
+        "2605.30258 (EASE - already mentioned)"
+      ]
+    },
+    "harness-engineering": {
+      "new_candidates": [
+        {
+          "arxiv_id": "2605.27922",
+          "title": "Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows",
+          "seen": false,
+          "selected": true,
+          "reason": "First diagnostic benchmark making harness the primary evaluation axis; 106 tasks, 5194 trajectories"
+        },
+        {
+          "arxiv_id": "2605.24134",
+          "title": "ProofAgent Harness: Open Infrastructure for Adversarial Evaluation of AI Agents",
+          "seen": false,
+          "selected": true,
+          "reason": "Adversarial multi-juror evaluation harness; open infrastructure; asymmetric evaluation"
+        }
+      ],
+      "seen_skipped": [
+        "2605.18747 (Code as Agent Harness - already mentioned)"
+      ]
+    },
+    "agent-memory": {
+      "new_candidates": [
+        {
+          "arxiv_id": "2605.26252",
+          "title": "Is Agent Memory a Database? Rethinking Data Foundations for Long-Term AI Agent Memory (GEM)",
+          "seen": false,
+          "selected": true,
+          "reason": "Vision paper reframing agent memory as data-management workload; GEM abstraction with formal correctness conditions"
+        },
+        {
+          "arxiv_id": "2605.10870",
+          "title": "Remember the Decision, Not the Description: A Rate-Distortion Framework for Agent Memory (DeMem)",
+          "seen": false,
+          "selected": true,
+          "reason": "Decision-centric forgetting theory with exact forgetting boundary and near-minimax regret guarantees"
+        },
+        {
+          "arxiv_id": "2605.15710",
+          "title": "SMMBench: A Benchmark for Source-Distributed Multimodal Agent Memory",
+          "seen": false,
+          "selected": true,
+          "reason": "First benchmark for source-distributed multimodal memory; 1877 samples, 264 sources"
+        }
+      ],
+      "seen_skipped": [
+        "2604.20006 (From Recall to Forgetting - already mentioned)",
+        "2603.07670 (Memory for Autonomous LLM Agents - already recommended)",
+        "2605.18421 (EvoMemBench - already mentioned)",
+        "2605.06527 (STALE - already mentioned)",
+        "2601.01885 (Agentic Memory - already mentioned)",
+        "2605.25092 (AgentIR - already mentioned)"
+      ]
+    }
+  }
+}

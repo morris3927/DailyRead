@@ -1,0 +1,54 @@
+# DailyRead Log — 2026-06-02
+
+## SearXNG Status
+- SearXNG (192.168.1.18:8888) 無回應，timeout。改用 web_search + arXiv 直接搜尋。
+
+## Search Queries
+1. silicon sampling social simulation LLM agents arxiv 2025
+2. harness engineering agent evaluation benchmark arxiv 2025
+3. agent memory long-term short-term management LLM arxiv 2025 2026
+4. silicon sampling social desirability bias LLM simulation arxiv 2025
+5. agent memory write manage read loop survey arxiv 2026
+6. agent memory architecture LLM AtomMem SSGM stability safety governed
+
+## Paper Deduplication (check_paper_seen.py)
+- 2512.22725 (Mitigating SDB): SEEN (2026-05-14)
+- 2507.19364 (Integrating LLM in ABS): SEEN (2026-05-15)
+- 2502.08691 (AgentSociety): SEEN (2026-05-08)
+- 2603.23448 (c-CRAB): SEEN (2026-05-31)
+- 2601.01885 (AgeMem): SEEN (2026-05-09)
+- 2603.07670 (Memory for Autonomous LLM Agents survey): SEEN (2026-05-09)
+- 2603.29194 (Multi-Layered Memory): SEEN (2026-05-18)
+- 2603.00026 (ActMem): SEEN (2026-05-13)
+- 2603.11768 (SSGM): SEEN (2026-05-20)
+- 2605.08538 (Human-Inspired Memory): SEEN (2026-05-14)
+
+## New Papers Selected
+- 2509.03736 (Behaviorally Coherent? Latent Profiles): NOT_SEEN → 推薦
+- 2504.10157 (SocioVerse): NOT_SEEN → 收錄
+- 2504.11671 (Computational Basis): NOT_SEEN → 收錄（abstract only）
+- 2602.12670 (SkillsBench): NOT_SEEN → 推薦
+- 2603.02239 (ERI Benchmark): NOT_SEEN → 收錄（abstract only）
+- 2601.08323 (AtomMem): NOT_SEEN → 推薦
+- 2601.07190 (Focus/Active Context Compression): NOT_SEEN → 收錄
+
+## Full-text Access
+- 2509.03736: Full HTML read ✓
+- 2504.10157: Full HTML read (truncated at method section) ✓
+- 2601.08323: Full HTML read (truncated at baseline section) ✓
+- 2601.07190: Full HTML read (truncated at discussion) ✓
+- 2504.11671: Abstract only (no HTML available)
+- 2602.12670: Abstract only (no HTML available)
+- 2603.02239: Abstract only (no HTML available)
+
+## Images Generated
+- behavioral-coherence-note.png: 待產生
+- skillsbench-note.png: 待產生
+- atommem-note.png: 待產生
+
+## Self-audit Checklist
+- [x] All entries have 5 required subheadings
+- [x] Content explains research problem, not just bullet points
+- [x] Information gaps explicitly noted where applicable
+- [x] Today's recommendations have 500+ Chinese characters each
+- [x] Non-recommended entries have 300+ Chinese characters each

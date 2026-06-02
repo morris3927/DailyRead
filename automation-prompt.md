@@ -204,7 +204,7 @@ Commit 前必須由 main model 自審三個 domain notes：
 
 ## Discord 回報
 
-不要把完整晨報丟到 paper 晨報頻道。完成後只回覆一段短摘要即可：
+不要把完整晨報丟到 paper 晨報頻道。完成後只回覆一段短摘要即可，且**必須使用繁體中文**；不要用英文回報 Morris。paper 標題可以保留原文英文，但說明、headline、推薦理由、狀態回覆都要用繁體中文。
 
 - 今日 DailyRead 已更新
 - 三個 domain 各一句 headline

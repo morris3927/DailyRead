@@ -1,0 +1,27 @@
+{
+  "date": "2026-06-03",
+  "search_sources": ["web_search (Gemini)", "arXiv HTML/abs via web_fetch"],
+  "searxng_status": "unavailable (private IP, timeout)",
+  "arxiv_api_status": "empty response",
+  "papers_checked": [
+    {"arxiv_id": "2606.00476", "title": "Doing What They Say, Not What They Reason", "status": "NOT_SEEN", "full_text": true},
+    {"arxiv_id": "2606.01199", "title": "Can LLM Agents Sustain Long-Horizon Organizational Dynamics?", "status": "NOT_SEEN", "full_text": true},
+    {"arxiv_id": "2605.12894", "title": "Beyond Cooperative Simulators (Persona Policies)", "status": "NOT_SEEN", "full_text": false},
+    {"arxiv_id": "2605.04886", "title": "Making the Social Sciences Count (BenCSSmark)", "status": "NOT_SEEN", "full_text": false},
+    {"arxiv_id": "2605.30621", "title": "Harness Updating Is Not Harness Benefit", "status": "NOT_SEEN", "full_text": true},
+    {"arxiv_id": "2606.01770", "title": "Adaptive Auto-Harness", "status": "NOT_SEEN", "full_text": true},
+    {"arxiv_id": "2606.01779", "title": "HarnessForge", "status": "NOT_SEEN", "full_text": true},
+    {"arxiv_id": "2606.02373", "title": "Harness-1 (RL for Search Agents)", "status": "NOT_SEEN", "full_text": false},
+    {"arxiv_id": "2605.29960", "title": "MemPoison", "status": "NOT_SEEN", "full_text": false},
+    {"arxiv_id": "2605.15759", "title": "DimMem", "status": "NOT_SEEN", "full_text": false},
+    {"arxiv_id": "2605.29341", "title": "WorldMemArena", "status": "SEEN"},
+    {"arxiv_id": "2605.08538", "title": "Human-Inspired Memory Architecture", "status": "SEEN"},
+    {"arxiv_id": "2605.06716", "title": "From Storage to Experience (Survey)", "status": "SEEN"},
+    {"arxiv_id": "2605.14421", "title": "MemLineage", "status": "SEEN"}
+  ],
+  "daily_picks": [
+    "2606.00476",
+    "2605.30621",
+    "2605.15759"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-02",
+  "search_queries": [
+    "silicon sampling social simulation LLM agents arxiv 2025",
+    "harness engineering agent evaluation benchmark arxiv 2025",
+    "agent memory long-term short-term management LLM arxiv 2025 2026",
+    "silicon sampling social desirability bias LLM simulation arxiv 2025",
+    "agent memory write manage read loop survey arxiv 2026",
+    "agent memory architecture LLM AtomMem SSGM stability safety governed"
+  ],
+  "searxng_status": "timeout",
+  "papers_considered": [
+    {"arxiv_id": "2512.22725", "title": "Mitigating Social Desirability Bias in Random Silicon Sampling", "status": "SEEN"},
+    {"arxiv_id": "2507.19364", "title": "Integrating LLM in Agent-Based Social Simulation", "status": "SEEN"},
+    {"arxiv_id": "2502.08691", "title": "AgentSociety", "status": "SEEN"},
+    {"arxiv_id": "2603.23448", "title": "Code Review Agent Benchmark (c-CRAB)", "status": "SEEN"},
+    {"arxiv_id": "2601.01885", "title": "Agentic Memory (AgeMem)", "status": "SEEN"},
+    {"arxiv_id": "2603.07670", "title": "Memory for Autonomous LLM Agents", "status": "SEEN"},
+    {"arxiv_id": "2603.29194", "title": "Multi-Layered Memory Architectures", "status": "SEEN"},
+    {"arxiv_id": "2603.00026", "title": "ActMem", "status": "SEEN"},
+    {"arxiv_id": "2603.11768", "title": "SSGM", "status": "SEEN"},
+    {"arxiv_id": "2509.03736", "title": "Are LLM Agents Behaviorally Coherent?", "status": "NEW_RECOMMENDED"},
+    {"arxiv_id": "2504.10157", "title": "SocioVerse", "status": "NEW_INCLUDED"},
+    {"arxiv_id": "2504.11671", "title": "Computational Basis of LLM Decision Making", "status": "NEW_INCLUDED"},
+    {"arxiv_id": "2602.12670", "title": "SkillsBench", "status": "NEW_RECOMMENDED"},
+    {"arxiv_id": "2603.02239", "title": "ERI Benchmark", "status": "NEW_INCLUDED"},
+    {"arxiv_id": "2601.08323", "title": "AtomMem", "status": "NEW_RECOMMENDED"},
+    {"arxiv_id": "2601.07190", "title": "Focus/Active Context Compression", "status": "NEW_INCLUDED"}
+  ]
+}

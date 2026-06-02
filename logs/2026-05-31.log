@@ -31,4 +31,9 @@ DailyRead 2026-05-31 Log
 - 圖片連結已插入 domain markdown 和 daily overview
 
 ## Graph 重建
-- 待執行 build_paper_graph.py 和 graphify global add
+- build_paper_graph.py ✓ 成功（Nodes=354, Edges=1457）
+- graphify global add ✓ 成功
+
+## Git
+- commit 26b748e ✓
+- push ✓

@@ -1,0 +1,50 @@
+# DailyRead Log — 2026-06-03
+
+## 搜尋記錄
+
+- SearXNG (http://192.168.1.18:8888): 無法使用（private IP，web_fetch 被擋，curl timeout/SIGKILL）
+- arXiv API: 空回應/parse error
+- 改用 web_search (Gemini) + web_fetch (arXiv abs/HTML) 組合成功
+
+## 查重結果
+
+| arXiv ID | 標題 | 狀態 |
+|---|---|---|
+| 2606.00476 | Doing What They Say, Not What They Reason | NOT_SEEN ✅ |
+| 2606.01199 | Can LLM Agents Sustain Long-Horizon Organizational Dynamics? | NOT_SEEN ✅ |
+| 2605.12894 | Beyond Cooperative Simulators (Persona Policies) | NOT_SEEN ✅ |
+| 2605.04886 | Making the Social Sciences Count (BenCSSmark) | NOT_SEEN ✅ |
+| 2605.30621 | Harness Updating Is Not Harness Benefit | NOT_SEEN ✅ |
+| 2606.01770 | Adaptive Auto-Harness | NOT_SEEN ✅ |
+| 2606.01779 | HarnessForge | NOT_SEEN ✅ |
+| 2606.02373 | Harness-1 (RL for Search Agents) | NOT_SEEN ✅ |
+| 2605.29960 | MemPoison | NOT_SEEN ✅ |
+| 2605.15759 | DimMem | NOT_SEEN ✅ |
+| 2605.29341 | WorldMemArena | SEEN ❌ (已在 2026-05-22) |
+| 2605.08538 | Human-Inspired Memory Architecture | SEEN ❌ (已在 2026-05-14) |
+| 2605.06716 | From Storage to Experience (Survey) | SEEN ❌ (已在 2026-05-14) |
+| 2605.14421 | MemLineage | SEEN ❌ (已在 2026-05-25) |
+
+## 全文讀取
+
+| arXiv ID | 來源 | 完整度 |
+|---|---|---|
+| 2606.00476 | arXiv HTML (v1) | 完整全文 ✅ |
+| 2606.01199 | arXiv HTML (v1) | 前 60% + 方法段 ✅ |
+| 2605.30621 | arXiv HTML (v1) | 完整全文 ✅ |
+| 2606.01770 | arXiv HTML (v1) | 前 70% + 方法段 ✅ |
+| 2606.01779 | arXiv HTML (v1) | 前 70% + 方法段 ✅ |
+| 2605.15759 | arXiv abs (v3, HTML 不可用) | abstract 層級 ⚠️ |
+| 2605.29960 | arXiv abs | abstract 層級 ⚠️ |
+| 2605.04886 | arXiv abs | abstract 層級 ⚠️ |
+
+## 今日推薦點開
+
+1. 2606.00476 — Doing What They Say, Not What They Reason
+2. 2605.30621 — Harness Updating Is Not Harness Benefit
+3. 2605.15759 — DimMem
+
+## 備註
+
+- 2605.15759 (DimMem) HTML 版本不可用，推薦理由基於 abstract 和 arXiv 頁面資訊；domain note 中已標注資訊不足處。
+- 2605.29960 (MemPoison) 同樣只有 abstract，收錄但非推薦。

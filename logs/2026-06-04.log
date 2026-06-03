@@ -1,0 +1,61 @@
+# DailyRead Log — 2026-06-04
+
+## 搜尋與抓取
+
+- SearXNG 搜尋: silicon sampling, social simulation, harness engineering, agent memory
+- Semantic Scholar API: 回傳 429 rate limit，放棄
+- arXiv XML API: parse 失敗，改用 SearXNG JSON + direct arXiv abs page fetch
+
+## 查重結果
+
+| arXiv ID | Title | Status |
+|---|---|---|
+| 2506.19806 | LLM-Based Social Simulations Require a Boundary | SEEN (mentioned_daily 2026-05-17) |
+| 2604.06663 | Restoring Heterogeneity in LLM-based Social Simulation | SEEN (mentioned_daily 2026-05-10) |
+| 2604.07838 | We Need Strong Preconditions For Using Simulations In Policy | NOT_SEEN |
+| 2606.02293 | AI as a Tool for Simulation-Based Experiments in Literary Studies | NOT_SEEN |
+| 2606.02859 | Economy of Minds | NOT_SEEN |
+| 2603.28052 | Meta-Harness | SEEN (mentioned_daily 2026-05-19) |
+| 2605.27922 | Harness-Bench | SEEN (mentioned_daily 2026-06-01) |
+| 2603.11768 | SSGM Framework | SEEN (mentioned_daily 2026-05-20) |
+| 2506.06326 | MemoryOS | NOT_SEEN |
+| 2605.13941 | EvolveMem | SEEN (mentioned_daily 2026-05-21) |
+| 2601.10702 | STITCH | NOT_SEEN |
+| 2602.02007 | xMemory | NOT_SEEN |
+| 2605.18747 | Code as Agent Harness | SEEN (mentioned_daily 2026-05-21) |
+| 2603.19649 | PolicySim | SEEN (mentioned_daily 2026-05-18) |
+| 2603.00113 | AI Agents Not Yet Sufficient for Social Simulation | SEEN (deepread 2026-05-12) |
+| 2602.02598 | Social Catalysts, Not Moral Agents | NOT_SEEN |
+| 2603.00026 | ActMem | SEEN (mentioned_daily 2026-05-13) |
+| 2606.02470 | MCP-Persona | NOT_SEEN |
+| 2606.03918 | Hedge-Bench 1.0 | NOT_SEEN |
+| 2606.03329 | InfoMem | NOT_SEEN |
+| 2605.01386 | MemORAI | NOT_SEEN |
+| 2605.30712 | ExpGraph | NOT_SEEN |
+| 2603.16142 | PSII | NOT_SEEN |
+
+## 全文讀取狀態
+
+- 2604.07838: HTML 全文已讀
+- 2602.02598: HTML 全文已讀
+- 2603.16142: HTML 全文已讀
+- 2606.02293: HTML 前段已讀（截斷）
+- 2606.02859: HTML 前段已讀（截斷）
+- 2606.02470: HTML 全文已讀
+- 2606.03918: HTML 全文已讀
+- 2606.03329: HTML 前段已讀（截斷）
+- 2605.01386: HTML 前段+方法已讀
+- 2605.30712: HTML 全文已讀
+- 2506.06326: HTML 方法已讀
+- 2602.02007: HTML 全文已讀
+- 2601.10702: HTML 方法+基準已讀
+
+## 今日推薦
+
+1. PSII (2603.16142) — Silicon Sampling
+2. Hedge-Bench (2606.03918) — Harness Engineering
+3. xMemory (2602.02007) — Agent Memory
+
+## Graph Update
+
+(將在執行 build_paper_graph.py 後更新狀態)

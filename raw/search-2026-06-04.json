@@ -1,0 +1,20 @@
+{
+  "date": "2026-06-04",
+  "search_queries": ["silicon sampling social simulation", "harness engineering LLM agent", "agent memory LLM", "LLM social simulation diversity", "MCP benchmark personalization", "financial reasoning benchmark agent", "parametric identity injection", "experience learning agent graph"],
+  "papers": [
+    {"arxiv_id": "2604.07838", "title": "We Need Strong Preconditions For Using Simulations In Policy", "domain": "silicon-sampling-social-simulation", "status": "mentioned_daily"},
+    {"arxiv_id": "2602.02598", "title": "Social Catalysts, Not Moral Agents: The Illusion of Alignment in LLM Societies", "domain": "silicon-sampling-social-simulation", "status": "mentioned_daily"},
+    {"arxiv_id": "2603.16142", "title": "Parametric Social Identity Injection and Diversification in Public Opinion Simulation", "domain": "silicon-sampling-social-simulation", "status": "recommended"},
+    {"arxiv_id": "2606.02293", "title": "AI as a Tool for Simulation-Based Experiments in Literary Studies", "domain": "silicon-sampling-social-simulation", "status": "mentioned_daily"},
+    {"arxiv_id": "2606.02859", "title": "Economy of Minds: Emerging Multi-Agent Intelligence with Economic Interactions", "domain": "silicon-sampling-social-simulation", "status": "mentioned_daily"},
+    {"arxiv_id": "2606.02470", "title": "MCP-Persona: Benchmarking LLM Agents on Real-World Personal Applications via Environment Simulation", "domain": "harness-engineering", "status": "mentioned_daily"},
+    {"arxiv_id": "2606.03918", "title": "Hedge-Bench: Benchmarking Agents on Hard, Realistic Tasks Pertaining to Financial Reasoning", "domain": "harness-engineering", "status": "recommended"},
+    {"arxiv_id": "2606.03329", "title": "InfoMem: Training Long-Context Memory Agents with Answer-Conditioned Information Gain", "domain": "harness-engineering", "status": "mentioned_daily"},
+    {"arxiv_id": "2602.02007", "title": "xMemory: Beyond RAG for Agent Memory - Retrieval by Decoupling and Aggregation", "domain": "agent-memory", "status": "recommended"},
+    {"arxiv_id": "2605.01386", "title": "MemORAI: Memory Organization and Retrieval via Adaptive Graph Intelligence", "domain": "agent-memory", "status": "mentioned_daily"},
+    {"arxiv_id": "2506.06326", "title": "MemoryOS: Memory Operating System for AI Agents", "domain": "agent-memory", "status": "mentioned_daily"},
+    {"arxiv_id": "2605.30712", "title": "ExpGraph: Model-Agnostic Experience Learning with Graph-Structured Memory for LLM Agents", "domain": "agent-memory", "status": "mentioned_daily"},
+    {"arxiv_id": "2601.10702", "title": "STITCH: Grounding Agent Memory in Contextual Intent", "domain": "agent-memory", "status": "mentioned_daily"}
+  ],
+  "recommended": ["2603.16142", "2606.03918", "2602.02007"]
+}

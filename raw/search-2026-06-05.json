@@ -1,0 +1,26 @@
+{
+  "date": "2026-06-05",
+  "search_queries": [
+    {"query": "silicon sampling social simulation 2025 2026", "source": "SearXNG", "results_count": 10},
+    {"query": "harness engineering LLM agent evaluation 2025 2026", "source": "SearXNG", "results_count": 10},
+    {"query": "agent memory LLM long-term autonomous 2025 2026", "source": "SearXNG", "results_count": 10},
+    {"query": "arXiv silicon sampling social simulation 2025 2026", "source": "SearXNG", "results_count": 10},
+    {"query": "arXiv agent harness evaluation benchmark 2025 2026", "source": "SearXNG", "results_count": 10},
+    {"query": "arXiv agent memory survey benchmark 2026", "source": "SearXNG", "results_count": 10}
+  ],
+  "deduplication": {
+    "seen_skipped": [
+      "2601.01546", "2506.19806", "2605.27922", "2603.25723",
+      "2603.07670", "2512.13564", "2503.16527", "2603.00113",
+      "2602.22480", "2604.25850", "2602.16313", "2605.12239"
+    ],
+    "new_candidates": [
+      "SSRN_5835122", "EACL_2026_long89", "2605.09998",
+      "2602.22769", "2602.06052", "2601.14192"
+    ]
+  },
+  "selected": {
+    "recommended": ["2605.09998", "2602.22769"],
+    "mentioned": ["EACL_2026_long89", "2602.06052", "2601.14192"]
+  }
+}

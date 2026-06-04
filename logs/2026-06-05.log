@@ -1,0 +1,63 @@
+# DailyRead Log — 2026-06-05
+
+## Search Queries (SearXNG)
+
+1. `silicon sampling social simulation 2025 2026` — 10 relevant results
+2. `harness engineering LLM agent evaluation 2025 2026` — 10 relevant results
+3. `agent memory LLM long-term autonomous 2025 2026` — 10 relevant results
+4. `arXiv silicon sampling social simulation 2025 2026` — 10 results
+5. `arXiv agent harness evaluation benchmark 2025 2026` — 10 results
+6. `arXiv agent memory survey benchmark 2026` — 10 results
+
+## Deduplication Results
+
+### SEEN (skipped as new candidates)
+- 2601.01546 — Improving Behavioral Alignment (already 2026-05-15)
+- 2506.19806 — LLM-Based Social Simulations Require a Boundary (already 2026-05-17)
+- 2605.27922 — Harness-Bench (already 2026-06-01)
+- 2603.25723 — Natural-Language Agent Harnesses (already 2026-05-11)
+- 2603.07670 — Memory for Autonomous LLM Agents (already 2026-05-12)
+- 2512.13564 — Memory in the Age of AI Agents (already 2026-05-13)
+- 2503.16527 — LLM Generated Persona is a Promise with a Catch (already 2026-05-08)
+- 2603.00113 — AI Agents Not Sufficient for Social Simulation (already deepread)
+- 2602.22480 — VeRO (already 2026-05-20)
+- 2604.25850 — AHE Observability Driven Harness Evolution (already 2026-05-10)
+- 2602.16313 — MemoryArena (already 2026-05-11)
+- 2605.12239 — Harness Engineering as Categorical Architecture (already 2026-05-19)
+
+### NOT_SEEN (new candidates)
+- SSRN 5835122 — The Silicon Sample (SSRN, paywalled → only abstract)
+- EACL 2026 long.89 — Too Open for Opinion? (conference paper, PDF available)
+- arXiv 2605.09998 — Continual Harness ★ FULL READ
+- arXiv 2602.22769 — AMA-Bench ★ FULL READ
+- arXiv 2602.06052 — Rethinking Memory Mechanisms (survey, abstract only)
+- arXiv 2601.14192 — Toward Efficient Agents (survey, abstract only)
+- Preprints 202604.0428 — Agent Harness Survey (PDF blocked)
+- Preprints — Harness Engineering as Control, Agency, Runtime (PDF blocked)
+
+## Full-text Access Log
+
+- Continual Harness (2605.09998): Full HTML read via arxiv.org/html — ~25K chars captured
+- AMA-Bench (2602.22769): Full HTML read via arxiv.org/html — ~25K chars captured
+- Too Open for Opinion (EACL 2026): Abstract + metadata only from ACL Anthology
+- The Silicon Sample (SSRN 5835122): Paywall blocked (403)
+- Close The Validation Gap (PDF): PDF fetched but not parseable, only search snippet
+- Agent Harness Survey (Preprints): Blocked (Akamai protection)
+- Rethinking Memory Mechanisms (2602.06052): Abstract only
+- Toward Efficient Agents (2601.14192): Abstract only
+
+## Image Generation
+
+- continual-harness.png → openai/gpt-image-2, 1536x1024, OK
+- ama-bench.png → openai/gpt-image-2, 1536x1024, OK
+
+## Today's Selection
+
+### 今日推薦點開
+1. Continual Harness (2605.09998) — harness engineering domain, full read
+2. AMA-Bench (2602.22769) — agent memory domain, full read
+
+### 一般收錄
+- Too Open for Opinion? (EACL 2026) — silicon sampling, abstract only
+- Rethinking Memory Mechanisms (2602.06052) — agent memory, abstract only (large survey)
+- Toward Efficient Agents (2601.14192) — agent memory, abstract only

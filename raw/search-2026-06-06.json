@@ -1,0 +1,62 @@
+{
+  "date": "2026-06-06",
+  "searches": [
+    {
+      "query": "silicon sampling social simulation LLM 2025 2026",
+      "engine": "SearXNG",
+      "results_count": 15
+    },
+    {
+      "query": "agent memory LLM long term short term 2025 2026",
+      "engine": "SearXNG",
+      "results_count": 15
+    },
+    {
+      "query": "harness engineering AI agent evaluation framework 2025 2026",
+      "engine": "SearXNG",
+      "results_count": 15
+    }
+  ],
+  "papers": [
+    {
+      "title": "Synthetic Personalities: How Well Can LLMs Mimic Individual Respondents Using Socio-Economic Microdata?",
+      "arxiv_id": "2606.04592",
+      "status": "recommended_daily",
+      "domains": ["silicon-sampling-social-simulation"]
+    },
+    {
+      "title": "ScioMind: Cognitively Grounded Multi-Agent Social Simulation with Anchoring-Based Belief Dynamics and Dynamic Profiles",
+      "arxiv_id": "2605.13725",
+      "status": "mentioned_daily",
+      "domains": ["silicon-sampling-social-simulation"]
+    },
+    {
+      "title": "MOSAIC: Modeling Social AI for Content Dissemination and Regulation in Multi-Agent Simulations",
+      "arxiv_id": null,
+      "url": "https://aclanthology.org/2025.emnlp-main.325/",
+      "status": "mentioned_daily",
+      "domains": ["silicon-sampling-social-simulation"]
+    },
+    {
+      "title": "From Context to Dreams: Architecting Memory for AI Agents",
+      "arxiv_id": null,
+      "url": "https://next.redhat.com/2026/06/01/from-context-to-dreams-architecting-memory-for-ai-agents/",
+      "status": "recommended_daily",
+      "domains": ["agent-memory"]
+    },
+    {
+      "title": "Hidden Technical Debt of AI Systems: Agent Harness",
+      "arxiv_id": null,
+      "url": "https://leehanchung.github.io/blogs/2026/05/08/hidden-technical-debt-agent-harness/",
+      "status": "recommended_daily",
+      "domains": ["harness-engineering"]
+    },
+    {
+      "title": "Building an Evaluation Harness for Production AI Agents: A 12-Metric Framework From 100+ Deployments",
+      "arxiv_id": null,
+      "url": "https://towardsdatascience.com/building-an-evaluation-harness-for-production-ai-agents-a-12-metric-framework-from-100-deployments/",
+      "status": "mentioned_daily",
+      "domains": ["harness-engineering"]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+# DailyRead Log — 2026-06-06
+
+## 搜尋
+
+- SearXNG 搜尋 silicon sampling/social simulation, harness engineering, agent memory
+- 三個 domain 各拿到 10-15 個結果
+
+## 查重
+
+- arXiv 2603.00113 (AI Agents Not Sufficient): SEEN (deepread, 多次提及)
+- arXiv 2603.11768 (Governing Evolving Memory): SEEN (mentioned 2026-05-20)
+- arXiv 2605.26112 (From Model Scaling to System Scaling): SEEN (mentioned 2026-05-29)
+- AgentSociety: SEEN (mentioned 2026-05-08, 05-09)
+- awesome-harness-engineering: SEEN (mentioned 2026-05-09)
+- arXiv 2606.04592: NOT_SEEN → 收錄（今日推薦）
+- arXiv 2605.13725 (ScioMind): NOT_SEEN → 收錄
+- MOSAIC (EMNLP 2025): NOT_SEEN → 收錄
+- Red Hat "Architecting memory for AI agents": NOT_SEEN → 收錄（今日推薦）
+- "Hidden Technical Debt: Agent Harness" blog: NOT_SEEN → 收錄（今日推薦）
+- "12-Metric Eval Harness" article: NOT_SEEN → 收錄
+
+## 全文取得
+
+- arXiv 2606.04592: 成功取得 HTML 全文（ar5iv）
+- arXiv 2605.13725: 成功取得 HTML 全文（ar5iv），但截斷，方法細節完整
+- MOSAIC: 只取得 abstract（EMNLP 頁面），PDF 未抓取
+- Red Hat blog: 成功取得全文
+- Hidden Technical Debt blog: 成功取得全文
+- 12-Metric Eval Harness article: 成功取得全文（截斷，但涵蓋所有 12 metrics）
+
+## 產圖
+
+- 今日推薦 3 篇，各產 1 張筆記圖
+  - synthetic-personalities-silicon-sampling.png
+  - architecting-memory-ai-agents.png
+  - hidden-technical-debt-agent-harness.png
+
+## Graph build
+
+- 待執行 build_paper_graph.py 和 graphify global add

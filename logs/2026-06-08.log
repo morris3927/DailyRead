@@ -1,0 +1,63 @@
+DailyRead 2026-06-08
+
+Search source:
+- Lab SearXNG http://192.168.1.18:8888/search?format=json
+- arXiv API / arXiv HTML
+
+SearXNG queries executed:
+- silicon sampling social simulation LLM arxiv 2026
+- LLM social simulation agent arxiv 2606
+- harness engineering LLM agents benchmark arxiv 2606
+- agent harness evaluation repair trajectories arxiv 2606
+- agent memory LLM agents arxiv 2606
+- long term memory agents arxiv 2606
+
+arXiv API queries executed:
+- all:"social simulation" AND all:LLM
+- all:"silicon sampling"
+- all:"agent memory"
+- all:"long-term memory" AND all:agent
+- all:"harness" AND all:"LLM agents"
+- all:"trajectory" AND all:"LLM agents" AND all:harness
+
+Dedup check BEFORE candidate selection via /Users/morris/.graphify/dailyread-paper-kg/check_paper_seen.py:
+- 2606.04197 NOT_SEEN -> selected / recommended
+- 2606.01199 SEEN -> skipped (seen 2026-06-03)
+- 2606.00476 SEEN -> skipped (seen 2026-06-03)
+- 2605.30258 SEEN -> skipped (seen 2026-05-31)
+- 2606.05922 NOT_SEEN -> selected / recommended
+- 2606.06460 NOT_SEEN -> selected
+- 2606.01311 NOT_SEEN -> not selected due lower priority today
+- 2605.27922 SEEN -> skipped (seen 2026-06-01)
+- 2606.05684 NOT_SEEN -> selected
+- 2606.06055 NOT_SEEN -> selected / recommended
+- 2606.05761 NOT_SEEN -> selected
+- 2606.04780 NOT_SEEN -> not selected due enough memory candidates
+- 2606.04628 NOT_SEEN -> not selected due enough memory candidates
+- 2606.04555 NOT_SEEN -> not selected due enough memory candidates
+
+Full-text attempts:
+- arXiv PDF extraction first attempted, but local pdftotext was unavailable. Python pypdf exists but HTML was available for all selected papers, so arXiv HTML full text was used.
+- arXiv HTML successfully fetched and extracted for 2606.04197, 2606.05922, 2606.06460, 2606.05684, 2606.06055, 2606.05761.
+
+Images:
+- Generated with openai/gpt-image-2 for recommended papers only.
+- assets/2026-06-08/consensus-topology-memory-2606-04197.png
+- assets/2026-06-08/rho-2606-05922.png
+- assets/2026-06-08/memory-stay-silent-2606-06055.png
+
+Self-review:
+- daily/2026-06-08.md contains short overview and 3 recommendations.
+- silicon-sampling-social-simulation/2026-06-08.md: all entries include required five headings.
+- harness-engineering/2026-06-08.md: all entries include required five headings.
+- agent-memory/2026-06-08.md: all entries include required five headings.
+- Recommended papers have full-text-level arXiv HTML reading and images inserted.
+
+Graph update:
+- pending at write time.
+Wrote /Users/morris/.graphify/dailyread-paper-kg/graphify-out/graph.json
+Wrote /Users/morris/.graphify/dailyread-paper-kg/graphify-out/paper_index.json
+Nodes=467 Edges=1955
+graph build exit=0
+Added 'DailyRead-paper-kg' to global graph: +467 nodes, -457 pruned. Global: /Users/morris/.graphify/global-graph.json
+graphify global add exit=0

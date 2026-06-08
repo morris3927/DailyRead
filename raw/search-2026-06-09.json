@@ -1,0 +1,46 @@
+{
+  "date": "2026-06-09",
+  "searches": [
+    {
+      "query": "silicon sampling social simulation 2025 2026",
+      "source": "SearXNG",
+      "results_count": 40
+    },
+    {
+      "query": "harness engineering LLM agent evaluation 2025 2026",
+      "source": "SearXNG",
+      "results_count": 40
+    },
+    {
+      "query": "agent memory LLM long-term memory framework 2025 2026",
+      "source": "SearXNG",
+      "results_count": 40
+    }
+  ],
+  "papers_considered": [
+    {"arxiv_id": "2605.00197", "title": "The Silicon Society Cookbook", "status": "SEEN"},
+    {"arxiv_id": "2606.05922", "title": "Retrospective Harness Optimization", "status": "SEEN"},
+    {"arxiv_id": "2605.15759", "title": "DimMem", "status": "SEEN"},
+    {"arxiv_id": "2605.18747", "title": "Code as Agent Harness", "status": "SEEN"},
+    {"arxiv_id": "2604.06663", "title": "Restoring Heterogeneity in LLM-based Social Simulation", "status": "SEEN"},
+    {"arxiv_id": "2603.03329", "title": "AutoHarness", "status": "NOT_SEEN, included"},
+    {"arxiv_id": "2604.08224", "title": "Externalization in LLM Agents", "status": "SEEN"},
+    {"arxiv_id": "2603.07670", "title": "Memory for Autonomous LLM Agents", "status": "SEEN"},
+    {"arxiv_id": "2604.16548", "title": "Security of Long-Term Memory in LLM Agents", "status": "SEEN"},
+    {"arxiv_id": "2603.15642", "title": "CraniMem", "status": "NOT_SEEN, included"},
+    {"arxiv_id": "2601.06377", "title": "HiMem", "status": "NOT_SEEN, included"},
+    {"arxiv_id": "2601.01885", "title": "Agentic Memory", "status": "SEEN"},
+    {"arxiv_id": "2507.07957", "title": "MIRIX", "status": "NOT_SEEN, included"},
+    {"arxiv_id": "2601.05960", "title": "Distilling Feedback into Memory-as-a-Tool", "status": "NOT_SEEN, included"},
+    {"arxiv_id": "2605.15221", "title": "Effective Harness Engineering for Algorithm Discovery", "status": "SEEN"},
+    {"title": "Agent Harness Engineering: A Survey", "status": "NOT_SEEN, candidate only (no full text)"},
+    {"title": "Agent Systems with Harness Engineering", "status": "NOT_SEEN, candidate only (no full text)"},
+    {"arxiv_id": "2503.16527", "title": "LLM Generated Persona is a Promise with a Catch", "status": "SEEN"},
+    {"title": "Too Open for Opinion? (EACL 2026)", "status": "NOT_SEEN, included"},
+    {"title": "The Silicon Sample (SSRN)", "status": "SEEN"}
+  ],
+  "recommended": [
+    {"arxiv_id": "2603.03329", "title": "AutoHarness", "domain": "harness-engineering"},
+    {"arxiv_id": "2601.06377", "title": "HiMem", "domain": "agent-memory"}
+  ]
+}

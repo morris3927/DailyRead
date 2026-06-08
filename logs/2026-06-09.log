@@ -1,0 +1,48 @@
+# DailyRead Log — 2026-06-09
+
+## Search Queries
+- silicon sampling social simulation 2025 2026 (SearXNG)
+- harness engineering LLM agent evaluation 2025 2026 (SearXNG)
+- agent memory LLM long-term memory framework 2025 2026 (SearXNG)
+
+## Deduplication
+Checked against paper_index.json:
+- 2605.00197 (Silicon Society Cookbook) — SEEN, skip
+- 2606.05922 (Retrospective Harness Optimization) — SEEN, skip
+- 2605.15759 (DimMem) — SEEN, skip
+- 2605.18747 (Code as Agent Harness) — SEEN, skip
+- 2604.06663 (Restoring Heterogeneity) — SEEN, skip
+- 2603.03329 (AutoHarness) — NOT_SEEN ✓
+- 2604.08224 (Externalization in LLM Agents) — SEEN, skip
+- 2603.07670 (Memory for Autonomous LLM Agents) — SEEN, skip
+- 2604.16548 (Security of Long-Term Memory) — SEEN, skip
+- 2603.15642 (CraniMem) — NOT_SEEN ✓
+- 2601.06377 (HiMem) — NOT_SEEN ✓
+- 2601.01885 (Agentic Memory) — SEEN, skip
+- 2507.07957 (MIRIX) — NOT_SEEN ✓
+- 2601.05960 (Distilling Feedback) — NOT_SEEN ✓
+- 2605.15221 (Effective Harness Engineering for Algorithm Discovery) — SEEN, skip
+- Agent Harness Engineering: A Survey — NOT_SEEN (OpenReview, PDF extraction failed)
+- Agent Systems with Harness Engineering — NOT_SEEN (OpenReview, PDF extraction failed)
+- 2503.16527 (LLM Generated Persona Promise with a Catch) — SEEN, skip
+- The Silicon Sample (SSRN) — SEEN, skip
+- Evaluating Silicon Sampling (AHFE) — NOT_SEEN but not priority (conference paper)
+
+## Full-text Access
+- AutoHarness (2603.03329): Full HTML read from arxiv.org/html/2603.03329v1 ✓
+- HiMem (2601.06377): Full HTML read from arxiv.org/html/2601.06377v1 ✓
+- Too Open for Opinion (EACL 2026): Abstract + metadata from ACL Anthology. PDF is binary, not extractable via web_fetch. Marked as "position paper, abstract level confirmed". ✓
+- CraniMem (2603.15642): Full HTML read from arxiv.org/html/2603.15642v1 ✓
+- Distilling Feedback (2601.05960): Full HTML read from arxiv.org/html/2601.05960v2 ✓
+- MIRIX (2507.07957): Full HTML read from arxiv.org/html/2507.07957v1 ✓
+- Agent Harness Engineering: A Survey (OpenReview): PDF binary, extraction failed. Only title/abstract available from OpenReview page.
+- Agent Systems with Harness Engineering (OpenReview): PDF binary, extraction failed. Only title available.
+
+## Image Generation
+- AutoHarness pipeline note diagram → spawned sub-agent
+- HiMem architecture note diagram → spawned sub-agent
+
+## Notes
+- AutoHarness and HiMem are today's recommended reads (full text available).
+- Too Open for Opinion is EACL 2026 long paper, position paper. Full text not extracted (PDF binary), but abstract confirms relevance.
+- Two OpenReview harness engineering surveys could not be fully read; listed as candidates only.

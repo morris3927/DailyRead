@@ -1,0 +1,40 @@
+# DailyRead Log — 2026-06-10
+
+## 搜尋紀錄
+
+- SearXNG 搜尋: silicon sampling social simulation LLM 2025 2026
+- SearXNG 搜尋: harness engineering agent evaluation benchmark 2025 2026
+- SearXNG 搜尋: agent memory LLM long-term retrieval 2025 2026
+- SearXNG 搜尋: silicon sampling synthetic survey LLM opinion 2026
+- SearXNG 搜尋: MemGraphRAG KDD 2026 memory graph agent
+
+## 查重結果
+
+- 2606.07513 (Agentopia): NOT_SEEN → 收錄
+- 2606.07462 (AARRI-Bench): NOT_SEEN → 收錄
+- 2605.27922 (Harness-Bench): SEEN → 已在 2026-06-01 推薦過，不重複收錄
+- 2606.05342 (SentinelBench): NOT_SEEN → 收錄
+- 2605.19952 (TriMem): NOT_SEEN → 收錄
+- 2606.06448 (Agent Memory characterization): SEEN → 已在 2026-06-07 提到過，不重複收錄
+- 2606.00610 (MemGraphRAG): NOT_SEEN → 收錄
+- ScioMind: SEEN → 已在 2026-06-06 推薦過
+- Stochastic Parrots or Singing in Harmony: SEEN → 已在 2026-05-14 提到過
+
+## 全文取得
+
+- Agentopia (2606.07513): HTML 全文已讀取
+- SentinelBench (2606.05342): HTML 全文已讀取
+- AARRI-Bench (2606.07462): HTML 全文已讀取
+- TriMem (2605.19952): HTML 不可用（LaTeX 格式），僅讀到 abstract
+- MemGraphRAG (2606.00610): HTML 全文已讀取
+- From Context to Dreams (Red Hat blog): 全文已讀取
+- Simulating Social Networks with LLM Agents (ACM): 403 forbidden，無法取得全文
+
+## 今日推薦點開
+
+1. Agentopia (2606.07513) — 已讀全文，推薦點開
+2. SentinelBench (2606.05342) — 已讀全文，推薦點開
+
+## 圖片產生
+
+- 非同步產圖中：agentopia, sentinelbench

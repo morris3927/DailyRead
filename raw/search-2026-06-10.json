@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-10",
+  "searches": [
+    {"query": "silicon sampling social simulation LLM 2025 2026", "time_range": "month"},
+    {"query": "harness engineering agent evaluation benchmark 2025 2026", "time_range": "month"},
+    {"query": "agent memory LLM long-term retrieval 2025 2026", "time_range": "month"},
+    {"query": "silicon sampling synthetic survey LLM opinion 2026", "time_range": "month"},
+    {"query": "MemGraphRAG KDD 2026 memory graph agent", "time_range": null}
+  ],
+  "papers": [
+    {
+      "arxiv_id": "2606.07513",
+      "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies",
+      "domain": "silicon-sampling-social-simulation",
+      "status": "recommended"
+    },
+    {
+      "arxiv_id": "2606.07462",
+      "title": "AARRI-Bench: Act As a Real Researcher",
+      "domain": "harness-engineering",
+      "status": "mentioned"
+    },
+    {
+      "arxiv_id": "2606.05342",
+      "title": "SentinelBench: A Benchmark for Long-Running Monitoring Agents",
+      "domain": "harness-engineering",
+      "status": "recommended"
+    },
+    {
+      "arxiv_id": "2605.19952",
+      "title": "TriMem: Rethinking How to Remember: Beyond Atomic Facts in Lifelong LLM Agent Memory",
+      "domain": "agent-memory",
+      "status": "mentioned"
+    },
+    {
+      "arxiv_id": "2606.00610",
+      "title": "MemGraphRAG: Memory-based Multi-Agent System for Graph Retrieval-Augmented Generation",
+      "domain": "agent-memory",
+      "status": "mentioned"
+    }
+  ]
+}

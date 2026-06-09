@@ -37,4 +37,10 @@
 
 ## 圖片產生
 
-- 非同步產圖中：agentopia, sentinelbench
+- agentopia.png: 使用 openai/gpt-image-2 產生（Google 429 限流後 fallback）
+- sentinelbench.png: 使用 openai/gpt-image-2 產生
+
+## Graph 更新
+
+- build_paper_graph.py: 成功，Nodes=488 Edges=2029
+- graphify global add: 成功，+488 nodes, -478 pruned

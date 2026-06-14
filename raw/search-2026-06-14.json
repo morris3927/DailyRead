@@ -1,0 +1,43 @@
+{
+  "date": "2026-06-14",
+  "domains": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "search_sources": [
+    {
+      "domain": "silicon-sampling-social-simulation",
+      "queries": ["social simulation LLM 2026", "silicon sampling social belief dynamics", "social world model prediction market LLM"],
+      "papers_found": [
+        {"arxiv_id": "2606.11482", "title": "Building Social World Models with Large Language Models", "seen": false},
+        {"arxiv_id": "2606.12369", "title": "Should LLM Agents Decide in Social Simulations?", "seen": false},
+        {"arxiv_id": "2601.15793", "title": "HumanLLM", "seen": false}
+      ]
+    },
+    {
+      "domain": "harness-engineering",
+      "queries": ["harness engineering AI agent 2026", "agent reliability evaluation metrics", "AI agent harness engineering Addy Osmani"],
+      "papers_found": [
+        {"arxiv_id": "2602.16666", "title": "Towards a Science of AI Agent Reliability", "seen": false},
+        {"arxiv_id": "2605.13357", "title": "AI Harness Engineering: A Runtime Substrate for Foundation-Model Software Agents", "seen": true},
+        {"arxiv_id": "2605.27922", "title": "Harness-Bench", "seen": true}
+      ],
+      "blogs_found": [
+        {"url": "https://addyosmani.com/blog/agent-harness-engineering/", "title": "Agent Harness Engineering", "seen": false}
+      ]
+    },
+    {
+      "domain": "agent-memory",
+      "queries": ["agent memory operating system LLM 2026", "self-organizing memory long-horizon reasoning", "cognitive memory benchmark multi-session dialogue"],
+      "papers_found": [
+        {"arxiv_id": "2601.02163", "title": "EverMemOS", "seen": false},
+        {"arxiv_id": "2601.03543", "title": "EvolMem", "seen": false},
+        {"arxiv_id": "2605.04897", "title": "True Memory (Storage Is Not Memory)", "seen": true},
+        {"arxiv_id": "2605.13941", "title": "EvolveMem", "seen": true}
+      ]
+    }
+  ],
+  "dedup_notes": {
+    "2605.13357": "SEEN - harness-engineering/2026-05-26.md",
+    "2605.27922": "SEEN - harness-engineering/2026-06-01.md",
+    "2605.04897": "SEEN - agent-memory/2026-05-30.md",
+    "2605.13941": "SEEN - EvolveMem (different from EvolMem 2601.03543)"
+  }
+}

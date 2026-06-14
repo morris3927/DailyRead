@@ -1,0 +1,22 @@
+{
+  "date": "2026-06-15",
+  "domains": {
+    "silicon-sampling-social-simulation": [
+      {"arxiv": "2606.07948", "title": "EduMirror: Modeling Educational Social Dynamics with Value-driven Multi-agent Simulation", "status": "included"},
+      {"arxiv": "2606.06399", "title": "CollabSim: A CSCW-Grounded Methodology for Investigating Collaborative Competence of LLM Agents", "status": "recommended"},
+      {"arxiv": "2606.09198", "title": "MASS: Deep Research for Social Sciences with Memory-Augmented Social Simulation", "status": "included"}
+    ],
+    "harness-engineering": [
+      {"arxiv": "2606.05608", "title": "How AI Agents Are Restructuring the Software Paradigm (Agentic Engineering)", "status": "included"},
+      {"arxiv": "2602.18029", "title": "Towards More Standardized AI Evaluation: From Models to Agents", "status": "included"},
+      {"arxiv": "2605.22608", "title": "Agentic CLEAR: Automating Multi-Level Evaluation of LLM Agents", "status": "included"}
+    ],
+    "agent-memory": [
+      {"arxiv": "2606.13681", "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments", "status": "recommended"},
+      {"arxiv": "2605.11325", "title": "PrecisionMemBench & Tenure: Structured Belief State and the First Precision-Aware Benchmark for LLM Memory Retrieval", "status": "recommended"}
+    ]
+  },
+  "search_sources": ["web_search", "arXiv HTML"],
+  "searxng_blocked": true,
+  "searxng_reason": "private IP blocked by web_search policy"
+}

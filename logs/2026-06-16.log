@@ -1,0 +1,43 @@
+# DailyRead Log — 2026-06-16
+
+## Search
+- SearXNG (192.168.1.18:8888): Connection timeout. Not used.
+- web_search (Gemini): 503 errors on multiple queries. Used as supplementary; direct arXiv HTML fetch was primary.
+- All three domain searches completed via direct arXiv fetches.
+
+## Paper Fetching
+- 2606.09498 (Self-Harness): Full HTML fetched and read.
+- 2606.05405 (ALE): Full HTML fetched and read.
+- 2603.27056 (SPIRIT): Full HTML fetched and read.
+- 2603.17781 (Knowledge Objects): Full HTML fetched and read.
+- 2603.00113 (AI Agents Alone): Confirmed SEEN (deepread + mentioned_daily), skipped.
+- 2606.01444 (Self-Revising Discovery Systems): Excluded (category theory, not relevant).
+
+## Dedup Check
+- 2606.09498: NOT_SEEN ✓
+- 2606.05405: NOT_SEEN ✓
+- 2603.27056: NOT_SEEN ✓
+- 2603.17781: NOT_SEEN ✓
+- 2603.00113: SEEN (deepread + multiple mentions), skipped ✓
+
+## Domain Notes Written
+- silicon-sampling-social-simulation/2026-06-16.md: SPIRIT (1 paper)
+- harness-engineering/2026-06-16.md: Self-Harness + ALE (2 papers)
+- agent-memory/2026-06-16.md: Knowledge Objects (1 paper)
+
+## Self-Audit
+- All papers have five required subsections: 這篇在說什麼, 主要貢獻, 方法/pipeline, 實驗設計, かに讀後判斷 ✓
+- No paper written as short summary or card ✓
+- Recommended papers all have full HTML reading, not just abstract ✓
+
+## Today's Recommended Papers (今日推薦點開)
+1. Knowledge Objects (2603.17781) — agent-memory
+2. Self-Harness (2606.09498) — harness-engineering
+3. SPIRIT (2603.27056) — silicon-sampling-social-simulation
+
+## Graph Update
+- To be run: build_paper_graph.py + graphify global add
+
+## Errors
+- SearXNG timeout
+- web_search 503 errors (Gemini high demand)

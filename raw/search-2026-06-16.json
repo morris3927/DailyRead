@@ -1,0 +1,58 @@
+{
+  "date": "2026-06-16",
+  "search_queries": [
+    "silicon sampling social simulation LLM arxiv 2026",
+    "harness engineering AI agent evaluation benchmark arxiv 2026",
+    "agent memory LLM persistent knowledge objects arxiv 2026",
+    "SPIRIT persona inference social simulation arxiv",
+    "Self-Harness LLM agent harness improvement arxiv",
+    "Agents Last Exam ALE benchmark arxiv 2026"
+  ],
+  "searxng_status": "timeout (used web_search fallback)",
+  "papers_considered": {
+    "NOT_SEEN": [
+      {
+        "arxiv_id": "2606.05405",
+        "title": "Agents' Last Exam (ALE)",
+        "domain": "harness-engineering",
+        "decision": "mentioned (not featured)"
+      },
+      {
+        "arxiv_id": "2606.09498",
+        "title": "Self-Harness: Harnesses That Improve Themselves",
+        "domain": "harness-engineering",
+        "decision": "featured, recommended"
+      },
+      {
+        "arxiv_id": "2603.27056",
+        "title": "SPIRIT: Semi-structured Persona Inference and Reasoning for Individualized Trajectories",
+        "domain": "silicon-sampling-social-simulation",
+        "decision": "featured, recommended"
+      },
+      {
+        "arxiv_id": "2603.17781",
+        "title": "Knowledge Objects for Persistent LLM Memory",
+        "domain": "agent-memory",
+        "decision": "featured, recommended"
+      }
+    ],
+    "SEEN_skipped": [
+      {
+        "arxiv_id": "2603.00113",
+        "title": "AI Agents Alone Are Not (Yet) Sufficient for Social Simulation",
+        "reason": "already covered (deepread + mentioned_daily)"
+      }
+    ],
+    "excluded": [
+      {
+        "arxiv_id": "2606.01444",
+        "title": "Self-Revising Discovery Systems (category theory / materials science)",
+        "reason": "not relevant to three domains"
+      }
+    ]
+  },
+  "web_search_errors": [
+    "Gemini 503 on multiple queries - fell back to previously fetched content and direct arXiv lookups"
+  ],
+  "notes": "SearXNG at 192.168.1.18:8888 timed out; web_search via Gemini also hit 503 intermittently. Used direct arXiv HTML fetches as primary source."
+}

@@ -1,0 +1,33 @@
+{
+  "date": "2026-06-17",
+  "search_sources": [
+    {"source": "SearXNG", "url": "http://192.168.1.18:8888", "status": "unreachable (timeout, exit code 28)", "fallback": "web_search + Semantic Scholar API + arXiv"},
+    {"source": "web_search (gemini)", "status": "active"},
+    {"source": "Semantic Scholar API", "status": "429 rate limit after 2 successful calls"},
+    {"source": "arXiv API", "status": "empty results (0-byte XML)"}
+  ],
+  "queries": [
+    {"query": "arxiv June 2026 LLM agent-based social simulation emergent collective behavior", "results": ["2509.21862 (Shachi, NOT_SEEN)", "2509.03736 (SEEN)", "2603.03555 (withdrawn)"]},
+    {"query": "harness engineering LLM agent regression test CI", "results": ["2606.11686 (NOT_SEEN)", "2605.24220 (NOT_SEEN)", "2605.25958 (NOT_SEEN)", "martinfowler.com/harness-engineering"]},
+    {"query": "agent memory lifelong learning multi-agent continual learning", "results": ["2604.03295 (NOT_SEEN)", "2604.27003 (NOT_SEEN)", "2512.03627 (NOT_SEEN)"]}
+  ],
+  "dedup_results": {
+    "2606.11686": "NOT_SEEN",
+    "2605.24220": "NOT_SEEN",
+    "2605.25958": "NOT_SEEN",
+    "2601.06111": "NOT_SEEN",
+    "2601.10926": "NOT_SEEN",
+    "2604.03295": "NOT_SEEN",
+    "2604.27003": "NOT_SEEN",
+    "2509.21862": "NOT_SEEN",
+    "2512.03627": "NOT_SEEN",
+    "2509.03736": "SEEN (mentioned 2026-06-02)",
+    "2603.03555": "NOT_SEEN (withdrawn, excluded)"
+  },
+  "selected_for_domain_notes": {
+    "silicon-sampling-social-simulation": ["2509.21862 (Shachi)", "2601.06111 (Social Digital Twins)"],
+    "harness-engineering": ["2606.11686 (Layer-Isolated Harness)", "martinfowler.com/harness-engineering"],
+    "agent-memory": ["2604.03295 (LLMA-Mem)", "2604.27003 (Continual Learning → Memory)"]
+  },
+  "today_recommendations": ["2606.11686", "2509.21862", "2604.03295"]
+}

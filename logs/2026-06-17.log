@@ -1,0 +1,36 @@
+# DailyRead Log — 2026-06-17
+
+## Search
+- SearXNG (http://192.168.1.18:8888) unreachable — timeout after curl exit code 28. Fell back to web_search + direct arXiv/Semantic Scholar.
+- Semantic Scholar API: hit 429 rate limit after 2 successful calls.
+- arXiv API: returned 0-byte XML, abandoned.
+- web_search (gemini): primary search source, worked throughout.
+
+## Dedup
+- Checked 12 candidate papers against paper_index.json via check_paper_seen.py.
+- 2509.03736 SEEN (mentioned 2026-06-02), excluded.
+- 2603.03555 NOT_SEEN but withdrawn, excluded.
+- All others NOT_SEEN.
+
+## Full-text access
+- 2606.11686: HTML full text (arxiv.org/html/2606.11686v1) — read ~15000 chars. Methods, experiments, results confirmed.
+- 2509.21862: HTML full text (arxiv.org/html/2509.21862v3) — read ~15000 chars. Framework, experiments confirmed.
+- 2601.06111: HTML full text (arxiv.org/html/2601.06111v2) — read ~15000 chars. Framework, experiments confirmed.
+- 2604.03295: HTML full text (arxiv.org/html/2604.03295v1) — read ~12000 chars. Framework, experiments confirmed.
+- 2604.27003: HTML full text (arxiv.org/html/2604.27003v1) — read ~10000 chars. Framework confirmed, WIP.
+- martinfowler.com: HTML — read ~15000 chars. Conceptual article, no formal experiments.
+
+## Papers not selected (with reasons)
+- 2605.24220 (Polar / Agentic RL on Any Harness): interesting RL rollout framework but more about training infrastructure than harness engineering per se. Noted for future.
+- 2605.25958 (PolyGnosis 2.0): harness engineering applied to financial prediction markets, too domain-specific for today's focus.
+- 2601.10926 (Selecting LMs for Social Science): methodology paper about model selection, not directly silicon sampling.
+- 2512.03627 (MemVerse): multimodal memory framework, noted for future agent-memory coverage.
+
+## Image generation
+- Spawned 3 async sub-agents for today's recommendations:
+  - img-layer-harness: layer-isolated-harness.png
+  - img-shachi: shachi-framework.png
+  - img-llma-mem: llma-mem-scaling.png
+
+## Graph build
+- Pending: build_paper_graph.py + graphify global add

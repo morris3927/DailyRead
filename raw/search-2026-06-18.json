@@ -1,0 +1,42 @@
+{
+  "date": "2026-06-18",
+  "domains": {
+    "silicon-sampling-social-simulation": {
+      "queries": [
+        "silicon sampling LLM social simulation arxiv 2026",
+        "LLM agent social simulation silicon subjects",
+        "matching mechanisms LLM agents market"
+      ],
+      "candidates": [
+        {"arxiv_id": "2606.03030", "title": "Do Matching Mechanisms Work with LLM Agents?", "status": "NOT_SEEN", "selected": true},
+        {"arxiv_id": "2606.11482", "title": "Building Social World Models with Large Language Models (SWM)", "status": "SEEN", "selected": false},
+        {"arxiv_id": "2605.18395", "title": "Diagnosing Korean-Language LLM Political Bias via Census-Grounded Agent Simulation", "status": "SEEN", "selected": false}
+      ]
+    },
+    "harness-engineering": {
+      "queries": [
+        "harness engineering LLM agent evaluation testing 2026 arxiv",
+        "harness-aware evaluation framework LLM agents"
+      ],
+      "candidates": [
+        {"arxiv_id": "2605.23950", "title": "Stop Comparing LLM Agents Without Disclosing the Harness", "status": "NOT_SEEN", "selected": true},
+        {"arxiv_id": "2605.27898", "title": "A Unified Framework for the Evaluation of LLM Agentic Capabilities", "status": "NOT_SEEN", "selected": false},
+        {"arxiv_id": "2604.25850", "title": "AHE: Observability-Driven Automatic Evolution of Coding-Agent Harnesses", "status": "SEEN", "selected": false},
+        {"arxiv_id": "2605.27922", "title": "Harness-Bench: Measuring Harness Effects across Models in Realistic Agent Workflows", "status": "SEEN", "selected": false}
+      ]
+    },
+    "agent-memory": {
+      "queries": [
+        "agent memory LLM lifelong learning arxiv 2026",
+        "memory intelligence agent deep research"
+      ],
+      "candidates": [
+        {"arxiv_id": "2604.04503", "title": "Memory Intelligence Agent (MIA)", "status": "NOT_SEEN", "selected": true},
+        {"arxiv_id": "2601.10744", "title": "Explore with Long-term Memory: LMEE-Bench and MemoryExplorer", "status": "NOT_SEEN", "selected": true},
+        {"arxiv_id": "2603.11768", "title": "SSGM Framework: Governing Evolving Memory in LLM Agents", "status": "SEEN", "selected": false},
+        {"arxiv_id": "2601.01885", "title": "Agentic Memory (AgeMem)", "status": "SEEN", "selected": false},
+        {"arxiv_id": "2603.07670", "title": "Memory for Autonomous LLM Agents: Survey", "status": "SEEN", "selected": false}
+      ]
+    }
+  }
+}

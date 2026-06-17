@@ -1,0 +1,43 @@
+# DailyRead Log — 2026-06-18
+
+## Search & Selection
+
+### Silicon Sampling / Social Simulation
+- SearXNG and web search for silicon sampling / social simulation LLM 2026
+- Candidates checked:
+  - 2606.11482 (SWM) → SEEN (2026-06-14)
+  - 2605.00197 (Silicon Society Cookbook) → SEEN (deepread)
+  - 2605.18395 (Korean LLM Political Bias) → SEEN (2026-05-26)
+  - 2606.03030 (Matching Mechanisms) → NOT_SEEN → SELECTED
+  - 2506.19806 (LLM Simulations Require Boundary) → SEEN
+
+### Harness Engineering
+- Candidates checked:
+  - 2605.23950 (Stop Comparing Without Harness) → NOT_SEEN → SELECTED (今日推薦)
+  - 2605.27898 (Unified Framework) → NOT_SEEN → SELECTED
+  - 2605.27922 (Harness-Bench) → SEEN (2026-06-01)
+  - 2604.25850 (AHE) → SEEN (deepread)
+
+### Agent Memory
+- Candidates checked:
+  - 2604.04503 (MIA) → NOT_SEEN → SELECTED (今日推薦)
+  - 2601.10744 (LMEE-Bench) → NOT_SEEN → SELECTED
+  - 2603.11768 (SSGM) → SEEN (2026-05-20)
+  - 2601.01885 (AgeMem) → SEEN (2026-05-09)
+  - 2603.07670 (Memory Survey) → SEEN (deepread)
+
+### Full Text Access
+- 2605.23950: Read full HTML (ar5iv). Access: full text available.
+- 2604.04503: Read full HTML (ar5iv v4). Access: full text available.
+- 2606.03030: No HTML available. Access: abstract only. Marked as "僅 abstract 層級快速掃描" in domain note.
+- 2601.10744: Read full HTML (ar5iv v2). Access: full text available.
+- 2605.27898: Read abstract only. Not a today's recommendation.
+
+### Image Generation
+- 3 sub-agents spawned for note images:
+  1. binding-constraint-thesis.png (harness engineering, 推薦)
+  2. mia-architecture.png (agent memory, 推薦)
+  3. matching-mechanisms-llm.png (silicon sampling, 推薦)
+
+### Graph Build
+- To be run after commit

@@ -1,0 +1,53 @@
+{
+  "date": "2026-06-19",
+  "queries": [
+    "silicon sampling social simulation LLM agents 2025 2026 arxiv",
+    "agent harness engineering LLM benchmark evaluation framework 2025 2026",
+    "agent memory long-term short-term LLM retrieval augmented 2025 2026 arxiv",
+    "arxiv 2026 silicon sampling social simulation new paper June",
+    "arxiv 2026 PawBench agent harness evaluation benchmark model harness",
+    "arxiv 2026 agent memory LLM MemAct Memory-R1 new paper"
+  ],
+  "sources_used": [
+    "web_search (Gemini)",
+    "arxiv.org abstracts",
+    "arxiv.org HTML full text"
+  ],
+  "searxng_attempted": true,
+  "searxng_status": "timeout - SearXNG at 192.168.1.18:8888 not responding",
+  "candidates_checked": [
+    {"id": "2605.00197", "status": "SEEN"},
+    {"id": "2603.00113", "status": "SEEN"},
+    {"id": "2512.22725", "status": "SEEN"},
+    {"id": "2506.19806", "status": "SEEN"},
+    {"id": "2601.01885", "status": "SEEN"},
+    {"id": "PawBench", "status": "NOT_SEEN"},
+    {"id": "2603.29194", "status": "SEEN"},
+    {"id": "2603.11768", "status": "SEEN"},
+    {"id": "2602.16192", "status": "NOT_SEEN"},
+    {"id": "2603.07670", "status": "SEEN"},
+    {"id": "2606.11456", "status": "NOT_SEEN"},
+    {"id": "2606.12369", "status": "SEEN"},
+    {"id": "2606.04197", "status": "SEEN"},
+    {"id": "2606.04592", "status": "SEEN"},
+    {"id": "2605.27922", "status": "SEEN"},
+    {"id": "2508.19828", "status": "NOT_SEEN"},
+    {"id": "2603.18272", "status": "NOT_SEEN"},
+    {"id": "2603.29493", "status": "NOT_SEEN"},
+    {"id": "2605.10912", "status": "NOT_SEEN"},
+    {"id": "2602.22480", "status": "SEEN"},
+    {"id": "2606.05405", "status": "SEEN"}
+  ],
+  "selected_for_domain_notes": [
+    "2606.11456 - AI Coding Agents in Social Science (silicon-sampling)",
+    "2605.10912 - WildClawBench (harness-engineering)",
+    "2603.29493 - MemFactory (agent-memory)",
+    "2508.19828 - Memory-R1 (agent-memory)",
+    "2603.18272 - Retrieval-Augmented LLM Agents: Learning to Learn from Experience (agent-memory)"
+  ],
+  "recommended_today": [
+    "2606.11456 - AI Coding Agents in Social Science",
+    "2605.10912 - WildClawBench",
+    "2603.29493 - MemFactory"
+  ]
+}

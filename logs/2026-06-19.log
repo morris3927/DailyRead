@@ -1,0 +1,25 @@
+2026-06-19 DailyRead Log
+
+06:00 — Cron triggered
+06:00 — SearXNG at 192.168.1.18:8888 timeout, fell back to web_search (Gemini)
+06:01 — Search completed for 3 domains:
+  - Silicon Sampling / Social Simulation: 8 results
+  - Harness Engineering: 20+ results  
+  - Agent Memory: 10+ results
+06:02 — Checked paper_index.json for all candidates:
+  - SEEN: 2605.00197, 2603.00113, 2512.22725, 2506.19806, 2601.01885, 2603.29194, 2603.11768, 2603.07670, 2606.03030, 2606.04197, 2606.04592, 2605.27922, 2602.22480, 2606.05405, 2606.12369
+  - NOT_SEEN: 2606.11456, 2605.10912, 2603.29493, 2508.19828, 2603.18272, 2602.16192, 2602.16192
+06:03 — Fetched full HTML for selected papers:
+  - 2606.11456 (AI Coding Agents in Social Science) — full text read
+  - 2605.10912 (WildClawBench) — full text read
+  - 2603.29493 (MemFactory) — full text read
+  - 2508.19828 (Memory-R1) — full text read (v5)
+  - 2603.18272 — abstract only
+06:10 — Wrote domain notes:
+  - silicon-sampling-social-simulation/2026-06-19.md (1 paper)
+  - harness-engineering/2026-06-19.md (1 paper)
+  - agent-memory/2026-06-19.md (3 papers)
+  - daily/2026-06-19.md (summary + recommendations)
+06:10 — Writing log
+06:10 — SearXNG status: TIMEOUT (unreachable)
+06:10 — Image generation pending (3 recommended papers)

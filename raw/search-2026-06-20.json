@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-20",
+  "queries": [
+    "silicon sampling social simulation LLM agents 2025 2026 arxiv",
+    "agent evaluation harness benchmark framework 2025 2026 arxiv",
+    "agent memory long-term memory LLM framework 2025 2026 arxiv",
+    "arxiv silicon sampling LLM survey agents social simulation June 2026",
+    "arxiv agent harness evaluation sandboxed tasks June 2026",
+    "arxiv agent memory consolidation retrieval augmented June 2026",
+    "arxiv \"agent memory\" \"write manage read\" OR \"memory management\" OR \"episodic memory\" LLM 2026 new",
+    "arxiv agent memory store retrieve consolidate lifelong learning LLM 2026 new paper"
+  ],
+  "searxng_down": true,
+  "papers_considered": [
+    {"arxiv_id": "2606.13629", "title": "Valid Inference with Synthetic Data via Task Exchangeability", "domain": "silicon-sampling", "status": "included_recommended"},
+    {"arxiv_id": "2606.08853", "title": "AI-Assisted Variance Reduction in Randomized Experiments", "domain": "silicon-sampling", "status": "included"},
+    {"arxiv_id": "2605.10787", "title": "ComplexMCP: Evaluation of LLM Agents in Dynamic, Interdependent, and Large-Scale Tool Sandbox", "domain": "harness-engineering", "status": "included_recommended"},
+    {"arxiv_id": "2606.19787", "title": "ORAgentBench: Can LLM Agents Solve Challenging Operations Research Tasks End to End?", "domain": "harness-engineering", "status": "included"},
+    {"arxiv_id": "2603.19595", "title": "All-Mem: Agentic Lifelong Memory via Dynamic Topology Evolution", "domain": "agent-memory", "status": "included_recommended"},
+    {"arxiv_id": "2512.03627", "title": "MemVerse: Multimodal Memory for Lifelong Learning Agents", "domain": "agent-memory", "status": "included"},
+    {"arxiv_id": "2603.02277", "title": "SandboxEscapeBench", "domain": "harness-engineering", "status": "skipped_security_focused"},
+    {"arxiv_id": "2605.13534", "title": "MultiSearch: Scaling Retrieval-Augmented Reasoning with Parallel Search and Explicit Merging", "domain": "agent-memory", "status": "skipped_more_RAG_than_memory"}
+  ],
+  "papers_seen_skipped": [
+    "2603.00113", "2605.00197", "2606.11456", "2605.27922", "2605.08538",
+    "2603.11768", "2601.01885", "2603.29194", "2604.01707", "2603.07670",
+    "2606.05405", "2606.12369", "2606.06448", "2606.06036", "2602.02007",
+    "2512.22725", "2606.03030", "2604.03295", "2604.04503"
+  ]
+}

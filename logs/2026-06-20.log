@@ -1,0 +1,58 @@
+# DailyRead Log — 2026-06-20
+
+## SearXNG Status
+- SearXNG at http://192.168.1.18:8888 was unreachable (connection timed out). Used web_search (Gemini) and direct arXiv fetching as fallback.
+
+## Search Queries
+- silicon sampling social simulation LLM agents 2025 2026 arxiv
+- agent evaluation harness benchmark framework 2025 2026 arxiv
+- agent memory long-term memory LLM framework 2025 2026 arxiv
+- arxiv silicon sampling LLM survey agents social simulation June 2026
+- arxiv agent harness evaluation sandboxed tasks June 2026
+- arxiv agent memory consolidation retrieval augmented June 2026
+- arxiv "agent memory" "write manage read" OR "memory management" OR "episodic memory" LLM 2026 new
+- arxiv agent memory store retrieve consolidate lifelong learning LLM 2026 new paper
+
+## Papers Considered (NOT_SEEN → considered for today)
+- 2606.13629 — Valid Inference with Synthetic Data via Task Exchangeability ✅ INCLUDED (Silicon Sampling, recommended)
+- 2606.08853 — AI-Assisted Variance Reduction in Randomized Experiments ✅ INCLUDED (Silicon Sampling)
+- 2606.19787 — ORAgentBench ✅ INCLUDED (Harness Engineering)
+- 2605.10787 — ComplexMCP ✅ INCLUDED (Harness Engineering, recommended)
+- 2603.02277 — SandboxEscapeBench ❌ Not included (security-focused, not harness engineering core)
+- 2605.13534 — MultiSearch ❌ Not included (more about retrieval-augmented reasoning than agent memory)
+- 2512.03627 — MemVerse ✅ INCLUDED (Agent Memory)
+- 2603.19595 — All-Mem ✅ INCLUDED (Agent Memory, recommended)
+
+## Papers Skipped (SEEN)
+- 2603.00113 — AI Agents Alone Are Not (Yet) Sufficient for Social Simulation
+- 2605.00197 — Silicon Society Cookbook
+- 2606.11456 — AI Coding Agents in Social Science (yesterday's recommended)
+- 2605.27922 — Harness-Bench
+- 2605.08538 — Human-Inspired Memory Architecture
+- 2603.11768 — SSGM
+- 2601.01885 — Agentic Memory (AgeMem)
+- 2603.29194 — Multi-Layered Memory Architectures
+- 2604.01707 — Memory in the LLM Era
+- 2603.07670 — Memory for Autonomous LLM Agents
+- 2606.05405 — Agents' Last Exam (ALE)
+- 2606.12369 — Should LLM Agents Decide in Social Simulations?
+- 2606.06448 — Agent Memory: Characterization and System Implications
+- 2606.06036 — MRAgent (Memory is Reconstructed, Not Retrieved)
+- 2602.02007 — xMemory
+- 2512.22725 — Mitigating Social Desirability Bias in Random Silicon Sampling
+- 2606.03030 — Do Matching Mechanisms Work with LLM Agents?
+- 2604.03295 — Scaling Teams or Scaling Time? (LLMA-Mem)
+- 2604.04503 — Memory Intelligence Agent (MIA)
+
+## Full-Text Access
+- 2606.13629 — Full HTML (arxiv.org/html/2606.13629v1) ✅
+- 2606.08853 — Full HTML (arxiv.org/html/2606.08853v1) ✅
+- 2605.10787 — Full HTML (arxiv.org/html/2605.10787v2) ✅
+- 2606.19787 — Full HTML (arxiv.org/html/2606.19787v1) ✅
+- 2603.19595 — Full HTML (arxiv.org/html/2603.19595v2) ✅
+- 2512.03627 — Full HTML (arxiv.org/html/2512.03627v2) ✅
+
+## Image Generation
+- valid-inference-synthetic-data.png — ✅ Generated
+- complexmcp-pipeline.png — ✅ Generated
+- all-mem-topology.png — ✅ Generated

@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-21",
+  "search_queries": [
+    "silicon sampling social simulation",
+    "silicon subjects LLM generative survey opinion",
+    "Marginal Alignment Joint-Distribution silicon",
+    "analytic flexibility large language models silicon",
+    "harness LLM agent evaluation benchmark tool-use sandbox",
+    "SEAGym sandbox evasion agent evaluation",
+    "agent memory long-term dialogue memory system RAG",
+    "CoreMem Riemannian Retrieval Fisher-Guided Distillation"
+  ],
+  "searxng_status": "unreachable",
+  "candidates_checked": {
+    "2606.12433": {"status": "NOT_SEEN", "selected": true, "domain": "silicon-sampling-social-simulation"},
+    "2606.16871": {"status": "NOT_SEEN", "selected": true, "domain": "harness-engineering"},
+    "2606.17546": {"status": "NOT_SEEN", "selected": true, "domain": "harness-engineering"},
+    "2606.11680": {"status": "NOT_SEEN", "selected": true, "domain": "agent-memory"},
+    "2606.18406": {"status": "NOT_SEEN", "selected": true, "domain": "agent-memory"},
+    "2606.11456": {"status": "SEEN", "source": "silicon-sampling-social-simulation/2026-06-19.md"},
+    "2606.03030": {"status": "SEEN", "source": "silicon-sampling-social-simulation/2026-06-18.md"},
+    "2509.13397": {"status": "SEEN", "source": "silicon-sampling-social-simulation/2026-05-13.md"},
+    "2604.23575": {"status": "SEEN", "source": "silicon-sampling-social-simulation/2026-05-14.md"},
+    "2606.06324": {"status": "SEEN", "source": "harness-engineering/2026-06-07.md"}
+  },
+  "today_picks": [
+    "2606.12433",
+    "2606.16871",
+    "2606.11680"
+  ]
+}

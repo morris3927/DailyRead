@@ -1,0 +1,47 @@
+# DailyRead Log — 2026-06-21
+
+## Search & Fetch Log
+
+### SearXNG
+- SearXNG at http://192.168.1.18:8888 was unreachable/timing out. All searches used web_search (Gemini) and direct arXiv HTML fetch.
+
+### Silicon Sampling / Social Simulation
+- Searched: "silicon sampling social simulation", "silicon subjects LLM generative survey opinion", "Marginal Alignment Joint-Distribution silicon", "analytic flexibility large language models silicon"
+- Found candidates:
+  - 2606.12433 (Marginal Alignment Does Not Guarantee Joint-Distribution Fidelity) — NOT_SEEN → SELECTED
+  - 2606.11456 (AI Coding Agents in Social Science) — SEEN (2026-06-19)
+  - 2606.03030 (Do Matching Mechanisms Work with LLM Agents) — SEEN (2026-06-18)
+  - 2509.13397 (Analytic Flexibility) — SEEN (2026-05-13)
+  - 2604.23575 (Collapse of Heterogeneity in Silicon Philosophers) — SEEN (2026-05-14)
+
+### Harness Engineering
+- Searched: "harness LLM agent evaluation benchmark tool-use sandbox", "SEAGym sandbox evasion agent evaluation"
+- Found candidates:
+  - 2606.16871 (Human-on-the-Bridge) — NOT_SEEN → SELECTED
+  - 2606.17546 (SEAGym) — NOT_SEEN → SELECTED
+  - 2606.06324 (HarnessFix) — SEEN (2026-06-07)
+
+### Agent Memory
+- Searched: "agent memory long-term dialogue memory system RAG", "CoreMem Riemannian Retrieval Fisher-Guided Distillation"
+- Found candidates:
+  - 2606.11680 (HORMA) — NOT_SEEN → SELECTED (today's pick)
+  - 2606.18406 (CoreMem) — NOT_SEEN → SELECTED
+  - 2606.06448 — SEEN (2026-06-20)
+
+### Full-text Fetch Log
+- 2606.12433: arXiv HTML fetched successfully (truncated at 20K chars, key sections read)
+- 2606.16871: arXiv HTML fetched successfully (truncated, key sections read)
+- 2606.17546: arXiv HTML fetched successfully (truncated, key sections read)
+- 2606.11680: arXiv HTML fetched successfully (truncated, key sections read)
+- 2606.18406: arXiv HTML fetched successfully (truncated, key sections read)
+
+### Dedup Check Results
+All selected papers confirmed NOT_SEEN via check_paper_seen.py before inclusion.
+
+## Graphify Build Log
+- Build command: /Users/morris/.local/share/uv/tools/graphifyy/bin/python3 /Users/morris/.graphify/dailyread-paper-kg/build_paper_graph.py
+- Status: [pending execution after commit]
+
+## Errors
+- SearXNG unreachable — used web_search fallback (no data loss)
+- Semantic Scholar 429 rate limit — used arXiv direct fetch instead

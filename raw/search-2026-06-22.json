@@ -1,0 +1,34 @@
+{
+  "date": "2026-06-22",
+  "search_method": "web_search (Gemini) + web_fetch (arXiv HTML/abstract)",
+  "searxng_status": "unresponsive",
+  "domains_searched": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "queries": [
+    "arxiv silicon sampling social simulation June 2026",
+    "arxiv agent harness evaluation June 2026",
+    "arxiv agent memory retrieval June 2026",
+    "arxiv 2606 Agentopia social simulation",
+    "arxiv 2606 CoreMem Riemannian memory agent",
+    "arxiv 2606 DeployBench OR Agent-ValueBench harness",
+    "arxiv silicon sampling OR social simulation new paper June 15-22 2026",
+    "arxiv 2606 Human-on-the-Bridge harness evaluation"
+  ],
+  "papers_considered": [
+    {"arxiv_id": "2606.10677", "title": "Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory", "status": "NOT_SEEN", "action": "full_note"},
+    {"arxiv_id": "2606.09483", "title": "Memory Beyond Recall: DCPM Dual-Process Cognitive Memory", "status": "NOT_SEEN", "action": "full_note"},
+    {"arxiv_id": "2606.05238", "title": "DeployBench: Benchmarking LLM Agents for Research Artifact Deployment", "status": "NOT_SEEN", "action": "abstract_only"},
+    {"arxiv_id": "2605.26079", "title": "Auto Benchmark Audit (ABA)", "status": "NOT_SEEN", "action": "full_note"},
+    {"arxiv_id": "2605.10365", "title": "Agent-ValueBench: A Comprehensive Benchmark for Evaluating Agent Values", "status": "NOT_SEEN", "action": "abstract_only"},
+    {"arxiv_id": "2606.01444", "title": "Self-Revising Discovery Systems for Science: A Categorical Framework", "status": "NOT_SEEN", "action": "skipped_outside_scope"},
+    {"arxiv_id": "2606.07513", "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies", "status": "SEEN", "action": "skipped"},
+    {"arxiv_id": "2606.18406", "title": "CoreMem: Riemannian Retrieval and Fisher-Guided Distillation", "status": "SEEN", "action": "skipped"},
+    {"arxiv_id": "2606.13681", "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents", "status": "SEEN", "action": "skipped"},
+    {"arxiv_id": "2606.16871", "title": "Human-on-the-Bridge: Scalable Evaluation for AI Agents", "status": "SEEN", "action": "skipped"},
+    {"arxiv_id": "2604.06663", "title": "Restoring Heterogeneity in LLM-based Social Simulation", "status": "SEEN", "action": "skipped"},
+    {"arxiv_id": "2606.01199", "title": "Can LLM Agents Sustain Long-Horizon Organizational Dynamics? (TaskWeave)", "status": "SEEN", "action": "skipped"},
+    {"arxiv_id": "2606.12369", "title": "Should LLM Agents Decide in Social Simulations?", "status": "SEEN", "action": "skipped"},
+    {"arxiv_id": "2606.08853", "title": "AI-Assisted Variance Reduction in Randomized Experiments", "status": "SEEN", "action": "skipped"}
+  ],
+  "recommended_today": ["2606.10677", "2606.09483"],
+  "images_generated": ["infini-memory-pipeline.png", "dcpm-dual-process.png"]
+}

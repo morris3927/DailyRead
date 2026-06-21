@@ -1,0 +1,37 @@
+2026-06-22 DailyRead Log
+
+06:00 START — cron triggered
+
+SEARCH:
+- SearXNG (http://192.168.1.18:8888) unresponsive (timeout). Fallback to web_search (Gemini) + web_fetch.
+- web_search rate limit hit after 6 queries (Gemini 429/503). Completed 6 successful searches.
+
+DEDUP (check_paper_seen.py):
+- NOT_SEEN: 2606.10677, 2606.09483, 2606.05238, 2605.26079, 2605.10365, 2606.01444
+- SEEN (skipped): 2606.07513, 2606.18406, 2606.13681, 2606.16871, 2604.06663, 2606.01199, 2606.12369, 2606.08853
+
+FULL READ:
+- 2606.10677 (Infini Memory): arXiv HTML — Sections 1–2.1 full
+- 2606.09483 (DCPM): arXiv HTML — Sections 1–2.2 full
+- 2605.26079 (ABA): arXiv HTML — Sections 1–2 full
+- 2606.05238 (DeployBench): abstract only (HTML not available on arXiv)
+- 2605.10365 (Agent-ValueBench): abstract only (not fetched HTML)
+
+NOTES WRITTEN:
+- agent-memory/2026-06-22.md: Infini Memory + DCPM (both full notes)
+- harness-engineering/2026-06-22.md: ABA (full note) + DeployBench (abstract-only) + Agent-ValueBench (abstract-only) + silicon-sampling note (none today)
+- daily/2026-06-22.md: overview + recommended picks
+
+IMAGES: Pending generation (infini-memory-pipeline.png, dcpm-dual-process.png)
+
+GRAPH: Pending — build_paper_graph.py + graphify global add
+
+GIT: Committed 71d8b8b, pushed to origin/main
+
+GRAPH: SUCCESS — build_paper_graph.py wrote 583 nodes, 2455 edges. graphify global add completed: +583 nodes, -574 pruned.
+
+IMAGES: SUCCESS
+- infini-memory-pipeline.png (2.3 MB, verified readable)
+- dcpm-dual-process.png (2.6 MB, verified readable)
+
+DONE: 2026-06-22 DailyRead completed.

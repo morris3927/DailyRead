@@ -1,0 +1,24 @@
+{
+  "date": "2026-06-23",
+  "search_sources": {
+    "searxng": {"status": "timeout", "url": "http://192.168.1.18:8888"},
+    "arxiv_api": {"status": "ok"},
+    "web_search": {"status": "partial_503"}
+  },
+  "candidates": [
+    {"arxiv_id": "2606.20493", "title": "Contagion Networks: Evaluator Bias Propagation in Multi-Agent LLM Systems", "domain": "silicon-sampling-social-simulation", "seen": false, "depth": "full_html"},
+    {"arxiv_id": "2606.20520", "title": "Sovereign Execution Brokers: Enforcing Certificate-Bound Authority in Agentic Control Planes", "domain": "harness-engineering", "seen": false, "depth": "full_html"},
+    {"arxiv_id": "2606.20510", "title": "Efficient and Sound Probabilistic Verification for AI Agents", "domain": "harness-engineering", "seen": false, "depth": "abstract_only"},
+    {"arxiv_id": "2606.14470", "title": "GitOfThoughts: Version-Controlled Reasoning and Agent Memory You Can Replay, Diff, and Merge", "domain": "agent-memory", "seen": false, "depth": "full_html"},
+    {"arxiv_id": "2606.20529", "title": "LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents", "domain": "agent-memory", "seen": false, "depth": "full_html"},
+    {"arxiv_id": "2606.20545", "title": "Current World Models Lack a Persistent State Core (WRBench)", "domain": "agent-memory-adjacent", "seen": false, "depth": "full_html"},
+    {"arxiv_id": "2606.20562", "title": "MemoryWAM: Efficient World Action Modeling with Persistent Memory", "domain": "agent-memory-adjacent", "seen": false, "depth": "full_html"},
+    {"arxiv_id": "2606.07513", "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies", "domain": "silicon-sampling-social-simulation", "seen": true, "seen_date": "2026-06-10"},
+    {"arxiv_id": "2606.11482", "title": "Building Social World Models with Large Language Models (SWM)", "domain": "silicon-sampling-social-simulation", "seen": true, "seen_date": "2026-06-14"}
+  ],
+  "recommended": [
+    "2606.20493",
+    "2606.20520",
+    "2606.14470"
+  ]
+}

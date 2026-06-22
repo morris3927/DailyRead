@@ -1,0 +1,32 @@
+# DailyRead Log — 2026-06-23
+
+## 搜尋狀態
+- SearXNG (`http://192.168.1.18:8888`): 逾時（exit code 28），無法使用
+- arXiv API: 正常使用
+- web_search (Gemini): 間歇性 503 錯誤，部分搜尋成功
+
+## 論文抓取狀況
+- 2606.20493 (Contagion Networks): 全文 HTML ✓
+- 2606.20520 (SEB): 全文 HTML ✓（部分截斷，補充 abstract）
+- 2606.20510 (Probabilistic Verification): 僅 abstract（arXiv HTML 不可用，404）
+- 2606.14470 (GitOfThoughts): 全文 HTML ✓
+- 2606.20529 (LedgerAgent): 全文 HTML ✓
+- 2606.20545 (WRBench): 全文 HTML ✓（部分截斷）
+- 2606.20562 (MemoryWAM): 全文 HTML ✓（部分截斷）
+- 2606.19591: 原本標記為 GitOfThoughts，實際上是越南語多文件摘要論文，已更正為 2606.14470
+- 2606.07513 (Agentopia): SEEN（已在 2026-06-10 提過），跳過
+- 2606.11482 (SWM): SEEN（已在 2026-06-14 提過），跳過
+
+## 查重結果
+所有候選論文已用 check_paper_seen.py 查重，結果：
+- NOT_SEEN: 2606.20493, 2606.20520, 2606.20510, 2606.14470, 2606.20529, 2606.20545, 2606.20562
+- SEEN: 2606.07513 (Agentopia, 2026-06-10), 2606.11482 (SWM, 2026-06-14)
+- 2606.19591: NOT_SEEN 但非目標論文（越南語摘要論文）
+
+## 今日推薦點開
+1. Contagion Networks (2606.20493)
+2. Sovereign Execution Brokers (2606.20520)
+3. GitOfThoughts (2606.14470)
+
+## 產圖
+- 待產：3 張推薦篇筆記圖

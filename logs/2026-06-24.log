@@ -1,0 +1,38 @@
+DailyRead 2026-06-24 Log
+
+== Search ==
+- SearXNG (192.168.1.18:8888): 逾時 SIGKILL，未使用
+- Fallback: arXiv direct abs fetch + web_search + web_fetch
+- web_search 遇到 Gemini 429/503 quota 限制，改以 arXiv direct 逐篇查驗
+
+== Paper Search & Dedup ==
+Checked via check_paper_seen.py:
+- 2606.20877: NOT_SEEN ✓ (silicon sampling - collectives)
+- 2606.21666: NOT_SEEN ✓ (silicon sampling - context drift)
+- 2606.22844: NOT_SEEN ✓ (agent memory - RaMem)
+- 2606.21024: NOT_SEEN ✓ (agent memory - negative knowledge)
+- 2606.10106: NOT_SEEN ✓ (harness engineering)
+- 2606.23127: NOT_SEEN ✓ (agent memory - AFTER)
+- 2606.20720: NOT_SEEN ✓ (silicon sampling - SaMAS)
+- 2606.23158: NOT_SEEN (evaluated, not selected)
+- 2606.20662: NOT_SEEN (evaluated, not selected)
+- 2606.20615: NOT_SEEN (evaluated, not selected)
+- 2605.00197: SEEN ✓ (already deepread, skipped)
+
+== Image Generation ==
+- Google Gemini: HTTP 429 RESOURCE_EXHAUSTED (quota exceeded)
+- OpenAI gpt-image-2: HTTP 429 usage_limit_reached
+- 筆記圖產生失敗，所有推薦篇皆無圖片
+- 需要等 quota 恢復後手動補產
+
+== Full Text Sources ==
+- 2606.21666: arXiv HTML full text ✓
+- 2606.22844: arXiv HTML full text ✓ (truncated at ~40K chars)
+- 2606.10106: arXiv HTML full text ✓ (truncated at ~40K chars)
+- 2606.20877: arXiv HTML full text ✓ (truncated)
+- 2606.20720: arXiv HTML full text ✓ (truncated)
+- 2606.23127: arXiv HTML full text ✓ (truncated)
+- 2606.21024: arXiv HTML full text ✓ (truncated)
+
+== Graph Build ==
+(待執行)

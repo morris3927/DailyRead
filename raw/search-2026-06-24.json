@@ -1,0 +1,19 @@
+{
+  "date": "2026-06-24",
+  "search_method": "arXiv direct + web_search (SearXNG timeout)",
+  "domains": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "candidates": [
+    {"arxiv": "2606.21666", "title": "Hallucination as Context Drift: Synchronization Protocols for Multi-Agent LLM Systems", "domain": "silicon-sampling-social-simulation", "status": "recommended"},
+    {"arxiv": "2606.20877", "title": "Artificial collectives of specialists and generalists excel at different tasks", "domain": "silicon-sampling-social-simulation", "status": "included"},
+    {"arxiv": "2606.20720", "title": "SaMAS: Empowering Economic Simulation through Situation-aware LLM-driven Generative System", "domain": "silicon-sampling-social-simulation", "status": "included"},
+    {"arxiv": "2606.10106", "title": "What makes a harness a harness: necessary and sufficient conditions for an agent harness", "domain": "harness-engineering", "status": "recommended"},
+    {"arxiv": "2606.20615", "title": "Specifying AI-SDLC Processes: A Protocol Language for Human-Agent Boundaries", "domain": "harness-engineering", "status": "included"},
+    {"arxiv": "2606.20662", "title": "Confidence Laundering in Agent Systems", "domain": "harness-engineering", "status": "included"},
+    {"arxiv": "2606.22844", "title": "Contextual Reinstatement for Long-term Agentic Memory (RaMem)", "domain": "agent-memory", "status": "recommended"},
+    {"arxiv": "2606.23127", "title": "Managing Procedural Memory in LLM Agents: Control, Adaptation, and Evaluation (AFTER)", "domain": "agent-memory", "status": "included"},
+    {"arxiv": "2606.21024", "title": "Negative Knowledge as Failure-aware Shared Memory for AutoResearch", "domain": "agent-memory", "status": "included"}
+  ],
+  "seen_and_skipped": [
+    {"arxiv": "2605.00197", "title": "The Silicon Society Cookbook", "status": "SEEN - deepread"}
+  ]
+}

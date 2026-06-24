@@ -1,0 +1,38 @@
+{
+  "date": "2026-06-25",
+  "search_queries": [
+    "silicon sampling social simulation LLM agents arxiv 2026",
+    "agent harness engineering evaluation framework arxiv 2025 2026",
+    "agent memory long-term retrieval episodic procedural arxiv 2025 2026",
+    "silicon sampling LLM social simulation diversity parametric identity June 2026",
+    "arxiv 2606.14249 HarnessX composable adaptive evolvable agent harness",
+    "arxiv 2606.01435 agent memory",
+    "arxiv silicon sampling opinion polling LLM social desirability bias new paper",
+    "arxiv 2606 harness engineering agent evaluation harness definition self-harness",
+    "arxiv 2606 silicon sampling LLM opinion simulation diversity collapse",
+    "arxiv agent memory episodic retrieval new June 2026"
+  ],
+  "search_sources": ["web_search (Gemini)", "arXiv HTML", "arXiv abstract"],
+  "searxng_timeout": true,
+  "searxng_note": "SearXNG at 192.168.1.18:8888 timed out; all searches done via web_search",
+  "papers_considered": [
+    {"arxiv": "2606.09198", "title": "MASS: Deep Research for Social Sciences with Memory-Augmented Social Simulation", "status": "SEEN (2026-06-15)"},
+    {"arxiv": "2606.09498", "title": "Self-Harness: Harnesses That Improve Themselves", "status": "SEEN (2026-06-16)"},
+    {"arxiv": "2606.11482", "title": "Building Social World Models with LLMs", "status": "SEEN (2026-06-14)"},
+    {"arxiv": "2606.12369", "title": "Should LLM Agents Decide in Social Simulations?", "status": "SEEN (2026-06-14)"},
+    {"arxiv": "2606.06036", "title": "MRAgent: Graph Memory for LLM Agents", "status": "SEEN (2026-06-07)"},
+    {"arxiv": "2605.17625", "title": "Episodic-Semantic Memory Architecture", "status": "SEEN (2026-05-22)"},
+    {"arxiv": "2605.00197", "title": "Silicon Society Cookbook", "status": "SEEN (deepread)"},
+    {"arxiv": "2606.06448", "title": "Agent Memory: Characterization and System Implications", "status": "SEEN (2026-06-07)"},
+    {"arxiv": "2512.22725", "title": "Mitigating Social Desirability Bias in Random Silicon Sampling", "status": "SEEN (2026-05-14)"},
+    {"arxiv": "2603.16142", "title": "PSII: Parametric Social Identity Injection", "status": "SEEN (2026-06-04)"},
+    {"arxiv": "2606.01435", "title": "Don't Ask the LLM to Track Freshness", "status": "NEW - included"},
+    {"arxiv": "2606.14249", "title": "HarnessX", "status": "NEW - included"},
+    {"arxiv": "2606.09416", "title": "Harness Engineering for Physical AI", "status": "NEW - included"},
+    {"arxiv": "2604.18005", "title": "Diversity Collapse in MAS", "status": "NEW - included"},
+    {"arxiv": "2601.21714", "title": "E-mem", "status": "NEW - included"},
+    {"arxiv": "2602.16192", "title": "Revolutionizing Long-Term Memory in AI", "status": "NEW - included"},
+    {"arxiv": "2605.27784", "title": "WIRE: Diagnosing Live Within-Policy Instruction Conflicts", "status": "NOT_SEEN but not included today (harness-adjacent, lower priority)"},
+    {"arxiv": "2606.10106", "title": "What makes a harness a harness", "status": "SEEN (2026-06-24)"}
+  ]
+}

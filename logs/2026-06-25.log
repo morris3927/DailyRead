@@ -1,0 +1,25 @@
+# DailyRead Log — 2026-06-25
+
+## SearXNG Status
+- 192.168.1.18:8888 timed out on all 3 queries (silicon sampling, harness engineering, agent memory)
+- All searches completed via web_search (Gemini provider)
+- Gemini hit 429 rate limit on 2 agent memory searches; retries with simplified queries succeeded
+
+## Papers Processed
+- NEW: 2606.01435 (Don't Ask the LLM to Track Freshness) — agent-memory — full HTML read
+- NEW: 2606.14249 (HarnessX) — harness-engineering — full HTML read  
+- NEW: 2606.09416 (Harness Engineering for Physical AI) — harness-engineering — full HTML read
+- NEW: 2604.18005 (Diversity Collapse in MAS) — silicon-sampling-social-simulation — abstract only (HTML not available)
+- NEW: 2601.21714 (E-mem) — agent-memory — abstract only
+- NEW: 2602.16192 (Revolutionizing Long-Term Memory) — agent-memory — abstract only
+- SEEN (skipped): 2606.09198, 2606.09498, 2606.11482, 2606.12369, 2606.06036, 2605.17625, 2605.00197, 2606.06448, 2512.22725, 2603.16142, 2606.10106
+
+## Depth Levels
+- Full HTML: 2606.01435, 2606.14249, 2606.09416
+- Abstract only: 2604.18005, 2601.21714, 2602.16192
+
+## Image Generation
+- Pending: 3 note diagrams for recommended papers (async sub-agents)
+
+## Graph Update
+- Pending: build_paper_graph.py + graphify global add

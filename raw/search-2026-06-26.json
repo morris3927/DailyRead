@@ -1,0 +1,80 @@
+{
+  "date": "2026-06-26",
+  "domains": ["agent-memory", "harness-engineering", "silicon-sampling-social-simulation"],
+  "papers": [
+    {
+      "arxiv_id": "2606.24775",
+      "title": "Are We Ready For An Agent-Native Memory System?",
+      "domain": "agent-memory",
+      "recommended": true,
+      "full_text_available": true
+    },
+    {
+      "arxiv_id": "2606.24535",
+      "title": "Governed Shared Memory for Multi-Agent LLM Systems",
+      "domain": "agent-memory",
+      "recommended": false,
+      "full_text_available": true
+    },
+    {
+      "arxiv_id": "2606.04315",
+      "title": "Exploring Cross-Scenario Generality of Agentic Memory Systems",
+      "domain": "agent-memory",
+      "recommended": false,
+      "full_text_available": true
+    },
+    {
+      "arxiv_id": "2605.12978",
+      "title": "Useful Memories Become Faulty When Continuously Updated by LLMs",
+      "domain": "agent-memory",
+      "recommended": false,
+      "full_text_available": false,
+      "note": "HTML unavailable, abstract only"
+    },
+    {
+      "arxiv_id": "2606.25447",
+      "title": "The Interplay of Harness Design and Post-Training in LLM Agents",
+      "domain": "harness-engineering",
+      "recommended": true,
+      "full_text_available": true
+    },
+    {
+      "arxiv_id": "2605.11671",
+      "title": "Cochise: A Reference Harness for Autonomous Penetration Testing",
+      "domain": "harness-engineering",
+      "recommended": false,
+      "full_text_available": true
+    },
+    {
+      "arxiv_id": "2602.02613",
+      "title": "Exploring Silicon-Based Societies: An Early Study of the Moltbook Agent Community",
+      "domain": "silicon-sampling-social-simulation",
+      "recommended": true,
+      "full_text_available": true
+    }
+  ],
+  "seen_excluded": [
+    "2606.23127", "2606.06090", "2604.06663", "2605.00197", "2502.08691",
+    "2603.19649", "2603.00113", "2512.22725", "2604.01520", "2605.21404", "2510.11977"
+  ],
+  "search_queries": [
+    "agent memory management LLM",
+    "silicon sampling social simulation",
+    "harness agent evaluation LLM scaffold",
+    "\"Are We Ready For An Agent-Native Memory System\"",
+    "\"Governed Shared Memory for Multi-Agent LLM Systems\"",
+    "\"Interplay of Harness Design and Post-Training in LLM Agents\"",
+    "\"Exploring Cross-Scenario Generality of Agentic Memory Systems\"",
+    "\"Cochise\" harness penetration testing",
+    "Moltbook silicon societies"
+  ],
+  "image_generation": {
+    "provider": "openai/gpt-image-2",
+    "google_quota_exceeded": true,
+    "images": [
+      "assets/2026-06-26/are-we-ready-agent-native-memory.png",
+      "assets/2026-06-26/interplay-harness-posttraining.png",
+      "assets/2026-06-26/silicon-societies-moltbook.png"
+    ]
+  }
+}

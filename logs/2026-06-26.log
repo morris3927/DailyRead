@@ -1,0 +1,50 @@
+# DailyRead Log — 2026-06-26
+
+## Search Sources
+
+- arXiv search: agent memory management LLM, silicon sampling social simulation, harness agent evaluation LLM scaffold
+- arXiv HTML full text: 2606.24775, 2606.24535, 2606.04315, 2606.25447, 2605.11671, 2602.02613v2
+- arXiv abstract only: 2605.12978 (HTML version unavailable)
+- SearXNG (http://192.168.1.18:8888): blocked by web_fetch (private IP), used arXiv direct searches as fallback
+- web_search: used for arXiv ID lookups (Interplay of Harness Design → 2606.25447, Moltbook → 2602.02613)
+
+## Dedup Results
+
+All candidate papers checked via check_paper_seen.py: NOT_SEEN
+- 2606.24775, 2606.24535, 2606.04315, 2605.12978, 2605.11671, 2606.25447, 2602.02613
+
+## Papers with Full Text Retrieved
+
+- 2606.24775 — "Are We Ready For An Agent-Native Memory System?" — HTML full text (~40K chars)
+- 2606.24535 — "Governed Shared Memory for Multi-Agent LLM Systems" — HTML full text (~40K chars)
+- 2606.04315 — "Exploring Cross-Scenario Generality of Agentic Memory Systems" — HTML full text (~40K chars)
+- 2606.25447 — "The Interplay of Harness Design and Post-Training in LLM Agents" — HTML full text (~40K chars)
+- 2605.11671 — "Cochise: A Reference Harness for Autonomous Penetration Testing" — HTML full text (~40K chars)
+- 2602.02613v2 — "Exploring Silicon-Based Societies" — HTML full text (~40K chars)
+
+## Papers with Abstract Only
+
+- 2605.12978 — "Useful Memories Become Faulty When Continuously Updated by LLMs" — HTML version unavailable, abstract only from arXiv abs page
+  - Limitation noted in domain note: unable to confirm experimental details beyond abstract
+
+## Papers Not Found
+
+- "Layer-Isolated Evaluation" — arXiv search returned no results; may be workshop paper or not yet published
+  - Noted in domain note as abstract-level scan only
+
+## Image Generation
+
+- Google image generation: quota exceeded (HTTP 429)
+- Fallback to openai/gpt-image-2: all 3 images generated successfully
+- are-we-ready-agent-native-memory.png ✓
+- interplay-harness-posttraining.png ✓
+- silicon-societies-moltbook.png ✓
+
+## Self-Audit
+
+All three domain notes checked:
+- ✓ agent-memory: 4 papers, each with 5 required subheadings
+- ✓ harness-engineering: 3 papers (2 full, 1 abstract-level), each with required subheadings
+- ✓ silicon-sampling: 1 primary + 1 cross-reference, each with required subheadings
+- Content depth: all full-text papers have 500+ Chinese characters per entry
+- Abstract-only paper (2605.12978) explicitly marked with limitations

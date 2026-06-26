@@ -1,0 +1,30 @@
+{
+  "date": "2026-06-27",
+  "queries": [
+    "arxiv 2026 June silicon sampling social simulation LLM agent personality",
+    "arxiv 2026 June agent memory LLM long-term persistent new paper",
+    "arxiv 2026 June LLM agent evaluation harness benchmark new paper"
+  ],
+  "seen_papers": [
+    {"id": "2606.07513", "title": "Agentopia", "status": "SEEN", "date": "2026-06-10"},
+    {"id": "2606.11482", "title": "Building Social World Models", "status": "SEEN", "date": "2026-06-14"},
+    {"id": "2606.13629", "title": "Valid Inference with Synthetic Data", "status": "SEEN", "date": "2026-06-20"},
+    {"id": "2606.06448", "title": "Agent Memory Characterization", "status": "SEEN", "date": "2026-06-07"},
+    {"id": "2604.16548", "title": "LLM Agent Memory Security Survey", "status": "SEEN", "date": "2026-05-10"},
+    {"id": "2605.06527", "title": "STALE", "status": "SEEN", "date": "2026-05-24"},
+    {"id": "2605.23950", "title": "Stop Comparing LLM Agents Without Disclosing the Harness", "status": "SEEN", "date": "2026-06-18"},
+    {"id": "2606.07462", "title": "AARRI-Bench", "status": "SEEN", "date": "2026-06-10"}
+  ],
+  "new_papers": [
+    {"id": "2606.06936", "title": "Personality Anchoring for Social Simulation", "status": "INCLUDED", "pick": true},
+    {"id": "2606.19904", "title": "Toward Temporal Realism in Crisis Response Simulation", "status": "INCLUDED", "pick": true},
+    {"id": "2606.21315", "title": "Social World Model for Lifelong Social Intelligence", "status": "INCLUDED", "pick": false},
+    {"id": "2606.16415", "title": "Posterior Twins: Distributional Behavioral Simulation", "status": "INCLUDED", "pick": false},
+    {"id": "2606.24322", "title": "TMA-NM: Securing LLM-Agent Long-Term Memory", "status": "INCLUDED", "pick": true},
+    {"id": "2606.23042", "title": "Model as One Rater Among Several", "status": "SKIPPED"},
+    {"id": "2604.21748", "title": "StructMem", "status": "INCLUDED", "pick": false},
+    {"id": "2603.19935", "title": "Memori", "status": "SKIPPED"},
+    {"id": "2606.10749", "title": "Toward Secure LLM Agents Survey", "status": "INCLUDED", "pick": false}
+  ],
+  "source": "web_search + web_fetch (arxiv)"
+}

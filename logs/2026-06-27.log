@@ -1,0 +1,60 @@
+# DailyRead Log — 2026-06-27
+
+## Search Queries
+- arxiv 2026 June silicon sampling social simulation LLM agent personality
+- arxiv 2026 June agent memory LLM long-term persistent new paper
+- arxiv 2026 June LLM agent evaluation harness benchmark new paper
+
+## Papers Checked (check_paper_seen.py)
+
+### SEEN (not included as new)
+- 2606.07513 — Agentopia (2026-06-10)
+- 2606.11482 — Building Social World Models (2026-06-14)
+- 2606.13629 — Valid Inference with Synthetic Data (2026-06-20)
+- 2606.06448 — Agent Memory Characterization (2026-06-07)
+- 2604.16548 — LLM Agent Memory Security Survey (2026-05-10)
+- 2605.06527 — STALE (2026-05-24)
+- 2605.23950 — Stop Comparing LLM Agents Without Disclosing the Harness (2026-06-18)
+- 2606.07462 — AARRI-Bench (2026-06-10)
+
+### NOT_SEEN (new candidates)
+- 2606.06936 — Personality Anchoring for Social Simulation ✓ INCLUDED
+- 2606.19904 — Toward Temporal Realism in Crisis Response Simulation ✓ INCLUDED
+- 2606.21315 — Social World Model for Lifelong Social Intelligence ✓ INCLUDED
+- 2606.16415 — Posterior Twins: Distributional Behavioral Simulation ✓ INCLUDED (abstract only)
+- 2606.24322 — TMA-NM: Securing LLM-Agent Long-Term Memory ✓ INCLUDED (today's pick)
+- 2606.23042 — Model as One Rater Among Several ✗ skipped (political measurement, tangential)
+- 2604.21748 — StructMem ✓ INCLUDED (abstract only)
+- 2603.19935 — Memori ✗ skipped (white paper, lower depth)
+- 2606.10749 — Toward Secure LLM Agents Survey ✓ INCLUDED
+- 2602.18998 — General AgentBench ✗ skipped (older, Feb 2026)
+- 2601.00268 — WildAGTEval ✗ skipped (older, Jan 2026)
+- 2601.02428 — Adaptive RAG Memory ✗ skipped (older, Jan 2026)
+- 2507.21504 — Evaluation and Benchmarking of LLM Agents Survey ✗ skipped (older)
+- 2602.11224 — Agent-Diff ✗ skipped (older)
+
+## Full-text Sources
+- 2606.06936: https://arxiv.org/html/2606.06936v1 ✓ (full HTML fetched)
+- 2606.19904: https://arxiv.org/html/2606.19904v1 ✓ (full HTML fetched)
+- 2606.24322: https://arxiv.org/html/2606.24322v1 ✓ (full HTML fetched)
+- 2606.21315: https://arxiv.org/html/2606.21315v1 ✓ (full HTML fetched)
+- 2606.16415: abstract only (no HTML available)
+- 2604.21748: abstract only (ACL 2026, PDF available but not fetched in this cycle)
+- 2606.10749: abstract only (survey, 247 papers)
+
+## Today's Picks (推薦點開)
+1. 2606.24322 — TMA-NM (Agent Memory)
+2. 2606.06936 — Personality Anchoring (Silicon Sampling)
+3. 2606.19904 — Temporal Realism (Silicon Sampling)
+
+## Image Generation
+- Queued: 3 images for today's picks
+  - tma-nm-origin-bound-authority.png
+  - personality-anchoring-social-sim.png
+  - temporal-realism-crisis-sim.png
+
+## SearXNG
+- SearXNG at http://192.168.1.18:8888 timed out / SIGKILL; fell back to web_search and web_fetch
+
+## Graph Update
+- Pending: build_paper_graph.py + graphify global add

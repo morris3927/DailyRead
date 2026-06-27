@@ -1,0 +1,17 @@
+{
+  "date": "2026-06-28",
+  "search_queries": [
+    {"query": "silicon sampling social simulation LLM 2025 2026", "source": "arXiv + web_search"},
+    {"query": "harness engineering agent policy enforcement 2025 2026", "source": "arXiv + web_search"},
+    {"query": "agent memory evolution novelty detection 2025 2026", "source": "arXiv + web_search"}
+  ],
+  "papers": [
+    {"arxiv_id": "2606.23042", "title": "The Model as One Rater Among Several: Measuring Political Positions in Data-Sparse Regions with a Language-Model Panel", "domain": "silicon-sampling-social-simulation", "status": "NOT_SEEN", "recommended": true},
+    {"arxiv_id": "2606.14199", "title": "OdysSim: Building Foundation Models for Human Behavior Simulation", "domain": "silicon-sampling-social-simulation", "status": "NOT_SEEN", "recommended": false},
+    {"arxiv_id": "2606.25189", "title": "ActPlane: Programmable OS-Level Policy Enforcement for Agent Harnesses", "domain": "harness-engineering", "status": "NOT_SEEN", "recommended": true},
+    {"arxiv_id": "2605.14271", "title": "HarnessAudit: Auditing Agent Harness Safety", "domain": "harness-engineering", "status": "NOT_SEEN", "recommended": false},
+    {"arxiv_id": "2606.20683", "title": "From Question Answering to Task Completion: A Survey on Agent System and Harness Design", "domain": "harness-engineering", "status": "NOT_SEEN", "recommended": false},
+    {"arxiv_id": "2605.30711", "title": "SAGE: A Novelty Gate for Efficient Memory Evolution in Agentic LLMs", "domain": "agent-memory", "status": "NOT_SEEN", "recommended": true},
+    {"arxiv_id": "2606.14314", "title": "Communication Policy Evolution for Proactive LLM Agents", "domain": "agent-memory", "status": "NOT_SEEN", "recommended": false}
+  ]
+}

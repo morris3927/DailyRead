@@ -1,0 +1,28 @@
+# DailyRead Log — 2026-06-28
+
+## Search
+- SearXNG (http://192.168.1.18:8888) timed out; fell back to web_search + arXiv web_fetch
+- Search queries: silicon sampling social simulation, harness engineering agent policy, agent memory evolution novelty
+
+## Papers processed
+- 2606.23042 (Silicon Sampling): Full HTML retrieved from arxiv.org/html/2606.23042v1
+- 2606.14199 (Silicon Sampling): Full HTML retrieved from arxiv.org/html/2606.14199v1
+- 2606.25189 (Harness Engineering): Full HTML retrieved from arxiv.org/html/2606.25189v1
+- 2605.14271 (Harness Engineering): Full HTML retrieved from arxiv.org/html/2605.14271v2
+- 2606.20683 (Harness Engineering): Full HTML retrieved from arxiv.org/html/2606.20683v1 (truncated at 750KB)
+- 2605.30711 (Agent Memory): Full HTML retrieved from arxiv.org/html/2605.30711v2
+- 2606.14314 (Agent Memory): Full HTML retrieved from arxiv.org/html/2606.14314v1
+
+## Dedup check
+- All 7 papers checked via check_paper_seen.py: all NOT_SEEN
+
+## Recommended today
+- 2606.25189 (ActPlane) — harness engineering
+- 2605.30711 (SAGE) — agent memory
+- 2606.23042 (Model as Rater) — silicon sampling
+
+## Images
+- 3 note images queued for async generation via openai/gpt-image-2
+
+## Graph update
+- Pending: build_paper_graph.py + graphify global add (will attempt after commit)

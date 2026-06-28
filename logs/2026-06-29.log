@@ -1,0 +1,42 @@
+2026-06-29 DailyRead Log
+==========================
+
+Search Strategy:
+- Used arXiv direct search (SearXNG timeout, fell back to web_search + arXiv direct fetch)
+- Domains: silicon sampling/social simulation, harness engineering, agent memory
+
+Papers Evaluated:
+- 2606.23343 (Group Selection Promotes Prosocial Prompts) — HTML full text fetched ✓
+- 2606.23764 (Emergent Relational Order / CAREB-MAS) — HTML full text fetched ✓
+- 2606.26883 (EconSimulacra) — Abstract only (no HTML available)
+- 2606.21856 (Harness-MU) — HTML full text fetched ✓
+- 2606.27243 (NOVA) — HTML full text fetched ✓
+- 2606.25161 (TrustMem) — HTML full text fetched ✓
+- 2606.24595 (MEMPROBE) — Abstract only (no HTML, PDF fallback attempted)
+
+Full-Text Fetch Log:
+- ar5iv.org attempted for all papers; HTML versions used where available
+- 2606.24595: No HTML version, PDF not directly fetchable; abstract used
+- 2606.26883: No HTML version; abstract only
+
+Today's Recommended Papers (今日推薦點開):
+1. 2606.23343 (Group Selection) — Full HTML read, silicon sampling domain
+2. 2606.21856 (Harness-MU) — Full HTML read, harness engineering domain
+3. 2606.25161 (TrustMem) — Full HTML read, agent memory domain
+
+Papers with limited reading (abstract/landing page only):
+- 2606.26883 (EconSimulacra) — abstract only, noted in domain note
+- 2606.24595 (MEMPROBE) — abstract only, noted in domain note
+
+Dedup Check:
+- All NOT_SEEN candidates verified against paper_index.json and check_paper_seen.py
+- SEEN papers excluded: 2606.12433, 2604.06663, 2606.24322, 2606.20683, 2606.05922,
+  2606.14314, 2605.30621, 2606.25189, 2605.30711, 2606.23042, 2606.14199, 2606.24775
+
+Image Generation:
+- 3 images to be generated for recommended papers
+- Using openai/gpt-image-2 as default
+- Output: assets/2026-06-29/
+
+Graph Build:
+- Pending: build_paper_graph.py + graphify global add

@@ -1,0 +1,40 @@
+{
+  "date": "2026-06-29",
+  "search_queries": [
+    "silicon sampling social simulation LLM agents 2026",
+    "harness engineering agent infrastructure 2026",
+    "agent memory LLM long-term memory 2026",
+    "group selection LLM cooperation",
+    "multi-user LLM agent governance",
+    "trustworthy memory consolidation LLM",
+    "verification-aware agent harness recommender",
+    "emergent relational order LLM agent societies",
+    "digital twin socio-economic LLM simulation"
+  ],
+  "papers_fetched": [
+    {"arxiv_id": "2606.23343", "title": "Group Selection Promotes Prosocial Prompts in Populations of LLM Agents", "domain": "silicon-sampling", "status": "NOT_SEEN"},
+    {"arxiv_id": "2606.23764", "title": "Emergent Relational Order in LLM Agent Societies", "domain": "silicon-sampling", "status": "NOT_SEEN"},
+    {"arxiv_id": "2606.26883", "title": "EconSimulacra: A Digital Twin Platform of Socio-Economic Systems Powered by LLM Agents", "domain": "silicon-sampling", "status": "NOT_SEEN"},
+    {"arxiv_id": "2606.21856", "title": "Harness-MU: A Safe, Governed, and Effective Harness for Multi-User LLM Agents", "domain": "harness-engineering", "status": "NOT_SEEN"},
+    {"arxiv_id": "2606.27243", "title": "NOVA: A Verification-Aware Agent Harness for Architecture Evolution in Industrial Recommender Systems", "domain": "harness-engineering", "status": "NOT_SEEN"},
+    {"arxiv_id": "2606.25161", "title": "TrustMem: Learning Trustworthy Memory Consolidation for LLM Agents", "domain": "agent-memory", "status": "NOT_SEEN"},
+    {"arxiv_id": "2606.24595", "title": "MEMPROBE: Probing Long-Term Agent Memory via Hidden User-State Recovery", "domain": "agent-memory", "status": "NOT_SEEN"}
+  ],
+  "seen_papers_excluded": [
+    "2606.12433", "2604.06663", "2606.24322", "2606.20683", "2606.05922",
+    "2606.14314", "2605.30621", "2606.25189", "2605.30711", "2606.23042",
+    "2606.14199", "2606.24775"
+  ],
+  "irrelevant_papers_excluded": [
+    {"arxiv_id": "2606.07365", "reason": "PPG signal processing, not relevant"},
+    {"arxiv_id": "2606.18408", "reason": "quantum computing, not relevant"},
+    {"arxiv_id": "2606.18503", "reason": "quantum annealing, not relevant"},
+    {"arxiv_id": "2606.24698", "reason": "Finsler gravity, not relevant"},
+    {"arxiv_id": "2606.24500", "reason": "reaction-diffusion PDE, not relevant"},
+    {"arxiv_id": "2606.24650", "reason": "Hierarchical SSM, not relevant"},
+    {"arxiv_id": "2606.24705", "reason": "exceptional points physics, not relevant"},
+    {"arxiv_id": "2606.24609", "reason": "power grid digital twin, not relevant"},
+    {"arxiv_id": "2606.15000", "reason": "colorectal polyp detection, not relevant"},
+    {"arxiv_id": "2606.26032", "reason": "kinetic moment systems, not relevant"}
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "date": "2026-06-30",
+  "search_queries": [
+    {
+      "query": "silicon sampling OR LLM social simulation",
+      "source": "arXiv API",
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22silicon+sample%22+OR+all:%22LLM+social+simulation%22&sortBy=submittedDate&sortOrder=descending&max_results=10",
+      "results": ["2606.13629 (SEEN)", "2606.06936 (SEEN)", "2605.30258 (SEEN)", "2605.18890 (SEEN)"],
+      "notes": "All top results were already SEEN. Expanded search needed."
+    },
+    {
+      "query": "generative agent OR LLM agent simulation OR synthetic population",
+      "source": "arXiv API",
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22generative+agent%22+OR+all:%22LLM+agent+simulation%22+OR+all:%22synthetic+population%22&sortBy=submittedDate&sortOrder=descending&max_results=5",
+      "results": ["2606.27650 (GenWorld, NOT_SEEN)", "2606.28002 (irrelevant)", "2606.25496 (irrelevant)", "2606.24842 (irrelevant)", "2606.24597 (Qwen-AgentWorld)"],
+      "notes": "GenWorld 2606.27650 selected as silicon sampling candidate."
+    },
+    {
+      "query": "self-harness OR agent evaluation benchmark",
+      "source": "arXiv API",
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22self-harness%22+OR+all:%22agent+evaluation+benchmark%22&sortBy=submittedDate&sortOrder=descending&max_results=5",
+      "results": ["2606.15363 (APEX, NOT_SEEN)", "2606.09498 (Self-Harness, SEEN)", "2605.12153 (CIDR)", "2605.06177 (BioMedArena)", "2602.00352 (DETOUR)"],
+      "notes": "APEX 2606.15363 selected as harness candidate."
+    },
+    {
+      "query": "arXiv direct ID lookup",
+      "source": "arXiv API",
+      "ids": ["2606.08610", "2606.25206", "2606.23195", "2606.15903", "2606.15609", "2606.13177", "2606.12945", "2606.27650", "2606.15363"],
+      "notes": "Direct lookups for candidate papers identified from prior search context."
+    }
+  ],
+  "candidates_checked": {
+    "SEEN": [
+      "2606.13629", "2606.06936", "2605.30258", "2605.18890", "2606.09498",
+      "2606.01199", "2605.27419", "2604.06663", "2506.19806", "2605.13357",
+      "2606.20683", "2606.09416", "2606.10677", "2602.16192", "2604.16548",
+      "2606.21856", "2606.12433", "2604.23575", "2606.24775", "2606.24595",
+      "2606.24322", "2512.22725", "2606.00476"
+    ],
+    "NOT_SEEN": [
+      "2606.08610 (HARBOR - harness engineering)",
+      "2606.25206 (RAVEN - robot memory, not core domain)",
+      "2606.23195 (Memory Contagion - agent memory)",
+      "2606.15903 (ForgetEval - agent memory)",
+      "2606.15609 (FragFuse - agent memory/security)",
+      "2606.13177 (MemRefine - agent memory)",
+      "2606.12945 (Multi-Factor Value - agent memory)",
+      "2606.27650 (GenWorld - silicon sampling)",
+      "2606.15363 (APEX - harness engineering)"
+    ]
+  },
+  "selected_today": {
+    "silicon-sampling-social-simulation": ["2606.27650 (GenWorld)"],
+    "harness-engineering": ["2606.08610 (HARBOR)", "2606.15363 (APEX)"],
+    "agent-memory": ["2606.23195 (Memory Contagion)", "2606.15903 (ForgetEval)", "2606.12945 (Multi-Factor Value)", "2606.15609 (FragFuse)"]
+  },
+  "recommended_today": [
+    "2606.23195 (Memory Contagion)",
+    "2606.15903 (ForgetEval)",
+    "2606.08610 (HARBOR)"
+  ]
+}

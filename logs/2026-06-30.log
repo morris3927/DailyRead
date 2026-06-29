@@ -1,0 +1,33 @@
+2026-06-30 DailyRead Log
+
+## Search
+- SearXNG (192.168.1.18:8888) blocked by web_fetch private IP policy, used arXiv API instead
+- arXiv API queries: silicon sampling, LLM social simulation, generative agent, self-harness, agent evaluation benchmark
+- All top silicon sampling results were SEEN; expanded to urban simulation and found GenWorld (2606.27650)
+- Found APEX (2606.15363) via self-harness search
+- Agent memory candidates identified from prior context: Memory Contagion, ForgetEval, FragFuse, MemRefine, Multi-Factor Value, HARBOR
+
+## Dedup
+- All candidates checked via check_paper_seen.py
+- 23 papers confirmed SEEN, 9 confirmed NOT_SEEN
+- No previously recommended papers re-recommended
+
+## Full-text access
+- Memory Contagion (2606.23195): ar5iv redirected to abstract, used arxiv.org/html/2606.23195v2 — full text obtained (20KB+)
+- ForgetEval (2606.15903): arxiv.org/html/2606.15903v2 — full text obtained (20KB+)
+- HARBOR (2606.08610): arxiv.org/html/2606.08610v1 — full text obtained (20KB+)
+- Multi-Factor Value (2606.12945): ar5iv redirected to abstract, only abstract obtained — marked as abstract-level scan
+- FragFuse (2606.15609): only abstract obtained — marked as abstract-level scan
+- MemRefine (2606.13177): only abstract obtained — not included in today's notes (insufficient depth)
+- APEX (2606.15363): only abstract obtained — marked as abstract-level scan
+- GenWorld (2606.27650): only abstract obtained — marked as abstract-level scan
+
+## Image generation
+- Queued for: Memory Contagion, ForgetEval, HARBOR (3 recommended papers)
+- Output: assets/2026-06-30/memory-contagion.png, forgeteval.png, harbor.png
+
+## Graphify
+- Pending: build_paper_graph.py + graphify global add
+
+## Git
+- Pending: commit + push

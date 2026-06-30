@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-01",
+  "search_queries": [
+    "silicon sampling social simulation LLM agents arxiv 2025",
+    "harness engineering agent evaluation benchmark framework arxiv",
+    "agent memory LLM long-term forgetting retrieval arxiv 2025",
+    "arxiv silicon sampling LLM population survey simulation June 2026",
+    "arxiv agent memory forgetting retrieval LLM June 2026",
+    "arxiv harness engineering agent evaluation June 2026",
+    "arxiv STALE benchmark LLM memory belief revision implicit conflict 2026"
+  ],
+  "searxng_status": "timeout_unreachable",
+  "papers_considered": {
+    "silicon_sampling": {
+      "no_new_candidates": true,
+      "all_recent_already_seen": true
+    },
+    "harness_engineering": {
+      "new": [
+        {"arxiv_id": "2606.24311", "title": "LemonHarness Technical Report", "status": "recommended"},
+        {"arxiv_id": "2606.11543", "title": "SkillJuror: Measuring How Agent Skill Organization Changes Runtime Behavior", "status": "included"},
+        {"arxiv_id": "2604.01212", "title": "YC-Bench: Benchmarking AI Agents for Long-Term Planning and Consistent Execution", "status": "not_included_too_old"},
+        {"arxiv_id": "2604.22436", "title": "AgentSearchBench", "status": "not_included_ir"},
+        {"arxiv_id": "2606.12736", "title": "SciAgentArena", "status": "not_included_science_domain"}
+      ]
+    },
+    "agent_memory": {
+      "new": [
+        {"arxiv_id": "2606.27472", "title": "Supersede: Diagnosing and Training the Memory-Update Gap", "status": "recommended"},
+        {"arxiv_id": "2603.00270", "title": "Transformers Remember First, Forget Last", "status": "included"},
+        {"arxiv_id": "2605.16233", "title": "FORGE: Self-Evolving Agent Memory", "status": "included"},
+        {"arxiv_id": "2604.00430", "title": "Agent Unlearning Framework", "status": "included"}
+      ]
+    }
+  }
+}

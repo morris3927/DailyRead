@@ -1,0 +1,59 @@
+# DailyRead Log — 2026-07-01
+
+## 搜索紀錄
+
+### SearXNG
+- SearXNG (192.168.1.18:8888) 連線 timeout，不可用
+- 改用 web_search（Gemini search provider）替代
+
+### Web Search 查詢
+1. silicon sampling social simulation LLM agents arxiv 2025
+2. harness engineering agent evaluation benchmark framework arxiv
+3. agent memory LLM long-term forgetting retrieval arxiv 2025
+4. arxiv silicon sampling LLM population survey simulation June 2026
+5. arxiv agent memory forgetting retrieval LLM June 2026
+6. arxiv harness engineering agent evaluation June 2026
+7. arxiv STALE benchmark LLM memory belief revision implicit conflict 2026
+
+### 查重結果
+
+NOT_SEEN papers:
+- 2606.27472 (Supersede: Memory-Update Gap) → Agent Memory, 今日推薦 ✅
+- 2606.11543 (SkillJuror) → Harness Engineering, 收錄
+- 2606.24311 (LemonHarness) → Harness Engineering, 今日推薦 ✅
+- 2604.01212 (YC-Bench) → Harness Engineering, 收錄但較舊(April)
+- 2604.22436 (AgentSearchBench) → Harness Engineering, 偏 IR
+- 2606.12736 (SciAgentArena) → Harness Engineering, 但領域偏 science
+- 2604.00430 (Agent Unlearning) → Agent Memory, 收錄
+- 2603.00270 (Transformers Remember First, Forget Last) → Agent Memory, 收錄
+- 2605.16233 (FORGE) → Agent Memory, 收錄
+
+SEEN papers (excluded from new recommendations):
+- 2507.19364, 2506.19806, 2504.11671, 2512.22725, 2604.01520, 2605.00197, 2603.00113, 2605.02335, 2605.19229, 2605.16193, 2509.26080
+- 2606.10106, 2606.16871, 2605.27922, 2605.26112, 2605.24134, 2603.23749, 2605.13357
+- 2606.06036, 2603.07670, 2605.06716, 2606.06448, 2604.20006, 2605.06527
+- 2606.20683
+
+### Silicon Sampling / Social Simulation
+- 無新的高品質 NOT_SEEN 候選。所有近期搜索結果已被先前 DailyRead 覆蓋。
+
+### 全文讀取
+- Supersede (2606.27472): 讀取 full HTML (~20K chars)
+- LemonHarness (2606.24311): 讀取 full HTML (~20K chars)
+- SkillJuror (2606.11543): 讀取 full HTML (~15K chars)
+- Transformers Remember First (2603.00270): 讀取 full HTML (~10K chars)
+- FORGE (2605.16233): 只讀 abstract
+- Agent Unlearning (2604.00430): 只讀 abstract
+- YC-Bench (2604.01212): 只讀 abstract
+- AgentSearchBench (2604.22436): 只讀 abstract
+- SciAgentArena (2606.12736): 只讀 abstract
+
+## 圖片產生
+- Supersede concept diagram: 產生中（async sub-agent）
+- LemonHarness framework diagram: 產生中（async sub-agent）
+
+## 自審結果
+- ✅ 所有 domain notes 都有五個小標題（這篇在說什麼 / 主要貢獻 / 方法 pipeline / 實驗設計 / かに讀後判斷）
+- ✅ Agent Unlearning 因為只讀到 abstract，明確標注「目前只從 abstract 和 landing page 確認到以上資訊」
+- ✅ Silicon Sampling 明確寫「今日無高品質新候選」並列出搜索覆蓋範圍
+- ✅ 推薦篇的判斷都基於全文級材料

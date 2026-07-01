@@ -1,0 +1,41 @@
+2026-07-02 DailyRead Log
+
+## Search
+- SearXNG (192.168.1.18:8888) blocked by web_fetch (private IP), used arXiv direct search + web_search
+- web_search encountered Gemini API 429 rate limits on some queries
+
+## Dedup results (check_paper_seen.py)
+- 2606.10106 "What makes a harness a harness" → SEEN (2026-06-24)
+- 2606.10677 "Infini Memory" → SEEN (2026-06-22)
+- "Mandol: An Agglomerative Agent Memory System" → NOT_SEEN
+- "TRUSTMEM / TrustMem" → SEEN (2606.23343, 2606.25161, 2026-06-29)
+- "MEMPROBE" → SEEN (2606.24595, 2026-06-29)
+- "DynamicMem" → NOT_SEEN
+- "RaMem" → NOT_SEEN
+- "Towards Root Memories" → NOT_SEEN (not included, insufficient match)
+- "Parametric Social Identity Injection" → SEEN (2603.16142, 2026-06-04)
+- "When Do LLMs Generate Realistic Social Networks?" → NOT_SEEN
+- "Stochastic Parrots or Singing in Harmony?" → SEEN (2603.00059, 2026-05-14)
+- TUA-Bench → NOT_SEEN
+- Harness-Bench → SEEN (2605.27922, 2026-06-01)
+- "Human-on-the-Bridge" → SEEN (2606.16871, 2026-06-21)
+- "ProofAgent Harness" → SEEN (2605.24134, 2026-06-01)
+- "Agent Skill Evaluation and Evolution" (2606.11435) → NOT_SEEN (survey, not included today)
+- "Silicon Society Cookbook" → SEEN (2605.00197)
+- "Restoring Heterogeneity" → SEEN (2604.06663)
+- "LLM-Based Social Simulations Require a Boundary" → SEEN (2506.19806)
+
+## Full text sources
+- Mandol (2606.29778): arXiv HTML full text available, read successfully
+- RaMem (2606.22844): arXiv HTML full text available, read successfully
+- DynamicMem (2606.22877): arXiv HTML full text available, read successfully
+- TUA-Bench (2606.28480): arXiv HTML full text available, read successfully
+- When Do LLMs Generate Realistic Social Networks (2605.12898): arXiv HTML full text available, read successfully
+
+## Image generation
+- mandol-agglomerative-memory.png → generated via openai/gpt-image-2, saved to assets/2026-07-02/
+- tua-bench-terminal-use-agents.png → generated via openai/gpt-image-2, saved to assets/2026-07-02/
+- llm-realistic-social-networks.png → generated via openai/gpt-image-2, saved to assets/2026-07-02/
+
+## Graph update
+- Pending: build_paper_graph.py + graphify global add

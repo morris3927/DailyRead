@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-02",
+  "domains": {
+    "silicon-sampling-social-simulation": [
+      {
+        "arxiv_id": "2605.12898",
+        "title": "When Do LLMs Generate Realistic Social Networks? A Multi-Dimensional Study of Culture, Language, Scale, and Method",
+        "seen": false,
+        "recommended": true
+      }
+    ],
+    "harness-engineering": [
+      {
+        "arxiv_id": "2606.28480",
+        "title": "TUA-Bench: A Benchmark for General-Purpose Terminal-Use Agents",
+        "seen": false,
+        "recommended": true
+      }
+    ],
+    "agent-memory": [
+      {
+        "arxiv_id": "2606.29778",
+        "title": "Mandol: An Agglomerative Agent Memory System for Long-Term Conversations",
+        "seen": false,
+        "recommended": true
+      },
+      {
+        "arxiv_id": "2606.22844",
+        "title": "RaMem: Contextual Reinstatement for Long-term Agentic Memory",
+        "seen": false,
+        "recommended": false
+      },
+      {
+        "arxiv_id": "2606.22877",
+        "title": "DynamicMem: A Long-Horizon Memory Benchmark in Real-World Settings",
+        "seen": false,
+        "recommended": false
+      }
+    ]
+  }
+}

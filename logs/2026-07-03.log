@@ -1,0 +1,42 @@
+# DailyRead Log — 2026-07-03
+
+## Search and Fetch
+
+- SearXNG (http://192.168.1.18:8888) was DOWN at the time of execution (HTTP 000, timeout).
+- Fell back to web_search for all three domains.
+- arXiv HTML pages fetched via ar5iv/arxiv.org/html for full-text reading.
+- 2606.30801 HTML conversion failed; only abstract-level scan was possible.
+
+## Dedup
+
+- check_paper_seen.py results:
+  - 2607.00910: NOT_SEEN ✅
+  - 2606.30085: NOT_SEEN ✅
+  - 2606.13643: NOT_SEEN ✅
+  - 2606.26806: NOT_SEEN ✅
+  - 2606.06036: SEEN (mentioned in agent-memory/2026-06-07.md) ❌ EXCLUDED
+  - 2606.30801: NOT_SEEN ✅
+  - 2606.11435: NOT_SEEN ✅
+
+## 今日推薦點開
+
+1. 2607.00910 — Calibrating the Instrument: Controllability of an LLM-Driven Synthetic Population (Silicon Sampling)
+2. 2606.13643 — Recursive Agent Harnesses (Harness Engineering)
+3. 2606.26806 — Memory Depth, Not Memory Access (Agent Memory)
+
+## 一般收錄
+
+- 2606.30085 — Not-quite-human tastes (Silicon Sampling, full HTML read)
+- 2606.30801 — Using AI Agents to Automate Black-Box Audits (Silicon Sampling, abstract only — HTML conversion failed)
+- 2606.11435 — Agent Skill Evaluation and Evolution: Survey (Harness Engineering, full HTML read)
+
+## Image Generation
+
+- sive-calibrating-synthetic-population.png → openai/gpt-image-1.5 (Google quota exceeded, fallback to OpenAI)
+- recursive-agent-harness-rah.png → openai/gpt-image-1.5 ✅
+- memory-depth-selective-consolidation.png → openai/gpt-image-1.5 ✅
+
+## Notes
+
+- 2606.06036 (MRAgent) was already SEEN in agent-memory/2026-06-07.md, excluded from today's notes.
+- 2606.30801 (Black-Box Audits) only abstract-level scan due to HTML conversion failure on ar5iv.

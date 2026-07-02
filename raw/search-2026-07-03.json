@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-03",
+  "searxng_status": "DOWN",
+  "search_method": "web_search_fallback",
+  "domains_searched": [
+    "silicon sampling social simulation",
+    "harness engineering agent",
+    "agent memory LLM"
+  ],
+  "candidates": [
+    {
+      "arxiv_id": "2607.00910",
+      "title": "Calibrating the Instrument: Controllability of an LLM-Driven Synthetic Population",
+      "domain": "silicon-sampling",
+      "seen": false,
+      "recommended": true
+    },
+    {
+      "arxiv_id": "2606.30085",
+      "title": "Not-quite-human tastes: the stylized omnivorousness of LLM survey surrogates",
+      "domain": "silicon-sampling",
+      "seen": false,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2606.30801",
+      "title": "Using AI Agents to Automate Black-Box Audits of Personalization Algorithms at Scale",
+      "domain": "silicon-sampling",
+      "seen": false,
+      "recommended": false,
+      "note": "abstract only, HTML conversion failed"
+    },
+    {
+      "arxiv_id": "2606.13643",
+      "title": "Recursive Agent Harnesses",
+      "domain": "harness-engineering",
+      "seen": false,
+      "recommended": true
+    },
+    {
+      "arxiv_id": "2606.11435",
+      "title": "Agent Skill Evaluation and Evolution: Frameworks and Benchmarks",
+      "domain": "harness-engineering",
+      "seen": false,
+      "recommended": false
+    },
+    {
+      "arxiv_id": "2606.26806",
+      "title": "Memory Depth, Not Memory Access: Selective Parametric Consolidation for Long-Running Language Agents",
+      "domain": "agent-memory",
+      "seen": false,
+      "recommended": true
+    },
+    {
+      "arxiv_id": "2606.06036",
+      "title": "Memory is Reconstructed, Not Retrieved: Graph Memory for LLM Agents (MRAgent)",
+      "domain": "agent-memory",
+      "seen": true,
+      "note": "already in agent-memory/2026-06-07.md, excluded"
+    }
+  ]
+}

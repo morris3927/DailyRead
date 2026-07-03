@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-04",
+  "domains": {
+    "silicon-sampling-social-simulation": [
+      {
+        "arxiv": "2606.30395",
+        "title": "ConsumerSim: Uncovering Salience-Driven Dynamics in Consumer Confidence with Generative Social Simulation",
+        "status": "NOT_SEEN",
+        "recommended": true
+      },
+      {
+        "arxiv": "2606.28456",
+        "title": "Is Lying an Emergent Behaviour in LLMs? Evidence from Gaslighting AI agents in a Sustainability Game",
+        "status": "NOT_SEEN",
+        "recommended": false
+      },
+      {
+        "title": "Ripple: Simulating Societal Reaction with LLM-Powered Population Agents",
+        "url": "https://beperceptive.ai/whitepapers/ripple-population-simulation",
+        "type": "whitepaper",
+        "status": "NOT_SEEN",
+        "recommended": false
+      }
+    ],
+    "harness-engineering": [
+      {
+        "arxiv": "2606.07591",
+        "title": "ResearchClawBench: A Benchmark for End-to-End Autonomous Scientific Research",
+        "status": "NOT_SEEN",
+        "recommended": true
+      }
+    ],
+    "agent-memory": [
+      {
+        "arxiv": "2606.28781",
+        "title": "HyphaeDB: A Living Knowledge Topology for Agent-First Memory",
+        "status": "NOT_SEEN",
+        "recommended": true
+      },
+      {
+        "arxiv": "2606.06787",
+        "title": "AdMem: Advanced Memory for Task-solving Agents",
+        "status": "NOT_SEEN",
+        "recommended": false
+      }
+    ]
+  }
+}

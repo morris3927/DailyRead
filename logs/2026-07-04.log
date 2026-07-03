@@ -1,0 +1,39 @@
+# DailyRead Log — 2026-07-04
+
+## 搜尋來源
+- SearXNG (http://192.168.1.18:8888)：不可用（timeout/SIGKILL）
+- web_search (Gemini)：用於補充搜尋 silicon sampling, agent memory, harness engineering
+- arXiv 直接抓取：用於所有論文的 abstract 和 HTML 全文
+
+## 全文抓取狀況
+- ConsumerSim (2606.30395)：arXiv HTML 前 20000 字 + abstract ✅
+- "Is Lying Emergent" (2606.28456)：arXiv HTML 前 20000 字 + abstract ✅
+- Ripple (beperceptive.ai)：完整白皮書 HTML ✅
+- ResearchClawBench (2606.07591)：arXiv HTML 前 20000 字 + abstract ✅
+- HyphaeDB (2606.28781)：arXiv HTML 前 20000 字 + abstract ✅
+- AdMem (2606.06787)：arXiv HTML 前 20000 字 + abstract ✅
+
+## 查重結果
+所有候選均為 NOT_SEEN：
+- 2606.30395 (ConsumerSim) — NOT_SEEN ✅
+- 2606.28456 (Is Lying Emergent) — NOT_SEEN ✅
+- 2606.07591 (ResearchClawBench) — NOT_SEEN ✅
+- 2606.28781 (HyphaeDB) — NOT_SEEN ✅
+- 2606.06787 (AdMem) — NOT_SEEN ✅
+- Ripple whitepaper (無 arXiv ID) — 不在 paper_index 中 ✅
+
+## 今日推薦點開
+1. ConsumerSim (2606.30395) — 有全文級材料 ✅
+2. ResearchClawBench (2606.07591) — 有全文級材料 ✅
+3. HyphaeDB (2606.28781) — 有全文級材料 ✅
+
+## 產圖
+- consumersim-salience-driven-cci.png ✅
+- researchclawbench-end-to-end-benchmark.png ✅
+- hyphaedb-living-knowledge-topology.png ✅
+
+## Graph 重建
+（待執行）
+
+## Git
+（待執行）

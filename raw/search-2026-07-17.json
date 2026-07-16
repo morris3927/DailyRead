@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-17",
+  "searches": [
+    {
+      "query": "arxiv silicon sampling LLM social simulation 2607",
+      "results": [
+        "2607.03091 - Silicon Sampling via Cross-Survey Transfer (NOT_SEEN, SELECTED)",
+        "2506.19806 - LLM-Based Social Simulations Require a Boundary (SEEN, skipped)",
+        "2606.23764 - Emergent Relational Order in LLM Agent Societies (SEEN, skipped)",
+        "2606.28456 - Is Lying an Emergent Behaviour in LLMs? (SEEN, skipped)",
+        "2606.07513 - Agentopia (SEEN, skipped)",
+        "2507.02919 - ChatGPT is not A Man but Das Man (SEEN, skipped)"
+      ]
+    },
+    {
+      "query": "arxiv LLM agent social simulation emergent behavior survey 2607",
+      "results": [
+        "2603.27771 - Emergent Social Intelligence Risks in Generative Multi-Agent Systems (NOT_SEEN, SELECTED)"
+      ]
+    },
+    {
+      "query": "arxiv harness engineering agent evaluation 2607",
+      "results": [
+        "2607.03691 - Don't Blame the LLM: Scaffolding Evolution (NOT_SEEN, SELECTED)",
+        "2607.12227 - Rethinking Harness Evolution Evaluation (NOT_SEEN, SELECTED)"
+      ]
+    },
+    {
+      "query": "arxiv agent memory persistent agentic LLM 2607",
+      "results": [
+        "2607.00233 - From Signals to Structure: Memory Architecture & Language Emergence (NOT_SEEN, SELECTED)"
+      ]
+    }
+  ],
+  "selected_papers": [
+    "2607.03091",
+    "2603.27771",
+    "2607.03691",
+    "2607.12227",
+    "2607.00233"
+  ],
+  "recommended_papers": [
+    "2607.03091",
+    "2607.03691",
+    "2607.00233"
+  ]
+}

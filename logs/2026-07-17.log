@@ -1,0 +1,26 @@
+# DailyRead Log — 2026-07-17
+
+## Search & Selection
+
+- Searched: silicon sampling / social simulation, harness engineering, agent memory
+- SearXNG (192.168.1.18:8888) unavailable via web_fetch; fell back to web_search
+- 5 NOT_SEEN papers selected, 5 SEEN papers skipped
+- 3 papers chosen as 今日推薦點開: 2607.03091, 2607.03691, 2607.00233
+
+## Full-text Access
+
+- 2607.03691: arXiv HTML full text (first ~20000 chars)
+- 2607.12227: arXiv HTML full text (first ~20000 chars)
+- 2607.12747: arXiv HTML full text (first ~20000 chars) — NOT selected for today (agent evaluation, not in today's domains)
+- 2607.00233: arXiv HTML full text (first ~15000 chars)
+- 2607.03091: abstract only (PDF only, no HTML)
+- 2603.27771: arXiv HTML full text (first ~15000 chars)
+
+## Image Generation
+
+- 3 images generated with openai/gpt-image-2 for recommended papers
+- All saved to assets/2026-07-17/
+
+## Graph Update
+
+- Pending: build_paper_graph.py and graphify global add

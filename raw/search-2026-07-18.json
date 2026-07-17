@@ -1,0 +1,26 @@
+{
+  "date": "2026-07-18",
+  "domains": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "search_sources": ["web_search", "arXiv"],
+  "searxng_status": "timeout",
+  "papers_checked": {
+    "silicon-sampling-social-simulation": {
+      "2607.03091": "SEEN",
+      "2607.01600": "SEEN",
+      "2607.07387": "NOT_SEEN - included",
+      "2607.13693": "NOT_SEEN - survey, not included",
+      "2607.06440": "NOT_SEEN - out of scope"
+    },
+    "harness-engineering": {
+      "2607.08028": "NOT_SEEN - included, recommended",
+      "2607.08124": "NOT_SEEN - included, recommended",
+      "2607.13683": "NOT_SEEN - included, recommended"
+    },
+    "agent-memory": {
+      "2607.08716": "NOT_SEEN - included, recommended",
+      "2607.12385": "NOT_SEEN - included"
+    }
+  },
+  "recommended": ["2607.08124", "2607.08716", "2607.13683"],
+  "image_generation_pending": true
+}

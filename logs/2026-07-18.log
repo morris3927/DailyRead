@@ -1,0 +1,54 @@
+# DailyRead Log — 2026-07-18
+
+## 搜尋與查重
+
+### Silicon Sampling / Social Simulation
+- SearXNG (192.168.1.18:8888) 連線逾時，改用 web_search + arXiv 直接搜尋
+- web_search "arxiv July 2026 silicon sampling LLM opinion simulation generative agents"
+- 候選：
+  - 2607.03091 (Silicon Sampling via Cross-Survey Transfer) → SEEN (2026-07-15/16/17)
+  - 2607.01600 (BOUNDARY_SYNC) → SEEN (2026-07-16)
+  - 2607.07387 (Vaccine Opinion Dynamics) → NOT_SEEN → 收錄
+  - 2607.13693 (Social Simulations: from ABM to Digital Twins) → NOT_SEEN → survey/book chapter，不收錄為原創研究
+  - 2607.06440 (PIPBench) → NOT_SEEN → 個人化圖片生成，不在追蹤領域
+
+### Harness Engineering
+- web_search "arxiv harness engineering agent 2607"
+- 候選：
+  - 2607.08028 (From Prompts to Contracts) → NOT_SEEN → 收錄，今日推薦
+  - 2607.08124 (TTHE) → NOT_SEEN → 收錄，今日推薦
+  - 2607.13683 (GSME) → NOT_SEEN → 收錄，今日推薦
+
+### Agent Memory
+- web_search "arxiv proactive memory agent long-horizon behavioral state decay"
+- 候選：
+  - 2607.08716 (Proactive Memory Agent) → NOT_SEEN → 收錄，今日推薦
+  - 2607.12385 (PM-Bench) → NOT_SEEN → 收錄
+
+## 全文讀取狀況
+
+| Paper | 來源 | 深度 |
+|-------|------|------|
+| 2607.08028 | arXiv HTML | 前 12000 字（intro + related work + 部分 method） |
+| 2607.08124 | arXiv HTML | 前 12000 字（intro + related work + 部分 method） |
+| 2607.13683 | arXiv HTML | 前 12000 字（intro + related work + 部分 method） |
+| 2607.08716 | arXiv HTML | 前 12000 字（intro + related work + 部分 method） |
+| 2607.12385 | arXiv HTML | 前 12000 字（intro + related work） |
+| 2607.07387 | arXiv HTML | 前 8000 字（abstract + intro + 部分 method） |
+| 2607.13693 | arXiv HTML | 前 6000 字（abstract + definition + 部分 classical ABM） |
+
+## 推薦篇圖片
+
+- 2607.08124 TTHE → assets/2026-07-18/tthe-test-time-harness-evolution.png
+- 2607.08716 Proactive Memory Agent → assets/2026-07-18/proactive-memory-agent.png
+- 2607.13683 GSME → assets/2026-07-18/gsme-self-evolving-harness.png
+
+## Graph 重建
+
+待執行。
+
+## 備註
+
+- Silicon sampling 領域今日無高品質新論文（所有搜到的要麼已 SEEN、要麼是 survey/book chapter、要麼不在追蹤領域）
+- Harness engineering 今日三篇都是強論文，形成完整的方法論對話：contract-based → test-time evolution → train-time evolution with quality-diversity
+- Agent memory 今日兩篇形成問題-方案配對：PM-Bench 測前瞻性記憶困難、Proactive Memory Agent 提供選擇性介入方案

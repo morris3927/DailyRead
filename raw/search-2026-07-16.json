@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-16",
+  "search_engine": "web_search (Gemini) + arXiv API",
+  "searxng_status": "unavailable",
+  "domains_searched": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "queries": [
+    "arxiv 2607 silicon sampling social simulation survey LLM",
+    "arxiv agent memory LLM persistent selective context july 2026",
+    "arxiv july 2026 LLM agent social simulation opinion dynamics computational",
+    "\"Shared Selective Persistent Memory\" arxiv agent LLM 2026",
+    "\"Silicon Sampling via Cross-Survey Transfer\" 2607.03091 TEDS method details results",
+    "arxiv 2607 harness engineering agent task complexity adaptive"
+  ],
+  "papers_found": [
+    {"arxiv_id": "2607.03091", "title": "Silicon Sampling via Cross-Survey Transfer", "domain": "silicon-sampling-social-simulation", "status": "included"},
+    {"arxiv_id": "2607.01600", "title": "BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling in Multi-Agent LLM Systems", "domain": "silicon-sampling-social-simulation", "status": "included"},
+    {"arxiv_id": "2607.13034", "title": "Do AI Agents Know When a Task Is Simple? Toward Complexity-Aware Reasoning and Execution", "domain": "harness-engineering", "status": "included"},
+    {"arxiv_id": "2607.09493", "title": "Shared Selective Persistent Memory for Agentic LLM Systems", "domain": "agent-memory", "status": "included"}
+  ],
+  "papers_excluded": [
+    {"arxiv_id": "2606.03137", "reason": "SEEN (mentioned in 2026-06-07)"},
+    {"arxiv_id": "2606.06448", "reason": "SEEN (mentioned in 2026-06-07)"}
+  ]
+}

@@ -1,0 +1,39 @@
+# DailyRead Log — 2026-07-19
+
+## 搜尋來源
+- SearXNG (http://192.168.1.18:8888)：超時，改用 web_search + web_fetch
+- arXiv abs/html 頁面直接抓取
+- web_search：agent tool use error recovery execution 2026 july arxiv
+
+## 查重結果
+- 2607.13591 (MemCon): NOT_SEEN ✓
+- 2606.28963 (Three-Axis Fidelity): NOT_SEEN ✓
+- 2607.02464 (Will Scaling Improve Social Simulation): NOT_SEEN ✓
+- 2607.07405 (Deterministic Gates): NOT_SEEN ✓
+- 2607.11098 (AgentCheck): NOT_SEEN ✓
+- 2607.12227 (Rethinking Harness Evolution): SEEN（排除）
+- 2606.10106 (harness): SEEN（排除）
+- 2606.11482 (SWM): SEEN（排除）
+- 2607.08716 (Proactive Memory Agent): SEEN（排除）
+- 2605.27922 (Harness-Bench): SEEN（排除）
+- 2603.23448 (c-CRAB): SEEN（排除）
+
+## 全文讀取狀況
+- MemCon (2607.13591): arXiv HTML 全文 ~20000 字，涵蓋 abstract, intro, method; 後段 ablation 需 PDF
+- Deterministic Gates (2607.07405): arXiv HTML 全文 ~20000 字，涵蓋 intro, method, 部分 results; 附錄需 PDF
+- Will Scaling (2607.02464): arXiv HTML 全文 ~20000 字，涵蓋 intro, method, 部分 results; fine-tuning analysis 需 PDF
+- Three-Axis Fidelity (2606.28963): arXiv HTML 全文 ~20000 字，涵蓋 abstract, intro, method, 部分 results; subgroup analysis 需 PDF
+- AgentCheck (2607.11098): arXiv HTML 全文 ~20000 字，涵蓋 intro, method, 部分 evaluation; per-fault results 需 PDF
+
+## 今日推薦點開
+1. MemCon (2607.13591) — Agent Memory
+2. Deterministic Gates (2607.07405) — Harness Engineering
+3. Will Scaling Improve Social Simulation (2607.02464) — Silicon Sampling
+
+## 圖片產生
+- memcon-memory-controlled-process.png: ✓ (openai/gpt-image-2)
+- deterministic-gates-silent-policy-violation.png: ✓ (openai/gpt-image-2)
+- will-scaling-improve-social-simulation.png: ✓ (openai/gpt-image-2)
+
+## Graph 更新狀況
+（待執行 build_paper_graph.py 和 graphify global add）

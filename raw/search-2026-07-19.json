@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-19",
+  "search_sources": [
+    "web_search: agent tool use error recovery execution 2026 july arxiv",
+    "arXiv abs/html direct fetch"
+  ],
+  "candidates_checked": [
+    {"arxiv_id": "2607.13591", "title": "MemCon: Memory as a Controlled Process", "status": "NOT_SEEN", "selected": true},
+    {"arxiv_id": "2606.28963", "title": "Three-Axis Fidelity for Aligning LLM-Based Survey Simulators", "status": "NOT_SEEN", "selected": true},
+    {"arxiv_id": "2607.02464", "title": "Will Scaling Improve Social Simulation with LLMs?", "status": "NOT_SEEN", "selected": true},
+    {"arxiv_id": "2607.07405", "title": "Deterministic Gates Recover Silent Policy-Violation Failures", "status": "NOT_SEEN", "selected": true},
+    {"arxiv_id": "2607.11098", "title": "AgentCheck: A Reproduce-Intervene-Mitigate Workbench", "status": "NOT_SEEN", "selected": true},
+    {"arxiv_id": "2607.12227", "title": "Rethinking Harness Evolution Evaluation", "status": "SEEN", "selected": false},
+    {"arxiv_id": "2606.10106", "title": "(harness paper)", "status": "SEEN", "selected": false},
+    {"arxiv_id": "2607.08716", "title": "Proactive Memory Agent", "status": "SEEN", "selected": false},
+    {"arxiv_id": "2605.27922", "title": "Harness-Bench", "status": "SEEN", "selected": false},
+    {"arxiv_id": "2603.23448", "title": "c-CRAB", "status": "SEEN", "selected": false}
+  ],
+  "recommended": [
+    {"arxiv_id": "2607.13591", "domain": "agent-memory", "reason": "Memory MDP formulation, UCB bandit controller, zero extra LLM calls"},
+    {"arxiv_id": "2607.07405", "domain": "harness-engineering", "reason": "Silent policy-violation failure mode, deterministic gates, +12.4pp replicated"},
+    {"arxiv_id": "2607.02464", "domain": "silicon-sampling-social-simulation", "reason": "Compute scaling laws for social simulation, 97% variance explained, outliers identified"}
+  ]
+}

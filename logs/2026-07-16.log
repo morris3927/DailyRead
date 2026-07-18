@@ -1,0 +1,47 @@
+# DailyRead Log — 2026-07-16
+
+## Search Sources
+- SearXNG (192.168.1.18:8888): unavailable (connection refused/SIGKILL)
+- arXiv API: used for initial discovery
+- Semantic Scholar API: rate-limited (429), only agent memory query succeeded
+- web_search (Gemini): primary search engine for this session
+- arXiv HTML: full-text source for 2607.13034, 2607.09493, 2607.01600
+
+## Papers Processed
+
+### Silicon Sampling / Social Simulation
+1. **2607.03091** — Silicon Sampling via Cross-Survey Transfer (NOT_SEEN, included)
+   - Full text: arXiv HTML not available, used abstract + web search detailed summary
+   - Source: arXiv abstract page + Gemini search results
+   
+2. **2607.01600** — BOUNDARY_SYNC: Measuring Communication-Induced Representational Coupling (NOT_SEEN, included)
+   - Full text: arXiv HTML read (truncated at ~20K chars, covered abstract, intro, methods, partial results)
+   - Source: https://arxiv.org/html/2607.01600v1
+
+### Harness Engineering
+1. **2607.13034** — Do AI Agents Know When a Task Is Simple? / E3 (NOT_SEEN, included)
+   - Full text: arXiv HTML read (truncated, covered abstract, full intro, related work sections 2.1-2.6)
+   - Source: https://arxiv.org/html/2607.13034v1
+
+### Agent Memory
+1. **2607.09493** — Shared Selective Persistent Memory (NOT_SEEN, included)
+   - Full text: arXiv HTML read (truncated, covered abstract, intro, related work, sections 3-4, partial 5)
+   - Source: https://arxiv.org/html/2607.09493v1
+
+## Papers Checked and Excluded (SEEN)
+- 2606.03137 (Think-Before-Speak) — SEEN, mentioned in 2026-06-07
+- 2606.06448 (Agent Memory: Characterization) — SEEN, mentioned in 2026-06-07
+- Multiple others from prior sessions (see paper_index.json)
+
+## Full Text Access Notes
+- 2607.03091: arXiv HTML conversion not available (LaTeX source). Relied on abstract + detailed web search summary. Marked as "abstract + search summary level" in domain note.
+- 2607.13034: Full HTML available, read through section 2 (related work). Method and experiment sections partially covered.
+- 2607.09493: Full HTML available, read through section 5 (implementation). Case study and evaluation sections need further review.
+- 2607.01600: Full HTML available, read through methods and partial results. Discussion and limitations sections not fully covered.
+
+## Graph Build
+- To be executed after commit
+
+## Image Generation
+- 2 images spawned as sub-agents (E3 + Shared Selective Persistent Memory)
+- 2607.03091 not selected for image (abstract-level only)

@@ -1,0 +1,76 @@
+{
+  "date": "2026-07-20",
+  "searxng": {
+    "base_url": "http://192.168.1.18:8888",
+    "status": "timeout",
+    "attempts": [
+      {
+        "query": "LLM agent memory arXiv 2026",
+        "endpoint": "http://192.168.1.18:8888/search?q=LLM%20agent%20memory%20arXiv%202026&format=json",
+        "result": "curl timeout after 20 seconds"
+      }
+    ]
+  },
+  "queries": {
+    "silicon_sampling_social_simulation": [
+      "2026 \"silicon sampling\" \"arXiv\" \"LLM\"",
+      "2026 \"social simulation\" \"LLM\" \"arXiv\" paper"
+    ],
+    "harness_engineering": [
+      "2026 \"execution harness\" \"LLM agents\" paper",
+      "site:arxiv.org/abs/2607 \"LLM agent\" \"evaluation\" harness benchmark"
+    ],
+    "agent_memory": [
+      "arXiv search: \"agent memory\" order=-announced_date_first",
+      "2026 \"agent memory\" \"arXiv\" \"LLM agents\" paper"
+    ]
+  },
+  "selected": [
+    {
+      "domain": "silicon_sampling_social_simulation",
+      "id": "2510.13884",
+      "title": "Too Open for Opinion? Embracing Open-Endedness in Large Language Models for Social Simulation",
+      "url": "https://arxiv.org/abs/2510.13884",
+      "html": "https://arxiv.org/html/2510.13884v2",
+      "seen_check": "NOT_SEEN",
+      "source_level": "arXiv HTML full-text level"
+    },
+    {
+      "domain": "harness_engineering",
+      "id": "2607.05458",
+      "title": "Learning to Control LLM Agent Harnesses with Offline Reinforcement Learning",
+      "url": "https://arxiv.org/abs/2607.05458",
+      "html": "https://arxiv.org/html/2607.05458v1",
+      "seen_check": "NOT_SEEN",
+      "source_level": "arXiv HTML full-text level"
+    },
+    {
+      "domain": "agent_memory",
+      "id": "2607.04089",
+      "title": "PlaceMem: Toward a Compute-Aware Memory Plane for Lifelong Agents",
+      "url": "https://arxiv.org/abs/2607.04089",
+      "html": "https://arxiv.org/html/2607.04089v1",
+      "seen_check": "NOT_SEEN",
+      "source_level": "arXiv HTML full-text level"
+    }
+  ],
+  "seen_rejected": [
+    {"id":"2607.03091","title":"Silicon Sampling via Cross-Survey Transfer","seen":"SEEN"},
+    {"id":"2607.02464","title":"Will Scaling Improve Social Simulation with LLMs?","seen":"SEEN"},
+    {"id":"2606.24775","title":"Are We Ready For An Agent-Native Memory System?","seen":"SEEN"},
+    {"id":"2606.06448","title":"Agent Memory: Characterization and System Implications of Stateful Long-Horizon Workloads","seen":"SEEN"},
+    {"id":"2605.23950","title":"Stop Comparing LLM Agents Without Disclosing the Harness","seen":"SEEN"},
+    {"id":"2604.18011","title":"TopoSim: Topology-Aware LLM-Driven Social Simulation","seen":"SEEN"},
+    {"id":"2506.19806","title":"LLM-Based Social Simulations Require a Boundary","seen":"SEEN"},
+    {"id":"2606.21856","title":"Harness-MU: A Safe, Governed, and Effective Harness for Multi-User LLM Agents","seen":"SEEN"},
+    {"id":"2606.06324","title":"HarnessFix / From Failed Trajectories to Reliable LLM Agents","seen":"SEEN"}
+  ],
+  "agent_memory_not_seen_candidates_not_selected": [
+    "2607.08032",
+    "2607.04391",
+    "2607.02579",
+    "2607.01709",
+    "2606.31612",
+    "2606.29824"
+  ]
+}

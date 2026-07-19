@@ -1,0 +1,70 @@
+# DailyRead Log — 2026-07-20
+
+## 搜尋入口
+
+### SearXNG
+- Base: http://192.168.1.18:8888
+- 嘗試：`/search?q=LLM agent memory arXiv 2026&format=json`
+- 結果：連線逾時（curl 20s timeout）。已改用 arXiv search / arXiv HTML / web_fetch 補全文級材料。
+
+### arXiv / web search 補充
+- Silicon Sampling / Social Simulation:
+  - `2026 "silicon sampling" "arXiv" "LLM"`
+  - `2026 "social simulation" "LLM" "arXiv" paper`
+  - arXiv HTML: https://arxiv.org/html/2510.13884v2
+- Harness Engineering:
+  - `2026 "execution harness" "LLM agents" paper`
+  - arXiv HTML: https://arxiv.org/html/2607.05458v1
+- Agent Memory:
+  - arXiv search: `"agent memory"`, order by announced date
+  - arXiv HTML: https://arxiv.org/html/2607.04089v1
+
+## 查重紀錄（挑選前）
+
+### 已出現，未重複推薦
+- `2607.03091` → SEEN（2026-07-16 / 2026-07-17）
+- `2607.02464` → SEEN（2026-07-19）
+- `2606.24775` → SEEN（2026-06-26）
+- `2606.06448` → SEEN（2026-06-07 / 2026-07-15）
+- `2605.23950` → SEEN（2026-06-18）
+- `2604.18011` → SEEN（2026-05-24）
+- `2506.19806` → SEEN（2026-05-17 / 2026-05-23 / 2026-07-15）
+- `2606.21856` → SEEN（2026-06-29）
+- `2606.06324` → SEEN（2026-06-07）
+
+### 今日收錄 / 推薦
+- `2510.13884` → NOT_SEEN — Too Open for Opinion? Embracing Open-Endedness in Large Language Models for Social Simulation
+- `2607.05458` → NOT_SEEN — Learning to Control LLM Agent Harnesses with Offline Reinforcement Learning
+- `2607.04089` → NOT_SEEN — PlaceMem: Toward a Compute-Aware Memory Plane for Lifelong Agents
+
+### Agent memory 其他 NOT_SEEN 候選（未收錄，避免硬湊）
+- `2607.08032` Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents
+- `2607.04391` What to Keep, What to Forget: A Rate--Distortion View of Memory Compaction in LLMs and Agents
+- `2607.02579` Your Agent's Memories Are Not Its Own: Forged Reasoning Attacks on LLM Agent Memory and Defenses
+- `2607.01709` COMFYCLAW: Self-Evolving Skill Harnesses for Image Generation Workflows
+- `2606.31612` A-TMA: Decoupling State-Aware Memory Failures in Long-Term Agent Memory
+- `2606.29824` MemSyco-Bench: Benchmarking Sycophancy in Agent Memory
+
+## 全文讀取狀況
+- `2510.13884`: arXiv abstract + arXiv HTML v2，成功。
+- `2607.05458`: arXiv abstract + arXiv HTML v1，成功。
+- `2607.04089`: arXiv abstract + arXiv HTML v1，成功。
+
+## 圖片產生
+- `too-open-for-opinion-open-ended-social-simulation.png`: ✓ openai/gpt-image-2
+- `learning-to-control-agent-harnesses-offline-rl.png`: ✓ openai/gpt-image-2
+- `placemem-compute-aware-memory-plane.png`: ✓ openai/gpt-image-2
+
+## 自審
+- daily/2026-07-20.md：已包含今日推薦點開 3 篇與圖片。
+- silicon-sampling-social-simulation/2026-07-20.md：五個必備小標題齊全。
+- harness-engineering/2026-07-20.md：五個必備小標題齊全。
+- agent-memory/2026-07-20.md：五個必備小標題齊全。
+- 資訊不足處：已標明 position / pilot / mock-backend 限制，未把 abstract-only 資訊寫成已完整實驗驗證。
+
+## Graph 更新狀況
+- build_paper_graph.py: ✓ 成功（Nodes=797, Edges=3504）
+- graphify global add: ✓ 成功（+797 nodes, -790 pruned）
+
+## Git
+- （待 commit / push）

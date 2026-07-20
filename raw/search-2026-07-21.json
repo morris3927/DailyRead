@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-21",
+  "search_sources": {
+    "searxng": "timeout",
+    "arxiv_api": "working",
+    "web_search": "working"
+  },
+  "queries": [
+    "silicon sampling social simulation LLM",
+    "agent harness engineering evaluation",
+    "agent memory lifelong LLM",
+    "LLM social simulation population",
+    "harness engineering LLM agent evaluation 2026"
+  ],
+  "candidates_checked": {
+    "2606.30454": "NOT_SEEN - selected (silicon sampling)",
+    "2607.13285": "NOT_SEEN - selected (harness engineering)",
+    "2607.15684": "NOT_SEEN - selected (harness engineering, abstract)",
+    "2607.13396": "NOT_SEEN - noted",
+    "2607.14275": "NOT_SEEN - noted",
+    "2607.12469": "NOT_SEEN - noted",
+    "2607.05458": "SEEN",
+    "2607.04089": "SEEN",
+    "2607.12227": "SEEN",
+    "2607.03091": "SEEN",
+    "2607.13034": "SEEN",
+    "2606.28963": "SEEN",
+    2606.23343": "SEEN",
+    "2506.19806": "SEEN",
+    "2605.19952": "SEEN",
+    "2606.10677": "SEEN",
+    "2605.09315": "NOT_SEEN - selected (agent memory)",
+    "2603.25973": "NOT_SEEN - selected (agent memory, abstract)",
+    "2607.12086": "NOT_SEEN - noted",
+    "2607.05999": "NOT_SEEN - noted",
+    "2604.06663": "SEEN"
+  },
+  "recommended": [
+    {
+      "id": "2606.30454",
+      "domain": "silicon-sampling-social-simulation",
+      "title": "Collective Cooperation without Individual Fidelity in LLM Agents"
+    },
+    {
+      "id": "2607.13285",
+      "domain": "harness-engineering",
+      "title": "Harness Handbook: Making Evolving Agent Harnesses Readable, Navigable, and Editable"
+    },
+    {
+      "id": "2605.09315",
+      "domain": "agent-memory",
+      "title": "Do Self-Evolving Agents Forget? Capability Degradation and Preservation in Lifelong LLM Agent Adaptation"
+    }
+  ]
+}

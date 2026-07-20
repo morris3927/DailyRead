@@ -36,4 +36,9 @@
 - will-scaling-improve-social-simulation.png: ✓ (openai/gpt-image-2)
 
 ## Graph 更新狀況
-（待執行 build_paper_graph.py 和 graphify global add）
+- build_paper_graph.py: ✓ 成功（Nodes=790, Edges=3471）
+- graphify global add: ✓ 成功（+790 nodes, -779 pruned）
+
+## Git
+- Commit: 663abfa
+- Push: ✓ 成功

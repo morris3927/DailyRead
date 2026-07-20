@@ -1,0 +1,51 @@
+# DailyRead Log — 2026-07-21
+
+## Search Status
+
+- SearXNG (192.168.1.18:8888): Connection timeout, fell back to arXiv API + web search
+- arXiv API: Working (HTTPS)
+- Web search (Gemini): Working but freshness filter not supported
+
+## Search Queries
+
+1. Silicon sampling / social simulation: arXiv API (`all:silicon AND all:sampling AND all:social AND all:simulation`, `all:LLM AND all:social AND all:simulation AND all:population`), web search
+2. Harness engineering: arXiv API (`all:agent AND all:harness AND all:engineering`, `all:harness AND all:engineering AND all:evaluation`), web search
+3. Agent memory: arXiv API (`all:agent AND all:memory AND all:lifelong AND all:LLM`), web search
+
+## Dedup Results
+
+- 2607.03091 (Silicon Sampling via Cross-Survey Transfer): SEEN — already in 2026-07-16/17
+- 2607.02464 (Will Scaling Improve Social Simulation?): SEEN — already in previous DailyRead
+- 2506.19806 (LLM-Based Social Simulations Require a Boundary): SEEN
+- 2606.28963 (Three-Axis Fidelity): SEEN — in 2026-07-19
+- 2607.05458 (Learning to Control Agent Harnesses with Offline RL): SEEN — in 2026-07-20
+- 2607.04089 (PlaceMem): SEEN — in 2026-07-20
+- 2605.19952 (TriMem): SEEN
+- 2607.12227 (Rethinking Harness Evolution Evaluation): SEEN — in 2026-07-17
+- 2607.13034 (Complexity-Aware Reasoning): SEEN — in 2026-07-16
+- 2606.10677 (Infini Memory): SEEN
+
+## Selected Papers (NOT_SEEN)
+
+- 2606.30454: Collective cooperation without individual fidelity in LLM agents → Silicon Sampling (推薦)
+- 2607.13285: Harness Handbook → Harness Engineering (推薦)
+- 2607.15684: Agent-Reactive Bugs → Harness Engineering (收錄, abstract only)
+- 2607.12469: Agent-Safety Evaluations as Load-Bearing Evidence → Harness Engineering (noted, not深入)
+- 2607.13396: Set-shifting Behavioral Test for Harnessed Agents → Harness Engineering (noted)
+- 2607.14275: AI Agents Do Not Fail Alone: The Context Fails First → Harness Engineering (noted)
+- 2605.09315: Do Self-Evolving Agents Forget? → Agent Memory (推薦)
+- 2603.25973: MemoryCD → Agent Memory (收錄, abstract only)
+- 2607.12086: CityBehavEx → Silicon Sampling (noted, urban simulation, peripheral to core interest)
+- 2607.05999: AgoraSim → Silicon Sampling (noted, ABM framework, more tool than methodology)
+
+## Full-Text Fetch Status
+
+- 2606.30454: HTML full text fetched successfully
+- 2607.13285: HTML full text fetched successfully (truncated at 15K chars, main content covered)
+- 2605.09315: HTML full text fetched successfully (truncated at 15K chars, covered through Section 3)
+- 2607.15684: Abstract only (HTML fetch not yet done)
+- 2603.25973: Abstract only (workshop paper, limited depth expected)
+
+## Image Generation
+
+- 3 推薦篇 images to be generated asynchronously

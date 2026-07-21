@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-22",
+  "search_sources": ["web_search_gemini", "arxiv_html_fetch", "arxiv_abstract"],
+  "candidates_checked": {
+    "SEEN": ["2512.22725", "2605.00197", "2607.12227", "2607.08028", "2606.24322", "2605.06527", "2605.06716", "2606.20683", "2604.06663", "2606.11482", "2606.12369", "2607.15684", "2607.03091", "2606.16871"],
+    "NOT_SEEN_selected": {
+      "2606.18276": "Characterizing Opinion Evolution of Networked LLMs",
+      "2607.14159": "MemoHarness: Agent Harnesses That Learn from Experience",
+      "2607.07847": "When Does Continual Learning Require Learning",
+      "2607.14336": "Copy-on-Write Scoring: Application-Specific Agent Evaluations",
+      "2606.25115": "CURATOR: Forget to Improve: On-Device LLM-Agent Continual Learning via Budget-Curated Memory",
+      "2603.03290": "AriadneMem: Threading the Maze of Lifelong Memory for LLM Agents"
+    },
+    "NOT_SEEN_not_selected": {
+      "2606.07929": "Stress-testing medical large language models (wrong domain)"
+    }
+  },
+  "recommended": ["2606.18276", "2607.14159", "2607.07847"],
+  "secondary": ["2607.14336", "2606.25115", "2603.03290"]
+}

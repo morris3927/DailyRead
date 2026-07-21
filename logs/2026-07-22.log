@@ -1,0 +1,27 @@
+2026-07-22 DailyRead Log
+
+## Search
+- SearXNG (192.168.1.18:8888) timeout on all three queries; fell back to web_search + arXiv direct fetch.
+- Used web_search for silicon sampling/social simulation, harness engineering, agent memory.
+- Used arXiv HTML fetch for full-text reading of 2607.14159, 2606.18276, 2607.07847.
+- Used arXiv abstract pages for 2607.14336, 2606.25115, 2603.03290.
+
+## Dedup
+- check_paper_seen.py results:
+  - SEEN: 2512.22725, 2605.00197, 2607.12227, 2607.08028, 2606.24322, 2605.06527, 2605.06716, 2606.20683, 2604.06663, 2606.11482, 2606.12369, 2607.15684, 2607.03091, 2606.16871
+  - NOT_SEEN (selected): 2606.18276, 2607.14159, 2607.07847, 2607.14336, 2606.25115, 2603.03290
+  - NOT_SEEN (not selected, wrong topic): 2606.07929 (medical LLM, not harness)
+
+## Full-text access
+- 2607.14159: full HTML read (15K chars)
+- 2606.18276: full HTML read (15K chars)
+- 2607.07847: full HTML read (15K chars)
+- 2607.14336: abstract only
+- 2606.25115: abstract only
+- 2603.03290: abstract only
+
+## Image generation
+- Spawned sub-agents for 3 recommended papers (see below)
+
+## Graph update
+- (to be filled after build)

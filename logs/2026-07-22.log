@@ -21,7 +21,14 @@
 - 2603.03290: abstract only
 
 ## Image generation
-- Spawned sub-agents for 3 recommended papers (see below)
+- opinion-evolution-networked-llms.png ✅ (2.8MB)
+- memoharness-experience-driven-adaptation.png ✅ (2.1MB)
+- continual-learning-axes-of-change.png ✅ (2.5MB)
 
 ## Graph update
-- (to be filled after build)
+- build_paper_graph.py: SUCCESS (Nodes=819 Edges=3632)
+- graphify global add: SUCCESS (+819 nodes, -809 pruned)
+
+## Git commits
+- 5969484: DailyRead: 2026-07-22 (markdown + log + raw)
+- f73a9ea: DailyRead: 2026-07-22 note images (3 PNG)

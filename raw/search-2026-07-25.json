@@ -1,0 +1,30 @@
+{
+  "date": "2026-07-25",
+  "search_queries": [
+    {"query": "silicon sampling social simulation LLM agent 2025 2026 arXiv", "source": "web_search"},
+    {"query": "silicon sampling LLM social simulation arxiv July 2026", "source": "web_search"},
+    {"query": "arxiv agent harness harness engineering agent benchmark evaluation 2026 July", "source": "web_search"},
+    {"query": "arxiv Chronos Vulnerability temporal persistence memory deception agentic AI", "source": "web_search"},
+    {"query": "arxiv Rethinking the Evaluation of Harness Evolution agent", "source": "arxiv_search"},
+    {"query": "arxiv Measuring Harness-Induced Belief Divergence multi-step agent 2026", "source": "web_search"},
+    {"query": "arxiv Beyond Memory Leaderboards scientific memory", "source": "arxiv_search"},
+    {"query": "arxiv Exploratory and Assimilating Reflection memory", "source": "arxiv_search"},
+    {"query": "arxiv Don't Blame the Large Language Model harness", "source": "arxiv_search"}
+  ],
+  "not_seen_candidates": [
+    {"arxiv_id": "2607.19359", "title": "Profile-Graph Memory for LLM Agents", "domain": "agent-memory", "recommended": true},
+    {"arxiv_id": "2607.20553", "title": "CMI-Mem: Toward Generalizable Long-Term Memory Management via CMI-Augmented RL", "domain": "agent-memory", "recommended": false},
+    {"arxiv_id": "2607.17879", "title": "EAR: Exploratory and Assimilating Reflection", "domain": "agent-memory", "recommended": false},
+    {"arxiv_id": "2607.16848", "title": "Beyond Memory Leaderboards", "domain": "agent-memory", "recommended": false},
+    {"arxiv_id": "2607.19433", "title": "The Chronos Vulnerability", "domain": "agent-memory", "recommended": false},
+    {"arxiv_id": "2607.04528", "title": "Measuring Harness-Induced Belief Divergence", "domain": "harness-engineering", "recommended": true},
+    {"arxiv_id": "2507.21504", "title": "Evaluation and Benchmarking of LLM Agents: A Survey", "domain": "harness-engineering", "recommended": false},
+    {"arxiv_id": "2607.18310", "title": "Distribution-First Population Simulation", "domain": "silicon-sampling-social-simulation", "recommended": true},
+    {"arxiv_id": "2607.08652", "title": "Formal Mechanisms for Market Stability", "domain": "silicon-sampling-social-simulation", "recommended": false}
+  ],
+  "seen_papers_excluded": [
+    "2607.12227", "2607.03691", "2607.13285", "2607.13693", "2512.22725",
+    "2506.19806", "2603.00113", "2605.00197", "2603.19649", "2604.18011",
+    "2504.11671", "2509.13397", "2509.26080", "2510.13884"
+  ]
+}

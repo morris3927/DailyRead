@@ -1,0 +1,50 @@
+# DailyRead Log — 2026-07-25
+
+## Search and Fetch Log
+
+### Search Queries
+- arXiv search: "Rethinking the Evaluation of Harness Evolution" → 2607.12227 (SEEN)
+- arXiv search: "Measuring Harness-Induced Belief Divergence" → 2607.04528 (NOT_SEEN)
+- arXiv search: "Chronos Vulnerability" → 2607.19433 (NOT_SEEN)
+- arXiv search: "Don't Blame the Large Language Model" harness → 2607.03691 (SEEN)
+- arXiv search: "Exploratory and Assimilating Reflection" memory → 2607.17879 (NOT_SEEN)
+- arXiv search: "Beyond Memory Leaderboards" scientific memory → 2607.16848 (NOT_SEEN)
+- web_search: "silicon sampling social simulation LLM agent 2025 2026 arXiv" → multiple SEEN papers
+- web_search: "silicon sampling LLM social simulation arxiv July 2026" → found 2607.18310 (NOT_SEEN), 2607.08652 (NOT_SEEN)
+- web_search: "arxiv harness engineering agent benchmark evaluation 2026 July" → found harness papers
+- web_search: "Chronos Vulnerability temporal persistence memory deception agentic AI" → 2607.19433 (NOT_SEEN)
+
+### Full Text Sources
+| Paper | Source | Quality |
+|-------|--------|---------|
+| 2607.19359 ProGraph | arXiv HTML (truncated at 20K chars) | Full method + benchmark design + partial ablation |
+| 2607.20553 CMI-Mem | arXiv HTML (truncated at 20K chars) | Full method + partial experiments |
+| 2607.16848 Beyond Memory Leaderboards | arXiv HTML (truncated at 20K chars) | Full method + benchmark design + partial results |
+| 2607.04528 Harness Belief Divergence | arXiv HTML (truncated at 20K chars) | Full method + formal definitions + partial experiments |
+| 2607.18310 Distribution-First | arXiv HTML (truncated at 20K chars) | Full method + 4 result sections |
+| 2607.19433 Chronos Vulnerability | arXiv HTML (truncated at 20K chars) | Full taxonomy + defense landscape |
+| 2607.17879 EAR | arXiv abstract only | Abstract only — noted in domain note |
+| 2507.21504 Agent Evaluation Survey | arXiv abstract only | Abstract only — noted in domain note |
+| 2607.08652 Market Stability | arXiv abstract only | Abstract only — noted in domain note |
+
+### Papers Checked for Duplication (SEEN)
+- 2607.12227 (Rethinking Harness Evaluation) — SEEN
+- 2607.03691 (Don't Blame the LLM) — SEEN
+- 2607.13285 (Harness Handbook) — SEEN
+- 2607.13693 (Social Simulations: ABM to Digital Twins) — SEEN
+- 2512.22725 (Mitigating Social Desirability Bias) — SEEN
+- 2506.19806 (LLM-Based Social Simulations Require a Boundary) — SEEN
+- 2603.00113 (AI Agents Alone Are Not Sufficient) — SEEN
+- 2605.00197 (Silicon Society Cookbook) — SEEN
+- 2603.19649 (PolicySim) — SEEN
+- 2604.18011 (TopoSim) — SEEN
+- 2504.11671 (Computational Basis of LLM Decision Making) — SEEN
+- 2509.13397 (Analytic Flexibility in LLM Simulation) — SEEN
+- 2509.26080 (Evaluating LLMs as Synthetic Social Agents) — SEEN
+- 2510.13884 (Too Open for Opinion) — SEEN
+
+### SearXNG Status
+- http://192.168.1.18:8888 — unresponsive, fell back to web_search and direct arXiv fetch
+
+### Graph Update
+- Pending: build_paper_graph.py + graphify global add

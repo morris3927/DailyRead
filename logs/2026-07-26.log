@@ -1,0 +1,37 @@
+# DailyRead Log — 2026-07-26
+
+## 搜尋來源
+- web_search: "silicon sampling social simulation LLM 2025 2026 arxiv"
+- web_search: "LLM agent harness engineering evaluation framework 2026 arxiv"
+- web_search: "arxiv 2607 silicon sampling social simulation LLM new paper July 2026"
+- web_search: "arxiv 2607 agent harness evaluation self-evolving July 2026"
+- arXiv HTML full-text fetch: 2607.21503, 2607.21106, 2607.04391, 2607.16621, 2607.05029, 2607.01935, 2607.03935, 2607.14485
+- arXiv abstract-only: 2607.15524, 2607.01071, 2607.07666
+
+## 查重結果
+- SEEN (排除): 2607.13683, 2607.03091, 2607.12227, 2605.27922, 2607.09493, 2607.00233, 2606.24322, 2607.18310, 2606.16871, 2607.04528, 2605.08538, 2606.10677, 2606.24535, 2607.02464, 2607.13693
+- NOT_SEEN (收錄): 2607.21503, 2607.21106, 2607.04391, 2607.16621, 2607.05029, 2607.01935, 2607.01071, 2607.07666, 2607.03935, 2607.15524, 2607.14485
+- 2607.13184 (Microarchitectural Causal Observability) — cs.AR，不屬於本 DailyRead 領域，排除
+
+## 全文取得狀況
+- ✅ 2607.21503 (ACM/Maximem Synap) — arXiv HTML full-text
+- ✅ 2607.21106 (AttriMem) — arXiv HTML full-text
+- ✅ 2607.04391 (MOSS) — arXiv HTML full-text
+- ✅ 2607.16621 (MSCE) — arXiv HTML full-text
+- ✅ 2607.05029 (FARMA) — arXiv HTML full-text
+- ✅ 2607.01935 (A-TMA) — arXiv HTML full-text
+- ✅ 2607.03935 (HASE) — arXiv HTML full-text
+- ✅ 2607.14485 (SimPref) — arXiv HTML full-text
+- ⚠️ 2607.15524 (RHI) — arXiv HTML 不可用，僅 abstract
+- ⚠️ 2607.01071 (MemSyco-Bench) — 僅 abstract（未抓取全文）
+- ⚠️ 2607.07666 (Ensemble QSP) — 僅 abstract（未抓取全文）
+
+## 今日推薦點開圖片
+- acm-context-management.png — 產圖成功
+- hase-self-evolving.png — 產圖成功
+- simpref-step-level.png — 產圖成功
+
+## 備註
+- SearXNG (192.168.1.18:8888) 持續 timeout，改用 web_search + web_fetch
+- Silicon sampling 領域本週新論文較少，SimPref 是唯一 NOT_SEEN 的高品質候選
+- Harness engineering 有 HASE 和 RHI 兩篇新作，都比之前收錄的 GSME (2607.13683) 和 Rethinking (2607.12227) 更進一步

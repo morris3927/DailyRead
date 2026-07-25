@@ -1,0 +1,26 @@
+{
+  "date": "2026-07-26",
+  "search_queries": [
+    "silicon sampling social simulation LLM 2025 2026 arxiv",
+    "LLM agent harness engineering evaluation framework 2026 arxiv",
+    "arxiv 2607 silicon sampling social simulation LLM new paper July 2026",
+    "arxiv 2607 agent harness evaluation self-evolving July 2026"
+  ],
+  "papers_checked": {
+    "seen_excluded": [
+      "2607.13683", "2607.03091", "2607.12227", "2605.27922", "2607.09493",
+      "2607.00233", "2606.24322", "2607.18310", "2606.16871", "2607.04528",
+      "2605.08538", "2606.10677", "2606.24535", "2607.02464", "2607.13693"
+    ],
+    "not_seen_included": [
+      "2607.21503", "2607.21106", "2607.04391", "2607.16621", "2607.05029",
+      "2607.01935", "2607.01071", "2607.07666", "2607.03935", "2607.15524", "2607.14485"
+    ],
+    "out_of_domain_excluded": ["2607.13184"]
+  },
+  "recommended": [
+    {"arxiv": "2607.21503", "domain": "agent-memory", "title": "ACM / Maximem Synap"},
+    {"arxiv": "2607.03935", "domain": "harness-engineering", "title": "HASE"},
+    {"arxiv": "2607.14485", "domain": "silicon-sampling", "title": "SimPref"}
+  ]
+}

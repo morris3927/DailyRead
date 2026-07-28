@@ -1,0 +1,83 @@
+# DailyRead Log — 2026-07-28
+
+Cron ID: 979a19ac-502e-4b99-9ede-9912883ce682
+Timezone: Asia/Taipei
+
+## Search
+
+Primary search target per automation prompt: SearXNG http://192.168.1.18:8888/search?q={query}&format=json
+
+SearXNG status: failed / timeout. Three SearXNG search attempts for the required domains timed out or were killed (timeout/SIGKILL). Fallback used: web_search plus direct arXiv abs/html fetches.
+
+Fallback queries executed:
+- arxiv new paper July 2026 LLM social simulation agent-based opinion dynamics consensus
+- arxiv "2607" LLM agent benchmark evaluation harness scaffolding coding tool
+- arxiv "2607" silicon sampling social simulation generative agents public opinion
+- agent memory long-term memory LLM agents arxiv 2607 LongMemEval graph temporal
+
+## Deduplication
+
+Checked with /Users/morris/.graphify/dailyread-paper-kg/check_paper_seen.py before selecting domain-note / recommendation candidates.
+
+SEEN and skipped as new recommendations:
+- 2607.07387 — A Large Language Model-Driven Agent-Based Modeling Framework with Multi-Round Communication for Simulating Vaccine Opinion Dynamics
+- 2607.03691 — Don't Blame the LLM: How Scaffolding Evolution Shapes Coding Agent Quality
+- 2607.13683 — Self-Evolving Agent Harnesses via Gated Semantic Quality-Diversity
+- 2606.07513 — Agentopia: Long-Term Life Simulation and Learning in Agent Societies
+
+NOT_SEEN and used:
+- 2607.05999 — AgoraSim: A Hybrid Agent-Based Modeling Framework
+- 2607.22585 — The Scaffold Effect in Coding Agents: Harness Choice as a Hidden Variable in Coding-Agent Evaluation
+- 2607.13085 — Baselines Before Architecture: Evaluating Coding Agents for Autonomous Penetration Testing
+- 2606.09900 — A Bi-Temporal Memory Engine for LLM Agents Where a Lean Retrieved Context Beats the Full History
+- 2607.22690 — LazyMem: Retrieve Broadly, Construct Selectively for Efficient Long-Term Agent Memory
+- 2607.16211 — Accurate and Efficient Long-Term Memory for LLM Agents (MOSAIC)
+
+Additional NOT_SEEN candidates discovered but not fully written today due to quality/space prioritization:
+- 2607.01523 — Multi-Head Recurrent Memory Agents
+- 2607.13157 — Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents
+- 2607.15657 — Do Agents Dream of False Memories? Black-box Visual Attacks on Long-term Memory in Multimodal AI Agents
+- 2607.23444 — Isolated but Exposed: Persistence-Based Memory Extraction Attack on LLM Agents
+
+## Full-text attempts
+
+Full-text-level arXiv HTML fetched and used for:
+- https://arxiv.org/html/2607.05999v1
+- https://arxiv.org/html/2607.22585v1
+- https://arxiv.org/html/2607.13085v1
+- https://arxiv.org/html/2606.09900v1
+- https://arxiv.org/html/2607.22690v1
+- https://arxiv.org/html/2607.16211v1
+
+ArXiv abstract / landing pages fetched for additional memory candidates:
+- https://arxiv.org/abs/2607.13157
+- https://arxiv.org/abs/2607.22690
+- https://arxiv.org/abs/2607.16211
+
+## Recommended papers and images
+
+Recommended today:
+1. 2607.05999 — AgoraSim
+2. 2607.22585 — The Scaffold Effect in Coding Agents
+3. 2606.09900 — Engram bi-temporal memory engine
+
+Images generated with openai/gpt-image-2 and saved:
+- assets/2026-07-28/agorasim-hybrid-abm.png
+- assets/2026-07-28/scaffold-effect-coding-agents.png
+- assets/2026-07-28/engram-bitemporal-memory.png
+
+## Self-review before commit
+
+- daily/2026-07-28.md includes short overview and 3 recommendations with image links.
+- silicon-sampling-social-simulation/2026-07-28.md includes required five headings for the paper.
+- harness-engineering/2026-07-28.md includes required five headings for both papers.
+- agent-memory/2026-07-28.md includes required five headings for all three papers.
+- Recommendations were NOT_SEEN before selection.
+
+## Graphify
+
+Pending at log creation; subsequent command output will be appended if failures occur.
+
+Graph build result:
+- build_paper_graph.py succeeded: Nodes=880 Edges=3976
+- graphify global add succeeded: Added DailyRead-paper-kg to global graph (+880 nodes, -869 pruned)

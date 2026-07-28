@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-28",
+  "cron_id": "979a19ac-502e-4b99-9ede-9912883ce682",
+  "search_policy": {
+    "primary": "SearXNG http://192.168.1.18:8888",
+    "fallback": "web_search / arXiv web_fetch",
+    "dedupe": "/Users/morris/.graphify/dailyread-paper-kg/check_paper_seen.py"
+  },
+  "searxng": {
+    "status": "failed",
+    "attempts": [
+      {"query": "silicon sampling social simulation LLM agents arxiv recent", "result": "timeout/SIGKILL"},
+      {"query": "harness engineering LLM agent benchmark scaffold arxiv recent", "result": "timeout/SIGKILL"},
+      {"query": "agent memory LLM agents long term memory arxiv recent", "result": "timeout/SIGKILL"}
+    ],
+    "fallback_reason": "SearXNG searches repeatedly timed out; used web_search and direct arXiv fetches."
+  },
+  "queries": [
+    {
+      "domain": "silicon-sampling-social-simulation",
+      "query": "arxiv new paper July 2026 LLM social simulation agent-based opinion dynamics consensus",
+      "results": [
+        {"id": "2607.07387", "title": "A Large Language Model-Driven Agent-Based Modeling Framework with Multi-Round Communication for Simulating Vaccine Opinion Dynamics", "url": "https://arxiv.org/abs/2607.07387", "seen": "SEEN"}
+      ]
+    },
+    {
+      "domain": "silicon-sampling-social-simulation",
+      "query": "arxiv \"2607\" silicon sampling social simulation generative agents public opinion",
+      "results": [
+        {"id": "2607.05999", "title": "AgoraSim: A Hybrid Agent-Based Modeling Framework", "url": "https://arxiv.org/abs/2607.05999", "seen": "NOT_SEEN", "selected": true},
+        {"id": "2606.07513", "title": "Agentopia: Long-Term Life Simulation and Learning in Agent Societies", "url": "https://arxiv.org/abs/2606.07513", "seen": "SEEN"}
+      ]
+    },
+    {
+      "domain": "harness-engineering",
+      "query": "arxiv \"2607\" LLM agent benchmark evaluation harness scaffolding coding tool",
+      "results": [
+        {"id": "2607.03691", "title": "Don't Blame the LLM: How Scaffolding Evolution Shapes Coding Agent Quality", "url": "https://arxiv.org/abs/2607.03691", "seen": "SEEN"},
+        {"id": "2607.13683", "title": "Self-Evolving Agent Harnesses via Gated Semantic Quality-Diversity", "url": "https://arxiv.org/abs/2607.13683", "seen": "SEEN"},
+        {"id": "2607.13085", "title": "Baselines Before Architecture: Evaluating Coding Agents for Autonomous Penetration Testing", "url": "https://arxiv.org/abs/2607.13085", "seen": "NOT_SEEN", "selected": true},
+        {"id": "2607.22585", "title": "The Scaffold Effect in Coding Agents: Harness Choice as a Hidden Variable in Coding-Agent Evaluation", "url": "https://arxiv.org/abs/2607.22585", "seen": "NOT_SEEN", "selected": true}
+      ]
+    },
+    {
+      "domain": "agent-memory",
+      "query": "agent memory long-term memory LLM agents arxiv 2607 LongMemEval graph temporal",
+      "results": [
+        {"id": "2607.01523", "title": "Multi-Head Recurrent Memory Agents", "url": "https://arxiv.org/abs/2607.01523", "seen": "NOT_SEEN"},
+        {"id": "2607.13157", "title": "Oracle Agent Memory as an Enterprise Memory Substrate for Long-Horizon AI Agents", "url": "https://arxiv.org/abs/2607.13157", "seen": "NOT_SEEN"},
+        {"id": "2607.15657", "title": "Do Agents Dream of False Memories? Black-box Visual Attacks on Long-term Memory in Multimodal AI Agents", "url": "https://arxiv.org/abs/2607.15657", "seen": "NOT_SEEN"},
+        {"id": "2607.16211", "title": "Accurate and Efficient Long-Term Memory for LLM Agents", "url": "https://arxiv.org/abs/2607.16211", "seen": "NOT_SEEN", "selected": true},
+        {"id": "2607.22690", "title": "Retrieve Broadly, Construct Selectively for Efficient Long-Term Agent Memory", "url": "https://arxiv.org/abs/2607.22690", "seen": "NOT_SEEN", "selected": true},
+        {"id": "2607.23444", "title": "Isolated but Exposed: Persistence-Based Memory Extraction Attack on LLM Agents", "url": "https://arxiv.org/abs/2607.23444", "seen": "NOT_SEEN"},
+        {"id": "2606.09900", "title": "A Bi-Temporal Memory Engine for LLM Agents Where a Lean Retrieved Context Beats the Full History", "url": "https://arxiv.org/abs/2606.09900", "seen": "NOT_SEEN", "selected": true}
+      ]
+    }
+  ],
+  "recommended": ["2607.05999", "2607.22585", "2606.09900"],
+  "notes": "Full-text-level arXiv HTML was fetched for the three recommendations and for selected additional domain-note papers where available."
+}

@@ -1,0 +1,27 @@
+2026-08-08 DailyRead Log
+
+## Search & Fetch
+- SearXNG (192.168.1.18:8888) timeout, fell back to web_search and web_fetch
+- All papers fetched via arXiv HTML pages successfully
+- Papers checked via check_paper_seen.py: all NOT_SEEN
+
+## Papers Processed
+1. 2608.03044 - Emulate or Estimate? (Silicon Sampling) - full HTML read
+2. 2608.04205 - MatrAIx (Silicon Sampling) - full HTML read (truncated at 750000 bytes)
+3. 2608.00267 - LoopsBench (Harness Engineering) - full HTML read
+4. 2607.20972 - Delivery, Not Storage (Harness Engineering + Agent Memory) - full HTML read
+5. 2608.01739 - CoEvo-Mem (Agent Memory) - full HTML read (truncated)
+6. 2607.27773 - ChronoMem (Agent Memory) - full HTML read (truncated)
+
+## Selected as 今日推薦點開
+1. 2608.03044 - Emulate or Estimate?
+2. 2608.00267 - LoopsBench
+3. 2607.20972 - Delivery, Not Storage
+
+## Notes
+- MatrAIx (2608.04205): very large paper (70+ authors), read first ~12000 chars of HTML. Full experiment details not fully confirmed from truncated read; noted in domain note.
+- CoEvo-Mem (2608.01739): read first ~10000 chars; ablation details need full read.
+- ChronoMem (2607.27773): read first ~10000 chars; post-exposure evaluation details need full read.
+
+## Graph Update
+- To be run: build_paper_graph.py + graphify global add

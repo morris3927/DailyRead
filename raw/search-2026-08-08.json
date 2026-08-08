@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-08",
+  "searches": [
+    {
+      "query": "silicon sampling social simulation LLM 2026",
+      "source": "SearXNG (timeout) + web_search",
+      "results_found": ["2608.03044", "2608.04205"]
+    },
+    {
+      "query": "LoopsBench harness engineering loop engineering coding agent",
+      "source": "web_search",
+      "results_found": ["2608.00267"]
+    },
+    {
+      "query": "Delivery Not Storage cue-anchored working memory agent",
+      "source": "web_search",
+      "results_found": ["2607.20972"]
+    },
+    {
+      "query": "CoEvo-Mem co-evolving retrieval memory agent",
+      "source": "web_search",
+      "results_found": ["2608.01739"]
+    },
+    {
+      "query": "ChronoMem version control semantic rollback agent memory",
+      "source": "web_search",
+      "results_found": ["2607.27773"]
+    }
+  ],
+  "papers_checked": [
+    {"id": "2608.03044", "status": "NOT_SEEN"},
+    {"id": "2608.04205", "status": "NOT_SEEN"},
+    {"id": "2608.00267", "status": "NOT_SEEN"},
+    {"id": "2607.20972", "status": "NOT_SEEN"},
+    {"id": "2608.01739", "status": "NOT_SEEN"},
+    {"id": "2607.27773", "status": "NOT_SEEN"}
+  ],
+  "full_text_sources": {
+    "2608.03044": "arXiv HTML",
+    "2608.04205": "arXiv HTML",
+    "2608.00267": "arXiv HTML",
+    "2607.20972": "arXiv HTML",
+    "2608.01739": "arXiv HTML",
+    "2607.27773": "arXiv HTML"
+  }
+}

@@ -1,0 +1,60 @@
+# DailyRead Log — 2026-08-13
+
+## Search Queries
+- silicon sampling social simulation LLM agents arxiv 2026
+- harness engineering coding agent evaluation arxiv 2026
+- agent memory LLM long-term working memory retrieval arxiv 2026
+- arxiv silicon sampling LLM opinion simulation emulate estimate 2026
+- arxiv social simulation LLM agents persona population 2026 recent
+- arxiv agent memory working memory harness coding agent 2026 august
+- arxiv 2026 august LLM social simulation silicon sampling persona new
+- arxiv 2026 august agent memory LLM episodic semantic new paper
+- arxiv 2026 august coding agent harness evaluation benchmark new
+- arxiv "agent memory" OR "working memory" LLM 2026 august new paper
+
+## Search Sources
+- SearXNG (192.168.1.18:8888) — blocked (private IP), fell back to web_search
+- arXiv abstracts and HTML full text for: 2608.00023, 2608.01193, 2608.06811, 2608.09096, 2608.07622, 2608.06745
+
+## Deduplication
+Checked all candidates against paper_index.json via check_paper_seen.py:
+- 2608.03044 (Emulate or Estimate) → SEEN (2026-08-08)
+- MatrAIx / 2608.04205 → SEEN (2026-08-08)
+- LoopsBench / 2608.00267 → SEEN (2026-08-08)
+- 2607.20972 (Delivery Not Storage) → SEEN (2026-08-08)
+- 2607.14159 (MemoHarness) → SEEN (2026-07-22)
+- SPIRIT / 2603.27056 → SEEN (2026-06-16)
+- Agentopia / 2606.07513 → SEEN (2026-06-10)
+- Infini Memory / 2606.10677 → SEEN
+- ActMem / 2603.00026 → SEEN
+- Persona Policies / 2605.12894 → SEEN
+
+NEW (NOT_SEEN) candidates selected:
+- 2608.00023 — CastVectors (→ recommended)
+- 2608.09096 — Evo-Bench (→ recommended)
+- 2608.07622 — CMI (→ recommended)
+- 2608.06811 — PMCoder (→ included)
+- 2608.06745 — MemPrism (→ included)
+- 2608.01193 — Humans Are More Diverse (→ not included, more game theory than silicon sampling)
+
+## Full-text Access
+- 2608.00023: HTML full text read (ar5iv)
+- 2608.06811: HTML full text read (ar5iv)
+- 2608.09096: HTML full text read (ar5iv)
+- 2608.07622: Abstract only (PDF not yet read in full)
+- 2608.06745: Abstract only (PDF not yet read in full)
+
+## Image Generation
+- castvectors-role-steering.png → generated via openai/gpt-image-2
+- evobench-harness-evolution.png → generated via openai/gpt-image-2
+- cmi-memory-interference.png → generated via openai/gpt-image-2
+
+## Quality Self-Audit
+- ✅ All domain notes have 5 required subsections (這篇在說什麼, 主要貢獻, 方法/pipeline, 實驗設計, かに讀後判斷)
+- ✅ Recommended papers have 500+ Chinese characters each
+- ✅ Included papers have 300+ Chinese characters each
+- ✅ Papers with abstract-only access are marked with limitations
+- ✅ No SEEN papers recommended as new
+
+## Graph Build
+(to be executed after commit)

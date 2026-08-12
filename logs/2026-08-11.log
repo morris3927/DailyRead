@@ -1,0 +1,72 @@
+[2026-08-11 06:00 Asia/Taipei] DailyRead started.
+SearXNG queries attempted via http://192.168.1.18:8888/search for silicon sampling/social simulation, harness engineering, agent memory. All initial curl requests timed out/no output; using web_search/arXiv/web_fetch fallback.
+--- 2605.27401
+NOT_SEEN
+--- 2607.28347
+NOT_SEEN
+--- 2605.10907
+NOT_SEEN
+--- 2605.15221
+SEEN
+- 2605.15221 | Effective Harness Engineering for Algorithm Discovery with Coding Agents — Vesper | mentioned_daily,conversation_review | dates=2026-05-21 | source=harness-engineering/2026-05-21.md
+--- 2605.06716
+SEEN
+- 2605.06716 | From Storage to Experience: A Survey on the Evolution of LLM Agent Memory Mechanisms | mentioned_daily,conversation_review | dates=2026-05-14 | source=agent-memory/2026-05-14.md
+--- 2606.24322
+SEEN
+- 2606.24322 | ⏱️ Toward Temporal Realism in City-Scale Crisis Response Simulation (2606.19904) | recommended_daily,mentioned_daily,conversation_review | dates=2026-06-27 | source=daily/2026-06-27.md
+- - | 🔒 Securing LLM-Agent Long-Term Memory Against Poisoning: Non-Malleable, Origin-Bound Authority with Machine-Checked Guarantees (2606.24322) | recommended_daily | dates=2026-06-27 | source=daily/2026-06-27.md
+--- 2604.26197
+SEEN
+- 2604.26197 | Hierarchical Long-Term Semantic Memory (HLTM) for LinkedIn's Hiring Agent | mentioned_daily,conversation_review | dates=2026-05-19 | source=agent-memory/2026-05-19.md
+--- 2605.06527
+SEEN
+- 2605.06527 | STALE: Can LLM Agents Know When Their Memories Are No Longer Valid? | mentioned_daily,conversation_review | dates=2026-05-24,2026-07-15 | source=agent-memory/2026-05-24.md
+--- 2603.11768
+SEEN
+- 2603.11768 | Governing Evolving Memory in LLM Agents: Risks, Mechanisms, and the Stability and Safety Governed Memory (SSGM) Framework | mentioned_daily,conversation_review | dates=2026-05-20,2026-06-06 | source=agent-memory/2026-05-20.md
+--- 2605.18747
+SEEN
+- 2605.18747 | Code as Agent Harness: Toward Executable, Verifiable, and Stateful Agent Systems | mentioned_daily,conversation_review | dates=2026-05-21 | source=harness-engineering/2026-05-21.md
+--- 2604.25850
+SEEN
+- 2604.25850 | AHE Observability Driven Harness Evolution | deepread,mentioned_daily,conversation_review | dates=2026-05-24,2026-05-18 | source=deepread/AHE-Observability-Driven-Harness-Evolution.md
+- 2604.25850 | Agentic Harness Engineering: Observability-Driven Automatic Evolution of Coding-Agent Harnesses | recommended_daily,mentioned_daily | dates=2026-05-10 | source=daily/2026-05-10.md
+--- 2603.23448
+SEEN
+- 2603.23448 | Code Review Agent Benchmark (c-CRAB) | mentioned_daily,conversation_review | dates=2026-05-31 | source=harness-engineering/2026-05-31.md
+--- 2605.10907
+NOT_SEEN
+--- 2605.27401
+NOT_SEEN
+--- 2607.28347
+NOT_SEEN
+--- 2604.16548
+SEEN
+- 2604.16548 | A Survey on the Security of Long-Term Memory in LLM Agents: Toward Mnemonic Sovereignty | mentioned_daily | dates=2026-05-10 | source=agent-memory/2026-05-10.md
+--- 2604.01707
+SEEN
+- 2604.01707 | Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework | mentioned_daily,conversation_review | dates=2026-05-17 | source=agent-memory/2026-05-17.md
+--- 2603.07670
+SEEN
+- 2603.07670 | Memory for Autonomous LLM Agents: Mechanisms, Evaluation, and Emerging Frontiers | recommended_daily,mentioned_daily,conversation_review | dates=2026-05-12,2026-05-13,2026-05-09,2026-06-05 | source=daily/2026-05-12.md
+--- 2512.12791
+SEEN
+- 2512.12791 | Beyond Task Completion: An Assessment Framework for Evaluating Agentic AI Systems (2512.12791) | mentioned_daily,conversation_review | dates=2026-07-23 | source=harness-engineering/2026-07-23.md
+--- 2511.00872
+NOT_SEEN
+--- 2507.21504
+SEEN
+- 2507.21504 | Evaluation and Benchmarking of LLM Agents: A Survey (2507.21504) | mentioned_daily,conversation_review | dates=2026-07-25 | source=harness-engineering/2026-07-25.md
+--- 2608.07438
+NOT_SEEN
+--- 2608.07429
+NOT_SEEN
+--- 2608.07169
+NOT_SEEN
+--- 2608.07449
+NOT_SEEN
+--- 2608.07395
+NOT_SEEN
+--- 2608.07457
+NOT_SEEN

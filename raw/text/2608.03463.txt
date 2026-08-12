@@ -1,0 +1,813 @@
+LeanMem: Simple and Efficient Long-Term Memory for LLM Agents
+Yuxin Liao, Le Wu∗, Min Hou, Hao Liu, Han Wu, Zishu Wang
+Hefei University of Technology
+yuxinliao314@gmail.com, lewu.ustc@gmail.com, hmhoumin@gmail.com, hliu7879@163.com, ustcwuhan@gmail.com,
+zishuwang@mail.hfut.edu.cn
+Abstract
+Long-termmemoryisessentialforLLM-basedagentstosus-
+tain interactions and reliably leverage distant history. How-
+ever, existing memory systems typically process heteroge-
+neousdialoguecontentthroughauniformsummarizationand
+retrieval pipeline, leading to either excessive token consump-
+tion or irreversible loss of fine-grained evidence. We argue
+that historical dialogue content should be handled differently
+according to its compressibility, temporal dynamics, and fi-
+delity requirements. Based on this insight, we propose Lean-
+Mem,alightweightlong-termmemoryframework.LeanMem
+firstfiltersoutlow-valuecontent,thenstoresinformativeseg-
+mentsascompactprofilememory,temporallystructuredevent
+memory, or source-grounded record memory, depending on
+the nature of the information. During maintenance, only dy-
+namically evolving event memories are selectively updated,
+avoiding redundant consolidation of stable profiles and im-
+mutable records. During inference,LeanMemdynamically
+selects memory types and allocates retrieval budgets accord-
+ing to query-specific evidence demands, assembling relevant
+evidenceondemand.OnLoCoMoandLongMemEval-Swith
+GPT-4.1-mini and Qwen3-8B, LeanMem improves accuracy
+overthestrongestmemory-basedbaselineineverysetting,by
+up to 15.1 points, at the lowest or near-lowest construction
+cost, inference tokens, and latency. The code and datasets are
+included in the supplementary materials.
+1 Introduction
+Large language model (LLM)-based agents have shown
+strong capabilities across diverse tasks (Li et al. 2024; Fer-
+rag, Tihanyi, and Debbah 2026). However, their ability to
+support long-running interactions is limited by fixed con-
+text windows and unreliable access to distant history. To
+addressthis,memory(Huetal.2025;Zhangetal.2025;Wu
+et al. 2025) has become a pivot mechanism for LLM-based
+agents,allowingthemtomaintainapersistentstateoverhis-
+torical interactions. It enables agents to retain user-specific
+knowledge, trackevolving information, and retrieverelevant
+evidence for future decision-making (Liu et al. 2026b; Liao
+et al. 2026; Banerjee et al. 2026).
+Recent studies (Xu et al. 2026; Li et al. 2025; Zhong,
+Gao, and Wang 2026) have extensively explored the design
+of agent memory, covering the full pipeline from extract-
+ing information out of raw interactions, to constructing and
+evolvingmemoryunits,andultimatelyretrievingrelevantev-
+∗Corresponding author.
+Chunk #1[user] Wait,I didn't ask a question. I just stated my plan. Can I ask a question now?[assistant] I apologize for the mistake! You're right, you didn't ask a question, and I responded as if you did. Please go ahead and ask your question now! I'm here to help and provide guidance. What's on your mind?
+low-information turns with little long-term memory value
+[user] I've used Trello in my previous role as a marketing specialist at a small startup and I'm familiar with its features. But I'm interested in exploring other options as well. Could you tell me more about ClickUp? How does it differ from Trello, and what are its strengths and weaknesses?",
+Chunk #2
+stable user attributes or preferencescan be compactly represented# 2023/05/11(Thu) 02:02[user] I lead a team of 4 engineers in my new role as Senior Software Engineer.# 2023/10/24 (Tue) 13:53[user] I‘ve been enjoying my role…I now lead a team of five engineers.
+Chunk #3
+Evolving events require temporal anchoring and state tracking
+[assistant] Got it! Here's an updated version of …: \"8 am till 4 pm -12 pm till 8 pm -4 pm till 12 am -12 am till 8 am\":\n\nShift Rotation Sheet for GM Social Media Agents\n\n| | 8 am -4 pm | 12 pm -8 pm | 4 pm -12 am | 12 am -8 am |\n| Week 1| Agent 1 | Agent 2 | Agent 3 | Agent 4 |\n| Week 2 |…
+Chunk #4
+Dense details require faithful preservation with source traceability
+Figure1:Dialogueinformationdiffersincompressibilityand
+storage requirements.
+idence for downstream reasoning and response generation.
+Despite these advances,memory systems still suffer from
+significant token consumption and information loss(Liu
+et al. 2026a; Fang et al. 2025). In this pipeline, memory
+construction is usually the first major source of cost (Huang
+et al. 2026). For each incoming dialogue chunk, existing
+systems often process full user-assistant dialogue chunks to
+an LLM to identify useful content, summarize it into mem-
+oryentries,andupdatetheexistingmemorybank.Thiseager
+constructionstrategykeepsmemoriesimmediatelyavailable,
+but it repeatedly invokes LLMs over long interaction histo-
+ries and therefore consumes substantial construction tokens.
+At the same time, reducing raw interactions into compact
+memories can discard fine-grained details that are difficult
+to recover later.This creates a tension between efficiency
+and fidelity: processing more context improves the chance
+of preserving useful evidence, but it increases token cost;
+compressingmoreaggressivelyreducescost,butitmaylose
+information needed by future queries.
+Recent studies have tried to address this tension from dif-
+ferent sides. (1) Lightweight memory construction methods
+reduce token consumption by filtering redundant dialogue,
+compressing input before memory writing, or delaying con-
+solidation to an offline stage (Fang et al. 2025; Liu et al.
+2026a). These methods improve efficiency, but they mainly
+arXiv:2608.03463v1  [cs.AI]  4 Aug 2026
+
+reduce how much information enters the memory pipeline.
+Once useful information is compressed or filtered out, fine-
+grained evidence may still be difficult to recover for future
+queries. (2) In contrast, retrieval-side methods (Zhang et al.
+2026; Kim et al. 2025) improve fidelity by using iterative
+retrieval, or multi-hop reasoning to collect more evidence at
+inferencetime.Thesemethodscanimproveansweraccuracy,
+buttheyintroduceadditionaltokenconsumptionandlatency
+duringretrievalandresponsegeneration.Therefore,existing
+approaches often improve one side of the efficiency-fidelity
+trade-off at the cost of the other.
+Weaddresstheefficiencyandfidelityissuesfromadiffer-
+ent perspective.Our key observation is that dialogue in-
+formation differs in compressibility and storage require-
+ments.Noteverydialoguesegmentshouldberecordedindis-
+criminately.Somesegmentscontainlittleusefulinformation
+andcanbesafelyignored.Somecontainstableuserattributes
+or preferences, which can be stored in a compact structured
+form. Some describe events that change over time, which
+require temporal anchors and state tracking. Others contain
+dense details, such as lists, plans, or step-by-step discus-
+sions, where aggressive summarization may lose important
+evidence. Therefore, an efficient memory system should not
+apply the same construction strategy to all dialogue content.
+Itshouldfirstdecidewhetherasegmentshouldbestored,and
+thenchooseastorageformthatmatchesitsinformationtype
+and fidelity requirement. As shown in Fig. 1, stable profiles,
+evolvingevents,anddetail-intensiverecordsrequiredifferent
+degrees of compression and preservation.
+Based on this idea, we proposeLeanMem, an extremely
+lightweight long-term memory framework for LLM-based
+agents.LeanMemtreats memory construction as a con-
+trolled writing process. We develop a three-stage pipeline:
+(1)Controlled Memory Writing: Given a dialogue seg-
+ment,LeanMemfirst decides whether the segment should
+enter memory. Segments with low information value are
+ignored to avoid unnecessary construction cost. For useful
+segments,LeanMemusesalightweightschedulertoclassify
+the information type and assign a suitable storage strategy.
+Stable user attributes and preferences are stored as com-
+pactprofilememory.State-changinginformationisstoredas
+event memory with temporal anchors and state descriptions.
+Detail-intensive content is stored as record memory with
+lightweight indices and pointers to the original dialogue, so
+that fine-grained evidence can be traced back when needed.
+(2)SelectiveMemoryEvolution:wefurtherperformmem-
+oryevolutiononlyforeventmemory.Itgroupsrelatedevents
+across sessions and merges them into temporal state repre-
+sentations. This moves part of the evidence integration re-
+quiredbymulti-hoptemporalqueriesfromquerytimetothe
+memory construction stage.(3)Adaptive Evidence Com-
+position: At inference time, we perform adaptive evidence
+composition by selecting memory types and retrieval bud-
+gets according to the query. In this way,LeanMemreduces
+redundant memory writing, preserves important details, and
+avoids expensive multi-hop retrieval for every query.
+We evaluateLeanMemon two long-term conversational
+question answering benchmarks, LongMemEval-S and Lo-
+CoMo.LeanMemconsistently improves answer accuracy
+while substantially reducing token consumption. Compared
+with A-Mem, it improves Accuracy by up to 20.40 per-
+centage points, reduces memory construction tokens by up
+to 17.24×, and reduces inference tokens by up to 8.41×.
+TheseresultsdemonstratethatLeanMemachievesastronger
+effectiveness–efficiency balance by representing conversa-
+tionalinformationaccordingtoitscompressibility,temporal
+dynamics,andfidelityrequirements,andretrievingevidence
+according to query-specific demands.
+2 Preliminaries
+Long-TermMemoryPipeline.Aconversationalagentin-
+teracts with a user across multiple sessions, producing a
+dialogue historyH=c i ∗i= 1 C, where each session
+ci =x∗i, j Ti
+j=1 containsT i user–assistant turns. An explicit
+memory system extracts valuable information fromHinto
+an external memory bankMto support future queries.
+Most agent memory systems involve two stages: memory
+construction and memory usage. During construction, raw
+dialoguesaretransformedintoretrievableentriesandevolved
+asinteractionsaccumulate.Duringusage,aqueryqretrieves
+supporting evidence fromMfor answer generation. Some
+systemsfurtheriterateretrievalandreflectionuntilsufficient
+evidence is obtained. Representative LLM agent memory
+systems are reviewed in Appendix A.
+3 Method
+3.1 Overview
+The central proposal ofLeanMemis that conversational in-
+formationdiffersincompressibility,temporaldynamics,and
+fidelity requirements. However, existing memory systems
+typically process dialogue history using a uniform compres-
+sion strategy, resulting in either insufficient compression or
+irreversible information loss.
+As illustrated in Fig. 2,LeanMemaddresses this mis-
+match through three coordinated stages spanning memory
+construction, maintenance, and retrieval. First,Controlled
+Memory Writingpartitions dialogue history into coher-
+ent segments and stores them as compact profile memory,
+evolvingeventmemory,orsource-groundedrecordmemory
+according to their compressibility, temporal dynamics, and
+fidelityrequirements.Second,SelectiveMemoryEvolution
+applies deferred and localized updates only to event mem-
+ory, avoiding unnecessary consolidation of stable profiles
+and immutable records. Third,Adaptive Evidence Com-
+positionidentifies query-specific evidence demands, selects
+relevant memory types, and allocates retrieval budgets to
+assemble sufficient evidence. Through these stages,Lean-
+Memreduces long-term memory cost while preserving the
+evidence required for reliable downstream reasoning.
+3.2 Controlled Memory Writing
+GivenadialoguehistoryH,ControlledMemoryWritingfirst
+filtersitintokeyutterancesU,whicharefurthergroupedinto
+semantically coherent topic segmentsS={S i}N
+i=1, where
+Nis the number of detected segments. Each segmentS i
+
+Key UtteranceExtraction
+a.Topic Segment Detection
+CoherenceValley
+Seg1
+ …Schedule
+profileStructuralExtraction
+eventrecord
+b.  Controlled Memory WritingLLM Calling: Topic + TimelineSeg1Seg2Seg3Seg2Seg3…
+My previous role is a marketing specialist at a small startup.
+Light LLM Calling: Retrieval Gist
+Topic Segments
+Store
+Profile MemEvent MemRecord MemMemory
+[user] I‘m trying to stay on top of my fitness goals.…[user]I’ve been tracking my progress with my new Fitbit Inspire HR, which I bought on February 15th.[assistant] Congratulations on taking the first step towards a healthier lifestyle!High UtilityLowUtility
+SemanticSimilarity
+TopicSegment
+Topic: work, [2023/05/11], lead 4 engineers in my new role Senior Software Engineer. 100 prompt parameters, specify agent influence output, session: answer_sharegpt_6pWK9yx_0
+c.  Selective Memory Evolutiond. Adaptive Evidence Composition
+RetrievalPlanningKey Constrain: after moving to ChicagoEvidence Demand: gift boughtRetrieval Budget: event, k=10MemoryRetrievalWhat gift did I buy after moving to Chicago?
+Query
+AnswerGeneration
+EventMemory…TopicClustering
+Memory Merge Rerank
+0.67→0.82
+0.54→0.35
+Figure 2: The architecture ofLeanMem. (a) Topic Segmentation filters key utterances and groups them into topically coherent
+segments.(b)ControlledMemoryWritingrouteseachsegmenttoprofile,event,orrecordmemoryaccordingtoitscompression,
+temporal, and fidelity requirements. (c) Selective Memory Evolution buffers and incrementally updates event memory through
+localized offline consolidation. (d) Adaptive Evidence Composition plans retrieval and assembles sufficient evidence under a
+query-conditioned budget.
+serves as the basic decision unit for write scheduling, pro-
+ducingaroutingresultr i thatguidesitssubsequentmemory
+materialization.
+•Key Utterance Filtering.LeanMemfirst applies a rule-
+based filter to remove structurally low-information turns, in-
+cluding greetings, acknowledgements, and restatements. In
+asymmetric user–assistant interactions, user utterances are
+treated as the primary routing anchors because they typi-
+cally introduce user-specific requirements, preferences, and
+state changes, whereas assistant responses mainly elaborate
+on the current request. Assistant utterances are therefore not
+independently retained as routing anchors inU, while their
+contextual information remains accessible from the original
+dialogue. This preprocessing produces a cleaner utterance
+sequence and reduces subsequent LLM input.
+•Topic Segmentation.Long-term dialogue history com-
+prises multiple sessions of user–assistant turns, yet neither
+granularity is suitable for memory construction (Pan et al.
+2025; Tan et al. 2025). Individual turns often lack suffi-
+cient context. A full session may contain several interleaved
+topics, increasing routing ambiguity when semantically dis-
+tinct spans require different memory representations.Lean-
+Memaccordingly adopts topic segments as the basic con-
+struction granularity.
+Within each session, letui andu i+1 denote adjacent re-
+tainedutterances,andlets i = sim(u i, ui+1)denotetheirco-
+sine similarity. Topic transitions are typically accompanied
+byabruptdecreasesinadjacent-utterancesimilarity.Foreach
+validpositionwhoseleftandrightwindowsarecomplete,the
+corresponding valley depth is computed as
+di = 1
+w
+wX
+j=1
+si−j + 1
+w
+wX
+j=1
+si+j −2s i,(1)
+wherewisthenumberofneighboringsimilarityscorescon-
+sideredoneachside.LetD={d i}collectthevalleydepths
+within the current session. The adaptive boundary threshold
+is defined as
+τ=µ D + 0.05σD,(2)
+whereµ D andσ D arethemeanandstandarddeviationofD,
+respectively.Thecomputedpositionsaretreatedascandidate
+valleys; among them, positions that are local maxima ofdi
+and satisfyd i ≥τare selected as topic boundaries. The
+resulting segmentsSserve as the basic decision units for
+subsequent write scheduling.
+•Write Scheduling.Given a topic segmentS i, the write
+scheduler selects the lowest-cost representation that pre-
+serves the evidence required for future use. LetY=
+{ignore,profile,event,record}denote the avail-
+able write actions, and letC(y, Si)andL(y, S i)denote the
+representation cost and potential evidence loss incurred by
+assigningS itoactiony,respectively.Weexpresstheschedul-
+ing design objective as
+yi = arg min
+y∈Y
+C(y, S i)s.t.L(y, S i)≤ϵ,(3)
+whereϵdenotesthemaximumacceptablelossofinformation
+requiredforreliablefuturereasoning.Ratherthanestimating
+C(·)andL(·)numerically,LeanMemoperationalizes this
+objective through fixed routing criteria.
+Specifically,anLLM-basedschedulerevaluateseachseg-
+ment along three discriminative dimensions:stability, in-
+dicating whether the information remains reusable across
+interactions;temporal dependence, indicating whether its
+meaning depends on state changes or chronological rela-
+tions; andfidelity requirement, indicating whether accurate
+reuserequirespreservingdetailedsourcecontent.Stableand
+readily structured information is assigned toprofile; up-
+dates, progress, and temporally ordered states are assigned
+toevent; information-dense content that cannot be safely
+
+compressed is assigned torecord; and content without
+persistent evidentiary value is assigned toignore. Un-
+like key utterance filtering, which removes structurally low-
+information turns before semantic processing,ignoreap-
+pliestomeaningfultopicsegmentsthatdonotwarrantlong-
+term storage, such as temporary requests. The routing di-
+mensions correspond to mutually distinguishable evidence
+properties rather than semantic topics, making the decision
+less ambiguous across heterogeneous content.
+Theschedulerfollowsafixeddecisionprotocolencodedin
+theinstructionprompt.Itfirstidentifiestheevidence-bearing
+content inS i, evaluates the three routing dimensions, and
+then applies a predefined priority order to resolve overlap-
+ping cases: temporal dependence takes precedence over sta-
+bility,whilehighfidelityrequirementsoverridecompressive
+representations. It returns
+ri =⟨y i, I i, ξ i⟩,(4)
+wherey i ∈ Yis the selected write action,I i contains the
+source indices supporting the decision, andξi contains the
+extracted attribute–value pairs whenyi =profileand
+is empty otherwise. The output is restricted to a predefined
+schema, grounding each decision in the original segment.
+In our implementation, the scheduler uses the same
+instruction-following LLM backbone as the corresponding
+memory-system configuration, including GPT-4.1-mini in
+the closed-source setting and Qwen3-8B in the open-source
+setting. Each topic segment requires one forward call, and
+the scheduler returns the structured resultri.
+•Memory Materialization.Givenr i,LeanMemrecovers
+thesupportingdialoguespanX i =H[I i]andmaterializesit
+according toyi:
+mi =
+
+
+
+∅, y i =ignore,
+ξi, y i =profile,
+LLM(Xi;e, t, z), y i =event,
+⟨LLM(Xi;g),NER(X i), I i⟩, y i =record.
+(5)
+For profile memory, the scheduler has already extracted
+ξi ={(a ij, vij)}ni
+j=1, so the system stores these structured
+attributesdirectlywithoutanadditionalLLMcall.Forevent
+memory,LLM(X i;e, t, z)denotesaschema-constrainedcall
+that returns only
+LLM(Xi;e, t, z) =⟨e i, t i, z i⟩,(6)
+wheree i,t i, andz i denote the event topic, temporal an-
+chor, and state description, respectively. For record mem-
+ory,LLM(X i;g)generates only a concise retrieval gistgi,
+whileNER(X i)extracts a keyword and entity setκi using
+the lightweight GLiNER model (Zaratiana et al. 2024); the
+source pointer is retained aspi =I i. The resulting record
+is thereforem record
+i =⟨g i, κi, pi⟩. These constrained out-
+puts avoid free-form summarization: profile memory reuses
+structured extraction, event memory retains only temporal
+statefields,andrecordmemorystoresalightweightretrieval
+index while preserving access to the original dialogue. The
+resulting heterogeneous memory bank is
+M=M profile ∪ Mevent ∪ Mrecord.(7)
+3.3 Selective Memory Evolution
+Different memory representations require distinct mainte-
+nancestrategies.Profilememorystoresstableuserattributes,
+whilerecordmemorypreservesimmutablesource-grounded
+indices. In contrast, event memory represents ongoing pro-
+cesses refined through later interactions. Therefore,Lean-
+Memrestrictsevolutiontoeventmemory,avoidingunneces-
+sary consolidation of other memory types.
+To reduce online maintenance cost,LeanMemdecouples
+memory writing from evolution through deferred updates.
+Newly constructed event memories are accumulated in an
+event buffer, and consolidation is triggered only when the
+bufferreachesapredefinedcapacity.Byamortizingmultiple
+updates into one evolution step, this strategy reduces expen-
+siveLLMinvocationswhilekeepingnewlywrittenmemories
+immediately retrievable.
+During evolution, each buffered event retrieves related
+event memories based on their topics and states to form a
+localized context. The retrieved events are ordered by tem-
+poral anchors, allowing the LLM to infer the latest state and
+updatethe correspondingmemory incrementallyratherthan
+reconstructingit.Anincomingeventmayaddevidencetoan
+existing topic, revise its state, or extend its timeline. Event
+memory therefore evolves through localized updates while
+avoiding repeated global consolidation.
+3.4 Adaptive Evidence Composition
+Given an incoming queryq,LeanMemfirst identifies its ev-
+idence requirements instead of retrieving a fixed number of
+memories. An LLM planner analyzes evidence granularity,
+temporal dependence, fidelity, and aggregation scope, and
+follows a fixed prompt template to produce retrieval plan
+πq =⟨C q, d q,M q,w q,k q⟩,(8)
+whereC q contains entity, attribute, temporal, and relational
+constraints;d q describes the evidence demand;M q ⊆
+{profile,event,record}denotes the required mem-
+ory types;w q ={w c
+q}c∈Mq represents the query’s rel-
+ative dependence on each selected memory type, withP
+c∈Mq wc
+q = 1; andk q ={k c
+q}c∈Mq specifies the re-
+trieval depth for each type. Stable attribute lookup places
+greaterdependenceonprofilememory,temporalchangeand
+state tracking emphasize event memory, and detail-sensitive
+verification or source traceback emphasizes record mem-
+ory.Query-specificevidencedemandsdeterminetheretrieval
+budget allocated to each selected memory type.
+Guided byπ q,LeanMemretrieves the top-k c
+q candidates
+from each selected memory typec∈ M q. Profile retrieval
+matchesstructuredattributes,eventretrievalconsiderstopics
+and temporal states, and record retrieval uses retrieval gists.
+The retrieved candidates are then reranked as
+score(q, m) =w c
+q [Relc(q, m) + Match(Cq, m)],(9)
+whereRel c(q, m)measures type-specific relevance,
+Match(Cq, m)measures consistency with the query con-
+straints, andwc
+q reflects the query’s dependence on memory
+typec. This reranking favors both relevant memories and
+evidencecontainingcriticalconstraintsortemporalanchors.
+
+Finally,LeanMemcomposes the retrieved memories ac-
+cording to their evidence roles rather than concatenating a
+global top-klist. Profile entries provide stable user context,
+evententriesarechronologicallyorderedtoexposestatetran-
+sitions, and record pointers are expanded to the original di-
+alogue spans only when detailed evidence is required. The
+resulting evidence is assembled within the available context
+budget for downstream reasoning and answer generation.
+4 Experiments
+4.1 Experimental Setup
+•BenchmarkDatasets.WeevaluateLeanMemontwolong-
+term conversational question answering benchmarks:Lo-
+CoMo(Maharana et al. 2024) andLongMemEval-S(Wu
+et al. 2024). LoCoMo contains 10 conversations averaging
+16Ktokensandupto32sessions.SinceCategory5contains
+adversarial/unanswerable questions without gold answers,
+we evaluate only Categories 1–4. LongMemEval-S contains
+500 interaction histories averaging 115K tokens across 40–
+50 sessions, each paired with one question.
+•Baselines and Backbone Models.We compareLean-
+Memwith six baselines: FullText, Naive RAG, Memo-
+ryOS (Kang et al. 2025), A-MEM (Xu et al. 2026), Light-
+Mem (Fang et al. 2025), and SimpleMem (Liu et al. 2026a);
+further details are provided in Appendix B. We instantiate
+all methods with the proprietary GPT-4.1-mini and locally
+deployed Qwen3-8B.
+•Implementation Details.FullText directly uses the com-
+pletedialoguehistory,whileNaiveRAGretrievesthetop-10
+dialogue turns. We useall-MiniLM-L6-v2to encode memo-
+riesforindexingandretrieval,andadditionalimplementation
+details are provided in Appendix C.
+•Evaluation Metrics.We evaluate all methods in terms of
+effectiveness and efficiency. We report LLM-judged Accu-
+racy using GPT-4.1-mini. Since the original LoCoMo met-
+rics, such as F1, cannot adequately assess semantic correct-
+ness, we follow the evaluation protocol of SimpleMem (Liu
+et al. 2026a) for all LoCoMo experiments. The full evalua-
+tionpromptisprovidedinAppendixD.WealsoreportRecall
+forevidenceretrieval.Efficiencyismeasuredbyconstruction
+tokens, inference tokens, and latency.
+4.2 Overall Performance Analysis
+Table 1 compares effectiveness and efficiency on LoCoMo
+and LongMemEval-S. Across both datasets and backbones,
+LeanMemachievesthebestAccuracywiththelowestornear-
+lowest construction and inference costs. FullText and Naive
+RAG are included only as references. FullText cannot run
+on LongMemEval-S with Qwen3-8B because the average
+115K-token history exceeds its context window.
+•Jointeffectiveness–efficiencyadvantage.Comparedwith
+the strongest memory-based baselines,LeanMemimproves
+Accuracy by 5.54/5.84 points on LoCoMo and 15.07/2.80
+points on LongMemEval-S under GPT-4.1-mini/Qwen3-
+8B. Meanwhile, it reduces LoCoMo construction cost by
+26.8%/22.2%andrequiresonly117.61K/160.35Kconstruc-
+tiontokensonLongMemEval-S.UnlikeA-Mem,whichcon-
+sumes over 1.2M construction tokens,LeanMemachieves
+FullTextNaive RAGMemoryOS
+A-MemLightMemSimpleMem
+Ours
+Single Session
+User
+Single Session
+Preference
+Single Session
+Assistant
+Multi-
+Session
+Temporal
+Reasoning
+Knowledge
+Update
+95.71 94.29 65.71 88.57 91.43 94.29 95.71
+50.00 36.67 66.67 40.00 50.00 46.67 80.00
+98.21 80.36 67.86 98.21 66.67 96.43 83.93
+66.92 49.62 63.91 58.65 79.93 69.17 90.98
+73.68 63.91 67.67 67.67 70.68 63.16 94.74
+80.77 83.33 76.92 76.92 85.90 80.77 94.87
+40
+50
+60
+70
+80
+90
+100
+Score (%)
+Figure3:AccuracyofGPT-4.1-miniacrossdifferentquestion
+categories on LongMemEval-S.
+stronger effectiveness through heterogeneous memory con-
+struction and query-adaptive evidence composition.
+•Dataset-specific observations.LoCoMo contains 1,540
+answerable questions over relatively shorter conversations
+and covers diverse reasoning types. It therefore emphasizes
+flexible access to heterogeneous evidence. With GPT-4.1-
+mini,LeanMemachieves 83.80 Recall and 84.87 Accuracy,
+improving the strongest baselines by 1.63 and 5.54 points,
+whilereducingconstructiontokens,inferencetokens,andla-
+tency by 26.8%, 23.6%, and 13.4%, respectively. This bene-
+fitsfromrepresentingstablefacts,evolvingstates,anddetail-
+intensivecontentasprofile,event,andrecordmemories,and
+selecting them according to each query.
+LongMemEval-S instead contains much longer histories,
+averaging approximately 115K tokens across dozens of ses-
+sions, and places greater emphasis on long-range evidence
+preservationandcross-sessionstatetracking.WithGPT-4.1-
+mini,LeanMemreaches 97.67 Recall and 91.80 Accuracy,
+exceeding the strongest baselines by 2.52 and 15.07 points,
+while using only 117.61K construction tokens, 3.62K infer-
+ence tokens, and 2.16,s latency. The larger Accuracy gain
+highlights the value of selectively evolving event memories
+andretrievingonlytheevidencerequiredfromrawhistories.
+•Robustness across backbone LLMs.Qwen3-8B ex-
+hibits the same overall trend as GPT-4.1-mini, withLean-
+MemmaintainingthehighestAccuracyandlowestinference
+latency on both datasets. This consistency indicates that the
+gains arise primarily from the memory design rather than a
+particular backbone.
+4.3 Performance across Question Types
+Fig. 3 and 4 report the Accuracy of different methods across
+question types using GPT-4.1-mini.
+•LoCoMo.LeanMemachievesthehighestAccuracyacross
+all four answerable question types, demonstrating consistent
+benefits under different evidence demands. Compared with
+the strongest baseline for each category, it improves Multi-
+Hop,Temporal,Open-Domain,andSingle-HopAccuracyby
+
+Dataset Method
+GPT-4.1-mini Qwen3-8B
+Effectiveness↑ Efficiency↓ Effectiveness↑ Efficiency↓
+Recall Acc. Build Infer. Latency Recall Acc. Build Infer. Latency
+LoCoMo
+FullText 64.62 56.92 – 16.91 5.78 56.26 50.83 – 16.91 4.77
+Naive RAG 57.68 64.09 – 0.60 1.65 51.61 51.04 – 1.05 1.21
+MemoryOS 41.62 65.39 386.40 5.03 3.62 51.23 63.04 429.03 5.73 4.97
+A-Mem 80.08 67.58 1197.28 22.02 7.30 78.74 69.80 1172.94 25.31 8.84
+LightMem 82.17 79.33 106.67 3.98 4.88 79.08 78.57 129.62 3.78 4.26
+SimpleMem 75.58 76.86 94.90 5.54 3.20 73.40 71.14 119.45 9.39 4.07
+LeanMem 83.80∗ 84.87∗ 69.45∗ 3.04∗ 2.77∗ 85.55∗ 84.41∗ 92.92∗ 3.01∗ 3.23∗
+LongMemEval-S
+FullText 100.00 77.40 – 112.50 9.92 – – – – –
+Naive RAG 81.07 67.60 – 11.93 7.54 63.38 65.00 – 5.33 6.03
+MemoryOS 80.80 67.80 669.20 9.19 5.42 75.40 63.40 720.27 9.73 5.87
+A-Mem 92.83 71.40 1330.77 15.46 4.17 84.95 69.00 1352.68 16.24 4.53
+LightMem 90.18 76.73 150.39 3.78 3.93 89.77 69.80 157.604.56 3.12
+SimpleMem 95.15 74.60 162.38 9.17 3.46 95.3274.60 174.31 14.60 2.67
+LeanMem 97.67∗ 91.80∗ 117.61∗ 3.62∗ 2.16∗ 93.30 77.40∗ 160.35 3.95∗ 2.14∗
+Table 1: Overall effectiveness and efficiency on LoCoMo and LongMemEval-S. Recall and Accuracy are averaged over 5 runs;
+∗ denotesasignificantimprovementoverthestrongestmemory-basedbaselineunderpairedtesting(p <0.05).Buildtokensare
+averaged per conversation, whereas inference tokens and latency are averaged per question. Tokens are reported in thousands
+(K)andlatencyinseconds(s).Bestandsecond-bestmemory-basedresultsareboldedandunderlined ;FullTextandNaiveRAG
+are references only.
+Configuration LoCoMo LongMemEval-S
+Acc.↑Tok./Lat.↓ Acc.↑Tok./Lat.↓
+LeanMem 84.87 72.49/2.77 91.80 121.23/2.16
+w/o Utterance Filter75.58 109.75/4.70 82.20 149.42/3.48
+w/o Topic Segment82.79 92.92/3.98 79.60 184.33/3.96
+w/o Storage Schedule72.79 123.56/3.36 71.00 172.73/3.60
+w/o Mem Evolution84.42 89.38/3.43 81.20 125.14/3.42
+w/o Retrieval Plan 77.92 94.15/3.79 81.20 135.25/2.92
+Table 2: Ablation study on LoCoMo and LongMemEval-S.
+Token usage is reported in K tokens and latency in seconds.
+12.02, 6.23, 2.46, and 10.57 points, respectively. The large
+gains on Single-Hop and Open-Domain questions indicate
+that profile and source-grounded record memories preserve
+both reusable facts and fine-grained details. Meanwhile, the
+improvements on Temporal and Multi-Hop questions show
+thateventmemoryandAdaptiveEvidenceCompositioncan
+organize evolving states and combine complementary evi-
+dence across memory types.
+•LongMemEval-S.ThegainsonLongMemEval-Sarecon-
+centratedinquestiontypesthatrequirelong-rangestatetrack-
+ing and cross-session evidence integration.LeanMemim-
+proves significantly over the strongest memory-based base-
+line on Single Session Preference, Multi-Session, Temporal
+Reasoning and Knowledge Update. These results directly
+support Selective Memory Evolution, which incrementally
+maintains temporally changing information, and Adaptive
+Evidence Composition, which retrieves and orders relevant
+evidence from long histories.
+FullText Naive RAGMemoryOS
+A-Mem LightMemSimpleMem
+Ours
+Multi
+Hop
+Temporal
+Open
+Domain
+Single
+Hop
+43.75 42.71 52.08 41.67 64.58 56.25 76.60
+47.04 67.91 54.52 69.16 81.93 78.82 88.16
+62.50 72.29 69.92 75.24 80.73 77.95 83.19
+56.03 42.55 68.79 51.77 77.23 78.37 88.94
+40
+50
+60
+70
+80
+90
+Score (%)
+Figure4:AccuracyofGPT-4.1-miniacrossdifferentquestion
+categories on LoCoMo.
+4.4 Ablation Study
+We assess the contribution of each key component inLean-
+Memusing the following variants: (1)w/o Key Utterance
+Filtering: performs topic segmentation over all dialogue
+turnsratherthanfilteringfortopic-advancinguserutterances;
+(2)w/o Topic Segmentation: treats each session as a sin-
+gledialogueunitformemoryconstruction;(3)w/oMemory
+StorageScheduling:replacesschedulingandheterogeneous
+memoryrepresentationswithaunifiedsummary-basedstrat-
+egy; (4)w/o Event Memory Evolution: stores newly con-
+structed event memories without topic-level consolidation
+or incremental evolution; and (5)w/o Retrieval Planning:
+replaces demand-aware evidence composition with standard
+top-kembedding retrieval.
+As shown in Table 2, all components contribute to the
+effectiveness or efficiency ofLeanMem.1) Key utterance
+filtering.Removing key utterance filtering introduces non-
+
+informativeturns,leadingtoloweraccuracyandhighertoken
+usage and latency.2) Topic segmentation.Without topic
+segmentation, session-level inputs conflate distinct discus-
+sions, resulting in coarser construction units, higher costs,
+and severe degradation on LongMemEval-S.3) Memory
+storage scheduling.Replacing heterogeneous memory rep-
+resentationswithunifiedsummariescausesthelargestaccu-
+racy drop on both datasets and increases token usage, con-
+firming that minimal sufficient representations are central
+to evidence preservation and efficiency.4) Event memory
+evolution.Removing event memory evolution substantially
+degradesLongMemEval-Sperformance.Withoutconsolida-
+tion, related event states remain fragmented, requiring more
+evidence during inference and offsetting the saved evolution
+cost.5) Retrieval planning.Replacing retrieval planning
+withfixed top-kretrievalreduces accuracyandincreases in-
+ference cost, highlighting the importance of query-specific
+memory selection and retrieval budgets.
+4.5 Case Study
+Fig. 5 illustrates howLeanMemidentifies different types of
+conversational information, stores them as heterogeneous
+memory representations, and selectively evolves dynamic
+event states. These memories provide targeted evidence for
+future queries.
+•ProfileMemory.ThetoppanelofFig.5showshowstable
+and reusable information, such as user profiles and prefer-
+ences, is identified during memory scheduling and stored as
+compactprofilememoryinaminimallysufficientformwith-
+outsubsequentevolution.Forfuturequeriesaboutuserfacts,
+profile memory provides precise evidence without introduc-
+ing irrelevant conversational context.
+•Record Memory.The middle panel shows how
+information-rich conversational content is stored as record
+memory.LeanMemuses a lightweight local model to gener-
+ate keywords while preserving pointers to the original dia-
+logue,avoidinginformationlosscausedbyexcessiveabstrac-
+tion. During retrieval, the reranking mechanism uses these
+keywords to better align retrieved records with the query,
+enabling more accurate evidence selection.
+•Event Memory.The bottom panel shows how evolving
+event states are consolidated into coherent temporal evi-
+dence.LeanMemsummarizes each event into a compact
+topic representation with temporal anchors, and selectively
+evolves related memories by organizing their state changes
+into a chronological timeline. For future queries about event
+updates, these evolved memories provide coherent temporal
+evidence for accurate question answering.
+5 Conclusion
+In this paper, we study how long-term memory systems
+should represent heterogeneous conversational information.
+We argue that uniform compression is mismatched with
+dialogue history: stable attributes can be compactly struc-
+tured, evolving information requires temporal state tracking,
+and detail-intensive content should preserve access to its
+source. Based on this insight, we proposeLeanMem, which
+writes information into profile, event, and source-grounded
+ProfileMemory#[Raw Data] [user] I graduated with a degree in Business Administration, which hasdefinitely helped me in my new role. Do you have any advice on how to stay?#[Memory Construction][Schedule] {”action": ”profile","indices": [5],”extract_info": "I graduated with a degree in Business Administration"}[Memory Storage] {“id”: 335,"type": ”profile","memory_text": "I graduated with a degree in Business Administration.","date": "2023/05/30 (Tue) 17:27","seg_id": "answer_280352e9::topic_2",…}[Memory Evolution] N/A#[Query] What degree did I graduate with?#[Memory Utilize] memory text[Memory Retrieval]score:0.7029, rank:1/10[Memory Rerank] N/A#[Answer Generation] You graduated with a degree in Business Administration.
+Record Memory#[Raw Data] [assistant] No problem! Here‘s an updated version of the shift rotation sheet for GM social media …:\n\nShift Rotation Sheet for GM Social Media Agents…#[Memory Construction][Schedule] {”action": "record","indices": [1, 2, 3, 4]}[Memory Storage] {“id”: 23,  "type": "record","memory_text": "Shift rotation schedule for 7 GM social media agents covering 4 daily shifts (8am-4pm, 12pm-8pm, 4pm-12am, 12am-8am) with 2 days off per agent, organized weekly from Sunday to Saturday.","seg_id": "answer_sharegpt_5Lzox6N_0::topic_2”, "turn_id": [1,2,3,4],"date": "2023/05/24 (Wed) 02:46", …}[Memory Evolution] N/A#[Query] I'm checking our previous chat about the shift rotation sheet for GMsocial media agents. Can you remind me what was the rotation for Admon on a Sunday?#[Memory Utilize] original content traceback[Memory Retrieval]score:0.7872, rank:2/10[Memory Rerank] key word: GM social media agents, score:0.8872, rank:1/10#[Answer Generation] Admon is scheduled for the8 am -4 pm on Sunday.
+EventMemory#[Raw Data]2023/05/23 (Tue) 13:01, answer_a25d4a91_1:[user] I recently set a personal best time in a charity 5K run with a time of 27:122023/05/30 (Tue) 13:53, answer_a25d4a91_2:User: I'm training for another charity 5K run coming up ... I'm hoping to beat my personal best time of 25:50 this time around.#[Memory Construction][Schedule] mem1:{"action": "event", "indices": [3,5,7]}, mem2:{"action": "event", "indices": [1,3,5]},[Memory Storage]mem1:{"id": 101, "type": "event","memory_text": "Topic: fitness and soccer.Event1: time=2023/05/23, event=User set a personal best time of 27:12 in a charity 5K run. ...","seg_id": "answer_a25d4a91_1::topic_2"}mem2:{"id": 241,"type": "event","memory_text":"Topic: charity 5K run\nEvent 1: time=2023/05/30, event=User is training for an upcoming charity 5K run aiming to beat their personal best time of 25:50 ...","seg_id": "answer_a25d4a91_2::topic_1"}#[Memory Evolution]update memory text: Topic: run.Event1: time=2023/05/23, event=User set a personal best time of 27:12 in a charity 5K run. Event 2: time=2023/05/30, status=current, event=User is training for an upcoming charity 5K run aiming to beat their personal best time of 25:50 #[Query] What was my personal best time in the charity 5K run?#[Memory Utilize] memorytext[Memory Retrieval]score:0.6109, rank:1/10[Memory Rerank] N/A#[Answer Generation] 25 minutes and 50 seconds
+Figure5:Casestudyfortheconstructionandutilizationpro-
+cess of profile memory, record memory and event memory.
+record memories, selectively evolves changing events, and
+composes evidence according to query-specific demands.
+Thisdesignavoidsredundantprocessingofeasilycompress-
+ible information and irreversible loss of fidelity-sensitive
+evidence. Experiments on LoCoMo and LongMemEval-S
+demonstrate consistently stronger answer quality with lower
+construction and inference costs.
+
+References
+Banerjee,P.;Moshtaghi,M.;Subramanian,S.;Misra,A.;and
+Chadha, A. 2026. APEX-MEM: Agentic Semi-Structured
+Memory with Temporal Reasoning for Long-Term Conver-
+sationalAI.InProceedingsofthe64thAnnualMeetingofthe
+Association for Computational Linguistics (Volume 1: Long
+Papers), 16470–16489.
+Fang,J.;Deng,X.;Xu,H.;Jiang,Z.;Tang,Y.;Xu,Z.;Deng,
+S.; Yao, Y.; Wang, M.; Qiao, S.; et al. 2025. Lightmem:
+Lightweight and efficient memory-augmented generation.
+arXiv preprint arXiv:2510.18866.
+Ferrag,M.A.;Tihanyi,N.;andDebbah,M.2026. Fromllm
+reasoningtoautonomousaiagents:Acomprehensivereview.
+IEEE Access.
+Hu, Y.; Liu, S.; Yue, Y.; Zhang, G.; Liu, B.; Zhu, F.; Lin, J.;
+Guo, H.; Dou, S.; Xi, Z.; et al. 2025. Memory in the Age of
+AI Agents.arXiv preprint arXiv:2512.13564.
+Huang,W.-C.;Zhang,W.;Liang,Y.;Bei,Y.;Chen,Y.;Feng,
+T.;Pan,X.;Tan,Z.;Wang,Y.;Wei,T.;etal.2026.Rethinking
+Memory Mechanisms of Foundation Agents in the Second
+Half: A Survey.arXiv preprint arXiv:2602.06052.
+Kang,J.;Ji,M.;Zhao,Z.;andBai,T.2025. Memoryosofai
+agent. InProceedings of the 2025 Conference on Empirical
+Methods in Natural Language Processing, 25972–25981.
+Kim, S.; Lee, Y.; Kim, S.; Kim, H.; and Cho, S. 2025. Pre-
+storage reasoning for episodic memory: Shifting inference
+burdentomemoryforpersonalizeddialogue.arXivpreprint
+arXiv:2509.10852.
+Li,R.;Zhang,Z.;Bo,X.;Tian,Z.;Chen,X.;Dai,Q.;Dong,
+Z.; and Tang, R. 2025. CAM: A Constructivist View of
+Agentic Memory for LLM-Based Reading Comprehension.
+arXiv preprint arXiv:2510.05520.
+Li, X.; Wang, S.; Zeng, S.; Wu, Y.; and Yang, Y. 2024. A
+surveyonLLM-basedmulti-agentsystems:workflow,infras-
+tructure, and challenges.Vicinagearth, 1(1): 9.
+Liao,Y.;Wu,L.;Hou,M.;Wang,Y.;Wu,H.;andWang,M.
+2026. From Atom to Community: Structured and Evolving
+Agent Memory for User Behavior Modeling.arXiv preprint
+arXiv:2601.16872.
+Liu,J.;Su,Y.;Xia,P.;Han,S.;Zheng,Z.;Xie,C.;Ding,M.;
+andYao,H.2026a. SimpleMem:EfficientLifelongMemory
+for LLM Agents.arXiv preprint arXiv:2601.02553.
+Liu, Z.; Kim, J.; Luo, X.; Li, D.; and Yang, Y. 2026b. Ex-
+ploratorymemory-augmentedLLMagentviahybridon-and
+off-policy optimization.arXiv preprint arXiv:2602.23008.
+Maharana, A.; Lee, D.-H.; Tulyakov, S.; Bansal, M.; Bar-
+bieri, F.; and Fang, Y. 2024. Evaluating very long-term
+conversational memory of llm agents. InProceedings of the
+62nd Annual Meeting of the Association for Computational
+Linguistics (Volume 1: Long Papers), 13851–13870.
+Pan,Z.;Wu,Q.;Jiang,H.;Luo,X.;Cheng,H.;Li,D.;Yang,
+Y.; Lin, C.-Y.; Zhao, H. V.; Qiu, L.; et al. 2025. On mem-
+oryconstructionandretrievalforpersonalizedconversational
+agents.arXiv preprint arXiv:2502.05589.
+Tan,Z.;Yan,J.;Hsu,I.-H.;Han,R.;Wang,Z.;Le,L.;Song,
+Y.; Chen, Y.; Palangi, H.; Lee, G.; et al. 2025. In prospect
+and retrospect: Reflective memory management for long-
+term personalized dialogue agents. InProceedings of the
+63rd Annual Meeting of the Association for Computational
+Linguistics (Volume 1: Long Papers), 8416–8439.
+Wu, D.; Wang, H.; Yu, W.; Zhang, Y.; Chang, K.-W.;
+and Yu, D. 2024. Longmemeval: Benchmarking chat as-
+sistants on long-term interactive memory.arXiv preprint
+arXiv:2410.10813.
+Wu, Y.; Liang, S.; Zhang, C.; Wang, Y.; Zhang, Y.; Guo,
+H.; Tang, R.; and Liu, Y. 2025. From human memory to
+ai memory: A survey on memory mechanisms in the era of
+llms.arXiv preprint arXiv:2504.15965.
+Xu, W.; Liang, Z.; Mei, K.; Gao, H.; Tan, J.; and Zhang, Y.
+2026. A-mem:Agenticmemoryforllmagents.Advancesin
+Neural Information Processing Systems, 38: 17577–17604.
+Zaratiana, U.; Tomeh, N.; Holat, P.; and Charnois, T. 2024.
+GLiNER:Generalistmodelfornamedentityrecognitionus-
+ing bidirectional transformer. InProceedings of the 2024
+Conference of the North American Chapter of the Associa-
+tion for Computational Linguistics: Human Language Tech-
+nologies (Volume 1: Long Papers), 5364–5376.
+Zhang, S.; Li, J.; Zhang, Y.; Jia, P.; Wang, Y.; Qian,
+X.; Zhang, W.; Wang, M.; Liu, Y.; and Zhao, X. 2026.
+MemSearch-o1: Empowering Large Language Models with
+Reasoning-Aligned Memory Growth in Agentic Search. In
+Proceedings of the 64th Annual Meeting of the Associa-
+tionforComputationalLinguistics(Volume1:LongPapers),
+925–943.
+Zhang, Z.; Dai, Q.; Bo, X.; Ma, C.; Li, R.; Chen, X.; Zhu,
+J.; Dong, Z.; and Wen, J.-R. 2025. A survey on the memory
+mechanism of large language model-based agents.ACM
+Transactions on Information Systems, 43(6): 1–47.
+Zhong,Y.;Gao,Y.;andWang,H.2026. HingeMem:Bound-
+ary Guided Long-Term Memory with Query Adaptive Re-
+trieval for Scalable Dialogues. InProceedings of the ACM
+Web Conference 2026, 3576–3587.

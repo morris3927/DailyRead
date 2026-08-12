@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-13",
+  "search_queries": [
+    "silicon sampling social simulation LLM agents arxiv 2026",
+    "harness engineering coding agent evaluation arxiv 2026",
+    "agent memory LLM long-term working memory retrieval arxiv 2026",
+    "arxiv silicon sampling LLM opinion simulation emulate estimate 2026",
+    "arxiv social simulation LLM agents persona population 2026 recent",
+    "arxiv agent memory working memory harness coding agent 2026 august",
+    "arxiv 2026 august LLM social simulation silicon sampling persona new",
+    "arxiv 2026 august agent memory LLM episodic semantic new paper",
+    "arxiv 2026 august coding agent harness evaluation benchmark new",
+    "arxiv \"agent memory\" OR \"working memory\" LLM 2026 august new paper"
+  ],
+  "sources": {
+    "primary": "web_search (Gemini) + arXiv HTML/PDF",
+    "searxng": "blocked (private IP)"
+  },
+  "candidates_found": 15,
+  "candidates_after_dedup": 6,
+  "recommended": [
+    {
+      "arxiv_id": "2608.00023",
+      "title": "CastVectors: Role Steering of Language Models for Social Simulations",
+      "domain": "silicon-sampling-social-simulation"
+    },
+    {
+      "arxiv_id": "2608.09096",
+      "title": "Evo-Bench: Can Language Models Improve Agent Harness?",
+      "domain": "harness-engineering"
+    },
+    {
+      "arxiv_id": "2608.07622",
+      "title": "CMI: Controlled Memory Interference in Continual LLM Agents",
+      "domain": "agent-memory"
+    }
+  ],
+  "included": [
+    {
+      "arxiv_id": "2608.06811",
+      "title": "PMCoder: Coupling Planning with Episodic Memory in LLM Agents for Software Issue Resolution",
+      "domains": ["harness-engineering", "agent-memory"]
+    },
+    {
+      "arxiv_id": "2608.06745",
+      "title": "MemPrism: Task-Conditioned Relational Memory Views for Long-Horizon Agents",
+      "domain": "agent-memory"
+    }
+  ]
+}

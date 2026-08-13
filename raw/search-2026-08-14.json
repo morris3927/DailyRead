@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-14",
+  "primary_source": "Lab SearXNG",
+  "searxng": {
+    "base_url": "http://192.168.1.18:8888",
+    "queries": [
+      "silicon sampling social simulation LLM agents arxiv 2026",
+      "harness engineering LLM agent evaluation benchmark arxiv 2026",
+      "agent memory LLM episodic continual learning arxiv 2026"
+    ],
+    "status": "attempted_from_runtime_but_timed_out",
+    "raw_files": ["raw/search-2026-08-14.txt", "raw/search-2026-08-14.err"]
+  },
+  "fallback_search": {
+    "source": "web_search + arXiv abs/html",
+    "queries": [
+      "silicon sampling social simulation LLM agents arxiv 2025",
+      "harness engineering LLM agent evaluation benchmark arxiv 2025",
+      "agent memory LLM episodic continual learning arxiv 2025",
+      "silicon sampling social simulation LLM arxiv August 2026",
+      "HarnessOpt-Bench harness optimization LLM agent arxiv 2026",
+      "LLMA-Mem multi-agent memory lifelong learning episodic procedural arxiv 2026",
+      "agent memory management LLM arxiv new August 2026",
+      "arxiv new papers silicon sampling computational social science LLM simulation August 2026"
+    ]
+  },
+  "selected": [
+    {"domain":"silicon-sampling-social-simulation","title":"Mind the Gaps: Mixture-of-Minds for Human Simulation","arxiv":"2608.06115","url":"https://arxiv.org/abs/2608.06115","seen":"NOT_SEEN"},
+    {"domain":"silicon-sampling-social-simulation","title":"Emulate or Estimate? The Divergent Strengths of Base and Post-Trained Language Models for Opinion Simulation","arxiv":"2608.03044","url":"https://arxiv.org/abs/2608.03044","seen":"NOT_SEEN"},
+    {"domain":"harness-engineering","title":"HarnessOpt-Bench: Evaluating LLMs at Harness Optimization","arxiv":"2608.06301","url":"https://arxiv.org/abs/2608.06301","seen":"NOT_SEEN"},
+    {"domain":"harness-engineering","title":"Rethinking the Evaluation of Harness Evolution for Agents","arxiv":"2607.12227","url":"https://arxiv.org/abs/2607.12227","seen":"NOT_SEEN"},
+    {"domain":"agent-memory","title":"EvoMem: Memory-Augmented Evolution for Code Optimization","arxiv":"2608.10795","url":"https://arxiv.org/abs/2608.10795","seen":"NOT_SEEN"},
+    {"domain":"agent-memory","title":"Structured Episodic Event Memory (SEEM)","arxiv":"2601.06411","url":"https://arxiv.org/abs/2601.06411","seen":"NOT_SEEN"}
+  ],
+  "skipped_seen": [
+    {"title":"Mitigating Social Desirability Bias in Random Silicon Sampling","arxiv":"2512.22725"},
+    {"title":"Evo-Bench: Can Language Models Improve Agent Harness?","arxiv":"2608.09096"},
+    {"title":"Memory in the LLM Era: Modular Architectures and Strategies in a Unified Framework","arxiv":"2604.01707"},
+    {"title":"Infini Memory: Maintainable Topic Documents for Long-Term LLM Agent Memory","arxiv":"2606.10677"},
+    {"title":"Agentic Context Management","arxiv":"2607.21503"}
+  ]
+}

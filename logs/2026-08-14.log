@@ -1,0 +1,60 @@
+# DailyRead log — 2026-08-14
+
+## Search
+
+- Tried Lab SearXNG at `http://192.168.1.18:8888/search?format=json` for:
+  - silicon sampling social simulation LLM agents arxiv 2026
+  - harness engineering LLM agent evaluation benchmark arxiv 2026
+  - agent memory LLM episodic continual learning arxiv 2026
+- Result: connection timed out from this runtime. Raw curl timeout output saved to `raw/search-2026-08-14.txt` and `raw/search-2026-08-14.err`.
+- Fallback: used web_search plus arXiv abs/html pages for candidate discovery and full-text-level reading.
+
+## Dedup checks before selection
+
+Ran `/Users/morris/.graphify/dailyread-paper-kg/check_paper_seen.py` before selecting candidates.
+
+- `2608.06115` — NOT_SEEN
+- `Anacreon Mixture-of-Minds Human Simulation` — NOT_SEEN
+- `2608.03044` / `Emulate or Estimate divergent strengths base post-trained` — NOT_SEEN
+- `2512.22725` — SEEN; skipped as new recommendation
+- `HarnessOpt-Bench` — NOT_SEEN
+- `2608.06301` — NOT_SEEN
+- `Rethinking Evaluation Harness Evolution Agents` — NOT_SEEN
+- `Evo-Bench` — SEEN; skipped as new recommendation
+- `2608.10795` — NOT_SEEN
+- `EvoMem persistent memory evolutionary` — NOT_SEEN
+- `2604.01707` — SEEN; skipped as new recommendation
+- `Infini Memory maintainable topic documents` — SEEN; skipped as new recommendation
+- `Agentic Context Management` — SEEN; skipped as new recommendation
+
+## Full-text / readable-source attempts
+
+- 2608.06115: read arXiv abs and arXiv HTML (`https://arxiv.org/html/2608.06115v1`). HTML was available; extraction truncated after ~20k chars but included intro, background, method sections and pipeline details.
+- 2608.03044: read arXiv abs and arXiv HTML (`https://arxiv.org/html/2608.03044v1`). HTML was available; extraction included intro, methodology, experiments, conclusion/limitations.
+- 2608.06301: read arXiv abs and arXiv HTML (`https://arxiv.org/html/2608.06301v1`). HTML was available; extraction included intro, benchmark/protocol, budget and suite details.
+- 2607.12227: read arXiv abs and arXiv HTML (`https://arxiv.org/html/2607.12227v1`). HTML was available; extraction included intro, formal protocol, experiments and Terminal-Bench results.
+- 2608.10795: read arXiv abs and arXiv HTML (`https://arxiv.org/html/2608.10795v1`). HTML was available; extraction included intro, memory architecture, extraction/dedup/retrieval pipeline.
+
+## Images
+
+Generated only for 今日推薦點開:
+
+- `assets/2026-08-14/mixture-of-minds-human-simulation.png`
+- `assets/2026-08-14/harnessopt-bench-harness-optimization.png`
+- `assets/2026-08-14/evomem-memory-augmented-evolution.png`
+
+Model requested: `openai/gpt-image-2`.
+
+## Graph update
+
+Pending at log creation; final command output appended by shell step.
+
+## Image verification
+- Inspected generated diagrams. Mixture-of-Minds and HarnessOpt-Bench broadly on-topic/readable.
+- First EvoMem image had title typo; regenerated and rechecked. Final EvoMem image title is spelled correctly.
+Wrote /Users/morris/.graphify/dailyread-paper-kg/graphify-out/graph.json
+Wrote /Users/morris/.graphify/dailyread-paper-kg/graphify-out/paper_index.json
+Nodes=923 Edges=4215
+GRAPH_BUILD_EXIT=0
+Added 'DailyRead-paper-kg' to global graph: +923 nodes, -915 pruned. Global: /Users/morris/.graphify/global-graph.json
+GRAPHIFY_GLOBAL_ADD_EXIT=0

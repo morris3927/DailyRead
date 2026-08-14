@@ -1,0 +1,75 @@
+# DailyRead log — 2026-08-15
+
+## Scope
+- Domains: silicon sampling/social simulation; harness engineering; agent memory.
+- Required search entry: Lab SearXNG (`http://192.168.1.18:8888/search?q={query}&format=json`).
+- Fallback used: arXiv API after SearXNG timeouts.
+
+## Search attempts
+
+### SearXNG
+- `"silicon sampling" social simulation LLM arXiv` — FAILED: urlopen timeout after 20s.
+- `"generative agents" social simulation LLM 2026 paper` — FAILED: urlopen timeout after 20s.
+- `LLM agent based social simulation arXiv 2026` — FAILED: urlopen timeout after 20s.
+- `"harness engineering" LLM agents evaluation` — FAILED: urlopen timeout after 20s.
+- `LLM agent harness benchmark workflow GitHub 2026` — FAILED: urlopen timeout after 20s.
+- `agent evaluation harness engineering paper` — not completed; SearXNG run hit global timeout.
+- Agent memory SearXNG queries were not completed because the same run hit global timeout.
+
+### arXiv fallback
+- Saved structured results to `raw/arxiv-search-2026-08-15.json` and combined record to `raw/search-2026-08-15.json`.
+- Queries included social simulation / generative agents / silicon sampling, agent benchmark / harness / workflow, and long-term / agent memory searches.
+
+## Dedup checks before selection
+
+Used `/Users/morris/.graphify/dailyread-paper-kg/check_paper_seen.py` before choosing today's recommendation/domain candidates.
+
+Selected:
+- `2607.28550v1` — NOT_SEEN — Correcting Mode Collapse in Silicon Sampling with Semantic Similarity Rating.
+- `2608.11727v1` — NOT_SEEN — Harness-IF: Evaluating Instruction Following Across Instruction Surfaces in Coding Agents.
+- `2608.13334v1` — NOT_SEEN — RippleMem: From Isolated Retrieval to Associative Recollection for Long-Term Agent Memory.
+
+Examples of skipped seen items:
+- `2607.14485v1` — SEEN — Step-Level Preference Learning for Generative Agents in Social Simulations.
+- `2607.13693v1` — SEEN — Social Simulations: from Agent-Based Modeling to Digital Twins.
+- `2607.02464v2` — SEEN — Will Scaling Improve Social Simulation with LLMs?
+- `2608.07622v1` — SEEN — Controlled Memory Interference in Continual LLM Agents.
+
+## Full-text / material retrieval
+
+Downloaded arXiv PDFs and extracted text with Python PDF libraries because `pdftotext` is not installed on this host.
+
+- `2607.28550v1.pdf` — downloaded; extracted ~38k chars.
+- `2608.11727v1.pdf` — downloaded; extracted ~88k chars.
+- `2608.13334v1.pdf` — downloaded; extracted ~81k chars.
+- Additional screened but not selected full PDFs:
+  - `2608.10669v1` REDAgentBench — downloaded/extracted.
+  - `2607.27834v1` MemTxn — downloaded/extracted.
+
+## Image generation
+
+Generated only for the 3 今日推薦點開 papers, with `openai/gpt-image-2`, saved under `assets/2026-08-15/`:
+- `correcting-mode-collapse-silicon-sampling.png` — visual inspection: on-topic; minor skipped numbering, acceptable.
+- `harness-if-instruction-surfaces.png` — visual inspection: on-topic/readable.
+- `ripplemem-associative-recollection.png` — visual inspection: on-topic; minor typo, acceptable.
+
+## Self-review before commit
+
+- Domain notes all include required headings: `這篇在說什麼`, `主要貢獻`, `方法 / pipeline`, `實驗設計`, `かに讀後判斷`.
+- 今日推薦 notes are based on PDF/full-text extraction, not abstract-only.
+- Known limitation: SearXNG was attempted but unavailable/timeout; arXiv API fallback used and recorded.
+
+## Graph update
+
+Graph build and global add completed successfully.
+Wrote /Users/morris/.graphify/dailyread-paper-kg/graphify-out/graph.json
+Wrote /Users/morris/.graphify/dailyread-paper-kg/graphify-out/paper_index.json
+Nodes=930 Edges=4245
+graph_build_exit=0
+Added 'DailyRead-paper-kg' to global graph: +930 nodes, -923 pruned. Global: /Users/morris/.graphify/global-graph.json
+graphify_global_add_exit=0
+
+## Post-update verification
+- `check_paper_seen.py 2607.28550v1` now returns SEEN for 2026-08-15.
+- `check_paper_seen.py 2608.11727v1` now returns SEEN for 2026-08-15.
+- `check_paper_seen.py 2608.13334v1` now returns SEEN for 2026-08-15.

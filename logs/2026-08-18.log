@@ -1,0 +1,44 @@
+2026-08-18 DailyRead Log
+========================
+
+## Search
+- SearXNG (http://192.168.1.18:8888) 連線逾時，改用 web_search (Gemini) + arXiv API + web_fetch 搜尋與取得論文全文
+- Searched domains: silicon sampling/social simulation, harness engineering, agent memory
+- web_search count parameter capped at 10 (exceeded in initial attempts, corrected)
+
+## Dedup (check_paper_seen.py)
+SEEN (skipped):
+- 2607.28550 (Correcting Mode Collapse in Silicon Sampling — SSR) — recommended 2026-08-15
+- 2608.00267 (LoopsBench) — recommended 2026-08-08
+- 2608.09096 (Evo-Bench) — mentioned 2026-08-13
+- 2608.06811 (PMCoder) — mentioned 2026-08-13
+- 2607.03091, 2512.22725, 2602.06052, 2605.06716, 2605.17625, 2509.13397, 2510.13884, 2608.11727, 2608.13334
+
+NOT_SEEN candidates selected:
+- 2510.01171 (Verbalized Sampling: Mitigate Mode Collapse & Unlock LLM Diversity)
+- 2605.00435 (Escaping Mode Collapse via Geometric Regulation)
+- 2608.02499 (SWE-Touch: Benchmarking Coding Agents When Users Touch the Code)
+- 2607.22575 (Temporal Context Reinstatement Drives Episodic-Like Order Memory)
+- 2608.12990 (LycheeMemory V2: Efficient Long-Term Memory via Semantic Segment-Level Consolidation)
+- 2507.04219 (Model Collapse Is Not a Bug — Machine Unlearning) — SKIPPED, off-topic
+
+Excluded:
+- 2507.04219: 偏題，不適合三個 domain
+
+## Full-text retrieval
+- 2605.00435: HTML fetched from https://arxiv.org/html/2605.00435v3 — truncated, read head + tail
+- 2510.01171: HTML fetched from https://arxiv.org/html/2510.01171v4 — truncated, read head + tail
+- 2608.02499: HTML fetched from https://arxiv.org/html/2608.02499v1 — truncated, read head + tail
+- 2607.22575: HTML fetched from https://arxiv.org/html/2607.22575v1 — truncated, read head + tail
+- 2608.12990: HTML fetched from https://arxiv.org/html/2608.12990v1 — truncated, read head + tail
+
+## Image generation
+- Google Gemini image generation: HTTP 429 quota exceeded
+- OpenAI Codex image generation: HTTP 429 usage limit reached
+- No images generated; fallback recorded in log
+- Will retry image generation later or in next session
+
+## Selected today's recommendations
+1. Silicon Sampling: 2510.01171 (Verbalized Sampling)
+2. Harness Engineering: 2608.02499 (SWE-Touch)
+3. Agent Memory: 2608.12990 (LycheeMemory V2)

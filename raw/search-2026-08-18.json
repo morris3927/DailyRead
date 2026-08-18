@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-18",
+  "search_method": "web_search (Gemini) + arXiv HTML fetch (SearXNG timeout)",
+  "domains": {
+    "silicon_sampling": {
+      "query": "arxiv 2026 silicon sampling LLM social simulation diversity mode collapse",
+      "candidates": [
+        {"arxiv_id": "2510.01171", "title": "Verbalized Sampling: Mitigate Mode Collapse and Unlock LLM Diversity", "status": "NOT_SEEN", "selected": true},
+        {"arxiv_id": "2605.00435", "title": "Escaping Mode Collapse via Geometric Regulation in Representation Space", "status": "NOT_SEEN", "selected": false},
+        {"arxiv_id": "2607.28550", "title": "Correcting Mode Collapse in Silicon Sampling with Semantic Similarity Rating", "status": "SEEN", "note": "recommended 2026-08-15"}
+      ]
+    },
+    "harness_engineering": {
+      "query": "arxiv 2026 agent evaluation harness instruction following coding benchmark new",
+      "candidates": [
+        {"arxiv_id": "2608.02499", "title": "SWE-Touch: Benchmarking Coding Agents When Users Touch the Code", "status": "NOT_SEEN", "selected": true},
+        {"arxiv_id": "2608.00267", "title": "LoopsBench: From Harness Engineering to Loop Engineering", "status": "SEEN", "note": "recommended 2026-08-08"},
+        {"arxiv_id": "2608.09096", "title": "Evo-Bench: Can Language Models Improve Agent Harness?", "status": "SEEN", "note": "mentioned 2026-08-13"},
+        {"arxiv_id": "2608.11727", "title": "Harness-IF: Evaluating Instruction Following Across Instruction Surfaces", "status": "SEEN", "note": "recommended 2026-08-15"}
+      ]
+    },
+    "agent_memory": {
+      "query": "arxiv 2026 agent memory long-term experience retrieval architecture",
+      "candidates": [
+        {"arxiv_id": "2608.12990", "title": "LycheeMemory V2: Efficient Long-Term Memory via Semantic Segment-Level Consolidation", "status": "NOT_SEEN", "selected": true},
+        {"arxiv_id": "2607.22575", "title": "Temporal Context Reinstatement Drives Episodic-Like Order Memory in Long-Context Language Models", "status": "NOT_SEEN", "selected": false},
+        {"arxiv_id": "2608.06811", "title": "PMCoder: Coupling Planning with Episodic Memory in LLM Agents for Software Issue Resolution", "status": "SEEN", "note": "mentioned 2026-08-13"}
+      ]
+    }
+  },
+  "full_text_sources": {
+    "2510.01171": "https://arxiv.org/html/2510.01171v4",
+    "2605.00435": "https://arxiv.org/html/2605.00435v3",
+    "2608.02499": "https://arxiv.org/html/2608.02499v1",
+    "2607.22575": "https://arxiv.org/html/2607.22575v1",
+    "2608.12990": "https://arxiv.org/html/2608.12990v1"
+  }
+}

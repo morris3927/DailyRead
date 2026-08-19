@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-20",
+  "search_method": "web_search (Gemini) + arXiv web_fetch (SearXNG unreachable)",
+  "domains": {
+    "silicon-sampling-social-simulation": {
+      "status": "no_new_candidates",
+      "seen_papers": [
+        "2607.02464", "2607.03091", "2506.19806", "2604.06663",
+        "2509.10127", "2608.06115", "2512.22725", "2509.26080"
+      ]
+    },
+    "harness-engineering": {
+      "status": "has_candidates",
+      "papers": [
+        {
+          "arxiv_id": "2607.13705",
+          "title": "AgentCompass: A Unified Evaluation Infrastructure for Agent Capabilities",
+          "full_text_read": true,
+          "selected": true
+        },
+        {
+          "arxiv_id": "2604.18071",
+          "title": "Architectural Design Decisions in AI Agent Harnesses",
+          "full_text_read": true,
+          "selected": true
+        },
+        {
+          "arxiv_id": "2608.13417",
+          "title": "A Systematic Evaluation of Agents for Long-Horizon AI Research and Development",
+          "full_text_read": false,
+          "selected": false,
+          "reason": "abstract only, not included in domain notes"
+        }
+      ]
+    },
+    "agent-memory": {
+      "status": "has_candidates",
+      "papers": [
+        {
+          "arxiv_id": "2506.15841",
+          "title": "MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+          "full_text_read": true,
+          "selected": true,
+          "recommended": true
+        },
+        {
+          "arxiv_id": "2608.15008",
+          "title": "Harness the Memory: A Holistic Evaluation of Memory Substrates in Memory Agents",
+          "full_text_read": true,
+          "selected": true,
+          "recommended": true
+        },
+        {
+          "arxiv_id": "2608.18066",
+          "title": "On the Fragility of Self-Improving Agents: Variance, Task Order, and Underspecification",
+          "full_text_read": true,
+          "selected": true
+        }
+      ]
+    }
+  },
+  "recommended_daily": [
+    "2506.15841 (MEM1)",
+    "2608.15008 (Harness the Memory)",
+    "2604.18071 (Architectural Design Decisions in AI Agent Harnesses)"
+  ],
+  "images_generated": false,
+  "image_failure_reason": "Both Google Gemini and OpenAI Codex hit quota limits (HTTP 429)"
+}

@@ -1,0 +1,36 @@
+2026-08-20 DailyRead Log
+
+## Search
+- SearXNG (http://192.168.1.18:8888) unreachable from sandbox, fell back to web_search (Gemini) + arXiv web_fetch
+- Topics searched: silicon sampling/social simulation, harness engineering, agent memory
+
+## Dedup
+All candidates checked against paper_index.json (518 papers) via check_paper_seen.py:
+- SEEN: 2607.02464, 2607.03091, 2506.19806, 2604.06663, 2509.10127, 2608.06115, 2512.22725, 2509.26080, 2606.10677, 2606.05405, 2606.20683, 2606.06448, 2606.09498, 2603.28052, 2607.16211, 2608.13334, HarnessBench
+- NOT_SEEN (selected for domain notes):
+  - 2506.15841 (MEM1) — agent memory
+  - 2608.15008 (Harness the Memory) — agent memory
+  - 2608.18066 (On the Fragility of Self-Improving Agents) — agent memory
+  - 2607.13705 (AgentCompass) — harness engineering
+  - 2604.18071 (Architectural Design Decisions) — harness engineering
+- NOT_SEEN (abstract only, not selected):
+  - 2608.13417 (A Systematic Evaluation of Agents for Long-Horizon AI Research and Development)
+
+## Full-text reads
+- MEM1 (2506.15841): arxiv/html full text read
+- Harness the Memory (2608.15008): arxiv/html full text read (truncated at 750KB)
+- On the Fragility of Self-Improving Agents (2608.18066): arxiv/html full text read (truncated)
+- AgentCompass (2607.13705): arxiv/html full text read (truncated)
+- Architectural Design Decisions (2604.18071): arxiv/html full text read (truncated)
+- A Systematic Evaluation (2608.13417): abstract only
+
+## Image generation
+- FAILED: Both Google Gemini and OpenAI Codex image generation hit quota limits (HTTP 429)
+- No note images generated for 2026-08-20
+- Will retry in a later session
+
+## Self-audit
+- [x] All domain notes have 5 required sub-headings (這篇在說什麼, 主要貢獻, 方法/pipeline, 實驗設計, かに讀後判斷)
+- [x] Content explains research problems, methods, and evidence — not just headings
+- [x] Papers with insufficient information are marked (A Systematic Evaluation: abstract only, not included in domain notes)
+- [x] Dedup checked before selection

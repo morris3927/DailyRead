@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-21",
+  "domains": ["silicon-sampling-social-simulation", "harness-engineering", "agent-memory"],
+  "search_sources": ["web_search_gemini", "arxiv_web_fetch"],
+  "searxng_status": "timeout",
+  "papers": {
+    "silicon_sampling": {
+      "NOT_SEEN": [
+        {"arxiv_id": "2511.03758", "title": "CiteAgent: Leveraging LLM-based agents for social science research"},
+        {"arxiv_id": "2608.08058", "title": "Representational Equality in Cross-country Value Simulation"}
+      ],
+      "SEEN": ["2607.03091", "2509.26080", "2512.22725", "2507.19364", "2604.01520", "2603.19649", "2608.04205", "2506.19806"]
+    },
+    "harness_engineering": {
+      "NOT_SEEN": [
+        {"arxiv_id": "2607.26598", "title": "Living-Harness Is an Interactive-Agent Evolver"},
+        {"arxiv_id": "2607.28956", "title": "MerchantBench: Benchmarking LLM Agents for Long-Term Coherence"}
+      ],
+      "SEEN": ["2605.27922", "2605.27898", "2608.09096", "2607.12227", "2606.20683", "2604.08224", "2604.25850"]
+    },
+    "agent_memory": {
+      "NOT_SEEN": [
+        {"arxiv_id": "2608.03463", "title": "LeanMem: Simple and Efficient Long-Term Memory for LLM Agents"},
+        {"arxiv_id": "2510.07925", "title": "Enabling Personalized Long-term Interactions in LLM-based Agents"}
+      ],
+      "SEEN": ["2606.10677", "2607.16211", "2606.09483", "2604.16548", "2510.09720", "2504.19413"]
+    }
+  },
+  "recommended": [
+    {"arxiv_id": "2608.03463", "domain": "agent-memory"},
+    {"arxiv_id": "2607.26598", "domain": "harness-engineering"},
+    {"arxiv_id": "2608.08058", "domain": "silicon-sampling-social-simulation"}
+  ]
+}

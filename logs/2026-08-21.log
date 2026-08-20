@@ -1,0 +1,61 @@
+# DailyRead Log — 2026-08-21
+
+## 搜尋入口
+
+- SearXNG (http://192.168.1.18:8888) 連線逾時，改用 web_search (Gemini) + arXiv web_fetch。
+- 三個 domain 的搜尋關鍵字：silicon sampling social simulation、harness engineering agent evaluation、agent memory LLM long-term memory。
+
+## 查重結果
+
+### Silicon Sampling / Social Simulation
+- 2607.03091 (Cross-Survey Transfer) → SEEN
+- 2509.26080 (Evaluating LLM as Synthetic Social Agents) → SEEN
+- 2512.22725 (Mitigating Social Desirability Bias) → SEEN
+- 2507.19364 (Integrating LLM in ABM) → SEEN
+- 2604.01520 (S-Researcher) → SEEN
+- 2603.19649 (PolicySim) → SEEN
+- 2608.04205 (MatrAIx 8.3B) → SEEN
+- 2506.19806 (LLM-Based Social Simulations Require Boundary) → SEEN
+- **2511.03758 (CiteAgent) → NOT_SEEN ✓**
+- **2608.08058 (Representational Equality) → NOT_SEEN ✓**
+
+### Harness Engineering
+- 2605.27922 (Harness-Bench) → SEEN
+- 2605.27898 (Unified Framework) → SEEN
+- 2608.09096 (Evo-Bench) → SEEN
+- 2607.12227 (Rethinking Evaluation) → SEEN
+- 2606.20683 (Survey on Agent System) → SEEN
+- 2604.08224 (Externalization) → SEEN
+- 2604.25850 (AHE) → SEEN
+- **2607.26598 (Living-Harness) → NOT_SEEN ✓**
+- **2607.28956 (MerchantBench) → NOT_SEEN ✓**
+- 2608.16859 (HarnessEval-W) → NOT_SEEN but CV domain, not included
+
+### Agent Memory
+- 2606.10677 (Infini Memory) → SEEN
+- 2607.16211 (MOSAIC) → SEEN
+- 2606.09483 (DCPM) → SEEN
+- 2604.16548 (Memory Security Survey) → SEEN
+- 2510.09720 (PAMU) → SEEN
+- 2504.19413 (Mem0) → SEEN
+- **2608.03463 (LeanMem) → NOT_SEEN ✓**
+- **2510.07925 (Personalized Long-term Interactions) → NOT_SEEN ✓**
+
+## 全文取得
+
+- LeanMem (2608.03463): HTML 全文 ✓
+- Living-Harness (2607.26598): HTML 全文 ✓
+- Representational Equality (2608.08058): HTML 全文 ✓
+- CiteAgent (2511.03758): HTML 全文 ✓
+- MerchantBench (2607.28956): HTML 全文 ✓
+- Personalized Long-term Interactions (2510.07925): abstract only
+
+## 今日推薦點開
+
+1. LeanMem (2608.03463) — agent memory
+2. Living-Harness (2607.26598) — harness engineering
+3. Representational Equality (2608.08058) — silicon sampling
+
+## Graph update
+
+- 待執行 build_paper_graph.py 和 graphify global add

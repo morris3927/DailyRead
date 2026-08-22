@@ -1,0 +1,87 @@
+{
+  "date": "2026-08-22",
+  "searxng": {
+    "base_url": "http://192.168.1.18:8888",
+    "status": "failed_timeout",
+    "attempts": [
+      {
+        "query": "agent memory LLM 2026",
+        "url": "http://192.168.1.18:8888/search?q=agent%20memory%20LLM%202026&format=json",
+        "error": "curl timeout after 10 seconds"
+      },
+      {
+        "queries": [
+          "silicon sampling social simulation LLM agents paper 2026",
+          "LLM social simulation silicon sampling arxiv 2026",
+          "harness engineering LLM agents evaluation framework paper 2026",
+          "agent harness engineering evaluation workflow LLM 2026",
+          "agent memory LLM long term memory paper 2026 arxiv",
+          "LLM agent memory benchmark framework 2026"
+        ],
+        "error": "urllib requests did not complete before session was killed; local SearXNG appeared unreachable"
+      }
+    ]
+  },
+  "fallback_searches": [
+    {
+      "query": "2026 LLM social simulation silicon sampling arXiv",
+      "candidate_ids": ["2607.03091", "2605.00197", "2604.17615", "2603.19649", "2608.06115"]
+    },
+    {
+      "query": "2026 LLM agent harness engineering evaluation framework arXiv",
+      "candidate_ids": ["2607.12227", "2605.27922", "2605.23950", "2608.07346", "2605.18747", "2604.21003"]
+    },
+    {
+      "query": "2026 LLM agent memory long term memory benchmark arXiv",
+      "candidate_ids": ["2607.12385", "2604.20006", "2605.06527", "2606.10677", "2606.24322"]
+    },
+    {
+      "query": "site:arxiv.org/abs/2608 multi-agent social simulation LLM survey human behavior simulation",
+      "candidate_ids": ["2608.07519"]
+    },
+    {
+      "query": "site:arxiv.org/abs/2608 LLM agent memory benchmark long-term memory personalized agents",
+      "candidate_ids": ["2608.04095"]
+    }
+  ],
+  "seen_check_before_selection": {
+    "2607.03091": "SEEN",
+    "2512.22725": "SEEN",
+    "2605.00197": "SEEN",
+    "2604.17615": "SEEN",
+    "2603.19649": "SEEN",
+    "2506.19806": "SEEN",
+    "2509.13397": "SEEN",
+    "2608.06115": "SEEN",
+    "2607.12227": "SEEN",
+    "2605.27922": "SEEN",
+    "2605.23950": "SEEN",
+    "2608.07346": "NOT_SEEN",
+    "2605.18747": "SEEN",
+    "2604.21003": "SEEN",
+    "2607.12385": "SEEN",
+    "2604.20006": "SEEN",
+    "2605.06527": "SEEN",
+    "2606.10677": "SEEN",
+    "2606.24322": "SEEN",
+    "2608.07519": "NOT_SEEN",
+    "2608.04095": "NOT_SEEN"
+  },
+  "selected": [
+    {
+      "id": "2608.07519",
+      "title": "From Survey Personas to LLM Agents: A Generative Agent-based Simulation of Mobility Policy Preference Dynamics",
+      "source_read": "https://arxiv.org/html/2608.07519v2"
+    },
+    {
+      "id": "2608.07346",
+      "title": "A^2E: An End-to-End Agent Auditing Engine",
+      "source_read": "https://arxiv.org/html/2608.07346v2"
+    },
+    {
+      "id": "2608.04095",
+      "title": "FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents",
+      "source_read": "https://arxiv.org/html/2608.04095v1"
+    }
+  ]
+}

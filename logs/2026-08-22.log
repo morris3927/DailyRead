@@ -1,0 +1,66 @@
+# DailyRead log — 2026-08-22
+
+## Search
+
+- Required SearXNG base: http://192.168.1.18:8888
+- Attempted SearXNG JSON endpoint with query `agent memory LLM 2026`: `curl` timed out after 10 seconds.
+- Attempted batched Python urllib SearXNG searches for silicon sampling/social simulation, harness engineering, and agent memory queries. Requests did not complete; session was killed after appearing unreachable.
+- Fallback used: web_search + arXiv export API + arXiv HTML full text.
+
+## Deduplication before selection
+
+Checked with `/Users/morris/.graphify/dailyread-paper-kg/check_paper_seen.py` before selecting today's domain notes / recommendations.
+
+Seen and skipped:
+- 2607.03091 — SEEN
+- 2512.22725 — SEEN
+- 2605.00197 — SEEN
+- 2604.17615 — SEEN
+- 2603.19649 — SEEN
+- 2506.19806 — SEEN
+- 2509.13397 — SEEN
+- 2608.06115 — SEEN
+- 2607.12227 — SEEN
+- 2605.27922 — SEEN
+- 2605.23950 — SEEN
+- 2605.18747 — SEEN
+- 2604.21003 — SEEN
+- 2607.12385 — SEEN
+- 2604.20006 — SEEN
+- 2605.06527 — SEEN
+- 2606.10677 — SEEN
+- 2606.24322 — SEEN
+
+Selected as NOT_SEEN:
+- 2608.07519 — From Survey Personas to LLM Agents: A Generative Agent-based Simulation of Mobility Policy Preference Dynamics
+- 2608.07346 — A²E: An End-to-End Agent Auditing Engine
+- 2608.04095 — FinPerMA: A Theory-Informed, Event-Grounded Personalized-Memory Benchmark for LLM Agents
+
+## Full-text / source reading
+
+- 2608.07519v2: read arXiv HTML full text. Covered abstract, introduction, methodology, experimental setup, results figure descriptions.
+- 2608.07346v2: read arXiv HTML full text. Covered abstract, introduction, overview, monitor layer, evaluation layer, experiment summary / figure descriptions.
+- 2608.04095v1: read arXiv HTML full text. Covered abstract, introduction, methodology, impact model, evaluation task design, headline result numbers.
+
+## Images
+
+Generated exactly 3 recommendation images with `openai/gpt-image-2` and copied them to:
+- assets/2026-08-22/survey-personas-to-llm-agents.png
+- assets/2026-08-22/a2e-agent-auditing-engine.png
+- assets/2026-08-22/finperma-personalized-memory.png
+
+## Self-review before commit
+
+- All three domain notes include the required five headings: `這篇在說什麼`, `主要貢獻`, `方法 / pipeline`, `實驗設計`, `かに讀後判斷`.
+- Recommendation notes are based on full-text-level arXiv HTML, not abstract-only reading.
+- Information gaps / cautions are explicitly described where relevant, especially prompt sensitivity in 2608.07519 and operationalized rather than empirical finance rules in 2608.04095.
+
+## Graph update
+
+Success.
+
+- `/Users/morris/.local/share/uv/tools/graphifyy/bin/python3 /Users/morris/.graphify/dailyread-paper-kg/build_paper_graph.py`
+  - Wrote graph.json and paper_index.json
+  - Nodes=969 Edges=4434
+- `graphify global add /Users/morris/.graphify/dailyread-paper-kg/graphify-out/graph.json --as DailyRead-paper-kg`
+  - Added DailyRead-paper-kg to global graph: +969 nodes, -962 pruned

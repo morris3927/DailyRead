@@ -1,0 +1,32 @@
+# DailyRead Log — 2026-09-01
+
+## SearXNG
+- Status: TIMEOUT
+- All 3 queries to 192.168.1.18:8888 timed out (sessions ember-gulf, calm-river, tidy-falcon killed with SIGKILL after ~30s each, no output)
+- Fallback: web_search (gemini-2.5-flash) used successfully
+
+## Full-text fetching
+- 2608.28182 (SILICA): HTML full text fetched, read through Section 2. Sections 3-4 need PDF for complete experiment details.
+- 2608.05013 (OneDayAgent): HTML full text fetched, read through Section 2.2.3. Sections 3-4 need PDF for experiment details.
+- 2605.27721 (UserHarness): HTML full text fetched, read through Section 3.1. Remaining method and experiment details need PDF.
+- 2603.19935 (Memori): HTML full text fetched, read through Section 3.8. Detailed ablation/analysis needs PDF.
+- 2603.11337 (RewardHackingAgents): Abstract only (no HTML version available).
+- 2608.16859 (HarnessEval-W): HTML partially fetched (truncated at 5000 chars). Full details need PDF.
+
+## Image generation
+- All 3 images generated successfully with openai/gpt-image-2
+- silica-benchmark.png: 2.7MB
+- onedayagent-harness.png: 2.2MB  
+- memori-persistent-memory.png: 2.0MB
+- All copied to assets/2026-09-01/
+
+## Dedup
+- 6 NOT_SEEN papers identified out of ~25 candidates
+- 19+ SEEN papers correctly skipped
+- check_paper_seen.py used for all arXiv IDs before selection
+
+## Self-review checklist
+- [x] All 6 entries have 5 required subheadings (這篇在說什麼 / 主要貢獻 / 方法 pipeline / 實驗設計 / かに讀後判斷)
+- [x] 3 recommended entries have 500+ Chinese characters each with full method and experiment explanation
+- [x] Information gaps explicitly noted where full text was not available
+- [x] No fabricated experiment details

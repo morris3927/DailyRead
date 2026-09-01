@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-01",
+  "search_queries": [
+    "silicon sampling social simulation LLM agents 2025 2026",
+    "harness engineering LLM agent evaluation benchmark 2025 2026",
+    "agent memory LLM long-term short-term management 2025 2026",
+    "arxiv silicon sampling OR social simulation LLM agents 2026 new",
+    "arxiv harness engineering agent evaluation 2026 new recent",
+    "arxiv agent memory management LLM 2026 new recent"
+  ],
+  "searxng_status": "TIMEOUT (192.168.1.18:8888 not responding, all 3 queries killed after timeout)",
+  "search_provider": "web_search (gemini-2.5-flash)",
+  "candidates_found": 20+,
+  "dedup_results": {
+    "NOT_SEEN": [
+      "2608.28182 - Benchmarking LLM Agent Societies Against Human Behavioural Distributions (SILICA)",
+      "2605.27721 - UserHarness: Harnessing User Minds for Stronger Agent Theory-of-Mind",
+      "2603.11337 - RewardHackingAgents: Benchmarking Evaluation Integrity for LLM ML-Engineering Agents",
+      "2608.05013 - OneDayAgent: Towards a Long-Horizon Harness for Autonomous Agents",
+      "2608.16859 - HarnessEval-W: Agentifying the Evaluation of Visual Worlds",
+      "2603.19935 - Memori: A Persistent Memory Layer for Efficient, Context-Aware LLM Agents"
+    ],
+    "SEEN_skipped": [
+      "2607.03091 - Silicon Sampling via Cross-Survey Transfer",
+      "2605.00197 - The Silicon Society Cookbook",
+      "2507.19364 - Integrating LLM in Agent-Based Social Simulation",
+      "2607.28550 - Correcting Mode Collapse in Silicon Sampling with SSR",
+      "2606.30085 - Not-quite-human Tastes",
+      "2606.13629 - Valid Inference with Synthetic Data via Task Exchangeability",
+      "2603.00113 - AI Agents Alone Are Not (Yet) Sufficient for Social Simulation",
+      "2506.19806 - LLM-Based Social Simulations Require a Boundary",
+      "2605.27922 - Harness-Bench",
+      "2608.06301 - HarnessOpt-Bench",
+      "2607.12227 - Rethinking the Evaluation of Harness Evolution for Agents",
+      "2608.00267 - LoopsBench",
+      "2604.25850 - AHE Observability Driven Harness Evolution",
+      "2606.20683 - From QA to Task Completion Survey",
+      "2601.01885 - Agentic Memory (AgeMem)",
+      "2606.10677 - Infini Memory",
+      "2607.16211 - MOSAIC",
+      "2601.02553 - SimpleMem",
+      "2604.07798 - LightMem / Agents as Social Scientists",
+      "2606.23127 - AFTER",
+      "2603.07670 - Memory for Autonomous LLM Agents (Survey)",
+      "2605.06716 - From Storage to Experience Survey",
+      "2504.19413 - Mem0"
+    ]
+  },
+  "selected": {
+    "silicon-sampling-social-simulation": ["2608.28182 (recommended)", "2605.27721"],
+    "harness-engineering": ["2608.05013 (recommended)", "2603.11337"],
+    "agent-memory": ["2603.19935 (recommended)", "2608.16859"]
+  }
+}
